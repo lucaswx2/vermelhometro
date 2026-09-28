@@ -56,11 +56,27 @@ const phi = (x: number) => {
   return x > 0 ? 1 - p : p
 }
 
+// O 2º turno principal é o confronto entre os dois primeiros do 1º turno mais recente.
+const chaveDoConfronto = (p: Pesquisa) =>
+  p.resultados
+    .filter((r) => r.partido)
+    .map((r) => normalizar(r.partido ?? ''))
+    .sort()
+    .join('|')
+
 const presidente = () => {
-  const segundoTurno = pesquisas.filter((p) => p.cargo === 'presidente' && p.turno === 2 && /lula/i.test(p.cenario ?? ''))
-  const principal = maisFrequente(segundoTurno.map((p) => normalizar(p.cenario ?? '')))
-  const doCenario = segundoTurno.filter((p) => normalizar(p.cenario ?? '') === principal).sort(maisRecentePrimeiro)
-  const base = doCenario.length > 0 ? doCenario : pesquisas.filter((p) => p.cargo === 'presidente' && p.turno === 1).sort(maisRecentePrimeiro)
+  const primeiroTurno = pesquisas.filter((p) => p.cargo === 'presidente' && p.turno === 1).sort(maisRecentePrimeiro)
+  const finalistas = [...(primeiroTurno[0]?.resultados ?? [])]
+    .filter((r) => r.partido)
+    .sort((a, b) => b.pct - a.pct)
+    .slice(0, 2)
+    .map((r) => normalizar(r.partido ?? ''))
+    .sort()
+    .join('|')
+  const doCenario = pesquisas
+    .filter((p) => p.cargo === 'presidente' && p.turno === 2 && chaveDoConfronto(p) === finalistas)
+    .sort(maisRecentePrimeiro)
+  const base = doCenario.length > 0 ? doCenario : primeiroTurno
   const recentes = umaPorInstituto(dentroDaJanela(base))
   const placares = recentes.map(placarDaPesquisa)
   const temperatura = media(placares.map(graus))
@@ -185,12 +201,6 @@ export const termometroDaUf = (uf: Uf) => {
 
 function media(valores: number[]) {
   return valores.length === 0 ? 50 : valores.reduce((a, b) => a + b, 0) / valores.length
-}
-
-function maisFrequente(valores: string[]) {
-  const contagem = new Map<string, number>()
-  for (const v of valores) contagem.set(v, (contagem.get(v) ?? 0) + 1)
-  return [...contagem.entries()].sort((a, b) => b[1] - a[1])[0]?.[0]
 }
 
 function dentroDaJanela(lista: Pesquisa[]) {

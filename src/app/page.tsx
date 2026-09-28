@@ -92,7 +92,7 @@ export default function Inicio() {
         )}
 
         <section className="moldura flex flex-col gap-3 px-4 py-5">
-          <h2 className="text-center font-display text-[24px] uppercase tracking-wide text-vermelho">★ Quem lidera nos governos ★</h2>
+          <h2 className="text-center font-display text-[24px] uppercase tracking-wide text-vermelho">★ Quem lidera ★</h2>
           <GradeEstados
             lideres={governadores.porUf.map((e) => ({ uf: e.uf, faixa: e.lider?.faixa ?? null, nome: e.lider?.nomeUrna ?? null }))}
           />
