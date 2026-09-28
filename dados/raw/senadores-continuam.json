@@ -1,0 +1,218 @@
+[
+  {
+    "uf": "AC",
+    "nome": "Alan Rick",
+    "partidoAtual": "REPUBLICANOS",
+    "titularOuSuplenteEmExercicio": "Alan Rick (titular)",
+    "alinhamento": "oposição",
+    "notas": "Republicanos-AC, alinhado à oposição ao governo Lula."
+  },
+  {
+    "uf": "AL",
+    "nome": "Renan Filho",
+    "partidoAtual": "MDB",
+    "titularOuSuplenteEmExercicio": "Renan Filho (titular)",
+    "alinhamento": "pró-Lula",
+    "notas": "Foi ministro dos Transportes de Lula; reassumiu o mandato em 2026-04-01 (API)."
+  },
+  {
+    "uf": "AM",
+    "nome": "Omar Aziz",
+    "partidoAtual": "PSD",
+    "titularOuSuplenteEmExercicio": "Omar Aziz (titular)",
+    "alinhamento": "pró-Lula",
+    "notas": "Aliado do governo no Senado."
+  },
+  {
+    "uf": "AP",
+    "nome": "Davi Alcolumbre",
+    "partidoAtual": "UNIÃO",
+    "titularOuSuplenteEmExercicio": "Davi Alcolumbre (titular)",
+    "alinhamento": "?",
+    "notas": "Presidente do Senado; relação pragmática/independente com o governo — não classificado."
+  },
+  {
+    "uf": "BA",
+    "nome": "Otto Alencar",
+    "partidoAtual": "PSD",
+    "titularOuSuplenteEmExercicio": "Otto Alencar (titular)",
+    "alinhamento": "pró-Lula",
+    "notas": "PSD-BA, aliado do PT na Bahia."
+  },
+  {
+    "uf": "CE",
+    "nome": "Camilo Santana",
+    "partidoAtual": "PT",
+    "titularOuSuplenteEmExercicio": "Camilo Santana (titular)",
+    "alinhamento": "pró-Lula",
+    "notas": "Ex-ministro da Educação; reassumiu o mandato em 2026-04-02 (API)."
+  },
+  {
+    "uf": "DF",
+    "nome": "Damares Alves",
+    "partidoAtual": "REPUBLICANOS",
+    "titularOuSuplenteEmExercicio": "Damares Alves (titular)",
+    "alinhamento": "oposição",
+    "notas": "Ex-ministra de Bolsonaro."
+  },
+  {
+    "uf": "ES",
+    "nome": "Magno Malta",
+    "partidoAtual": "PL",
+    "titularOuSuplenteEmExercicio": "Magno Malta (titular)",
+    "alinhamento": "oposição",
+    "notas": null
+  },
+  {
+    "uf": "GO",
+    "nome": "Wilder Morais",
+    "partidoAtual": "PL",
+    "titularOuSuplenteEmExercicio": "Wilder Morais (titular)",
+    "alinhamento": "oposição",
+    "notas": null
+  },
+  {
+    "uf": "MA",
+    "nome": "Flávio Dino",
+    "partidoAtual": "PSB",
+    "titularOuSuplenteEmExercicio": "Lourdinha Pereira (2ª suplente, PSB)",
+    "alinhamento": "pró-Lula",
+    "notas": "Eleito: Flávio Dino (hoje ministro do STF); a 1ª suplente Ana Paula Lobato (PSB) assumiu a vaga e pediu licença; Lourdinha Pereira tomou posse em 2026-08-05 por ~4 meses (API + Agência Senado). partidoAtual = partido de quem está no cargo. Alinhamento pelo partido (PSB, base do governo)."
+  },
+  {
+    "uf": "MG",
+    "nome": "Cleitinho",
+    "partidoAtual": "REPUBLICANOS",
+    "titularOuSuplenteEmExercicio": "Cleitinho (titular)",
+    "alinhamento": "oposição",
+    "notas": null
+  },
+  {
+    "uf": "MS",
+    "nome": "Tereza Cristina",
+    "partidoAtual": "PP",
+    "titularOuSuplenteEmExercicio": "Tereza Cristina (titular)",
+    "alinhamento": "oposição",
+    "notas": "Ex-ministra da Agricultura de Bolsonaro."
+  },
+  {
+    "uf": "MT",
+    "nome": "Wellington Fagundes",
+    "partidoAtual": "PL",
+    "titularOuSuplenteEmExercicio": "Wellington Fagundes (titular)",
+    "alinhamento": "oposição",
+    "notas": "Classificado pelo partido (PL); perfil historicamente moderado."
+  },
+  {
+    "uf": "PA",
+    "nome": "Beto Faro",
+    "partidoAtual": "PT",
+    "titularOuSuplenteEmExercicio": "Beto Faro (titular)",
+    "alinhamento": "pró-Lula",
+    "notas": null
+  },
+  {
+    "uf": "PB",
+    "nome": "Efraim Filho",
+    "partidoAtual": "PL",
+    "titularOuSuplenteEmExercicio": "Efraim Filho (titular)",
+    "alinhamento": "oposição",
+    "notas": "Eleito pelo União Brasil em 2022; hoje no PL segundo a API."
+  },
+  {
+    "uf": "PE",
+    "nome": "Teresa Leitão",
+    "partidoAtual": "PT",
+    "titularOuSuplenteEmExercicio": "Teresa Leitão (titular)",
+    "alinhamento": "pró-Lula",
+    "notas": null
+  },
+  {
+    "uf": "PI",
+    "nome": "Wellington Dias",
+    "partidoAtual": "PSD",
+    "titularOuSuplenteEmExercicio": "Jussara Lima (1ª suplente, PSD)",
+    "alinhamento": "pró-Lula",
+    "notas": "Eleito: Wellington Dias (PT), licenciado para ser ministro; Jussara Lima em exercício desde 2026-05-06 (API). Alinhamento: suplente de ministro de Lula."
+  },
+  {
+    "uf": "PR",
+    "nome": "Sergio Moro",
+    "partidoAtual": "PL",
+    "titularOuSuplenteEmExercicio": "Sergio Moro (titular)",
+    "alinhamento": "oposição",
+    "notas": "Eleito pelo União Brasil em 2022; hoje no PL segundo a API."
+  },
+  {
+    "uf": "RJ",
+    "nome": "Romário",
+    "partidoAtual": "S/Partido",
+    "titularOuSuplenteEmExercicio": "Romário (titular)",
+    "alinhamento": "?",
+    "notas": "Saiu do PL em ago/2026 e declarou apoio a Eduardo Paes (PSD) ao governo do RJ; sem partido. Votava com a oposição quando no PL — alinhamento atual incerto."
+  },
+  {
+    "uf": "RN",
+    "nome": "Rogerio Marinho",
+    "partidoAtual": "PL",
+    "titularOuSuplenteEmExercicio": "Rogerio Marinho (titular)",
+    "alinhamento": "oposição",
+    "notas": "Líder da oposição, ex-ministro de Bolsonaro."
+  },
+  {
+    "uf": "RO",
+    "nome": "Jaime Bagattoli",
+    "partidoAtual": "PL",
+    "titularOuSuplenteEmExercicio": "Jaime Bagattoli (titular)",
+    "alinhamento": "oposição",
+    "notas": null
+  },
+  {
+    "uf": "RR",
+    "nome": "Dr. Hiran",
+    "partidoAtual": "PP",
+    "titularOuSuplenteEmExercicio": "Dr. Hiran (titular)",
+    "alinhamento": "?",
+    "notas": "PP-RR; sem posicionamento claro confirmado."
+  },
+  {
+    "uf": "RS",
+    "nome": "Hamilton Mourão",
+    "partidoAtual": "REPUBLICANOS",
+    "titularOuSuplenteEmExercicio": "Hamilton Mourão (titular)",
+    "alinhamento": "oposição",
+    "notas": "Ex-vice-presidente de Bolsonaro."
+  },
+  {
+    "uf": "SC",
+    "nome": "Jorge Seif",
+    "partidoAtual": "PL",
+    "titularOuSuplenteEmExercicio": "Jorge Seif (titular)",
+    "alinhamento": "oposição",
+    "notas": "Reassumiu em 2026-09-02 após licença (API)."
+  },
+  {
+    "uf": "SE",
+    "nome": "Laércio Oliveira",
+    "partidoAtual": "PP",
+    "titularOuSuplenteEmExercicio": "Laércio Oliveira (titular)",
+    "alinhamento": "?",
+    "notas": "PP-SE; sem posicionamento claro confirmado."
+  },
+  {
+    "uf": "SP",
+    "nome": "Astronauta Marcos Pontes",
+    "partidoAtual": "PL",
+    "titularOuSuplenteEmExercicio": "Astronauta Marcos Pontes (titular)",
+    "alinhamento": "oposição",
+    "notas": "Ex-ministro de Bolsonaro."
+  },
+  {
+    "uf": "TO",
+    "nome": "Professora Dorinha Seabra",
+    "partidoAtual": "UNIÃO",
+    "titularOuSuplenteEmExercicio": "Professora Dorinha Seabra (titular)",
+    "alinhamento": "?",
+    "notas": "União-TO; sem posicionamento claro confirmado."
+  }
+]

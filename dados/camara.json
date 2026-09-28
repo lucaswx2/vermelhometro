@@ -1,0 +1,125 @@
+{
+  "atual": {
+    "fonte": "API Dados Abertos Câmara dos Deputados — https://dadosabertos.camara.leg.br/api/v2/deputados?itens=1000 (deputados em exercício), consultada em 2026-09-28",
+    "porPartido": {
+      "PL": 98,
+      "PT": 65,
+      "UNIÃO": 52,
+      "PSD": 48,
+      "PP": 46,
+      "REPUBLICANOS": 42,
+      "MDB": 38,
+      "PODE": 27,
+      "PSB": 17,
+      "PSDB": 17,
+      "PSOL": 13,
+      "PCdoB": 11,
+      "PDT": 9,
+      "PV": 6,
+      "AVANTE": 5,
+      "NOVO": 5,
+      "SOLIDARIEDADE": 4,
+      "PRD": 3,
+      "REDE": 3,
+      "CIDADANIA": 2,
+      "DC": 1,
+      "MISSÃO": 1
+    }
+  },
+  "projecaoDiap": {
+    "fonteUrl": "https://www.diap.org.br/index.php/noticias/agencia-diap/93159-camara-pode-ter-nova-correlacao-de-forcas-em-2027",
+    "data": "2026-09-26",
+    "porPartidoOuFederacao": [
+      {
+        "sigla": "PP/União",
+        "min": 93,
+        "max": 121,
+        "medio": 107
+      },
+      {
+        "sigla": "PL",
+        "min": 78,
+        "max": 103,
+        "medio": 91
+      },
+      {
+        "sigla": "PT/PCdoB/PV",
+        "min": 74,
+        "max": 100,
+        "medio": 87
+      },
+      {
+        "sigla": "PSD",
+        "min": 43,
+        "max": 60,
+        "medio": 52
+      },
+      {
+        "sigla": "Republicanos",
+        "min": 37,
+        "max": 59,
+        "medio": 48
+      },
+      {
+        "sigla": "MDB",
+        "min": 27,
+        "max": 43,
+        "medio": 35
+      },
+      {
+        "sigla": "Podemos",
+        "min": 23,
+        "max": 30,
+        "medio": 27
+      },
+      {
+        "sigla": "PSB",
+        "min": 15,
+        "max": 23,
+        "medio": 19
+      },
+      {
+        "sigla": "PSOL/Rede",
+        "min": 14,
+        "max": 21,
+        "medio": 18
+      },
+      {
+        "sigla": "PSDB/Cidadania",
+        "min": 10,
+        "max": 16,
+        "medio": 13
+      },
+      {
+        "sigla": "PDT",
+        "min": 7,
+        "max": 15,
+        "medio": 11
+      },
+      {
+        "sigla": "Solidariedade/PRD",
+        "min": 5,
+        "max": 12,
+        "medio": 9
+      },
+      {
+        "sigla": "Avante",
+        "min": 2,
+        "max": 5,
+        "medio": 4
+      },
+      {
+        "sigla": "Novo",
+        "min": 1,
+        "max": 6,
+        "medio": 4
+      },
+      {
+        "sigla": "Missão",
+        "min": 1,
+        "max": 1,
+        "medio": 1
+      }
+    ]
+  }
+}

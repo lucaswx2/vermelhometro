@@ -1,0 +1,2099 @@
+[
+  {
+    "id": "datafolha-sp-2026-09-23-gov-t1",
+    "instituto": "Datafolha",
+    "contratante": "Folha de S.Paulo e TV Globo",
+    "registro": "SP-03730/2026",
+    "campoInicio": "2026-09-22",
+    "campoFim": "2026-09-23",
+    "entrevistas": 1610,
+    "margemPp": 2,
+    "confiancaPct": 95,
+    "fonteUrl": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/datafolha-governador-sao-paulo-setembro-2026-2/",
+    "cargo": "governador",
+    "uf": "SP",
+    "turno": 1,
+    "cenario": "estimulado",
+    "resultados": [
+      {
+        "nomeUrna": "Tarcísio",
+        "partido": "Republicanos",
+        "pct": 50
+      },
+      {
+        "nomeUrna": "Haddad",
+        "partido": "PT",
+        "pct": 30
+      },
+      {
+        "nomeUrna": "Policial Edjane",
+        "partido": "Agir",
+        "pct": 2
+      },
+      {
+        "nomeUrna": "Carlos Machado",
+        "partido": "PCB",
+        "pct": 2
+      },
+      {
+        "nomeUrna": "Vera Lúcia",
+        "partido": "PSTU",
+        "pct": 2
+      },
+      {
+        "nomeUrna": "Vivian Mendes",
+        "partido": "UP",
+        "pct": 2
+      },
+      {
+        "nomeUrna": "Izadora Dias",
+        "partido": "PCO",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Branco/Nulo",
+        "partido": null,
+        "pct": 8
+      },
+      {
+        "nomeUrna": "Não sabe",
+        "partido": null,
+        "pct": 3
+      }
+    ],
+    "notas": "Votos totais. Publicada em 24/09/2026. Coleta 22-23/09 segundo Gazeta do Povo e DGABC; Poder360 informa 22-24/09. Votos válidos: Tarcísio 56%, Haddad 34%. A pesquisa não divulgou 2º turno. Contratante segundo o registro: Empresa Folha da Manhã S.A. e Globo Comunicação e Participações S/A. Vox Brasil (20-22/09, SP-07745/2026) e Quaest (19-22/09, SP-02456/2026) terminaram o campo antes."
+  },
+  {
+    "id": "datafolha-sp-2026-09-23-sen-t1",
+    "instituto": "Datafolha",
+    "contratante": "Folha de S.Paulo e TV Globo",
+    "registro": "SP-03730/2026",
+    "campoInicio": "2026-09-22",
+    "campoFim": "2026-09-23",
+    "entrevistas": 1610,
+    "margemPp": 2,
+    "confiancaPct": 95,
+    "fonteUrl": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/datafolha-senador-sao-paulo-setembro-2026/",
+    "cargo": "senador",
+    "uf": "SP",
+    "turno": 1,
+    "cenario": "estimulado",
+    "resultados": [
+      {
+        "nomeUrna": "Marina Silva",
+        "partido": "Rede",
+        "pct": 15
+      },
+      {
+        "nomeUrna": "Simone Tebet",
+        "partido": "PSB",
+        "pct": 14
+      },
+      {
+        "nomeUrna": "Guilherme Derrite",
+        "partido": "PP",
+        "pct": 12
+      },
+      {
+        "nomeUrna": "André do Prado",
+        "partido": "PL",
+        "pct": 12
+      },
+      {
+        "nomeUrna": "Ricardo Salles",
+        "partido": "Novo",
+        "pct": 4
+      },
+      {
+        "nomeUrna": "Geraldo Rufino",
+        "partido": "Podemos",
+        "pct": 3
+      },
+      {
+        "nomeUrna": "Soninha Francine",
+        "partido": "Cidadania",
+        "pct": 2
+      },
+      {
+        "nomeUrna": "Dra Eliana Ferreira",
+        "partido": "PSTU",
+        "pct": 2
+      },
+      {
+        "nomeUrna": "Maíra de Souza",
+        "partido": "UP",
+        "pct": 2
+      },
+      {
+        "nomeUrna": "Guto Schiavetto",
+        "partido": "Missão",
+        "pct": 2
+      },
+      {
+        "nomeUrna": "William Teixeira",
+        "partido": "Agir",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Ednelson Cesaretti",
+        "partido": "PCO",
+        "pct": 0
+      },
+      {
+        "nomeUrna": "Weller Gonçalves",
+        "partido": "PSTU",
+        "pct": 0
+      },
+      {
+        "nomeUrna": "Petter Maahs",
+        "partido": "PCB",
+        "pct": 0
+      },
+      {
+        "nomeUrna": "Branco/Nulo",
+        "partido": null,
+        "pct": 14
+      },
+      {
+        "nomeUrna": "Não sabe",
+        "partido": null,
+        "pct": 15
+      }
+    ],
+    "notas": "Votos consolidados (1º + 2º voto) reduzidos para 100%. Mesma pesquisa e mesmo registro do governador. Poder360 diz que 5 candidatos tiveram 2% cada. A Gazeta do Povo lista também Marcio Alves (UP) sem percentual, por isso ele ficou de fora (provavelmente 2%, não confirmado). Os partidos dos nanicos vêm só da Gazeta: há dois nomes para PSTU e dois para UP, não conferidos. O nome 'Ricardo Salles' vem do Poder360; a Gazeta usa 'Salles'."
+  },
+  {
+    "id": "datafolha-rj-2026-09-24-gov-t1",
+    "instituto": "Datafolha",
+    "contratante": "Folha de S.Paulo e TV Globo",
+    "registro": "RJ-02205/2026",
+    "campoInicio": "2026-09-22",
+    "campoFim": "2026-09-24",
+    "entrevistas": 1204,
+    "margemPp": 3,
+    "confiancaPct": 95,
+    "fonteUrl": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/datafolha-governador-senador-rio-de-janeiro-setembro-2026-2/",
+    "cargo": "governador",
+    "uf": "RJ",
+    "turno": 1,
+    "cenario": "estimulado",
+    "resultados": [
+      {
+        "nomeUrna": "Eduardo Paes",
+        "partido": "PSD",
+        "pct": 43
+      },
+      {
+        "nomeUrna": "Douglas Ruas",
+        "partido": "PL",
+        "pct": 30
+      },
+      {
+        "nomeUrna": "Garotinho",
+        "partido": "Republicanos",
+        "pct": 8
+      },
+      {
+        "nomeUrna": "William Siri",
+        "partido": "PSOL",
+        "pct": 2
+      },
+      {
+        "nomeUrna": "André Marinho",
+        "partido": "Novo",
+        "pct": 2
+      },
+      {
+        "nomeUrna": "Cyro Garcia",
+        "partido": "PSTU",
+        "pct": 2
+      },
+      {
+        "nomeUrna": "Coronel Busnello",
+        "partido": "Missão",
+        "pct": 2
+      },
+      {
+        "nomeUrna": "Juliete",
+        "partido": "UP",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Luan Monteiro",
+        "partido": "PCO",
+        "pct": 0
+      },
+      {
+        "nomeUrna": "Branco/Nulo",
+        "partido": null,
+        "pct": 6
+      },
+      {
+        "nomeUrna": "Não sabe",
+        "partido": null,
+        "pct": 4
+      }
+    ],
+    "notas": "Votos totais. Publicada em 24/09/2026. Números conferidos na Gazeta do Povo e na Tribuna do Sertão. Contratante segundo a Gazeta: 'Folha de S. Paulo e Rede Globo'."
+  },
+  {
+    "id": "datafolha-rj-2026-09-24-gov-t2",
+    "instituto": "Datafolha",
+    "contratante": "Folha de S.Paulo e TV Globo",
+    "registro": "RJ-02205/2026",
+    "campoInicio": "2026-09-22",
+    "campoFim": "2026-09-24",
+    "entrevistas": 1204,
+    "margemPp": 3,
+    "confiancaPct": 95,
+    "fonteUrl": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/datafolha-governador-senador-rio-de-janeiro-setembro-2026-2/",
+    "cargo": "governador",
+    "uf": "RJ",
+    "turno": 2,
+    "cenario": "estimulado",
+    "resultados": [
+      {
+        "nomeUrna": "Eduardo Paes",
+        "partido": "PSD",
+        "pct": 54
+      },
+      {
+        "nomeUrna": "Douglas Ruas",
+        "partido": "PL",
+        "pct": 38
+      },
+      {
+        "nomeUrna": "Branco/Nulo",
+        "partido": null,
+        "pct": 5
+      },
+      {
+        "nomeUrna": "Não sabe",
+        "partido": null,
+        "pct": 2
+      }
+    ],
+    "notas": "Simulação de 2º turno entre Paes e Ruas, em votos totais. Os percentuais de branco/nulo e indecisos vêm só da Gazeta do Povo."
+  },
+  {
+    "id": "datafolha-rj-2026-09-24-sen-t1",
+    "instituto": "Datafolha",
+    "contratante": "Folha de S.Paulo e TV Globo",
+    "registro": "RJ-02205/2026",
+    "campoInicio": "2026-09-22",
+    "campoFim": "2026-09-24",
+    "entrevistas": 1204,
+    "margemPp": 3,
+    "confiancaPct": 95,
+    "fonteUrl": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/datafolha-governador-senador-rio-de-janeiro-setembro-2026-2/",
+    "cargo": "senador",
+    "uf": "RJ",
+    "turno": 1,
+    "cenario": "estimulado",
+    "resultados": [
+      {
+        "nomeUrna": "Benedita da Silva",
+        "partido": "PT",
+        "pct": 19
+      },
+      {
+        "nomeUrna": "Carlos Portinho",
+        "partido": "PL",
+        "pct": 12
+      },
+      {
+        "nomeUrna": "Carlos Jordy",
+        "partido": "PL",
+        "pct": 12
+      },
+      {
+        "nomeUrna": "Pedro Paulo",
+        "partido": "PSD",
+        "pct": 9
+      },
+      {
+        "nomeUrna": "Marcelo Crivella",
+        "partido": "Republicanos",
+        "pct": 7
+      },
+      {
+        "nomeUrna": "Monica Benicio",
+        "partido": "PSOL",
+        "pct": 6
+      },
+      {
+        "nomeUrna": "Waguinho",
+        "partido": "Republicanos",
+        "pct": 3
+      },
+      {
+        "nomeUrna": "Marcos Dias",
+        "partido": "Podemos",
+        "pct": 2
+      },
+      {
+        "nomeUrna": "Luciano Mattos",
+        "partido": "PRTB",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Helio Secco",
+        "partido": "Missão",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Paula Falcão",
+        "partido": "PSTU",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Michelly Xavier",
+        "partido": "UP",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Luiz Eugenio",
+        "partido": "PCO",
+        "pct": 0
+      },
+      {
+        "nomeUrna": "Ó Clemente",
+        "partido": "Democrata",
+        "pct": 0
+      },
+      {
+        "nomeUrna": "Vinicius Benevides",
+        "partido": "UP",
+        "pct": 0
+      },
+      {
+        "nomeUrna": "Branco/Nulo",
+        "partido": null,
+        "pct": 13
+      },
+      {
+        "nomeUrna": "Não sabe",
+        "partido": null,
+        "pct": 12
+      }
+    ],
+    "notas": "Cada entrevistado escolheu dois nomes. O consolidado dos dois votos foi reduzido para 100%. A lista de nanicos e seus partidos vem só da Gazeta do Povo; há dois nomes para UP, não conferidos."
+  },
+  {
+    "id": "quaest-es-2026-09-24-gov-t1",
+    "instituto": "Quaest",
+    "contratante": "Rede Gazeta (TV Gazeta)",
+    "registro": "ES-01978/2026",
+    "campoInicio": "2026-09-21",
+    "campoFim": "2026-09-24",
+    "entrevistas": 804,
+    "margemPp": 3,
+    "confiancaPct": 95,
+    "fonteUrl": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/quaest-governador-senador-espirito-santo-setembro-2026/",
+    "cargo": "governador",
+    "uf": "ES",
+    "turno": 1,
+    "cenario": "estimulado",
+    "resultados": [
+      {
+        "nomeUrna": "Ricardo Ferraço",
+        "partido": "MDB",
+        "pct": 33
+      },
+      {
+        "nomeUrna": "Lorenzo Pazolini",
+        "partido": "Republicanos",
+        "pct": 31
+      },
+      {
+        "nomeUrna": "Helder Salomão",
+        "partido": "PT",
+        "pct": 12
+      },
+      {
+        "nomeUrna": "Breno Barcelos",
+        "partido": "Missão",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Rafael Demuner",
+        "partido": "UP",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Branco/Nulo",
+        "partido": null,
+        "pct": 11
+      },
+      {
+        "nomeUrna": "Não sabe",
+        "partido": null,
+        "pct": 11
+      }
+    ],
+    "notas": "Publicada em 25/09/2026. Números conferidos na Gazeta do Povo e no ES Fala. 'Branco/Nulo' inclui 'não vai votar'. Contratante segundo a Gazeta: A Gazeta do Espírito Santo Rádio e TV Ltda / TV Gazeta. O Instituto Perfil publicou pesquisa em 26/09 (Pazolini 36,94% x Ferraço 33,94%, margem 2,31 pp). Ela não foi usada por ser de instituto local, e suas datas de campo e registro não foram confirmadas. Paraná Pesquisas (18-22/09, ES-05719/2026) terminou o campo antes."
+  },
+  {
+    "id": "quaest-es-2026-09-24-gov-t2",
+    "instituto": "Quaest",
+    "contratante": "Rede Gazeta (TV Gazeta)",
+    "registro": "ES-01978/2026",
+    "campoInicio": "2026-09-21",
+    "campoFim": "2026-09-24",
+    "entrevistas": 804,
+    "margemPp": 3,
+    "confiancaPct": 95,
+    "fonteUrl": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/quaest-governador-senador-espirito-santo-setembro-2026/",
+    "cargo": "governador",
+    "uf": "ES",
+    "turno": 2,
+    "cenario": "estimulado",
+    "resultados": [
+      {
+        "nomeUrna": "Ricardo Ferraço",
+        "partido": "MDB",
+        "pct": 43
+      },
+      {
+        "nomeUrna": "Lorenzo Pazolini",
+        "partido": "Republicanos",
+        "pct": 38
+      },
+      {
+        "nomeUrna": "Branco/Nulo",
+        "partido": null,
+        "pct": 8
+      },
+      {
+        "nomeUrna": "Não sabe",
+        "partido": null,
+        "pct": 11
+      }
+    ],
+    "notas": "Cenário principal de 2º turno, Ferraço x Pazolini. Outros cenários da mesma pesquisa: Ferraço 54% x Salomão 18% (branco/nulo 15%, indecisos 13%) e Pazolini 53% x Salomão 21% (branco/nulo 13%, indecisos 13%)."
+  },
+  {
+    "id": "quaest-es-2026-09-24-sen-t1",
+    "instituto": "Quaest",
+    "contratante": "Rede Gazeta (TV Gazeta)",
+    "registro": "ES-01978/2026",
+    "campoInicio": "2026-09-21",
+    "campoFim": "2026-09-24",
+    "entrevistas": 804,
+    "margemPp": 3,
+    "confiancaPct": 95,
+    "fonteUrl": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/quaest-governador-senador-espirito-santo-setembro-2026/",
+    "cargo": "senador",
+    "uf": "ES",
+    "turno": 1,
+    "cenario": "estimulado",
+    "resultados": [
+      {
+        "nomeUrna": "Renato Casagrande",
+        "partido": "PSB",
+        "pct": 25
+      },
+      {
+        "nomeUrna": "Sergio Meneguelli",
+        "partido": "PSD",
+        "pct": 11
+      },
+      {
+        "nomeUrna": "Fabiano Contarato",
+        "partido": "PT",
+        "pct": 9
+      },
+      {
+        "nomeUrna": "Maguinha Malta",
+        "partido": "PL",
+        "pct": 9
+      },
+      {
+        "nomeUrna": "Rose de Freitas",
+        "partido": "MDB",
+        "pct": 7
+      },
+      {
+        "nomeUrna": "Evair de Melo",
+        "partido": "Republicanos",
+        "pct": 6
+      },
+      {
+        "nomeUrna": "Marcos do Val",
+        "partido": "Avante",
+        "pct": 4
+      },
+      {
+        "nomeUrna": "Rodney Miranda",
+        "partido": "PRTB",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Professor Fabian",
+        "partido": "PSOL",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Callegari",
+        "partido": "DC",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Leonardo Monjardim",
+        "partido": "Novo",
+        "pct": 0
+      },
+      {
+        "nomeUrna": "Branco/Nulo",
+        "partido": null,
+        "pct": 11
+      },
+      {
+        "nomeUrna": "Não sabe",
+        "partido": null,
+        "pct": 15
+      }
+    ],
+    "notas": "Votos consolidados (1º + 2º voto) reduzidos para 100%. Números do senado só na Gazeta do Povo; o ES Fala não trouxe o senado. 'Branco/Nulo' inclui 'não vai votar'."
+  },
+  {
+    "id": "real-time-big-data-mg-2026-09-26-gov-t1",
+    "instituto": "Real Time Big Data",
+    "contratante": "Rede Record Minas",
+    "registro": "MG-03351/2026",
+    "campoInicio": "2026-09-23",
+    "campoFim": "2026-09-26",
+    "entrevistas": 2000,
+    "margemPp": 2,
+    "confiancaPct": 95,
+    "fonteUrl": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/real-time-big-data-governador-senado-minas-gerais-setembro-2026-3/",
+    "cargo": "governador",
+    "uf": "MG",
+    "turno": 1,
+    "cenario": "estimulado",
+    "resultados": [
+      {
+        "nomeUrna": "Cleitinho",
+        "partido": "Republicanos",
+        "pct": 41
+      },
+      {
+        "nomeUrna": "Patrus Ananias",
+        "partido": "PT",
+        "pct": 22
+      },
+      {
+        "nomeUrna": "Kalil",
+        "partido": "PDT",
+        "pct": 10
+      },
+      {
+        "nomeUrna": "Mateus Simões",
+        "partido": "PSD",
+        "pct": 9
+      },
+      {
+        "nomeUrna": "Flávio Roscoe",
+        "partido": "PL",
+        "pct": 9
+      },
+      {
+        "nomeUrna": "Gabriel",
+        "partido": "MDB",
+        "pct": 5
+      },
+      {
+        "nomeUrna": "Ben Mendes",
+        "partido": "Missão",
+        "pct": 2
+      },
+      {
+        "nomeUrna": "Indira Xavier",
+        "partido": "UP",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Outros",
+        "partido": null,
+        "pct": 1
+      }
+    ],
+    "notas": "Percentuais em VOTOS VÁLIDOS (a fonte diz que excluem brancos, nulos e indecisos); brancos/nulos e indecisos não publicados na fonte. 'Outros' (1%) é agregado sem nomes na fonte. Publicada em 28/09/2026. Pesquisa mais recente em MG por fim de campo; a Datafolha (22-24/09) e a Quaest (19-22/09, MG-03276/2026) publicaram votos totais."
+  },
+  {
+    "id": "real-time-big-data-mg-2026-09-26-gov-t2",
+    "instituto": "Real Time Big Data",
+    "contratante": "Rede Record Minas",
+    "registro": "MG-03351/2026",
+    "campoInicio": "2026-09-23",
+    "campoFim": "2026-09-26",
+    "entrevistas": 2000,
+    "margemPp": 2,
+    "confiancaPct": 95,
+    "fonteUrl": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/real-time-big-data-governador-senado-minas-gerais-setembro-2026-3/",
+    "cargo": "governador",
+    "uf": "MG",
+    "turno": 2,
+    "cenario": "estimulado",
+    "resultados": [
+      {
+        "nomeUrna": "Cleitinho",
+        "partido": "Republicanos",
+        "pct": 53
+      },
+      {
+        "nomeUrna": "Patrus Ananias",
+        "partido": "PT",
+        "pct": 47
+      }
+    ],
+    "notas": "Votos válidos. Cenário entre os dois primeiros colocados do 1º turno. Outros cenários de 2º turno publicados na mesma pesquisa (votos válidos): Cleitinho 58 x Kalil 42; Mateus Simões 53 x Kalil 47; Kalil 51 x Patrus Ananias 49; Cleitinho 54 x Mateus Simões 46; Mateus Simões 52 x Patrus Ananias 48."
+  },
+  {
+    "id": "real-time-big-data-mg-2026-09-26-sen-t1",
+    "instituto": "Real Time Big Data",
+    "contratante": "Rede Record Minas",
+    "registro": "MG-03351/2026",
+    "campoInicio": "2026-09-23",
+    "campoFim": "2026-09-26",
+    "entrevistas": 2000,
+    "margemPp": 2,
+    "confiancaPct": 95,
+    "fonteUrl": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/real-time-big-data-governador-senado-minas-gerais-setembro-2026-3/",
+    "cargo": "senador",
+    "uf": "MG",
+    "turno": 1,
+    "cenario": "estimulado",
+    "resultados": [
+      {
+        "nomeUrna": "Marília Campos",
+        "partido": "PT",
+        "pct": 19
+      },
+      {
+        "nomeUrna": "Domingos Sávio",
+        "partido": "PL",
+        "pct": 16
+      },
+      {
+        "nomeUrna": "Carlos Viana",
+        "partido": "PSD",
+        "pct": 16
+      },
+      {
+        "nomeUrna": "Aécio Neves",
+        "partido": "PSDB",
+        "pct": 12
+      },
+      {
+        "nomeUrna": "Marcelo Aro",
+        "partido": "PP",
+        "pct": 11
+      },
+      {
+        "nomeUrna": "Áurea Carolina",
+        "partido": "PSOL",
+        "pct": 8
+      },
+      {
+        "nomeUrna": "Marco Antônio Superman",
+        "partido": "Novo",
+        "pct": 4
+      },
+      {
+        "nomeUrna": "Arcanjo Pimenta",
+        "partido": "MDB",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Carlin Moura",
+        "partido": "Avante",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Outros",
+        "partido": null,
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Branco/Nulo",
+        "partido": null,
+        "pct": 5
+      },
+      {
+        "nomeUrna": "Não sabe",
+        "partido": null,
+        "pct": 7
+      }
+    ],
+    "notas": "Votos somados: consolidado dos dois votos (1º+2º) no cenário estimulado, reduzido a 100%. 'Outros' (1%) é agregado sem nomes na fonte."
+  },
+  {
+    "id": "parana-pesquisas-pr-2026-09-27-gov-t1",
+    "instituto": "Paraná Pesquisas",
+    "contratante": "Sedek Serviços, Tecnologia & Informação LTDA",
+    "registro": "PR-02701/2026",
+    "campoInicio": "2026-09-25",
+    "campoFim": "2026-09-27",
+    "entrevistas": 1280,
+    "margemPp": 2.8,
+    "confiancaPct": 95,
+    "fonteUrl": "https://www.cartacapital.com.br/politica/moro-pode-ser-eleito-em-1o-turno-no-parana-indica-pesquisa/",
+    "cargo": "governador",
+    "uf": "PR",
+    "turno": 1,
+    "cenario": "estimulado",
+    "resultados": [
+      {
+        "nomeUrna": "Sergio Moro",
+        "partido": "PL",
+        "pct": 46.2
+      },
+      {
+        "nomeUrna": "Requião Filho",
+        "partido": "PDT",
+        "pct": 23.6
+      },
+      {
+        "nomeUrna": "Sandro Alex",
+        "partido": "PSD",
+        "pct": 21.5
+      },
+      {
+        "nomeUrna": "Luiz França",
+        "partido": "Missão",
+        "pct": 0.5
+      },
+      {
+        "nomeUrna": "Tayná Miessa",
+        "partido": "UP",
+        "pct": 0.2
+      },
+      {
+        "nomeUrna": "Adriano Funileiro",
+        "partido": "PCO",
+        "pct": 0.1
+      },
+      {
+        "nomeUrna": "Doutor Alexandre Salomão",
+        "partido": "Mobiliza",
+        "pct": 0.1
+      },
+      {
+        "nomeUrna": "Samuel de Mattos",
+        "partido": "PSTU",
+        "pct": 0.1
+      },
+      {
+        "nomeUrna": "Branco/Nulo",
+        "partido": null,
+        "pct": 4.1
+      },
+      {
+        "nomeUrna": "Não sabe",
+        "partido": null,
+        "pct": 3.7
+      }
+    ],
+    "notas": "Votos totais (fonte: CartaCapital; conferido parcialmente com obemdito.com.br). Em votos válidos (Gazeta do Povo): Moro 50,1; Requião Filho 25,6; Sandro Alex 23,3; Luiz França 0,5; Tayná Miessa 0,3; demais 0,1. Contratante tirado da Gazeta do Povo (https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/parana-pesquisas-governador-parana-setembro-2026-3/); a CartaCapital cita contratante diferente (governo estadual), não confirmado. Registro PR-02701/2026 confirmado por Gazeta, CartaCapital e obemdito; a Wikipédia lista PR-09048/2026 (divergente, desconsiderado). Sem cenário de 2º turno nesta pesquisa. Publicada em 28/09/2026."
+  },
+  {
+    "id": "quaest-pr-2026-09-23-sen-t1",
+    "instituto": "Quaest",
+    "contratante": "TV Paranaense",
+    "registro": "PR-02802/2026",
+    "campoInicio": "2026-09-20",
+    "campoFim": "2026-09-23",
+    "entrevistas": 804,
+    "margemPp": 3,
+    "confiancaPct": 95,
+    "fonteUrl": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/quaest-senador-parana-setembro-2026/",
+    "cargo": "senador",
+    "uf": "PR",
+    "turno": 1,
+    "cenario": "estimulado",
+    "resultados": [
+      {
+        "nomeUrna": "Alexandre Curi",
+        "partido": "Republicanos",
+        "pct": 14
+      },
+      {
+        "nomeUrna": "Deltan Dallagnol",
+        "partido": "Novo",
+        "pct": 11
+      },
+      {
+        "nomeUrna": "Filipe Barros",
+        "partido": "PL",
+        "pct": 11
+      },
+      {
+        "nomeUrna": "Gleisi",
+        "partido": "PT",
+        "pct": 10
+      },
+      {
+        "nomeUrna": "Dr Rosinha",
+        "partido": "PT",
+        "pct": 5
+      },
+      {
+        "nomeUrna": "Cristina Graeml",
+        "partido": "PSD",
+        "pct": 5
+      },
+      {
+        "nomeUrna": "Karen Guerreiro",
+        "partido": "Missão",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Marcelo Marcelino",
+        "partido": "PCO",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Branco/Nulo",
+        "partido": null,
+        "pct": 13
+      },
+      {
+        "nomeUrna": "Não sabe",
+        "partido": null,
+        "pct": 29
+      }
+    ],
+    "notas": "Votos somados: consolidado do 1º e 2º votos, reduzido a 100%. Pesquisa de instituto conhecido com fim de campo mais recente para Senado-PR (Neokemp 22-23/09 tem mesmo fim de campo, não coletada). Publicada em 24/09/2026. Mesmo registro da pesquisa Quaest de governador PR."
+  },
+  {
+    "id": "quaest-sc-2026-09-23-gov-t1",
+    "instituto": "Quaest",
+    "contratante": "NC Comunicações SA",
+    "registro": "SC-04783/2026",
+    "campoInicio": "2026-09-20",
+    "campoFim": "2026-09-23",
+    "entrevistas": 804,
+    "margemPp": 3,
+    "confiancaPct": 95,
+    "fonteUrl": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/quaest-goverador-santa-catarina-setembro-2026/",
+    "cargo": "governador",
+    "uf": "SC",
+    "turno": 1,
+    "cenario": "estimulado",
+    "resultados": [
+      {
+        "nomeUrna": "Jorginho Mello",
+        "partido": "PL",
+        "pct": 54
+      },
+      {
+        "nomeUrna": "João Rodrigues",
+        "partido": "PSD",
+        "pct": 13
+      },
+      {
+        "nomeUrna": "Gelson Merísio",
+        "partido": "PSB",
+        "pct": 10
+      },
+      {
+        "nomeUrna": "Professor Marcus Sodré",
+        "partido": "PSTU",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Marcelo Brigadeiro",
+        "partido": "Missão",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Laís Chaud",
+        "partido": "UP",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Ralf Zimmer",
+        "partido": "PRD",
+        "pct": 0
+      },
+      {
+        "nomeUrna": "Bruno Pedreiro",
+        "partido": "PCO",
+        "pct": 0
+      },
+      {
+        "nomeUrna": "Branco/Nulo",
+        "partido": null,
+        "pct": 5
+      },
+      {
+        "nomeUrna": "Não sabe",
+        "partido": null,
+        "pct": 15
+      }
+    ],
+    "notas": "Votos totais. Branco/Nulo inclui 'não vai votar'. Publicada em 24/09/2026. Pesquisa mais recente em SC por fim de campo (Paraná Pesquisas 20-22/09, SC-00523/2026, termina um dia antes)."
+  },
+  {
+    "id": "quaest-sc-2026-09-23-gov-t2",
+    "instituto": "Quaest",
+    "contratante": "NC Comunicações SA",
+    "registro": "SC-04783/2026",
+    "campoInicio": "2026-09-20",
+    "campoFim": "2026-09-23",
+    "entrevistas": 804,
+    "margemPp": 3,
+    "confiancaPct": 95,
+    "fonteUrl": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/quaest-goverador-santa-catarina-setembro-2026/",
+    "cargo": "governador",
+    "uf": "SC",
+    "turno": 2,
+    "cenario": "estimulado",
+    "resultados": [
+      {
+        "nomeUrna": "Jorginho Mello",
+        "partido": "PL",
+        "pct": 58
+      },
+      {
+        "nomeUrna": "João Rodrigues",
+        "partido": "PSD",
+        "pct": 23
+      },
+      {
+        "nomeUrna": "Branco/Nulo",
+        "partido": null,
+        "pct": 10
+      },
+      {
+        "nomeUrna": "Não sabe",
+        "partido": null,
+        "pct": 9
+      }
+    ],
+    "notas": "Votos totais. Cenário entre os dois primeiros colocados do 1º turno. Outro cenário na mesma pesquisa: Jorginho Mello 66 x Gelson Merísio 15, Branco/Nulo 11, Não sabe 8."
+  },
+  {
+    "id": "quaest-sc-2026-09-23-sen-t1",
+    "instituto": "Quaest",
+    "contratante": "NC Comunicações SA",
+    "registro": "SC-04783/2026",
+    "campoInicio": "2026-09-20",
+    "campoFim": "2026-09-23",
+    "entrevistas": 804,
+    "margemPp": 3,
+    "confiancaPct": 95,
+    "fonteUrl": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/quaest-senador-santa-catarina-setembro-2026/",
+    "cargo": "senador",
+    "uf": "SC",
+    "turno": 1,
+    "cenario": "estimulado",
+    "resultados": [
+      {
+        "nomeUrna": "Carol De Toni",
+        "partido": "PL",
+        "pct": 17
+      },
+      {
+        "nomeUrna": "Carlos Bolsonaro",
+        "partido": "PL",
+        "pct": 16
+      },
+      {
+        "nomeUrna": "Esperidião Amin",
+        "partido": "PP",
+        "pct": 15
+      },
+      {
+        "nomeUrna": "Décio Lima",
+        "partido": "PT",
+        "pct": 10
+      },
+      {
+        "nomeUrna": "Afrânio Boppré",
+        "partido": "PSOL",
+        "pct": 4
+      },
+      {
+        "nomeUrna": "Lunelli",
+        "partido": "MDB",
+        "pct": 3
+      },
+      {
+        "nomeUrna": "Carol",
+        "partido": "PCO",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Túlio de Amorim Pfuetzenreiter",
+        "partido": "Missão",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Ana Lúcia da Silveira Machado",
+        "partido": "UP",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Marcos Dorval",
+        "partido": "PSTU",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Jeferson Rocha",
+        "partido": "PRD",
+        "pct": 0
+      },
+      {
+        "nomeUrna": "Marlene Soccas",
+        "partido": "UP",
+        "pct": 0
+      },
+      {
+        "nomeUrna": "Joaninha de Oliveira",
+        "partido": "PSTU",
+        "pct": 0
+      },
+      {
+        "nomeUrna": "Branco/Nulo",
+        "partido": null,
+        "pct": 9
+      },
+      {
+        "nomeUrna": "Não sabe",
+        "partido": null,
+        "pct": 22
+      }
+    ],
+    "notas": "Votos somados: 1º e 2º votos consolidados, reduzidos a 100%. Nomes de candidatos menores conforme a matéria; nome de urna oficial não conferido no TSE."
+  },
+  {
+    "id": "quaest-rs-2026-09-23-gov-t1",
+    "instituto": "Quaest",
+    "contratante": "RBS Participações S.A/Televisão Gaúcha S.A",
+    "registro": "RS-01390/2026",
+    "campoInicio": "2026-09-20",
+    "campoFim": "2026-09-23",
+    "entrevistas": 900,
+    "margemPp": 3,
+    "confiancaPct": 95,
+    "fonteUrl": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/quaest-governador-senador-rio-grande-do-sul-setembro-2026/",
+    "cargo": "governador",
+    "uf": "RS",
+    "turno": 1,
+    "cenario": "estimulado",
+    "resultados": [
+      {
+        "nomeUrna": "Zucco",
+        "partido": "PL",
+        "pct": 29
+      },
+      {
+        "nomeUrna": "Juliana Brizola",
+        "partido": "PDT",
+        "pct": 23
+      },
+      {
+        "nomeUrna": "Gabriel Souza",
+        "partido": "MDB",
+        "pct": 10
+      },
+      {
+        "nomeUrna": "Marcelo Maranata",
+        "partido": "PSDB",
+        "pct": 3
+      },
+      {
+        "nomeUrna": "Priscila Voigt",
+        "partido": "UP",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Rejane de Oliveira",
+        "partido": "PSTU",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Cesar Pontes",
+        "partido": "PCO",
+        "pct": 0
+      },
+      {
+        "nomeUrna": "Branco/Nulo",
+        "partido": null,
+        "pct": 8
+      },
+      {
+        "nomeUrna": "Não sabe",
+        "partido": null,
+        "pct": 25
+      }
+    ],
+    "notas": "Cenário com todos os candidatos (inclui Cesar Pontes). Divulgada em 24/09. Números do cenário conferidos em Revista Fórum (https://revistaforum.com.br/politica/rs-quaest-setembro-governo/); no cenário sem Cesar Pontes, Gabriel Souza tem 11% e indecisos 24%. 'Branco/Nulo' inclui 'não vai votar'. Neokemp (23-24/09) é mais recente, mas é instituto menos conhecido. AtlasIntel (RS-00981/2026, divulgada 23/09, coleta ~15-20/09) é anterior."
+  },
+  {
+    "id": "quaest-rs-2026-09-23-gov-t2",
+    "instituto": "Quaest",
+    "contratante": "RBS Participações S.A/Televisão Gaúcha S.A",
+    "registro": "RS-01390/2026",
+    "campoInicio": "2026-09-20",
+    "campoFim": "2026-09-23",
+    "entrevistas": 900,
+    "margemPp": 3,
+    "confiancaPct": 95,
+    "fonteUrl": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/quaest-governador-senador-rio-grande-do-sul-setembro-2026/",
+    "cargo": "governador",
+    "uf": "RS",
+    "turno": 2,
+    "cenario": "estimulado",
+    "resultados": [
+      {
+        "nomeUrna": "Zucco",
+        "partido": "PL",
+        "pct": 40
+      },
+      {
+        "nomeUrna": "Juliana Brizola",
+        "partido": "PDT",
+        "pct": 34
+      },
+      {
+        "nomeUrna": "Branco/Nulo",
+        "partido": null,
+        "pct": 10
+      },
+      {
+        "nomeUrna": "Não sabe",
+        "partido": null,
+        "pct": 16
+      }
+    ],
+    "notas": "Cenário Zucco x Juliana Brizola. Outros cenários: Zucco 42% x Gabriel Souza 26% (BN 14, indecisos 18); Juliana Brizola 34% x Gabriel Souza 27% (BN 20, indecisos 19)."
+  },
+  {
+    "id": "quaest-rs-2026-09-23-sen-t1",
+    "instituto": "Quaest",
+    "contratante": "RBS Participações S.A/Televisão Gaúcha S.A",
+    "registro": "RS-01390/2026",
+    "campoInicio": "2026-09-20",
+    "campoFim": "2026-09-23",
+    "entrevistas": 900,
+    "margemPp": 3,
+    "confiancaPct": 95,
+    "fonteUrl": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/quaest-governador-senador-rio-grande-do-sul-setembro-2026/",
+    "cargo": "senador",
+    "uf": "RS",
+    "turno": 1,
+    "cenario": "estimulado",
+    "resultados": [
+      {
+        "nomeUrna": "Manuela",
+        "partido": "PSOL",
+        "pct": 14
+      },
+      {
+        "nomeUrna": "Marcel van Hattem",
+        "partido": "Novo",
+        "pct": 11
+      },
+      {
+        "nomeUrna": "Pimenta",
+        "partido": "PT",
+        "pct": 10
+      },
+      {
+        "nomeUrna": "Sanderson",
+        "partido": "PL",
+        "pct": 10
+      },
+      {
+        "nomeUrna": "Rigotto",
+        "partido": "MDB",
+        "pct": 9
+      },
+      {
+        "nomeUrna": "Frederico Antunes",
+        "partido": "PSD",
+        "pct": 2
+      },
+      {
+        "nomeUrna": "Daniela Mulheres Socialistas",
+        "partido": "PSTU",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Milton Cardoso",
+        "partido": "PSDB",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Tania Peres",
+        "partido": "UP",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Luciano do MLB",
+        "partido": null,
+        "pct": 0
+      },
+      {
+        "nomeUrna": "Regis Ethur",
+        "partido": null,
+        "pct": 0
+      },
+      {
+        "nomeUrna": "Renato Jaguarão",
+        "partido": null,
+        "pct": 0
+      },
+      {
+        "nomeUrna": "Ric Jones",
+        "partido": null,
+        "pct": 0
+      },
+      {
+        "nomeUrna": "Branco/Nulo",
+        "partido": null,
+        "pct": 11
+      },
+      {
+        "nomeUrna": "Não sabe",
+        "partido": null,
+        "pct": 30
+      }
+    ],
+    "notas": "Votos consolidados de 1º e 2º votos, reduzidos a 100% (soma = 100). Partidos de Luciano do MLB, Regis Ethur, Renato Jaguarão e Ric Jones não publicados na fonte (null). Números conferidos no Metrópoles (https://www.metropoles.com/brasil/quaest-aponta-empate-tecnico-entre-cinco-candidatos-ao-senado-no-rs). 'Branco/Nulo' inclui 'não vai votar'."
+  },
+  {
+    "id": "datafolha-df-2026-09-24-gov-t1",
+    "instituto": "Datafolha",
+    "contratante": "Folha de S.Paulo e TV Globo",
+    "registro": "DF-01888/2026",
+    "campoInicio": "2026-09-22",
+    "campoFim": "2026-09-24",
+    "entrevistas": 910,
+    "margemPp": 3,
+    "confiancaPct": 95,
+    "fonteUrl": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/datafolha-governador-senador-distrito-federal-setembro-2026-2/",
+    "cargo": "governador",
+    "uf": "DF",
+    "turno": 1,
+    "cenario": "estimulado",
+    "resultados": [
+      {
+        "nomeUrna": "Celina Leão",
+        "partido": "PP",
+        "pct": 42
+      },
+      {
+        "nomeUrna": "Leandro Grass",
+        "partido": "PT",
+        "pct": 23
+      },
+      {
+        "nomeUrna": "Paula Belmonte",
+        "partido": "PSDB",
+        "pct": 7
+      },
+      {
+        "nomeUrna": "Cappelli",
+        "partido": "PSB",
+        "pct": 5
+      },
+      {
+        "nomeUrna": "Professora Samara Mineiro",
+        "partido": "UP",
+        "pct": 2
+      },
+      {
+        "nomeUrna": "Professor Robson",
+        "partido": "PSTU",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Kiko Caputo",
+        "partido": "Novo",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Elisson",
+        "partido": "Agir",
+        "pct": 0
+      },
+      {
+        "nomeUrna": "Expedito Mendonça",
+        "partido": "PCO",
+        "pct": 0
+      },
+      {
+        "nomeUrna": "Rico Pinheiro",
+        "partido": "PRTB",
+        "pct": 0
+      },
+      {
+        "nomeUrna": "Branco/Nulo",
+        "partido": null,
+        "pct": 11
+      },
+      {
+        "nomeUrna": "Não sabe",
+        "partido": null,
+        "pct": 6
+      }
+    ],
+    "notas": "Cenário SEM Arruda: o TSE manteve indeferida a candidatura de Arruda (PSD) em 24/09/2026 (https://www.tse.jus.br/comunicacao/noticias/2026/Setembro/tse-mantem-indeferida-candidatura-de-arruda-ao-governo-do-df). Cenário COM Arruda: Celina Leão 37, Leandro Grass 21, Arruda 18, Paula Belmonte 6, Cappelli 2, Samara Mineiro 2, Kiko Caputo 2, Professor Robson 1, Expedito Mendonça 0, Rico Pinheiro 0, Branco/Nulo 8, Não sabe 4. O Poder360 também cita o registro BR-06769/2026. Quaest DF (19-22/09, DF-02596/2026) é anterior. A Wikipédia lista IGAPE (22-26/09) como mais recente, mas é instituto menos conhecido e a lista traz registros que divergem das matérias."
+  },
+  {
+    "id": "datafolha-df-2026-09-24-gov-t2",
+    "instituto": "Datafolha",
+    "contratante": "Folha de S.Paulo e TV Globo",
+    "registro": "DF-01888/2026",
+    "campoInicio": "2026-09-22",
+    "campoFim": "2026-09-24",
+    "entrevistas": 910,
+    "margemPp": 3,
+    "confiancaPct": 95,
+    "fonteUrl": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/datafolha-governador-senador-distrito-federal-setembro-2026-2/",
+    "cargo": "governador",
+    "uf": "DF",
+    "turno": 2,
+    "cenario": "estimulado",
+    "resultados": [
+      {
+        "nomeUrna": "Celina Leão",
+        "partido": "PP",
+        "pct": 53
+      },
+      {
+        "nomeUrna": "Leandro Grass",
+        "partido": "PT",
+        "pct": 34
+      },
+      {
+        "nomeUrna": "Branco/Nulo",
+        "partido": null,
+        "pct": 10
+      },
+      {
+        "nomeUrna": "Não sabe",
+        "partido": null,
+        "pct": 3
+      }
+    ],
+    "notas": "Cenário Celina Leão x Leandro Grass (53 x 34 confirmado também pelo Poder360). Cenários com Arruda (candidatura indeferida) omitidos. Há divergência entre fontes no Celina x Arruda (Gazeta: 48 x 35; Poder360: 51 x 48)."
+  },
+  {
+    "id": "datafolha-df-2026-09-24-sen-t1",
+    "instituto": "Datafolha",
+    "contratante": "Folha de S.Paulo e TV Globo",
+    "registro": "DF-01888/2026",
+    "campoInicio": "2026-09-22",
+    "campoFim": "2026-09-24",
+    "entrevistas": 910,
+    "margemPp": 3,
+    "confiancaPct": 95,
+    "fonteUrl": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/datafolha-governador-senador-distrito-federal-setembro-2026-2/",
+    "cargo": "senador",
+    "uf": "DF",
+    "turno": 1,
+    "cenario": "estimulado",
+    "resultados": [
+      {
+        "nomeUrna": "Michelle Bolsonaro",
+        "partido": "PL",
+        "pct": 22
+      },
+      {
+        "nomeUrna": "Leila do Vôlei",
+        "partido": "PDT",
+        "pct": 19
+      },
+      {
+        "nomeUrna": "Bia Kicis",
+        "partido": "PL",
+        "pct": 15
+      },
+      {
+        "nomeUrna": "Erika Kokay",
+        "partido": "PT",
+        "pct": 15
+      },
+      {
+        "nomeUrna": "Sebastião Coelho",
+        "partido": "Novo",
+        "pct": 2
+      },
+      {
+        "nomeUrna": "Ronaldo Fonseca",
+        "partido": "PSD",
+        "pct": 2
+      },
+      {
+        "nomeUrna": "Tiago",
+        "partido": "Agir",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Professor Guilherme Amorim",
+        "partido": "UP",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Marley",
+        "partido": "Avante",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Zanata",
+        "partido": "PSTU",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "David Horn",
+        "partido": "PCO",
+        "pct": 0
+      },
+      {
+        "nomeUrna": "Guto Felício dos Santos",
+        "partido": "PSDB",
+        "pct": 0
+      },
+      {
+        "nomeUrna": "Branco/Nulo",
+        "partido": null,
+        "pct": 10
+      },
+      {
+        "nomeUrna": "Não sabe",
+        "partido": null,
+        "pct": 10
+      }
+    ],
+    "notas": "Segundo a Gazeta do Povo, votos consolidados de 1º e 2º votos. A soma dá 99%, então os votos parecem reduzidos a 100%."
+  },
+  {
+    "id": "parana-pesquisas-go-2026-09-27-gov-t1",
+    "instituto": "Paraná Pesquisas",
+    "contratante": "Portal 6 Comunicação LTDA",
+    "registro": "GO-07040/2026",
+    "campoInicio": "2026-09-25",
+    "campoFim": "2026-09-27",
+    "entrevistas": 1352,
+    "margemPp": 2.7,
+    "confiancaPct": 95,
+    "fonteUrl": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/parana-pesquisas-governador-goias-setembro-2026/",
+    "cargo": "governador",
+    "uf": "GO",
+    "turno": 1,
+    "cenario": "estimulado",
+    "resultados": [
+      {
+        "nomeUrna": "Daniel Vilela",
+        "partido": "MDB",
+        "pct": 45.6
+      },
+      {
+        "nomeUrna": "Wilder Morais",
+        "partido": "PL",
+        "pct": 18.5
+      },
+      {
+        "nomeUrna": "Marconi Perillo",
+        "partido": "PSDB",
+        "pct": 18.4
+      },
+      {
+        "nomeUrna": "Luis Cesar Bueno",
+        "partido": "PT",
+        "pct": 6.1
+      },
+      {
+        "nomeUrna": "Luciana Amorim",
+        "partido": "UP",
+        "pct": 0.9
+      },
+      {
+        "nomeUrna": "Danilo Pinheiro",
+        "partido": "PCO",
+        "pct": 0.8
+      },
+      {
+        "nomeUrna": "Branco/Nulo",
+        "partido": null,
+        "pct": 5.5
+      },
+      {
+        "nomeUrna": "Não sabe",
+        "partido": null,
+        "pct": 4.1
+      }
+    ],
+    "notas": "Votos totais conforme CartaCapital (https://www.cartacapital.com.br/politica/parana-pesquisas-vilela-pode-ser-reeleito-em-1o-turno-em-goias/). A Gazeta do Povo publica votos válidos (Vilela 50,5; Wilder 20,5; Marconi 20,4; Bueno 6,8; Luciana 1,0; Danilo 0,9), coerentes com os totais. Divulgada em 28/09. Esta pesquisa não simulou 2º turno nem senado."
+  },
+  {
+    "id": "quaest-go-2026-09-23-sen-t1",
+    "instituto": "Quaest",
+    "contratante": "Televisão Anhanguera S/A",
+    "registro": "GO-01667/2026",
+    "campoInicio": "2026-09-20",
+    "campoFim": "2026-09-23",
+    "entrevistas": 804,
+    "margemPp": 3,
+    "confiancaPct": 95,
+    "fonteUrl": "https://portal6.com.br/2026/09/24/pesquisa-quaest-revela-novos-numeros-para-o-senado-em-goias-e-mostra-disputa-embolada-pela-segunda-vaga/",
+    "cargo": "senador",
+    "uf": "GO",
+    "turno": 1,
+    "cenario": "estimulado",
+    "resultados": [
+      {
+        "nomeUrna": "Gracinha Caiado",
+        "partido": "União",
+        "pct": 21
+      },
+      {
+        "nomeUrna": "Gustavo Gayer",
+        "partido": "PL",
+        "pct": 13
+      },
+      {
+        "nomeUrna": "Zacharias Calil",
+        "partido": "MDB",
+        "pct": 12
+      },
+      {
+        "nomeUrna": "Vanderlan Cardoso",
+        "partido": "PSD",
+        "pct": 8
+      },
+      {
+        "nomeUrna": "Gustavo Mendanha",
+        "partido": "PRD",
+        "pct": 8
+      },
+      {
+        "nomeUrna": "Oséias Varão",
+        "partido": "PL",
+        "pct": 3
+      },
+      {
+        "nomeUrna": "Isaura Lemos",
+        "partido": "PSB",
+        "pct": 3
+      },
+      {
+        "nomeUrna": "Cíntia Dias",
+        "partido": "PSOL",
+        "pct": 2
+      },
+      {
+        "nomeUrna": "Ernesto Roller",
+        "partido": "PSDB",
+        "pct": 0
+      },
+      {
+        "nomeUrna": "Guilherme Darques",
+        "partido": "UP",
+        "pct": 0
+      },
+      {
+        "nomeUrna": "Iure Castro",
+        "partido": "Cidadania",
+        "pct": 0
+      },
+      {
+        "nomeUrna": "Branco/Nulo",
+        "partido": null,
+        "pct": 8
+      },
+      {
+        "nomeUrna": "Não sabe",
+        "partido": null,
+        "pct": 22
+      }
+    ],
+    "notas": "Votos consolidados de 1º e 2º votos, reduzidos a 100% (soma = 100). Divulgada em 24/09. Ficha técnica conferida na Gazeta do Povo (https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/quaest-governador-senador-goias-setembro-2026/). É a pesquisa de senado mais recente encontrada em GO: Paraná Pesquisas (25-27/09) e Veritá (20-24/09) não trouxeram senado. 'Branco/Nulo' inclui 'não vota'."
+  },
+  {
+    "id": "quaest-ms-2026-09-24-gov-t1",
+    "instituto": "Quaest",
+    "contratante": "Televisão Ponta Porã Ltda/TV Morena",
+    "registro": "MS-09580/2026",
+    "campoInicio": "2026-09-21",
+    "campoFim": "2026-09-24",
+    "entrevistas": 804,
+    "margemPp": 3,
+    "confiancaPct": 95,
+    "fonteUrl": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/quaest-governador-senador-mato-grosso-do-sul-setembro-2026/",
+    "cargo": "governador",
+    "uf": "MS",
+    "turno": 1,
+    "cenario": "estimulado",
+    "resultados": [
+      {
+        "nomeUrna": "Eduardo Riedel",
+        "partido": "PP",
+        "pct": 51
+      },
+      {
+        "nomeUrna": "Fábio Trad",
+        "partido": "PT",
+        "pct": 12
+      },
+      {
+        "nomeUrna": "Delcídio Amaral",
+        "partido": "PRD",
+        "pct": 6
+      },
+      {
+        "nomeUrna": "João Henrique Catan",
+        "partido": "Novo",
+        "pct": 3
+      },
+      {
+        "nomeUrna": "Jeferson Bezerra",
+        "partido": "Agir",
+        "pct": 2
+      },
+      {
+        "nomeUrna": "Lucien Rezende",
+        "partido": "PSOL",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Economista Renato Gomes",
+        "partido": "DC",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Daniel Lemes",
+        "partido": "PCO",
+        "pct": 0
+      },
+      {
+        "nomeUrna": "Branco/Nulo",
+        "partido": null,
+        "pct": 9
+      },
+      {
+        "nomeUrna": "Não sabe",
+        "partido": null,
+        "pct": 15
+      }
+    ],
+    "notas": "Branco/Nulo inclui 'não vai votar'. Dados da ficha técnica publicada pela Gazeta do Povo. Nomes de candidatos fora da planilha conforme a matéria."
+  },
+  {
+    "id": "quaest-ms-2026-09-24-gov-t2-riedel-delcidio",
+    "instituto": "Quaest",
+    "contratante": "Televisão Ponta Porã Ltda/TV Morena",
+    "registro": "MS-09580/2026",
+    "campoInicio": "2026-09-21",
+    "campoFim": "2026-09-24",
+    "entrevistas": 804,
+    "margemPp": 3,
+    "confiancaPct": 95,
+    "fonteUrl": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/quaest-governador-senador-mato-grosso-do-sul-setembro-2026/",
+    "cargo": "governador",
+    "uf": "MS",
+    "turno": 2,
+    "cenario": "estimulado",
+    "resultados": [
+      {
+        "nomeUrna": "Eduardo Riedel",
+        "partido": "PP",
+        "pct": 63
+      },
+      {
+        "nomeUrna": "Delcídio Amaral",
+        "partido": "PRD",
+        "pct": 19
+      },
+      {
+        "nomeUrna": "Branco/Nulo",
+        "partido": null,
+        "pct": 10
+      },
+      {
+        "nomeUrna": "Não sabe",
+        "partido": null,
+        "pct": 8
+      }
+    ],
+    "notas": "Cenário de 2º turno 1 de 2 (Riedel x Delcídio). Sufixo no id adicionado para distinguir cenários da mesma pesquisa."
+  },
+  {
+    "id": "quaest-ms-2026-09-24-gov-t2-riedel-trad",
+    "instituto": "Quaest",
+    "contratante": "Televisão Ponta Porã Ltda/TV Morena",
+    "registro": "MS-09580/2026",
+    "campoInicio": "2026-09-21",
+    "campoFim": "2026-09-24",
+    "entrevistas": 804,
+    "margemPp": 3,
+    "confiancaPct": 95,
+    "fonteUrl": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/quaest-governador-senador-mato-grosso-do-sul-setembro-2026/",
+    "cargo": "governador",
+    "uf": "MS",
+    "turno": 2,
+    "cenario": "estimulado",
+    "resultados": [
+      {
+        "nomeUrna": "Eduardo Riedel",
+        "partido": "PP",
+        "pct": 63
+      },
+      {
+        "nomeUrna": "Fábio Trad",
+        "partido": "PT",
+        "pct": 20
+      },
+      {
+        "nomeUrna": "Branco/Nulo",
+        "partido": null,
+        "pct": 8
+      },
+      {
+        "nomeUrna": "Não sabe",
+        "partido": null,
+        "pct": 9
+      }
+    ],
+    "notas": "Cenário de 2º turno 2 de 2 (Riedel x Trad). Sufixo no id adicionado para distinguir cenários da mesma pesquisa."
+  },
+  {
+    "id": "quaest-ms-2026-09-24-sen-t1",
+    "instituto": "Quaest",
+    "contratante": "Televisão Ponta Porã Ltda/TV Morena",
+    "registro": "MS-09580/2026",
+    "campoInicio": "2026-09-21",
+    "campoFim": "2026-09-24",
+    "entrevistas": 804,
+    "margemPp": 3,
+    "confiancaPct": 95,
+    "fonteUrl": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/quaest-governador-senador-mato-grosso-do-sul-setembro-2026/",
+    "cargo": "senador",
+    "uf": "MS",
+    "turno": 1,
+    "cenario": "estimulado",
+    "resultados": [
+      {
+        "nomeUrna": "Capitão Contar",
+        "partido": "PL",
+        "pct": 23
+      },
+      {
+        "nomeUrna": "Reinaldo Azambuja",
+        "partido": "PL",
+        "pct": 22
+      },
+      {
+        "nomeUrna": "Soraya Thronicke",
+        "partido": "PSB",
+        "pct": 10
+      },
+      {
+        "nomeUrna": "Vander Loubet",
+        "partido": "PT",
+        "pct": 8
+      },
+      {
+        "nomeUrna": "Roberto Oshiro",
+        "partido": "Novo",
+        "pct": 2
+      },
+      {
+        "nomeUrna": "Beto do Movimento",
+        "partido": "PSOL",
+        "pct": 2
+      },
+      {
+        "nomeUrna": "Daniel Junior",
+        "partido": "Agir",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Luiz Lemes",
+        "partido": "DC",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Valderi Garcia",
+        "partido": "PCO",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Valter da Comagran",
+        "partido": "PRD",
+        "pct": 0
+      },
+      {
+        "nomeUrna": "Branco/Nulo",
+        "partido": null,
+        "pct": 12
+      },
+      {
+        "nomeUrna": "Não sabe",
+        "partido": null,
+        "pct": 18
+      }
+    ],
+    "notas": "Votos consolidados (1º + 2º voto) reduzidos a 100%, conforme a matéria. Branco/Nulo inclui 'não vai votar'."
+  },
+  {
+    "id": "quaest-mt-2026-09-24-gov-t1",
+    "instituto": "Quaest",
+    "contratante": "Rádio e Televisão Matogrossense Ltda / TV Centro América",
+    "registro": "MT-08098/2026",
+    "campoInicio": "2026-09-21",
+    "campoFim": "2026-09-24",
+    "entrevistas": 804,
+    "margemPp": 3,
+    "confiancaPct": 95,
+    "fonteUrl": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/quaest-governador-senador-mato-grosso-setembro-2026/",
+    "cargo": "governador",
+    "uf": "MT",
+    "turno": 1,
+    "cenario": "estimulado",
+    "resultados": [
+      {
+        "nomeUrna": "Otaviano Pivetta",
+        "partido": "Republicanos",
+        "pct": 29
+      },
+      {
+        "nomeUrna": "Wellington Fagundes",
+        "partido": "PL",
+        "pct": 27
+      },
+      {
+        "nomeUrna": "Doutora Natasha",
+        "partido": "PSD",
+        "pct": 11
+      },
+      {
+        "nomeUrna": "Maurício Coelho",
+        "partido": "Mobiliza",
+        "pct": 2
+      },
+      {
+        "nomeUrna": "Sargento Laudicério",
+        "partido": "Agir",
+        "pct": 2
+      },
+      {
+        "nomeUrna": "Rafaell Millas",
+        "partido": "Missão",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Branco/Nulo",
+        "partido": null,
+        "pct": 22
+      },
+      {
+        "nomeUrna": "Não sabe",
+        "partido": null,
+        "pct": 6
+      }
+    ],
+    "notas": "Branco/Nulo inclui 'não vai votar'. Branco/Nulo (22%) e indecisos (6%) conforme a Gazeta do Povo. Os valores parecem invertidos em relação às demais perguntas, mas não há outra fonte que confirme. A matéria cita o contratante também como Rede Matogrossense de Televisão. A Veritá (20-24/09) também terminou o campo em 24/09. A Quaest foi escolhida por ser instituto mais conhecido."
+  },
+  {
+    "id": "quaest-mt-2026-09-24-gov-t2-fagundes-pivetta",
+    "instituto": "Quaest",
+    "contratante": "Rádio e Televisão Matogrossense Ltda / TV Centro América",
+    "registro": "MT-08098/2026",
+    "campoInicio": "2026-09-21",
+    "campoFim": "2026-09-24",
+    "entrevistas": 804,
+    "margemPp": 3,
+    "confiancaPct": 95,
+    "fonteUrl": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/quaest-governador-senador-mato-grosso-setembro-2026/",
+    "cargo": "governador",
+    "uf": "MT",
+    "turno": 2,
+    "cenario": "estimulado",
+    "resultados": [
+      {
+        "nomeUrna": "Wellington Fagundes",
+        "partido": "PL",
+        "pct": 41
+      },
+      {
+        "nomeUrna": "Otaviano Pivetta",
+        "partido": "Republicanos",
+        "pct": 36
+      },
+      {
+        "nomeUrna": "Branco/Nulo",
+        "partido": null,
+        "pct": 8
+      },
+      {
+        "nomeUrna": "Não sabe",
+        "partido": null,
+        "pct": 15
+      }
+    ],
+    "notas": "Cenário de 2º turno 1 de 3. Sufixo no id para distinguir cenários."
+  },
+  {
+    "id": "quaest-mt-2026-09-24-gov-t2-fagundes-natasha",
+    "instituto": "Quaest",
+    "contratante": "Rádio e Televisão Matogrossense Ltda / TV Centro América",
+    "registro": "MT-08098/2026",
+    "campoInicio": "2026-09-21",
+    "campoFim": "2026-09-24",
+    "entrevistas": 804,
+    "margemPp": 3,
+    "confiancaPct": 95,
+    "fonteUrl": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/quaest-governador-senador-mato-grosso-setembro-2026/",
+    "cargo": "governador",
+    "uf": "MT",
+    "turno": 2,
+    "cenario": "estimulado",
+    "resultados": [
+      {
+        "nomeUrna": "Wellington Fagundes",
+        "partido": "PL",
+        "pct": 48
+      },
+      {
+        "nomeUrna": "Doutora Natasha",
+        "partido": "PSD",
+        "pct": 25
+      },
+      {
+        "nomeUrna": "Branco/Nulo",
+        "partido": null,
+        "pct": 11
+      },
+      {
+        "nomeUrna": "Não sabe",
+        "partido": null,
+        "pct": 14
+      }
+    ],
+    "notas": "Cenário de 2º turno 2 de 3. Sufixo no id para distinguir cenários. A soma publicada dá 98%, provavelmente por arredondamento; valores mantidos como na fonte."
+  },
+  {
+    "id": "quaest-mt-2026-09-24-gov-t2-pivetta-natasha",
+    "instituto": "Quaest",
+    "contratante": "Rádio e Televisão Matogrossense Ltda / TV Centro América",
+    "registro": "MT-08098/2026",
+    "campoInicio": "2026-09-21",
+    "campoFim": "2026-09-24",
+    "entrevistas": 804,
+    "margemPp": 3,
+    "confiancaPct": 95,
+    "fonteUrl": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/quaest-governador-senador-mato-grosso-setembro-2026/",
+    "cargo": "governador",
+    "uf": "MT",
+    "turno": 2,
+    "cenario": "estimulado",
+    "resultados": [
+      {
+        "nomeUrna": "Otaviano Pivetta",
+        "partido": "Republicanos",
+        "pct": 46
+      },
+      {
+        "nomeUrna": "Doutora Natasha",
+        "partido": "PSD",
+        "pct": 29
+      },
+      {
+        "nomeUrna": "Branco/Nulo",
+        "partido": null,
+        "pct": 9
+      },
+      {
+        "nomeUrna": "Não sabe",
+        "partido": null,
+        "pct": 16
+      }
+    ],
+    "notas": "Cenário de 2º turno 3 de 3. Sufixo no id para distinguir cenários."
+  },
+  {
+    "id": "quaest-mt-2026-09-24-sen-t1",
+    "instituto": "Quaest",
+    "contratante": "Rádio e Televisão Matogrossense Ltda / TV Centro América",
+    "registro": "MT-08098/2026",
+    "campoInicio": "2026-09-21",
+    "campoFim": "2026-09-24",
+    "entrevistas": 804,
+    "margemPp": 3,
+    "confiancaPct": 95,
+    "fonteUrl": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/quaest-governador-senador-mato-grosso-setembro-2026/",
+    "cargo": "senador",
+    "uf": "MT",
+    "turno": 1,
+    "cenario": "estimulado",
+    "resultados": [
+      {
+        "nomeUrna": "Mauro Mendes",
+        "partido": "União",
+        "pct": 27
+      },
+      {
+        "nomeUrna": "Janaina Riva",
+        "partido": "MDB",
+        "pct": 19
+      },
+      {
+        "nomeUrna": "Pedro Taques",
+        "partido": "PSB",
+        "pct": 9
+      },
+      {
+        "nomeUrna": "Zé Medeiros",
+        "partido": "PL",
+        "pct": 9
+      },
+      {
+        "nomeUrna": "Fávaro",
+        "partido": "PSD",
+        "pct": 8
+      },
+      {
+        "nomeUrna": "Galvan",
+        "partido": "Avante",
+        "pct": 2
+      },
+      {
+        "nomeUrna": "Coronel Darwin",
+        "partido": "Democrata",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Margareth Buzetti",
+        "partido": "PP",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Professor Nelson Ferreira",
+        "partido": "Agir",
+        "pct": 1
+      },
+      {
+        "nomeUrna": "Beny Godoy",
+        "partido": "Agir",
+        "pct": 0
+      },
+      {
+        "nomeUrna": "Branco/Nulo",
+        "partido": null,
+        "pct": 5
+      },
+      {
+        "nomeUrna": "Não sabe",
+        "partido": null,
+        "pct": 18
+      }
+    ],
+    "notas": "Votos consolidados (1º + 2º voto) reduzidos a 100%, conforme a matéria. Branco/Nulo inclui 'não vai votar'."
+  }
+]

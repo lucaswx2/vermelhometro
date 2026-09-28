@@ -1,69 +1,111 @@
-import Image from "next/image";
+import { Cartaz } from '@/componentes/Cartaz'
+import { Compartilhar } from '@/componentes/Compartilhar'
+import { FichaPesquisa } from '@/componentes/FichaPesquisa'
+import { GradeEstados } from '@/componentes/GradeEstados'
+import { Rodape } from '@/componentes/Rodape'
+import { atualizadoEm } from '@/lib/dados'
+import { calcularTermometro, clima } from '@/lib/temperatura'
+import { faixaDoPartido } from '@/lib/faixas'
 
-export default function Home() {
+const graus = (t: number) => `${Math.round(t)}°`
+
+export default function Inicio() {
+  const { temperatura, esferas } = calcularTermometro()
+  const { presidente, senado, governadores, camara } = esferas
+  const duelo = presidente.pesquisas[0]?.resultados.filter((r) => r.partido).sort((a, b) => b.pct - a.pct) ?? []
+  const frentes = [
+    {
+      nome: 'Presidente',
+      temperatura: presidente.temperatura,
+      resumo: presidente.turno === 2 ? 'Média do 2º turno nas últimas pesquisas.' : 'Média do 1º turno nas últimas pesquisas.',
+    },
+    {
+      nome: 'Senado',
+      temperatura: senado.temperatura,
+      resumo: `Projeção 2027: ${senado.cadeiras.esquerda} de esquerda, ${senado.cadeiras.direita} de direita, ${senado.cadeiras.centro} do centrão.`,
+    },
+    {
+      nome: 'Governos',
+      temperatura: governadores.temperatura,
+      resumo: `Esquerda lidera em ${governadores.lideres.esquerda} estados, direita em ${governadores.lideres.direita}.`,
+    },
+    {
+      nome: 'Câmara',
+      temperatura: camara.temperatura,
+      resumo: camara.usaProjecao ? 'Projeção de bancadas do DIAP.' : 'Bancada atual. A projeção entra quando houver.',
+    },
+  ]
+  const { nome } = clima(temperatura)
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <>
+      <Cartaz temperatura={temperatura} chamada="A esquerda hoje está a" atualizadoEm={atualizadoEm} />
+      <p className="bg-sangue px-5 py-2.5 text-center text-xs leading-snug text-papel">
+        50° é empate de forças entre esquerda e direita. Acima disso, nosso campo tá na frente.
+      </p>
+
+      <main className="mx-auto flex w-full max-w-xl flex-col gap-4 px-4 py-6">
+        <section className="moldura flex flex-col gap-3.5 px-4 py-5">
+          <h2 className="text-center font-display text-[28px] uppercase tracking-wide text-vermelho">★ As 4 frentes ★</h2>
+          <div className="grid grid-cols-2 gap-2.5">
+            {frentes.map((frente) => (
+              <article key={frente.nome} className="flex flex-col gap-1 bg-vermelho p-3 text-papel">
+                <h3 className="text-sm font-bold uppercase tracking-wider text-ouro">{frente.nome}</h3>
+                <p className="font-display text-[46px] leading-none">{graus(frente.temperatura)}</p>
+                <p className="text-xs leading-snug font-medium">{frente.resumo}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        {presidente.pesquisas[0] && (
+          <section className="flex flex-col gap-2.5 bg-tinta p-5 text-papel">
+            <h2 className="text-[13px] font-bold uppercase tracking-[0.15em] text-ouro">
+              Presidente · {presidente.turno}º turno
+            </h2>
+            <div className="flex items-end justify-between">
+              {duelo.slice(0, 2).map((r, i) => (
+                <div key={r.nomeUrna} className={`flex flex-col ${i === 1 ? 'items-end' : ''}`}>
+                  <span
+                    className={`font-display text-[60px] leading-none ${faixaDoPartido(r.partido ?? '') === 'frente-ampla' ? 'text-ouro' : 'text-cinza'}`}
+                  >
+                    {r.pct}%
+                  </span>
+                  <span className="font-bold uppercase">
+                    {r.nomeUrna} · {r.partido}
+                  </span>
+                </div>
+              ))}
+            </div>
+            <p className="font-bold uppercase">
+              {Math.abs(presidente.margem) <= 2 * presidente.pesquisas[0].margemPp ? 'Empate técnico' : 'Fora da margem'}
+              {presidente.chance !== null && ` · chance do Lula ${Math.round(presidente.chance * 100)}%`}
+            </p>
+            <p className="text-xs opacity-80">
+              Número principal: {presidente.pesquisas[0].instituto}. Temperatura: média de {presidente.pesquisas.length}{' '}
+              {presidente.pesquisas.length === 1 ? 'instituto' : 'institutos'}.
+            </p>
+            {presidente.pesquisas.map((p) => (
+              <FichaPesquisa key={p.id} pesquisa={p} />
+            ))}
+          </section>
+        )}
+
+        <section className="moldura flex flex-col gap-3 px-4 py-5">
+          <h2 className="text-center font-display text-[24px] uppercase tracking-wide text-vermelho">★ Quem lidera nos governos ★</h2>
+          <GradeEstados
+            lideres={governadores.porUf.map((e) => ({ uf: e.uf, faixa: e.lider?.faixa ?? null, nome: e.lider?.nomeUrna ?? null }))}
+          />
+          <p className="text-center text-xs">Toque num estado para ver governo e Senado.</p>
+        </section>
+
+        <Compartilhar
+          texto={`A esquerda tá a ${graus(temperatura)} no Vermelhômetro. ${nome}! Confere:`}
+          caminho="/"
+          cartaz="/cartaz"
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
       </main>
-    </div>
-  );
+      <Rodape />
+    </>
+  )
 }
