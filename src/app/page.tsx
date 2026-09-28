@@ -1,109 +1,133 @@
 import { Cartaz } from '@/componentes/Cartaz'
-import { Compartilhar } from '@/componentes/Compartilhar'
 import { FichaPesquisa } from '@/componentes/FichaPesquisa'
-import { GradeEstados } from '@/componentes/GradeEstados'
+import { GradeEstados, Legenda } from '@/componentes/GradeEstados'
 import { Rodape } from '@/componentes/Rodape'
 import { atualizadoEm } from '@/lib/dados'
-import { calcularTermometro, clima } from '@/lib/temperatura'
-import { faixaDoPartido } from '@/lib/faixas'
+import { NOME_UF, UFS } from '@/lib/estados'
+import { placarCamara, placarGovernos, placarPresidente, placarSenado } from '@/lib/placar'
 
-const graus = (t: number) => `${Math.round(t)}°`
+const SITE = 'https://vermelhometro.vercel.app'
+
+const pct = (n: number) => n.toLocaleString('pt-BR', { maximumFractionDigits: 1 })
+
+const estados = (n: number) => `${n} ${n === 1 ? 'estado' : 'estados'}`
+
+const FRASE_PRESIDENTE = {
+  empate: 'Empate técnico',
+  frente: 'Lula à frente',
+  atras: 'Lula atrás',
+} as const
 
 export default function Inicio() {
-  const { temperatura, esferas } = calcularTermometro()
-  const { presidente, senado, governadores, camara } = esferas
-  const duelo = presidente.pesquisas[0]?.resultados.filter((r) => r.partido).sort((a, b) => b.pct - a.pct) ?? []
-  const frentes = [
-    {
-      nome: 'Presidente',
-      temperatura: presidente.temperatura,
-      resumo: presidente.turno === 2 ? 'Média do 2º turno nas últimas pesquisas.' : 'Média do 1º turno nas últimas pesquisas.',
-    },
-    {
-      nome: 'Senado',
-      temperatura: senado.temperatura,
-      resumo: `Projeção 2027: ${senado.cadeiras.esquerda} de esquerda, ${senado.cadeiras.direita} de direita, ${senado.cadeiras.centro} do centrão.`,
-    },
-    {
-      nome: 'Governos',
-      temperatura: governadores.temperatura,
-      resumo: `Esquerda lidera em ${governadores.lideres.esquerda} estados, direita em ${governadores.lideres.direita}.`,
-    },
-    {
-      nome: 'Câmara',
-      temperatura: camara.temperatura,
-      resumo: camara.usaProjecao ? 'Projeção de bancadas do DIAP.' : 'Bancada atual. A projeção entra quando houver.',
-    },
-  ]
-  const { nome } = clima(temperatura)
+  const presidente = placarPresidente()
+  const governos = placarGovernos()
+  const senado = placarSenado()
+  const camara = placarCamara()
+  const textoZap = `Domingo tem eleição e celular não entra na cabine. Monte sua colinha de esquerda com os números oficiais do TSE: ${SITE}`
 
   return (
     <>
-      <Cartaz temperatura={temperatura} chamada="A esquerda hoje está a" atualizadoEm={atualizadoEm} />
-      <p className="bg-sangue px-5 py-2.5 text-center text-xs leading-snug text-papel">
-        50° é empate de forças entre esquerda e direita. Acima disso, nosso campo tá na frente.
-      </p>
+      <Cartaz
+        chamada="Domingo, 4 de outubro"
+        titulo={
+          <>
+            Monte sua <br /> colinha de esquerda
+          </>
+        }
+        rodape="Voto de classe. Nenhum voto na extrema direita."
+        atualizadoEm={atualizadoEm}
+      />
 
-      <main className="mx-auto flex w-full max-w-xl flex-col gap-4 px-4 py-6">
-        <section className="moldura flex flex-col gap-3.5 px-4 py-5">
-          <h2 className="text-center font-display text-[28px] uppercase tracking-wide text-vermelho">★ As 4 frentes ★</h2>
-          <div className="grid grid-cols-2 gap-2.5">
-            {frentes.map((frente) => (
-              <article key={frente.nome} className="flex flex-col gap-1 bg-vermelho p-3 text-papel">
-                <h3 className="text-sm font-bold uppercase tracking-wider text-ouro">{frente.nome}</h3>
-                <p className="font-display text-[46px] leading-none">{graus(frente.temperatura)}</p>
-                <p className="text-xs leading-snug font-medium">{frente.resumo}</p>
-              </article>
-            ))}
-          </div>
+      <main className="mx-auto flex w-full max-w-xl flex-col gap-6 px-4 py-6">
+        <section aria-labelledby="escolha-estado" className="moldura flex flex-col gap-3 px-4 py-5">
+          <h2 id="escolha-estado" className="text-center font-display text-3xl uppercase text-vermelho">
+            Toque no seu estado
+          </h2>
+          <GradeEstados celulas={UFS.map((uf) => ({ uf, rotulo: `Colinha de ${NOME_UF[uf]}` }))} />
+          <p className="text-center text-sm">
+            Números oficiais do TSE para presidente, governo, Senado e deputados. Você imprime, salva ou manda no zap. Celular é proibido na cabine.
+          </p>
         </section>
 
-        {presidente.pesquisas[0] && (
-          <section className="flex flex-col gap-2.5 bg-tinta p-5 text-papel">
-            <h2 className="text-[13px] font-bold uppercase tracking-[0.15em] text-ouro">
-              Presidente · {presidente.turno}º turno
-            </h2>
-            <div className="flex items-end justify-between">
-              {duelo.slice(0, 2).map((r, i) => (
-                <div key={r.nomeUrna} className={`flex flex-col ${i === 1 ? 'items-end' : ''}`}>
-                  <span
-                    className={`font-display text-[60px] leading-none ${faixaDoPartido(r.partido ?? '') === 'frente-ampla' ? 'text-ouro' : 'text-cinza'}`}
-                  >
-                    {r.pct}%
-                  </span>
-                  <span className="font-bold uppercase">
-                    {r.nomeUrna} · {r.partido}
-                  </span>
-                </div>
-              ))}
-            </div>
-            <p className="font-bold uppercase">
-              {Math.abs(presidente.margem) <= 2 * presidente.pesquisas[0].margemPp ? 'Empate técnico' : 'Fora da margem'}
-              {presidente.chance !== null && ` · chance do Lula ${Math.round(presidente.chance * 100)}%`}
-            </p>
-            <p className="text-xs opacity-80">
-              Número principal: {presidente.pesquisas[0].instituto}. Temperatura: média de {presidente.pesquisas.length}{' '}
-              {presidente.pesquisas.length === 1 ? 'instituto' : 'institutos'}.
-            </p>
-            {presidente.pesquisas.map((p) => (
-              <FichaPesquisa key={p.id} pesquisa={p} />
-            ))}
-          </section>
-        )}
+        <section className="flex flex-col gap-4" aria-labelledby="como-estamos">
+          <h2 id="como-estamos" className="font-display text-3xl uppercase text-vermelho">
+            Como estamos, frente por frente
+          </h2>
+          <p className="text-sm">
+            “Esquerda” aqui é pelo partido do candidato: PT e aliados de esquerda, mais a esquerda socialista. Quem é de outro partido mas está no palanque
+            de Lula aparece separado, como “aliado do Lula”.
+          </p>
 
-        <section className="moldura flex flex-col gap-3 px-4 py-5">
-          <h2 className="text-center font-display text-[24px] uppercase tracking-wide text-vermelho">★ Quem lidera ★</h2>
-          <GradeEstados
-            lideres={governadores.porUf.map((e) => ({ uf: e.uf, faixa: e.lider?.faixa ?? null, nome: e.lider?.nomeUrna ?? null }))}
-          />
-          <p className="text-center text-xs">Toque num estado para ver governo e Senado.</p>
+          {presidente.nomes && (
+            <article className="flex flex-col gap-2 bg-tinta p-5 text-papel">
+              <h3 className="text-sm font-bold uppercase tracking-widest text-ouro">Presidente · 2º turno</h3>
+              <p className="font-display text-4xl uppercase leading-none">{FRASE_PRESIDENTE[presidente.situacao]}</p>
+              <p className="text-lg">
+                {presidente.nomes.esquerda} tem {pct(presidente.validosEsquerda)}% dos votos válidos contra {pct(100 - presidente.validosEsquerda)}% de{' '}
+                {presidente.nomes.direita}, na média de {presidente.confrontos.length} institutos.
+              </p>
+              <details>
+                <summary className="cursor-pointer font-bold underline">Ver as {presidente.confrontos.length} pesquisas</summary>
+                <ul className="mt-2 flex flex-col gap-2">
+                  {presidente.confrontos.map((c) => (
+                    <li key={c.pesquisa.id}>
+                      <p className="font-bold">
+                        {c.esquerda.nomeUrna} {c.esquerda.pct}% × {c.direita.pct}% {c.direita.nomeUrna}
+                      </p>
+                      <FichaPesquisa pesquisa={c.pesquisa} />
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            </article>
+          )}
+
+          <article className="moldura flex flex-col gap-3 px-4 py-5">
+            <h3 className="text-sm font-bold uppercase tracking-widest text-vermelho">Governos estaduais</h3>
+            <p className="text-lg">
+              A esquerda é favorita em <strong>{estados(governos.esquerda.favorita)}</strong> e está na disputa em{' '}
+              <strong>{estados(governos.esquerda.disputa)}</strong>. Contando os aliados do Lula de outros partidos: favoritos em{' '}
+              <strong>{estados(governos.aliados.favorita)}</strong>, na disputa em <strong>{estados(governos.aliados.disputa)}</strong>.
+            </p>
+            <p className="text-sm">Quem lidera em cada estado, pela etiqueta do partido:</p>
+            <GradeEstados
+              ancora="#disputa"
+              celulas={governos.porUf.map((e) => ({
+                uf: e.uf,
+                rotulo: e.lider ? `${NOME_UF[e.uf]}: lidera ${e.lider.nomeUrna}` : `${NOME_UF[e.uf]}: sem pesquisa válida`,
+                faixa: e.lider?.classe?.faixaPartido ?? null,
+              }))}
+            />
+            <Legenda />
+          </article>
+
+          <article className="moldura flex flex-col gap-2 px-4 py-5">
+            <h3 className="text-sm font-bold uppercase tracking-widest text-vermelho">Senado em 2027</h3>
+            <p className="text-lg">
+              Pelas pesquisas, a esquerda teria <strong>{senado.porPartido.esquerda}</strong> das 81 cadeiras. Com os aliados do Lula de outros partidos,{' '}
+              <strong>{senado.comAliados.esquerda}</strong>. Maioria é 41.
+            </p>
+            <p className="text-sm">
+              Estão em jogo {senado.cadeirasEmJogo} vagas, duas por estado: você vota em dois nomes.
+              {senado.semPesquisa.length > 0 && ` Sem pesquisa válida: ${senado.semPesquisa.join(', ')}.`}
+            </p>
+          </article>
+
+          <article className="moldura flex flex-col gap-2 px-4 py-5">
+            <h3 className="text-sm font-bold uppercase tracking-widest text-vermelho">Câmara dos Deputados</h3>
+            <p className="text-lg">
+              Hoje a esquerda tem <strong>{camara.atual.esquerda}</strong> dos 513 deputados.
+              {camara.projetada &&
+                ` A projeção do DIAP dá ${camara.projetada.medio.esquerda} (entre ${camara.projetada.min.esquerda} e ${camara.projetada.max.esquerda}).`}{' '}
+              Para barrar um impeachment são precisos {camara.impeachment}.
+            </p>
+            <p className="text-sm">Não existe pesquisa para deputado. Por isso o voto de legenda da sua colinha conta tanto.</p>
+          </article>
         </section>
 
-        <Compartilhar
-          texto={`A esquerda tá a ${graus(temperatura)} no Vermelhômetro. ${nome}! Confere:`}
-          caminho="/"
-          cartaz="/cartaz"
-        />
+        <a href={`https://wa.me/?text=${encodeURIComponent(textoZap)}`} target="_blank" rel="noopener noreferrer" className="botao-primario">
+          Mandar o site no zap
+        </a>
       </main>
       <Rodape />
     </>

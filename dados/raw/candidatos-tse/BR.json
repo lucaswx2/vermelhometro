@@ -1,0 +1,15 @@
+[
+  {"cargo":"presidente","numero":13,"nomeUrna":"LULA","partido":"PT","situacao":"deferido","coligacaoOuFederacao":"BRASIL PRONTO PRA MAIS"},
+  {"cargo":"presidente","numero":14,"nomeUrna":"RENAN SANTOS","partido":"MISSÃO","situacao":"deferido","coligacaoOuFederacao":"MISSÃO"},
+  {"cargo":"presidente","numero":16,"nomeUrna":"HERTZ DIAS","partido":"PSTU","situacao":"deferido","coligacaoOuFederacao":"PSTU"},
+  {"cargo":"presidente","numero":21,"nomeUrna":"EDMILSON COSTA","partido":"PCB","situacao":"deferido","coligacaoOuFederacao":"PCB"},
+  {"cargo":"presidente","numero":22,"nomeUrna":"FLAVIO BOLSONARO","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
+  {"cargo":"presidente","numero":27,"nomeUrna":"CLARIANA BARAO","partido":"DC","situacao":"deferido","coligacaoOuFederacao":"DC"},
+  {"cargo":"presidente","numero":28,"nomeUrna":"LEONARDO AVALANCHE","partido":"PRTB","situacao":"pendente de julgamento","coligacaoOuFederacao":"PRTB"},
+  {"cargo":"presidente","numero":29,"nomeUrna":"RUI COSTA PIMENTA","partido":"PCO","situacao":"deferido","coligacaoOuFederacao":"PCO"},
+  {"cargo":"presidente","numero":30,"nomeUrna":"ZEMA","partido":"NOVO","situacao":"deferido","coligacaoOuFederacao":"NOVO"},
+  {"cargo":"presidente","numero":35,"nomeUrna":"VETERINÁRIO WILSON GRASSI","partido":"DEMOCRATA","situacao":"deferido","coligacaoOuFederacao":"DEMOCRATA"},
+  {"cargo":"presidente","numero":55,"nomeUrna":"RONALDO CAIADO","partido":"PSD","situacao":"deferido","coligacaoOuFederacao":"PSD"},
+  {"cargo":"presidente","numero":70,"nomeUrna":"ESCRITOR AUGUSTO CURY","partido":"AVANTE","situacao":"deferido","coligacaoOuFederacao":"BRASIL DOS NOSSOS SONHOS"},
+  {"cargo":"presidente","numero":80,"nomeUrna":"SAMARA","partido":"UP","situacao":"deferido","coligacaoOuFederacao":"UP"}
+]

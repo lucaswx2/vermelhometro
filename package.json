@@ -7,7 +7,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "dados": "node scripts/importar-dados.ts && node scripts/gerar-colinhas.ts",
+    "test": "node --test \"testes/**/*.test.ts\""
   },
   "dependencies": {
     "next": "16.3.6",

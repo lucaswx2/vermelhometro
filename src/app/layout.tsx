@@ -8,11 +8,11 @@ const oswald = Oswald({ variable: '--font-oswald', weight: ['500', '700'], subse
 export const metadata: Metadata = {
   metadataBase: new URL('https://vermelhometro.vercel.app'),
   title: {
-    default: 'Vermelhômetro — a temperatura da esquerda nas eleições 2026',
+    default: 'Vermelhômetro — colinha de esquerda para as eleições 2026',
     template: '%s · Vermelhômetro',
   },
   description:
-    'Termômetro da esquerda nas eleições 2026: presidente, governadores, Senado e Câmara, com pesquisas registradas no TSE, estado por estado.',
+    'Monte sua colinha de voto de classe com os números oficiais do TSE, estado por estado, e veja como a esquerda está em cada disputa.',
 }
 
 export default function RootLayout({ children }: LayoutProps<'/'>) {

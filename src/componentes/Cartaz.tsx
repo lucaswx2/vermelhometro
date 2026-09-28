@@ -1,42 +1,7 @@
-import { clima } from '@/lib/temperatura'
+import type { ReactNode } from 'react'
 import { PONTOS_ESTRELA, raiosDoSol } from './sol'
 
 const RAIOS = raiosDoSol(200, 600, 22, 900)
-
-export function Cartaz({ temperatura, chamada, atualizadoEm }: { temperatura: number; chamada: string; atualizadoEm: Date }) {
-  const { nome, grito } = clima(temperatura)
-  return (
-    <section className="relative h-[560px] overflow-hidden bg-vermelho text-papel">
-      <svg
-        viewBox="0 0 400 560"
-        preserveAspectRatio="xMidYMax slice"
-        className="absolute inset-0 h-full w-full"
-        aria-hidden="true"
-      >
-        <path d={RAIOS} fill="#E0402A" />
-        <circle cx="200" cy="600" r="170" fill="#F5C542" />
-      </svg>
-      <div className="relative mx-auto flex h-full max-w-xl flex-col items-center px-5 text-center">
-        <p className="mt-4 flex w-full justify-between text-xs font-bold tracking-[0.2em]">
-          <span>ELEIÇÕES 2026</span>
-          <span>{formatarAtualizacao(atualizadoEm)}</span>
-        </p>
-        <svg viewBox="-50 -50 100 100" className="mt-[30px] h-[90px] w-[90px]" aria-hidden="true">
-          <polygon points={PONTOS_ESTRELA} fill="#F5C542" />
-        </svg>
-        <h1 className="mt-[26px] font-display text-[40px] uppercase leading-none tracking-[0.08em]">Vermelhômetro</h1>
-        <p className="mt-3 text-[15px] font-bold uppercase tracking-[0.15em] text-ouro">{chamada}</p>
-        <p className="font-display text-[170px] leading-none" aria-label={`${Math.round(temperatura)} graus`}>
-          {Math.round(temperatura)}°
-        </p>
-        <p className="absolute bottom-6 font-display text-[30px] uppercase leading-[1.05] text-sangue">
-          {nome}.<br />
-          {grito}
-        </p>
-      </div>
-    </section>
-  )
-}
 
 const formatador = new Intl.DateTimeFormat('pt-BR', {
   day: '2-digit',
@@ -46,4 +11,27 @@ const formatador = new Intl.DateTimeFormat('pt-BR', {
   timeZone: 'America/Sao_Paulo',
 })
 
-const formatarAtualizacao = (data: Date) => formatador.format(data).replace(',', ' ·').toUpperCase()
+export const formatarAtualizacao = (data: Date) => formatador.format(data).replace(',', ' às')
+
+export function Cartaz({ titulo, chamada, rodape, atualizadoEm }: { titulo: ReactNode; chamada: string; rodape: ReactNode; atualizadoEm: Date }) {
+  return (
+    <section className="relative overflow-hidden bg-vermelho text-papel">
+      <svg viewBox="0 0 400 560" preserveAspectRatio="xMidYMax slice" className="absolute inset-0 h-full w-full" aria-hidden="true">
+        <path d={RAIOS} fill="#E0402A" />
+        <circle cx="200" cy="600" r="170" fill="#F5C542" />
+      </svg>
+      <div className="relative mx-auto flex max-w-xl flex-col items-center px-5 pb-6 text-center">
+        <p className="mt-4 flex w-full justify-between text-xs font-bold uppercase tracking-[0.15em]">
+          <span>Vermelhômetro</span>
+          <span>Atualizado {formatarAtualizacao(atualizadoEm)}</span>
+        </p>
+        <svg viewBox="-50 -50 100 100" className="mt-6 size-16" aria-hidden="true">
+          <polygon points={PONTOS_ESTRELA} fill="#F5C542" />
+        </svg>
+        <p className="mt-4 text-base font-bold uppercase tracking-[0.12em] text-ouro">{chamada}</p>
+        <h1 className="mt-1 font-display text-[52px] uppercase leading-[0.95]">{titulo}</h1>
+        <div className="mt-10 max-w-[15ch] font-display text-xl uppercase leading-tight text-sangue">{rodape}</div>
+      </div>
+    </section>
+  )
+}

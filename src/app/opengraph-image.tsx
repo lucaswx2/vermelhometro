@@ -1,9 +1,10 @@
-import { cartazDoBrasil } from '@/componentes/cartazes'
+import { imagemCartaz, TAMANHO_OG } from '@/componentes/imagemCartaz'
+import { atualizadoEm } from '@/lib/dados'
 
-export const alt = 'Vermelhômetro: a temperatura da esquerda nas eleições 2026'
-export const size = { width: 1200, height: 630 }
+export const alt = 'Vermelhômetro: monte sua colinha de esquerda para 4 de outubro'
+export const size = TAMANHO_OG
 export const contentType = 'image/png'
 
 export default function Imagem() {
-  return cartazDoBrasil('og')
+  return imagemCartaz({ chamada: 'Domingo, 4 de outubro', titulo: 'Monte sua colinha de esquerda', atualizadoEm })
 }

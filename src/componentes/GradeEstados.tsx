@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { faixaInfo, FAIXAS, type Faixa } from '@/lib/faixas'
-import type { Uf } from '@/lib/dados'
+import type { Uf } from '@/lib/estados'
 
 // Posição [coluna, linha] de cada UF na grade: todos os estados com o mesmo peso visual.
 const POSICAO = {
@@ -14,42 +14,49 @@ const POSICAO = {
   RS: [2, 8],
 } satisfies Record<Uf, [number, number]>
 
-export function GradeEstados({ lideres }: { lideres: { uf: Uf; faixa: Faixa | null; nome: string | null }[] }) {
+type Celula = { uf: Uf; rotulo: string; faixa?: Faixa | null }
+
+export function GradeEstados({ celulas, ancora = '' }: { celulas: Celula[]; ancora?: string }) {
   return (
-    <div className="flex flex-col gap-3">
-      <div className="grid auto-rows-[46px] grid-cols-6 gap-1">
-        {lideres.map(({ uf, faixa, nome }) => {
-          const [coluna, linha] = POSICAO[uf]
-          const info = faixa ? faixaInfo[faixa] : null
-          return (
-            <Link
-              key={uf}
-              href={`/estado/${uf.toLowerCase()}`}
-              aria-label={`${uf}: lidera ${nome ?? 'sem pesquisa'}${info ? `, ${info.nome}` : ''}`}
-              style={{ gridColumn: coluna, gridRow: linha, background: info?.cor ?? 'transparent', color: info?.texto ?? '#2A0A0A' }}
-              className={`flex items-center justify-center font-display text-base transition-transform hover:scale-105 focus-visible:outline-2 focus-visible:outline-ouro ${info ? '' : 'border-2 border-dashed border-tinta/40'}`}
-            >
-              {uf}
-            </Link>
-          )
-        })}
-      </div>
-      <Legenda />
+    <div className="grid auto-rows-[48px] grid-cols-6 gap-1.5">
+      {celulas.map(({ uf, rotulo, faixa }) => {
+        const [coluna, linha] = POSICAO[uf]
+        const info = faixa ? faixaInfo[faixa] : null
+        const semDado = faixa === null
+        return (
+          <Link
+            key={uf}
+            href={`/estado/${uf.toLowerCase()}${ancora}`}
+            aria-label={rotulo}
+            style={{
+              gridColumn: coluna,
+              gridRow: linha,
+              background: info?.cor ?? (semDado ? 'transparent' : '#FFF4DC'),
+              color: info?.texto ?? '#2A0A0A',
+            }}
+            className={`flex items-center justify-center font-display text-lg transition-transform hover:scale-105 focus-visible:outline-4 focus-visible:outline-ouro ${
+              semDado ? 'border-2 border-dashed border-tinta/50' : info ? '' : 'border-2 border-tinta'
+            }`}
+          >
+            {uf}
+          </Link>
+        )
+      })}
     </div>
   )
 }
 
 export function Legenda() {
   return (
-    <ul className="flex flex-wrap justify-center gap-x-3.5 gap-y-2 text-[13px] font-medium">
+    <ul className="flex flex-wrap justify-center gap-x-3.5 gap-y-2 text-sm font-medium">
       {FAIXAS.map((faixa) => (
         <li key={faixa} className="flex items-center gap-1.5">
-          <span className="size-3.5" style={{ background: faixaInfo[faixa].cor }} />
+          <span className="size-4 border border-tinta" style={{ background: faixaInfo[faixa].cor }} />
           {faixaInfo[faixa].nome}
         </li>
       ))}
       <li className="flex items-center gap-1.5">
-        <span className="size-3.5 border-2 border-dashed border-tinta/40" />
+        <span className="size-4 border-2 border-dashed border-tinta/50" />
         Sem pesquisa válida
       </li>
     </ul>

@@ -1,0 +1,7520 @@
+{
+ "geradoEm": "2026-09-28T17:15:27.708Z",
+ "colinhas": {
+  "AC": {
+   "PSTU": {
+    "presidente": [
+     {
+      "numero": 16,
+      "nomeUrna": "HERTZ DIAS",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "PCB": {
+    "presidente": [
+     {
+      "numero": 21,
+      "nomeUrna": "EDMILSON COSTA",
+      "partido": "PCB",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 21,
+      "nomeUrna": "EUDO RAFFAEL",
+      "partido": "PCB",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "UP": {
+    "presidente": [
+     {
+      "numero": 80,
+      "nomeUrna": "SAMARA",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "PSOL": {
+    "presidente": [
+     {
+      "numero": 13,
+      "nomeUrna": "LULA",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "governador": [],
+    "senador": [
+     {
+      "numero": 500,
+      "nomeUrna": "PROFESSOR INACIO MOREIRA",
+      "partido": "PSOL",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 5000,
+       "nomeUrna": "RIZA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5011,
+       "nomeUrna": "CÉLIO ROCHA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5015,
+       "nomeUrna": "AMANDA SOUZA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5050,
+       "nomeUrna": "MARQUINHOS TCHUKAS",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 50000,
+       "nomeUrna": "MAGUILA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50123,
+       "nomeUrna": "MARIA OLINDA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50789,
+       "nomeUrna": "MARCOS UBER",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   }
+  },
+  "AL": {
+   "PSTU": {
+    "presidente": [
+     {
+      "numero": 16,
+      "nomeUrna": "HERTZ DIAS",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "PCB": {
+    "presidente": [
+     {
+      "numero": 21,
+      "nomeUrna": "EDMILSON COSTA",
+      "partido": "PCB",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "UP": {
+    "presidente": [
+     {
+      "numero": 80,
+      "nomeUrna": "SAMARA",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 80,
+      "nomeUrna": "LENILDA LUNA",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 800,
+      "nomeUrna": "ALEXANDRE FLEMING",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 80,
+     "candidatos": [
+      {
+       "numero": 8000,
+       "nomeUrna": "CHARLES PEREIRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 8080,
+       "nomeUrna": "LILI ANJOS",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 80,
+     "candidatos": [
+      {
+       "numero": 80123,
+       "nomeUrna": "DANIEL CALISTO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 80180,
+       "nomeUrna": "PROFESSORA MARIA JOSÉ",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   },
+   "PSOL": {
+    "presidente": [
+     {
+      "numero": 13,
+      "nomeUrna": "LULA",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   }
+  },
+  "AM": {
+   "PSTU": {
+    "presidente": [
+     {
+      "numero": 16,
+      "nomeUrna": "HERTZ DIAS",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 16,
+      "nomeUrna": "GILBERTO VASCONCELOS",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 161,
+      "nomeUrna": "EVANDRO DE OLIVEIRA",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 16,
+     "candidatos": [
+      {
+       "numero": 1600,
+       "nomeUrna": "ALEXANDRE SOLORZANO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 1616,
+       "nomeUrna": "AUXILIADORA CASTRO",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 16,
+     "candidatos": [
+      {
+       "numero": 16000,
+       "nomeUrna": "ENEIDA VASCONCELOS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 16016,
+       "nomeUrna": "TARCÍSIO LEÃO",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   },
+   "PCB": {
+    "presidente": [
+     {
+      "numero": 21,
+      "nomeUrna": "EDMILSON COSTA",
+      "partido": "PCB",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "UP": {
+    "presidente": [
+     {
+      "numero": 80,
+      "nomeUrna": "SAMARA",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "PSOL": {
+    "presidente": [
+     {
+      "numero": 13,
+      "nomeUrna": "LULA",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "governador": [],
+    "senador": [
+     {
+      "numero": 500,
+      "nomeUrna": "PROFESSORA EVANY",
+      "partido": "PSOL",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 5013,
+       "nomeUrna": "VAL SANTOS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5033,
+       "nomeUrna": "VALDECO TATTOO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5050,
+       "nomeUrna": "ÁLEX SOUSA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5055,
+       "nomeUrna": "NATALIA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5067,
+       "nomeUrna": "PROFESSOR WELTON ODA",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 50011,
+       "nomeUrna": "NETE MOURA PROTETORA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50100,
+       "nomeUrna": "JEAN PAZ",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50111,
+       "nomeUrna": "NELSON NOEL",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50123,
+       "nomeUrna": "JOSÉ DO NORTE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50310,
+       "nomeUrna": "GILMARA GUIMARÃES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50420,
+       "nomeUrna": "JANAÍNA ANJOS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50444,
+       "nomeUrna": "SENHOR LUIZ AGRICULTOR",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50555,
+       "nomeUrna": "AILTON FERNANDES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50777,
+       "nomeUrna": "WLADIMIR MEDEIROS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50999,
+       "nomeUrna": "MAURO COELHO",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   }
+  },
+  "AP": {
+   "PSTU": {
+    "presidente": [
+     {
+      "numero": 16,
+      "nomeUrna": "HERTZ DIAS",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 16,
+      "nomeUrna": "CARLOS CLEY",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "PCB": {
+    "presidente": [
+     {
+      "numero": 21,
+      "nomeUrna": "EDMILSON COSTA",
+      "partido": "PCB",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "UP": {
+    "presidente": [
+     {
+      "numero": 80,
+      "nomeUrna": "SAMARA",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "PSOL": {
+    "presidente": [
+     {
+      "numero": 13,
+      "nomeUrna": "LULA",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 44,
+      "nomeUrna": "CLÉCIO",
+      "partido": "UNIÃO",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 130,
+      "nomeUrna": "RANDOLFE",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     },
+     {
+      "numero": 444,
+      "nomeUrna": "ALLINY SERRÃO",
+      "partido": "UNIÃO",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 5013,
+       "nomeUrna": "RAMONA MATARAZZO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5050,
+       "nomeUrna": "ANDREW COSTA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5080,
+       "nomeUrna": "PROF. GIL BARBOSA",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   }
+  },
+  "BA": {
+   "PSTU": {
+    "presidente": [
+     {
+      "numero": 16,
+      "nomeUrna": "HERTZ DIAS",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "PCB": {
+    "presidente": [
+     {
+      "numero": 21,
+      "nomeUrna": "EDMILSON COSTA",
+      "partido": "PCB",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "UP": {
+    "presidente": [
+     {
+      "numero": 80,
+      "nomeUrna": "SAMARA",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 80,
+      "nomeUrna": "AROLDO FELIX",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 800,
+      "nomeUrna": "GREGORIO GOULD",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 80,
+     "candidatos": [
+      {
+       "numero": 8000,
+       "nomeUrna": "GUIZIN",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 8080,
+       "nomeUrna": "GIOVANA FERREIRA",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 80,
+     "candidatos": [
+      {
+       "numero": 80000,
+       "nomeUrna": "LOUISE FERREIRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 80123,
+       "nomeUrna": "WILLIAN SANTOS",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   },
+   "PSOL": {
+    "presidente": [
+     {
+      "numero": 13,
+      "nomeUrna": "LULA",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 50,
+      "nomeUrna": "RONALDO MANSUR",
+      "partido": "PSOL",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 500,
+      "nomeUrna": "PROFESSORA DELLIANA",
+      "partido": "PSOL",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 5000,
+       "nomeUrna": "TATI DA MÃEDATA COLETIVA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5003,
+       "nomeUrna": "MARCELA PEREIRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5005,
+       "nomeUrna": "MAZO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5007,
+       "nomeUrna": "MÁRCIA PITTA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5009,
+       "nomeUrna": "WESLEY MENDES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5010,
+       "nomeUrna": "PROFESSORA ALINE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5011,
+       "nomeUrna": "CARLINHOS CAPOEIRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5012,
+       "nomeUrna": "SANDRO OLIVEIRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5013,
+       "nomeUrna": "PASTOR SERGIO EMILIO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5015,
+       "nomeUrna": "SALMO MACÁRIO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5018,
+       "nomeUrna": "ELZE FACCHINETTI",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5020,
+       "nomeUrna": "PROFESSOR REGINALDO ALVES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5023,
+       "nomeUrna": "MAKRISI",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5026,
+       "nomeUrna": "GERUZA CHÉ",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5027,
+       "nomeUrna": "CECILIA COSTA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5033,
+       "nomeUrna": "SERGIO LACERDA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5042,
+       "nomeUrna": "KADU SILVA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5050,
+       "nomeUrna": "PROFº HAMILTON ASSIS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5051,
+       "nomeUrna": "VALTER MOACIR",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5054,
+       "nomeUrna": "WANDERSON PIMENTA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5055,
+       "nomeUrna": "ELIETE PARAGUASSU",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5060,
+       "nomeUrna": "MARCIEL",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5066,
+       "nomeUrna": "MÃE BERNADETE DE OXOSSI",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5070,
+       "nomeUrna": "EDMO DEL REI LIMA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5071,
+       "nomeUrna": "MARCOS MONGA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5073,
+       "nomeUrna": "SOIIS RABELO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5077,
+       "nomeUrna": "SENHORA MAR",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5080,
+       "nomeUrna": "GABRIELLA BORGES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5088,
+       "nomeUrna": "TUKUMÃ PATAXÓ",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 50000,
+       "nomeUrna": "KOCK FEREGUETI",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50005,
+       "nomeUrna": "MÁRIO DINIZ",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50008,
+       "nomeUrna": "SIMONE MENDES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50010,
+       "nomeUrna": "PAULO AQUINO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50011,
+       "nomeUrna": "TELMA AGENTE DE SAÚDE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50018,
+       "nomeUrna": "RHADA VITÓRIA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50020,
+       "nomeUrna": "RAIMUNDO CALIXTO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50030,
+       "nomeUrna": "GOLD CBX",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50050,
+       "nomeUrna": "JHONATAS MONTEIRO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50071,
+       "nomeUrna": "DIEGO ANTUNES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50100,
+       "nomeUrna": "MAGALHÃES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50111,
+       "nomeUrna": "GILMAR OLIVEIRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50123,
+       "nomeUrna": "CATARINO PINTO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50150,
+       "nomeUrna": "HILTON COELHO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50180,
+       "nomeUrna": "ADRIANA BRASIL",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50200,
+       "nomeUrna": "CARMEN DO VOZES DA BAHIA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50222,
+       "nomeUrna": "JESNÁRIA ELAS POR ELAS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50259,
+       "nomeUrna": "MANOEL BARRETO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50277,
+       "nomeUrna": "FERRARO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50300,
+       "nomeUrna": "MARCIO LOUREIRO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50321,
+       "nomeUrna": "PROFº OSANÁ MACÊDO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50333,
+       "nomeUrna": "DR JELSON BARBOSA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50336,
+       "nomeUrna": "RICARDO AGUIAR PROTETOR",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50410,
+       "nomeUrna": "POETA EMERSON BULCÃO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50437,
+       "nomeUrna": "LORENZO ALMEIDA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50500,
+       "nomeUrna": "KLEBER  ROSA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50505,
+       "nomeUrna": "ROGERIO BARRETO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50555,
+       "nomeUrna": "MIWKY",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50600,
+       "nomeUrna": "ALMIR CESTÃO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50650,
+       "nomeUrna": "CARLOS GUERRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50700,
+       "nomeUrna": "PROF° ANTÔNIO CAFÉ",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50777,
+       "nomeUrna": "ANTÔNIO RIBEIRO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50789,
+       "nomeUrna": "CONCEIÇÃO BARRETO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50800,
+       "nomeUrna": "PALOMA MARTINEZ",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50850,
+       "nomeUrna": "#TO COM LORA",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   }
+  },
+  "CE": {
+   "PSTU": {
+    "presidente": [
+     {
+      "numero": 16,
+      "nomeUrna": "HERTZ DIAS",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 16,
+      "nomeUrna": "ZÉ BATISTA",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 162,
+      "nomeUrna": "REGINALDO",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": 16,
+     "candidatos": [
+      {
+       "numero": 16000,
+       "nomeUrna": "RAIMUNDO BANCADA OPERÁRIA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 16132,
+       "nomeUrna": "CIBELE",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   },
+   "PCB": {
+    "presidente": [
+     {
+      "numero": 21,
+      "nomeUrna": "EDMILSON COSTA",
+      "partido": "PCB",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "UP": {
+    "presidente": [
+     {
+      "numero": 80,
+      "nomeUrna": "SAMARA",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 80,
+      "nomeUrna": "SERLEY LEAL",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 800,
+      "nomeUrna": "CATARINA MATOS",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 80,
+     "candidatos": [
+      {
+       "numero": 8000,
+       "nomeUrna": "HAROLDO NETO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 8080,
+       "nomeUrna": "SUED CARVALHO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 8088,
+       "nomeUrna": "LUCAS MONTE",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 80,
+     "candidatos": [
+      {
+       "numero": 80000,
+       "nomeUrna": "OTÁVIO MIRANDA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 80180,
+       "nomeUrna": "DIANNE GLEBIA",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   },
+   "PSOL": {
+    "presidente": [
+     {
+      "numero": 13,
+      "nomeUrna": "LULA",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 13,
+      "nomeUrna": "ELMANO DE FREITAS",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 400,
+      "nomeUrna": "CID GOMES",
+      "partido": "PSB",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     },
+     {
+      "numero": 180,
+      "nomeUrna": "LUIZIANNE",
+      "partido": "REDE",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 5000,
+       "nomeUrna": "ANGELA ABUK",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5001,
+       "nomeUrna": "PROF. VALMIR ARRUDA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5005,
+       "nomeUrna": "ANNA KARINA VOZES DA EDUCAÇÃO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5010,
+       "nomeUrna": "EXPEDITO GUEDES DITO POPULAR",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5012,
+       "nomeUrna": "DAUYZIO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5013,
+       "nomeUrna": "LORENA MOURA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5018,
+       "nomeUrna": "PROFESSOR JARIR",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5024,
+       "nomeUrna": "NAYLA SILVA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5032,
+       "nomeUrna": "BRUNA SILVA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5050,
+       "nomeUrna": "RENATO ROSENO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5055,
+       "nomeUrna": "ANDRÉ COMARU",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5077,
+       "nomeUrna": "ADRIANA GERÔNIMO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5078,
+       "nomeUrna": "PEDRO WILSON",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5099,
+       "nomeUrna": "PAI GERSON COLETIVO D'TERREIRO",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 50000,
+       "nomeUrna": "DOUTOR DAMASCENO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50007,
+       "nomeUrna": "PROF. FABIANO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50009,
+       "nomeUrna": "PIPOCA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50013,
+       "nomeUrna": "LEO SURICATE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50050,
+       "nomeUrna": "JÚLIA RAQUEL",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50067,
+       "nomeUrna": "CARLA RODRIGUES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50100,
+       "nomeUrna": "JERÔNIMO GONÇALVES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50111,
+       "nomeUrna": "CICERO LIMA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50113,
+       "nomeUrna": "NESTOR BEZERRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50123,
+       "nomeUrna": "SANE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50180,
+       "nomeUrna": "PROFESSORA ZULEIDE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50333,
+       "nomeUrna": "ADÃO FERNANDES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50420,
+       "nomeUrna": "KILDARY FREITAS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50500,
+       "nomeUrna": "AILTON LOPES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50555,
+       "nomeUrna": "GABRIEL BIOLOGIA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50777,
+       "nomeUrna": "GLAUCIA LINHARES",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   }
+  },
+  "DF": {
+   "PSTU": {
+    "presidente": [
+     {
+      "numero": 16,
+      "nomeUrna": "HERTZ DIAS",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 16,
+      "nomeUrna": "PROFESSOR ROBSON",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 161,
+      "nomeUrna": "ZANATA",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "PCB": {
+    "presidente": [
+     {
+      "numero": 21,
+      "nomeUrna": "EDMILSON COSTA",
+      "partido": "PCB",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "UP": {
+    "presidente": [
+     {
+      "numero": 80,
+      "nomeUrna": "SAMARA",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 80,
+      "nomeUrna": "PROFESSORA SAMARA MINEIRO",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 800,
+      "nomeUrna": "PROFESSOR GUILHERME AMORIM",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 80,
+     "candidatos": [
+      {
+       "numero": 8000,
+       "nomeUrna": "MILENA DO MLB",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 8080,
+       "nomeUrna": "DURVAL",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 80,
+     "candidatos": [
+      {
+       "numero": 80110,
+       "nomeUrna": "BÁRBARA CALISTA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 80123,
+       "nomeUrna": "CHRISTIAN RODRIGUES SENA",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   },
+   "PSOL": {
+    "presidente": [
+     {
+      "numero": 13,
+      "nomeUrna": "LULA",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 13,
+      "nomeUrna": "LEANDRO GRASS",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 123,
+      "nomeUrna": "LEILA DO VÔLEI",
+      "partido": "PDT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     },
+     {
+      "numero": 131,
+      "nomeUrna": "ERIKA KOKAY",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 5000,
+       "nomeUrna": "NEIVA LOPES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5001,
+       "nomeUrna": "ADRIANO FIÚZA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5005,
+       "nomeUrna": "LUDMILA SUAID",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5040,
+       "nomeUrna": "DRA RAQUEL FERREIRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5050,
+       "nomeUrna": "FÁBIO FELIX",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5080,
+       "nomeUrna": "ENFERMEIRA KARINE",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 50000,
+       "nomeUrna": "MICHEL PLATINI",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50020,
+       "nomeUrna": "PROFESSORA RAY",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50050,
+       "nomeUrna": "PATTY RAMIRO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50060,
+       "nomeUrna": "MANO LIMA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50100,
+       "nomeUrna": "MAX MACIEL",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50123,
+       "nomeUrna": "KEKA BAGNO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50133,
+       "nomeUrna": "EDISON CEILÂNDIA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50180,
+       "nomeUrna": "NATTY VIEIRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50200,
+       "nomeUrna": "PIKINEIA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50257,
+       "nomeUrna": "CONCEIÇÃO DA AGRICULTURA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50321,
+       "nomeUrna": "PAULO CÉSAR (PC)",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50444,
+       "nomeUrna": "ABEL SANTOS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50500,
+       "nomeUrna": "DRA. NATÁLIA MATIAS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50511,
+       "nomeUrna": "MOUSTAFA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50700,
+       "nomeUrna": "MADU K",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50777,
+       "nomeUrna": "ROMÁRIO LEAL",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   }
+  },
+  "ES": {
+   "PSTU": {
+    "presidente": [
+     {
+      "numero": 16,
+      "nomeUrna": "HERTZ DIAS",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "PCB": {
+    "presidente": [
+     {
+      "numero": 21,
+      "nomeUrna": "EDMILSON COSTA",
+      "partido": "PCB",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "UP": {
+    "presidente": [
+     {
+      "numero": 80,
+      "nomeUrna": "SAMARA",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 80,
+      "nomeUrna": "RAFAEL DEMUNER",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": 80,
+     "candidatos": [
+      {
+       "numero": 8000,
+       "nomeUrna": "GABRIEL COSTA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 8080,
+       "nomeUrna": "LUISA KIRCHMAYER",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "PSOL": {
+    "presidente": [
+     {
+      "numero": 13,
+      "nomeUrna": "LULA",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "governador": [],
+    "senador": [
+     {
+      "numero": 500,
+      "nomeUrna": "PROFESSOR FABIAN",
+      "partido": "PSOL",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 5000,
+       "nomeUrna": "DR. FLÁVIO LAZZARINI",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5011,
+       "nomeUrna": "GILBERTINHO CAMPOS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5013,
+       "nomeUrna": "ANA PAULA ROCHA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5050,
+       "nomeUrna": "TUANNE ALMEIDA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5077,
+       "nomeUrna": "RENAN ALMEIDA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5080,
+       "nomeUrna": "PROF. VINÍCIUS MACHADO",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 50000,
+       "nomeUrna": "RENATA MARQUESINI",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50050,
+       "nomeUrna": "SHARLENE AMARO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50100,
+       "nomeUrna": "LUIZ BRICALLI",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50123,
+       "nomeUrna": "DR. THIAGO PEIXOTO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50180,
+       "nomeUrna": "CAMILA VALADÃO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50192,
+       "nomeUrna": "MICHELLE VIANA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50316,
+       "nomeUrna": "CLÁUDILE SABINO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50456,
+       "nomeUrna": "FRANCISCO LERA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50500,
+       "nomeUrna": "DR. LUAN LESSA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50555,
+       "nomeUrna": "EDMAR SANTOS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50888,
+       "nomeUrna": "PROFESSOR ÉRITON BERÇACO",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   }
+  },
+  "GO": {
+   "PSTU": {
+    "presidente": [
+     {
+      "numero": 16,
+      "nomeUrna": "HERTZ DIAS",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "PCB": {
+    "presidente": [
+     {
+      "numero": 21,
+      "nomeUrna": "EDMILSON COSTA",
+      "partido": "PCB",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "UP": {
+    "presidente": [
+     {
+      "numero": 80,
+      "nomeUrna": "SAMARA",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 80,
+      "nomeUrna": "LUCIANA AMORIM",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 800,
+      "nomeUrna": "GUILHERME DARQUES",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 80,
+     "candidatos": [
+      {
+       "numero": 8000,
+       "nomeUrna": "FAUSTO ANDRÉ",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 8080,
+       "nomeUrna": "EMILY ELOÁ",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 80,
+     "candidatos": [
+      {
+       "numero": 80000,
+       "nomeUrna": "PROF. PEDRO AUGUSTO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 80180,
+       "nomeUrna": "LARISSA MOURA",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   },
+   "PSOL": {
+    "presidente": [
+     {
+      "numero": 13,
+      "nomeUrna": "LULA",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 13,
+      "nomeUrna": "LUIS CESAR BUENO",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 500,
+      "nomeUrna": "CINTIA DIAS",
+      "partido": "PSOL",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 5000,
+       "nomeUrna": "FERNANDO VIANA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5005,
+       "nomeUrna": "ANNA CLAUDIA DIAS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5013,
+       "nomeUrna": "THAÍS CASTRO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5015,
+       "nomeUrna": "MAGNO CONSTANTINO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5022,
+       "nomeUrna": "XAVIER",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5024,
+       "nomeUrna": "BARBARA BOMBOM",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5041,
+       "nomeUrna": "PROFESSORA CARMEM",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5050,
+       "nomeUrna": "HUMBERTO CHAVES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5055,
+       "nomeUrna": "MARIA VERÔNICA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5062,
+       "nomeUrna": "VICTOR VERDE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5076,
+       "nomeUrna": "SULAMITA SANTOS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5077,
+       "nomeUrna": "FONTES LUCENA",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 50013,
+       "nomeUrna": "BRUNO GG",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50017,
+       "nomeUrna": "GERALDO DO BAIRRO GOIÁ",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50027,
+       "nomeUrna": "PROFESSORA MIRANDA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50050,
+       "nomeUrna": "PROFESSOR ALEX",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50100,
+       "nomeUrna": "MATEUS MOURA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50101,
+       "nomeUrna": "EDMILSON CAPELÃO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50123,
+       "nomeUrna": "SIMONE DA ENFERMAGEM",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50193,
+       "nomeUrna": "SARGENTO ROCHA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50345,
+       "nomeUrna": "MANDATA COLETIVA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50400,
+       "nomeUrna": "AIRTON COELHO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50444,
+       "nomeUrna": "ALEIDO AFIUNE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50500,
+       "nomeUrna": "AMANDA COSTA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50503,
+       "nomeUrna": "ANA MARIA DA SAÚDE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50777,
+       "nomeUrna": "ENIO BRITO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50990,
+       "nomeUrna": "THEFI AMÂNCIO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50999,
+       "nomeUrna": "ADONIAS DOURADO",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   }
+  },
+  "MA": {
+   "PSTU": {
+    "presidente": [
+     {
+      "numero": 16,
+      "nomeUrna": "HERTZ DIAS",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 16,
+      "nomeUrna": "SAULO ARCANGELI",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 160,
+      "nomeUrna": "WILSON LEITE",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 16,
+     "candidatos": [
+      {
+       "numero": 1600,
+       "nomeUrna": "IAGO IGUI - BANCADA HIP HOP",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 1616,
+       "nomeUrna": "MARINA - COLETIVO DAS PRETAS",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "PCB": {
+    "presidente": [
+     {
+      "numero": 21,
+      "nomeUrna": "EDMILSON COSTA",
+      "partido": "PCB",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 21,
+      "nomeUrna": "REGINALDO LIMA",
+      "partido": "PCB",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 212,
+      "nomeUrna": "RAIMUNDO MOREIRA",
+      "partido": "PCB",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": 21,
+     "candidatos": [
+      {
+       "numero": 21000,
+       "nomeUrna": "CAETANO COSTA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 21123,
+       "nomeUrna": "ROMILDA",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   },
+   "UP": {
+    "presidente": [
+     {
+      "numero": 80,
+      "nomeUrna": "SAMARA",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": 80,
+     "candidatos": [
+      {
+       "numero": 8000,
+       "nomeUrna": "AFONSO SODRÉ",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 8080,
+       "nomeUrna": "ÁGATA TREBI",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "PSOL": {
+    "presidente": [
+     {
+      "numero": 13,
+      "nomeUrna": "LULA",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 13,
+      "nomeUrna": "FELIPE CAMARÃO",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 500,
+      "nomeUrna": "ENILTON RODRIGUES",
+      "partido": "PSOL",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 5000,
+       "nomeUrna": "MAGNO GUAJAJARA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5005,
+       "nomeUrna": "CANTORA ALECIANE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5010,
+       "nomeUrna": "PROFESSORA ESMERALDA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5013,
+       "nomeUrna": "CHAGUINHA DE MANGAS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5014,
+       "nomeUrna": "EDNALDO CABEÇA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5016,
+       "nomeUrna": "ALUÍZIO MELO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5022,
+       "nomeUrna": "PROF. ARIMATEA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5033,
+       "nomeUrna": "PROF PAULO COELHO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5050,
+       "nomeUrna": "ANTONIA CARIONGO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5055,
+       "nomeUrna": "PROFESSOR EDMILSON",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5056,
+       "nomeUrna": "LINDENBERG BRAGA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5070,
+       "nomeUrna": "THAYRES PEREIRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5077,
+       "nomeUrna": "SAMUEL EVANGELISTA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5090,
+       "nomeUrna": "JOSÉ ARMANDO",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 50000,
+       "nomeUrna": "NONATO MORAES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50005,
+       "nomeUrna": "MÁRCIA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50012,
+       "nomeUrna": "PROFESSOR SIKEIRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50033,
+       "nomeUrna": "ALAN ROCHA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50080,
+       "nomeUrna": "PROF. LISBOA TOTE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50100,
+       "nomeUrna": "FRANKLIN",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50111,
+       "nomeUrna": "CHAGAS CUNHA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50123,
+       "nomeUrna": "LILCIOMAR DA AUTOESCOLA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50131,
+       "nomeUrna": "NERIVALDO MACHADO MONTEIRO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50150,
+       "nomeUrna": "MAGÃO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50180,
+       "nomeUrna": "SARA FONTINELE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50205,
+       "nomeUrna": "CHRIS DO PRIMAVERA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50222,
+       "nomeUrna": "HERBERT POETA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50333,
+       "nomeUrna": "PEDRA CELESTINA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50420,
+       "nomeUrna": "GLEICK MAIA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50444,
+       "nomeUrna": "GILVÂNIA PADILHA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50456,
+       "nomeUrna": "SILVANETE REI DO GADO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50500,
+       "nomeUrna": "CLAUDIO LOPEZ",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50501,
+       "nomeUrna": "BEATRIZ LIMA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50505,
+       "nomeUrna": "HEBER CAVALCANTE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50555,
+       "nomeUrna": "ROMEU PINTO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50777,
+       "nomeUrna": "MARCIA CONTADORA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50797,
+       "nomeUrna": "LENE CARDOSO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50888,
+       "nomeUrna": "MAGUINO CUTRIM",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   }
+  },
+  "MG": {
+   "PSTU": {
+    "presidente": [
+     {
+      "numero": 16,
+      "nomeUrna": "HERTZ DIAS",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 16,
+      "nomeUrna": "RAFAEL DUDA",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 160,
+      "nomeUrna": "JORDANO METALÚRGICO",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     },
+     {
+      "numero": 161,
+      "nomeUrna": "VICTÓRIA MELLO VIC",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 16,
+     "candidatos": [
+      {
+       "numero": 1600,
+       "nomeUrna": "RAIR ANÍCIO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 1616,
+       "nomeUrna": "VALDIR BI",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 1666,
+       "nomeUrna": "FLÁVIA SILVESTRE",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 16,
+     "candidatos": [
+      {
+       "numero": 16000,
+       "nomeUrna": "EDSON NEGÃO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 16016,
+       "nomeUrna": "ALICE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 16123,
+       "nomeUrna": "GUSTAVO OLÍMPIO",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   },
+   "PCB": {
+    "presidente": [
+     {
+      "numero": 21,
+      "nomeUrna": "EDMILSON COSTA",
+      "partido": "PCB",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 21,
+      "nomeUrna": "PROFESSOR TÚLIO LOPES",
+      "partido": "PCB",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": 21,
+     "candidatos": [
+      {
+       "numero": 21000,
+       "nomeUrna": "PROFESSOR MÁRIO MARIANO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 21113,
+       "nomeUrna": "ZULU",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 21180,
+       "nomeUrna": "JÉSSICA CARVALHO",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   },
+   "UP": {
+    "presidente": [
+     {
+      "numero": 80,
+      "nomeUrna": "SAMARA",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 80,
+      "nomeUrna": "INDIRA XAVIER",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 800,
+      "nomeUrna": "FIDÉLIS ALCÂNTARA",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     },
+     {
+      "numero": 808,
+      "nomeUrna": "ANA LUIZA DO MLB",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 80,
+     "candidatos": [
+      {
+       "numero": 8000,
+       "nomeUrna": "HELENA NARA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 8008,
+       "nomeUrna": "RAFAEL FUMERO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 8080,
+       "nomeUrna": "EDINHO DO MLB",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 80,
+     "candidatos": [
+      {
+       "numero": 80000,
+       "nomeUrna": "IRIS RAQUEL CONTRA A MINERAÇÃO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 80123,
+       "nomeUrna": "DANIEL TITO",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   },
+   "PSOL": {
+    "presidente": [
+     {
+      "numero": 13,
+      "nomeUrna": "LULA",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 13,
+      "nomeUrna": "PATRUS ANANIAS",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 500,
+      "nomeUrna": "ÁUREA CAROLINA",
+      "partido": "PSOL",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 5000,
+       "nomeUrna": "MARIA DA CONSOLAÇÃO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5005,
+       "nomeUrna": "LUCAS MORTIMER",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5007,
+       "nomeUrna": "FELIPPE BRANCO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5010,
+       "nomeUrna": "CRIS NUNES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5012,
+       "nomeUrna": "PROF. NELSON",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5015,
+       "nomeUrna": "IORRANA JULLYCE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5018,
+       "nomeUrna": "CHIQUINHO SERTANEJO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5020,
+       "nomeUrna": "EVELLYN LOREN",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5030,
+       "nomeUrna": "DENISE TRINDADE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5037,
+       "nomeUrna": "JU",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5042,
+       "nomeUrna": "DÁRIO 4E20",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5044,
+       "nomeUrna": "LUCAS SIDRACH DO VAT",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5050,
+       "nomeUrna": "DUDA SALABERT",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5051,
+       "nomeUrna": "FAGUNDES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5054,
+       "nomeUrna": "ALINE LOPES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5055,
+       "nomeUrna": "ANTÔNIO CARLOS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5077,
+       "nomeUrna": "PASTORA PATRÍCIA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5078,
+       "nomeUrna": "ANGELO COSTA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5088,
+       "nomeUrna": "CÉLIA XAKRIABÁ",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5099,
+       "nomeUrna": "FERNANNDO AUGUSTO",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 50000,
+       "nomeUrna": "MALLU ALMEIDA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50005,
+       "nomeUrna": "LEANDRO CÉSAR",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50036,
+       "nomeUrna": "PROFESSORA LUCIANA MATIAS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50050,
+       "nomeUrna": "GLEISON PEGO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50099,
+       "nomeUrna": "IZA LOURENÇA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50100,
+       "nomeUrna": "BRENDA MARQUES PENA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50111,
+       "nomeUrna": "JUHLIA SANTOS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50123,
+       "nomeUrna": "PROFESSORA THAÍS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50150,
+       "nomeUrna": "CLÁUDIO DO JORNAL",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50180,
+       "nomeUrna": "MARINA CAMPOS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50200,
+       "nomeUrna": "ADJAILSON SEVERO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50222,
+       "nomeUrna": "DU EVANGELISTA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50231,
+       "nomeUrna": "TI MIGUÉ DA BARBEARIA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50234,
+       "nomeUrna": "EDMARA APARECIDA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50321,
+       "nomeUrna": "FELIPE GOMES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50333,
+       "nomeUrna": "SHIRLEY KRENAK",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50350,
+       "nomeUrna": "PROFESSOR JANAEL SARGENTO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50369,
+       "nomeUrna": "MAGNO FRANCO PAYACAN",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50452,
+       "nomeUrna": "VILSON O CATADOR DE SONHOS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50500,
+       "nomeUrna": "CAROL CALDEIRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50550,
+       "nomeUrna": "EDINHO CARIOCA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50555,
+       "nomeUrna": "MILTÃO DO MENEZES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50777,
+       "nomeUrna": "DANILO KORVO",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   }
+  },
+  "MS": {
+   "PSTU": {
+    "presidente": [
+     {
+      "numero": 16,
+      "nomeUrna": "HERTZ DIAS",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "PCB": {
+    "presidente": [
+     {
+      "numero": 21,
+      "nomeUrna": "EDMILSON COSTA",
+      "partido": "PCB",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "UP": {
+    "presidente": [
+     {
+      "numero": 80,
+      "nomeUrna": "SAMARA",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "PSOL": {
+    "presidente": [
+     {
+      "numero": 13,
+      "nomeUrna": "LULA",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 50,
+      "nomeUrna": "LUCIEN REZENDE",
+      "partido": "PSOL",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 500,
+      "nomeUrna": "BETO DO MOVIMENTO",
+      "partido": "PSOL",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 5000,
+       "nomeUrna": "CLAUDIA TELES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5013,
+       "nomeUrna": "PROF. ANISIO GUATÓ",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5050,
+       "nomeUrna": "FÁTIMA SOUZA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5051,
+       "nomeUrna": "FÁBIO RODRIGUES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5077,
+       "nomeUrna": "LAHUANNY OLIVEIRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5080,
+       "nomeUrna": "CABRAL",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5088,
+       "nomeUrna": "GLEYCIELLI NONATO GUATÓ",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 50000,
+       "nomeUrna": "JYENIFFER MULLER",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50001,
+       "nomeUrna": "RINALDO PRASSA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50050,
+       "nomeUrna": "GILVAN FERNANDES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50123,
+       "nomeUrna": "LEANDRO CAFE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50190,
+       "nomeUrna": "JEAN CARLOS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50300,
+       "nomeUrna": "BIRA MECÂNICO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50333,
+       "nomeUrna": "MARGILA LEAL",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50555,
+       "nomeUrna": "KELLI DA SEGURANÇA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50651,
+       "nomeUrna": "FABIANO DUARTE",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   }
+  },
+  "MT": {
+   "PSTU": {
+    "presidente": [
+     {
+      "numero": 16,
+      "nomeUrna": "HERTZ DIAS",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "PCB": {
+    "presidente": [
+     {
+      "numero": 21,
+      "nomeUrna": "EDMILSON COSTA",
+      "partido": "PCB",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "UP": {
+    "presidente": [
+     {
+      "numero": 80,
+      "nomeUrna": "SAMARA",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "PSOL": {
+    "presidente": [
+     {
+      "numero": 13,
+      "nomeUrna": "LULA",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 55,
+      "nomeUrna": "DOUTORA NATASHA",
+      "partido": "PSD",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 400,
+      "nomeUrna": "PEDRO TAQUES",
+      "partido": "PSB",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     },
+     {
+      "numero": 555,
+      "nomeUrna": "FÁVARO",
+      "partido": "PSD",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 5000,
+       "nomeUrna": "ADRIANA LIARIO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5013,
+       "nomeUrna": "MILTÃO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5022,
+       "nomeUrna": "PASTOR JERONIMO GOMES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5050,
+       "nomeUrna": "JOSÉ ROBERTO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5070,
+       "nomeUrna": "MÃE KAKÁ GARCIA DO PSOL",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 50010,
+       "nomeUrna": "ROGÉRIO MESTRINHO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50011,
+       "nomeUrna": "ANTÔNIO DUARTE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50050,
+       "nomeUrna": "CAROLINA GUIMARÃES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50100,
+       "nomeUrna": "JANAÍNA LIMA APRESENTADORA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50123,
+       "nomeUrna": "RUBENS CANTUÁRIO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50222,
+       "nomeUrna": "PAULO FREIRE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50255,
+       "nomeUrna": "ISAAC ANTÔNIO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50275,
+       "nomeUrna": "GILBERTO LOPES FILHO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50333,
+       "nomeUrna": "JENEFFER CAMPOS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50555,
+       "nomeUrna": "DUÍCO DA MANGA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50629,
+       "nomeUrna": "FRACARO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50630,
+       "nomeUrna": "PEZÃO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50777,
+       "nomeUrna": "FELÍCIA DIAS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50888,
+       "nomeUrna": "BODINHO",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   }
+  },
+  "PA": {
+   "PSTU": {
+    "presidente": [
+     {
+      "numero": 16,
+      "nomeUrna": "HERTZ DIAS",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 16,
+      "nomeUrna": "WELL MACEDO",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": 16,
+     "candidatos": [
+      {
+       "numero": 1600,
+       "nomeUrna": "EDUARDO RODRIGUES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 1616,
+       "nomeUrna": "ACÁCIO MOREIRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 1660,
+       "nomeUrna": "MARIZA SANTOS",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 16,
+     "candidatos": [
+      {
+       "numero": 16000,
+       "nomeUrna": "AIRTON MORAES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 16123,
+       "nomeUrna": "SOCORRO GOMES",
+       "situacao": "sub judice (indeferido com recurso)"
+      }
+     ]
+    }
+   },
+   "PCB": {
+    "presidente": [
+     {
+      "numero": 21,
+      "nomeUrna": "EDMILSON COSTA",
+      "partido": "PCB",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "UP": {
+    "presidente": [
+     {
+      "numero": 80,
+      "nomeUrna": "SAMARA",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 80,
+      "nomeUrna": "GAL LEITE",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 800,
+      "nomeUrna": "FERNANDA LOPES",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 80,
+     "candidatos": [
+      {
+       "numero": 8000,
+       "nomeUrna": "HENRIQUE MACIEL",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 8080,
+       "nomeUrna": "BRUNA FREIRE",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 80,
+     "candidatos": [
+      {
+       "numero": 80000,
+       "nomeUrna": "MARCOS JOBSON",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 80180,
+       "nomeUrna": "MARIA SANTOS",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   },
+   "PSOL": {
+    "presidente": [
+     {
+      "numero": 13,
+      "nomeUrna": "LULA",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 50,
+      "nomeUrna": "ARACELI",
+      "partido": "PSOL",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 500,
+      "nomeUrna": "CONTI",
+      "partido": "PSOL",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     },
+     {
+      "numero": 505,
+      "nomeUrna": "GIZELLE FREITAS",
+      "partido": "PSOL",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 5000,
+       "nomeUrna": "KARIME",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5010,
+       "nomeUrna": "PROFESSOR CLEBE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5013,
+       "nomeUrna": "LEILA PALHETA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5016,
+       "nomeUrna": "RENATO SARAIVA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5020,
+       "nomeUrna": "PROFº ANDRÉ SILVA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5033,
+       "nomeUrna": "ENFERMEIRA NAZARÉ",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5050,
+       "nomeUrna": "VIVI REIS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5051,
+       "nomeUrna": "JULIO DE BRAGANÇA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5055,
+       "nomeUrna": "CAMILA PAMPLONA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5060,
+       "nomeUrna": "PROF. DR. PORTELA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5070,
+       "nomeUrna": "NICOLAS - BANCADA TRANSFORMAR",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5089,
+       "nomeUrna": "MANU LEOA",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 50010,
+       "nomeUrna": "RAILANY ALENCAR",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50051,
+       "nomeUrna": "SIMONE CAVALCANTE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50100,
+       "nomeUrna": "PROFESSOR AUGUSTO CEZAR",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50123,
+       "nomeUrna": "LÍVIA DUARTE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50299,
+       "nomeUrna": "JC DO APP",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50321,
+       "nomeUrna": "AURICELIA ARAPIUN",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50333,
+       "nomeUrna": "JOÃO DE ANANINDEUA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50500,
+       "nomeUrna": "BETO ANDRADE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50555,
+       "nomeUrna": "MARINOR BRITO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50562,
+       "nomeUrna": "MAX DO KARATÊ",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50777,
+       "nomeUrna": "FERNANDO CABANO (PROF LOBATO)",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   }
+  },
+  "PB": {
+   "PSTU": {
+    "presidente": [
+     {
+      "numero": 16,
+      "nomeUrna": "HERTZ DIAS",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "PCB": {
+    "presidente": [
+     {
+      "numero": 21,
+      "nomeUrna": "EDMILSON COSTA",
+      "partido": "PCB",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "UP": {
+    "presidente": [
+     {
+      "numero": 80,
+      "nomeUrna": "SAMARA",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 80,
+      "nomeUrna": "YURI EZEQUIEL",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 800,
+      "nomeUrna": "ROSILENE SANTANA",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     },
+     {
+      "numero": 801,
+      "nomeUrna": "JOÃO BATISTA",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 80,
+     "candidatos": [
+      {
+       "numero": 8000,
+       "nomeUrna": "JONAS SOUZA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 8080,
+       "nomeUrna": "ISABELE DO CORRENTEZA",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 80,
+     "candidatos": [
+      {
+       "numero": 80123,
+       "nomeUrna": "JOZIVAN ANTERO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 80180,
+       "nomeUrna": "VITORIA OHARA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 80800,
+       "nomeUrna": "PROF. CLEBER",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   },
+   "PSOL": {
+    "presidente": [
+     {
+      "numero": 13,
+      "nomeUrna": "LULA",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 5000,
+       "nomeUrna": "SOUSA NETO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5013,
+       "nomeUrna": "TATY PARAÍBA FEMININA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5050,
+       "nomeUrna": "ANDRÉA MIRANDA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5055,
+       "nomeUrna": "EDINHO MENDES",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 50111,
+       "nomeUrna": "RAIMUNDO AGENTE DE SAÚDE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50123,
+       "nomeUrna": "NEIDINHA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50150,
+       "nomeUrna": "ULISSES BARBOSA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50333,
+       "nomeUrna": "KALINE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50777,
+       "nomeUrna": "ZÉ DE DUNCO",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   }
+  },
+  "PE": {
+   "PSTU": {
+    "presidente": [
+     {
+      "numero": 16,
+      "nomeUrna": "HERTZ DIAS",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 16,
+      "nomeUrna": "GUILHERME FONSECA",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 161,
+      "nomeUrna": "MARIANO MACEDO",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": 16,
+     "candidatos": [
+      {
+       "numero": 16123,
+       "nomeUrna": "CAIO MARX",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 16180,
+       "nomeUrna": "KELLY DAS MULHERES SOCIALISTAS",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   },
+   "PCB": {
+    "presidente": [
+     {
+      "numero": 21,
+      "nomeUrna": "EDMILSON COSTA",
+      "partido": "PCB",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "UP": {
+    "presidente": [
+     {
+      "numero": 80,
+      "nomeUrna": "SAMARA",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 80,
+      "nomeUrna": "PROFESSORA CAMILA",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 800,
+      "nomeUrna": "SAMUEL TIMOTEO",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     },
+     {
+      "numero": 801,
+      "nomeUrna": "GORETT BITU",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 80,
+     "candidatos": [
+      {
+       "numero": 8000,
+       "nomeUrna": "MADU SILVA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 8080,
+       "nomeUrna": "MATHEUS DO MLB",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 80,
+     "candidatos": [
+      {
+       "numero": 80180,
+       "nomeUrna": "JÉSSICA NATHALIA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 80680,
+       "nomeUrna": "PAULO FERNANDO",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   },
+   "PSOL": {
+    "presidente": [
+     {
+      "numero": 13,
+      "nomeUrna": "LULA",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 50,
+      "nomeUrna": "IVAN MORAES",
+      "partido": "PSOL",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 5000,
+       "nomeUrna": "MICHELLE SANTOS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5001,
+       "nomeUrna": "FERNANDO DO SALVE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5005,
+       "nomeUrna": "KÁTIA CUNHA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5010,
+       "nomeUrna": "MARIOZINHO RIBEIRO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5013,
+       "nomeUrna": "PROFESSOR JERÔNIMO GALVÃO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5015,
+       "nomeUrna": "JÉSSICA MEDEIROS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5024,
+       "nomeUrna": "BRUNA AMBIENTAL",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5030,
+       "nomeUrna": "MÁRCIA AZEVEDO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5050,
+       "nomeUrna": "JONES MANOEL",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5055,
+       "nomeUrna": "PEDRO STILO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5063,
+       "nomeUrna": "DR. NELSON E O COLETIVO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5077,
+       "nomeUrna": "RENATO FONSECA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5081,
+       "nomeUrna": "MARCELLO DANTAS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5087,
+       "nomeUrna": "ROSALVO",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 50000,
+       "nomeUrna": "JÔ CAVALCANTI",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50001,
+       "nomeUrna": "EDUARDO PAYSAN",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50005,
+       "nomeUrna": "BRUNO MORAES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50024,
+       "nomeUrna": "ÉLITON OLIVEIRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50050,
+       "nomeUrna": "CLEIDE ANDRADE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50100,
+       "nomeUrna": "DANIEL VALENÇA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50122,
+       "nomeUrna": "MARACA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50123,
+       "nomeUrna": "DRA. RUANA BEZERRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50136,
+       "nomeUrna": "CARLOS FREITAS DA SAÚDE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50275,
+       "nomeUrna": "AGRINALDO JÚNIOR",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50300,
+       "nomeUrna": "ALDA ARANTES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50323,
+       "nomeUrna": "EUNICE MELO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50500,
+       "nomeUrna": "PERPÉTUA RODRIGUES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50555,
+       "nomeUrna": "MATHEUS DRAMA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50789,
+       "nomeUrna": "CARLOS CALHEIROS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50888,
+       "nomeUrna": "JOAQUIM COELHO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50999,
+       "nomeUrna": "YASMIM ALVES",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   }
+  },
+  "PI": {
+   "PSTU": {
+    "presidente": [
+     {
+      "numero": 16,
+      "nomeUrna": "HERTZ DIAS",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 16,
+      "nomeUrna": "GERALDO CARVALHO",
+      "partido": "PSTU",
+      "situacao": "sub judice (indeferido com recurso)",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 166,
+      "nomeUrna": "DANNIEL ROCHA",
+      "partido": "PSTU",
+      "situacao": "sub judice (indeferido com recurso)",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "PCB": {
+    "presidente": [
+     {
+      "numero": 21,
+      "nomeUrna": "EDMILSON COSTA",
+      "partido": "PCB",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "UP": {
+    "presidente": [
+     {
+      "numero": 80,
+      "nomeUrna": "SAMARA",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 80,
+      "nomeUrna": "SANTIAGO BELIZÁRIO",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 800,
+      "nomeUrna": "PEDRO LAURENTINO",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 80,
+     "candidatos": [
+      {
+       "numero": 8000,
+       "nomeUrna": "AUGUSTO FERREIRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 8080,
+       "nomeUrna": "DARA NETO",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "PSOL": {
+    "presidente": [
+     {
+      "numero": 13,
+      "nomeUrna": "LULA",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 50,
+      "nomeUrna": "PROFESSOR GISVALDO",
+      "partido": "PSOL",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 500,
+      "nomeUrna": "FRANCINALDO LEÃO",
+      "partido": "PSOL",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     },
+     {
+      "numero": 505,
+      "nomeUrna": "MARIA MADALENA NUNES",
+      "partido": "PSOL",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 5000,
+       "nomeUrna": "RIBAMAR CABRAL",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5022,
+       "nomeUrna": "DANIEL COSTA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5030,
+       "nomeUrna": "WESLEY LEÃO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5050,
+       "nomeUrna": "MÃE LÚCIA DE IANSÃ",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5070,
+       "nomeUrna": "EUNICE ROCHA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5077,
+       "nomeUrna": "WILMA CARVALHO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5090,
+       "nomeUrna": "ANA BRITO",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 50001,
+       "nomeUrna": "WALLK NASCIMENTO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50005,
+       "nomeUrna": "MAY SILVA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50123,
+       "nomeUrna": "CIDA THERESINA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50199,
+       "nomeUrna": "SULAMITA BARBOSA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50500,
+       "nomeUrna": "ARIANA MONTEIRO",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   }
+  },
+  "PR": {
+   "PSTU": {
+    "presidente": [
+     {
+      "numero": 16,
+      "nomeUrna": "HERTZ DIAS",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 16,
+      "nomeUrna": "SAMUEL DE MATTOS",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": 16,
+     "candidatos": [
+      {
+       "numero": 16000,
+       "nomeUrna": "LEONARDO MARTINEZ",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 16123,
+       "nomeUrna": "BIA BREHM",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   },
+   "PCB": {
+    "presidente": [
+     {
+      "numero": 21,
+      "nomeUrna": "EDMILSON COSTA",
+      "partido": "PCB",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "UP": {
+    "presidente": [
+     {
+      "numero": 80,
+      "nomeUrna": "SAMARA",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 80,
+      "nomeUrna": "TAYNÁ MIESSA",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 800,
+      "nomeUrna": "JOAQUIM DO MLB",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 80,
+     "candidatos": [
+      {
+       "numero": 8000,
+       "nomeUrna": "JULIA MARINHO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 8080,
+       "nomeUrna": "GIOVANNY GODOI",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 80,
+     "candidatos": [
+      {
+       "numero": 80000,
+       "nomeUrna": "JULIANE MENDES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 80080,
+       "nomeUrna": "LOHAN COTA",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   },
+   "PSOL": {
+    "presidente": [
+     {
+      "numero": 13,
+      "nomeUrna": "LULA",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 12,
+      "nomeUrna": "REQUIÃO FILHO",
+      "partido": "PDT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 131,
+      "nomeUrna": "GLEISI",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 5000,
+       "nomeUrna": "JUVANCI",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5005,
+       "nomeUrna": "ALANA LANDAL",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5007,
+       "nomeUrna": "BETS MARTINS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5010,
+       "nomeUrna": "GIBELLE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5015,
+       "nomeUrna": "BERNNA WANESSA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5022,
+       "nomeUrna": "JORNALISTA TONY KILIM",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5044,
+       "nomeUrna": "PROF. JOÃO HENRIQUE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5047,
+       "nomeUrna": "DR. SÉRGIO DA SAÚDE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5050,
+       "nomeUrna": "LEANDRO DIAS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5055,
+       "nomeUrna": "BRAGA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5060,
+       "nomeUrna": "FRED SIMONI",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5064,
+       "nomeUrna": "GENECY ABREU",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5077,
+       "nomeUrna": "AROLDO SANTOS",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 50000,
+       "nomeUrna": "GABRIEL",
+       "situacao": "sub judice (indeferido com recurso)"
+      },
+      {
+       "numero": 50013,
+       "nomeUrna": "MARCINHADOPOVVO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50050,
+       "nomeUrna": "EDUARDO FUJIKAWA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50055,
+       "nomeUrna": "ANA MARIA DE CARVALHO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50100,
+       "nomeUrna": "ETIENE DA SILVA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50123,
+       "nomeUrna": "ELOY NHANDEWA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50150,
+       "nomeUrna": "CARLOS MATTOS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50321,
+       "nomeUrna": "JEAN HENRIQUE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50354,
+       "nomeUrna": "ELENILZA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50500,
+       "nomeUrna": "PROFESSORA ANGELA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50777,
+       "nomeUrna": "BRUNA MOREIRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50888,
+       "nomeUrna": "GISLENE",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   }
+  },
+  "RJ": {
+   "PSTU": {
+    "presidente": [
+     {
+      "numero": 16,
+      "nomeUrna": "HERTZ DIAS",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 16,
+      "nomeUrna": "CYRO GARCIA",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 160,
+      "nomeUrna": "PAULA FALCÃO",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 16,
+     "candidatos": [
+      {
+       "numero": 1616,
+       "nomeUrna": "ELIAS ALFREDO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 1660,
+       "nomeUrna": "BARBARA SINEDINO",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 16,
+     "candidatos": [
+      {
+       "numero": 16016,
+       "nomeUrna": "JAD AVILA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 16123,
+       "nomeUrna": "LORRAN NEVES",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   },
+   "PCB": {
+    "presidente": [
+     {
+      "numero": 21,
+      "nomeUrna": "EDMILSON COSTA",
+      "partido": "PCB",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "UP": {
+    "presidente": [
+     {
+      "numero": 80,
+      "nomeUrna": "SAMARA",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 80,
+      "nomeUrna": "JULIETE",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 800,
+      "nomeUrna": "MICHELLY XAVIER",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     },
+     {
+      "numero": 808,
+      "nomeUrna": "VINICIUS BENEVIDES",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 80,
+     "candidatos": [
+      {
+       "numero": 8000,
+       "nomeUrna": "ESTEBAN CRESCENTE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 8080,
+       "nomeUrna": "PÉTALA",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 80,
+     "candidatos": [
+      {
+       "numero": 80000,
+       "nomeUrna": "HENDERSON",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 80080,
+       "nomeUrna": "RUAN VIDAL",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 80123,
+       "nomeUrna": "ELZA E EUNICE DO MLB",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 80180,
+       "nomeUrna": "MONIQUE ZUMA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 80456,
+       "nomeUrna": "DULCE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 80800,
+       "nomeUrna": "BIANCA RUBIM",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   },
+   "PSOL": {
+    "presidente": [
+     {
+      "numero": 13,
+      "nomeUrna": "LULA",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 50,
+      "nomeUrna": "WILLIAM SIRI",
+      "partido": "PSOL",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 500,
+      "nomeUrna": "MONICA BENICIO",
+      "partido": "PSOL",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 5000,
+       "nomeUrna": "TARCÍSIO MOTTA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5001,
+       "nomeUrna": "PASTOR HENRIQUE VIEIRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5005,
+       "nomeUrna": "RAFAEL RIBEIRO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5007,
+       "nomeUrna": "JÚLIA CASAMASSO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5012,
+       "nomeUrna": "DR EMANUEL TORQUATO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5013,
+       "nomeUrna": "AMANDA COSTA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5015,
+       "nomeUrna": "CRÂNIO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5016,
+       "nomeUrna": "FERNANDA VIEIRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5020,
+       "nomeUrna": "PROFESSORA MIRIANA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5021,
+       "nomeUrna": "GUILHERME PIMENTEL",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5022,
+       "nomeUrna": "WILIANS DOUGLAS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5024,
+       "nomeUrna": "FRENTISTA HAYRES MUNIZ",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5028,
+       "nomeUrna": "FERNANDO NASCIMENTO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5042,
+       "nomeUrna": "ANDRÉ BARROS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5044,
+       "nomeUrna": "RICK AZEVEDO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5050,
+       "nomeUrna": "CHICO ALENCAR",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5051,
+       "nomeUrna": "NOEL",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5055,
+       "nomeUrna": "DR DENILSON PRATA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5060,
+       "nomeUrna": "DELMA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5067,
+       "nomeUrna": "ARIANE MAGALHÃES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5077,
+       "nomeUrna": "TALÍRIA PETRONE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5080,
+       "nomeUrna": "GLAUBER BRAGA",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 50000,
+       "nomeUrna": "CLARICE CHACON",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50007,
+       "nomeUrna": "RENATA SOUZA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50010,
+       "nomeUrna": "FABÍOLA RODRIGUES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50033,
+       "nomeUrna": "CABELINHO TURISMO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50050,
+       "nomeUrna": "DANI MONTEIRO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50077,
+       "nomeUrna": "MONICA CUNHA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50080,
+       "nomeUrna": "ANDERSON RIBEIRO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50100,
+       "nomeUrna": "EMANUEL ALENCAR",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50101,
+       "nomeUrna": "PROFESSOR ANTONIO AUGUSTO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50111,
+       "nomeUrna": "PAULO PINHEIRO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50123,
+       "nomeUrna": "FLAVIO SERAFINI",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50180,
+       "nomeUrna": "LUCIANA BOITEUX",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50200,
+       "nomeUrna": "LEKO LEONARDO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50222,
+       "nomeUrna": "JEFFERSON VINCO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50321,
+       "nomeUrna": "PEDRO NASSIF",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50500,
+       "nomeUrna": "PROF. JOSEMAR",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50555,
+       "nomeUrna": "MARCUS LOPES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50666,
+       "nomeUrna": "CRISTIANE NASCIMENTO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50700,
+       "nomeUrna": "YURI MOURA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50800,
+       "nomeUrna": "ALEXANDRE VR ABANDONADA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50900,
+       "nomeUrna": "LEEBLON DA CULTURARJ",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   }
+  },
+  "RN": {
+   "PSTU": {
+    "presidente": [
+     {
+      "numero": 16,
+      "nomeUrna": "HERTZ DIAS",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 16,
+      "nomeUrna": "DÁRIO BARBOSA",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 161,
+      "nomeUrna": "LUCIANA MANDU",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     },
+     {
+      "numero": 166,
+      "nomeUrna": "ROSÁLIA FERNANDES",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": 16,
+     "candidatos": [
+      {
+       "numero": 16123,
+       "nomeUrna": "TIAGO SILVA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 16456,
+       "nomeUrna": "PROFESSORA ANA CELIA",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   },
+   "PCB": {
+    "presidente": [
+     {
+      "numero": 21,
+      "nomeUrna": "EDMILSON COSTA",
+      "partido": "PCB",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "UP": {
+    "presidente": [
+     {
+      "numero": 80,
+      "nomeUrna": "SAMARA",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 80,
+      "nomeUrna": "ARINALDA DO MLB",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 800,
+      "nomeUrna": "PROFESSOR GUILHERME",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 80,
+     "candidatos": [
+      {
+       "numero": 8000,
+       "nomeUrna": "BIA DO MLB",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 8080,
+       "nomeUrna": "VICTOR HUGO",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 80,
+     "candidatos": [
+      {
+       "numero": 80000,
+       "nomeUrna": "JULIO DA FNR",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 80180,
+       "nomeUrna": "MILENNE BARBOSA",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   },
+   "PSOL": {
+    "presidente": [
+     {
+      "numero": 13,
+      "nomeUrna": "LULA",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 50,
+      "nomeUrna": "PROFESSOR ROBERIO PAULINO",
+      "partido": "PSOL",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 500,
+      "nomeUrna": "SANDRO PIMENTEL",
+      "partido": "PSOL",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     },
+     {
+      "numero": 501,
+      "nomeUrna": "SONIA GODEIRO",
+      "partido": "PSOL",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 5013,
+       "nomeUrna": "VANUZIA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5044,
+       "nomeUrna": "PHILIPE DO VAT",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5055,
+       "nomeUrna": "PASTORA VERONICA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5088,
+       "nomeUrna": "ED RODRIGUES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5098,
+       "nomeUrna": "IGOR ROCHA",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 50000,
+       "nomeUrna": "IRAMÁ BARBOSA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50005,
+       "nomeUrna": "ALEXANDRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50013,
+       "nomeUrna": "GEORGE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50024,
+       "nomeUrna": "JESSICA ELIAS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50050,
+       "nomeUrna": "CARLINHOS DO GÁS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50100,
+       "nomeUrna": "LOURENÇO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50123,
+       "nomeUrna": "ANA SOS PATINHAS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50222,
+       "nomeUrna": "WILSON DUARTE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50555,
+       "nomeUrna": "AURELIO OLIVEIRA",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   }
+  },
+  "RO": {
+   "PSTU": {
+    "presidente": [
+     {
+      "numero": 16,
+      "nomeUrna": "HERTZ DIAS",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "PCB": {
+    "presidente": [
+     {
+      "numero": 21,
+      "nomeUrna": "EDMILSON COSTA",
+      "partido": "PCB",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "UP": {
+    "presidente": [
+     {
+      "numero": 80,
+      "nomeUrna": "SAMARA",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "PSOL": {
+    "presidente": [
+     {
+      "numero": 13,
+      "nomeUrna": "LULA",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 13,
+      "nomeUrna": "EXPEDITO NETTO",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 5000,
+       "nomeUrna": "GENECI GONÇALVES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5005,
+       "nomeUrna": "JACKELINE ROCHA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5007,
+       "nomeUrna": "JOÃO GUINHO",
+       "situacao": "sub judice (indeferido com recurso)"
+      },
+      {
+       "numero": 5011,
+       "nomeUrna": "FÁBIO JÚNIOR",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5013,
+       "nomeUrna": "JOSUÉ SHOCKNESS",
+       "situacao": "sub judice (indeferido com recurso)"
+      },
+      {
+       "numero": 5033,
+       "nomeUrna": "CARLOS MAGNO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5050,
+       "nomeUrna": "LILI RODRIGUES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5051,
+       "nomeUrna": "DANNY PAIXÃO",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 50112,
+       "nomeUrna": "PAULINHA DELGADO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50123,
+       "nomeUrna": "OTACÍLIO CEARÁ",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50204,
+       "nomeUrna": "JAIR DA 204",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50222,
+       "nomeUrna": "SÉRGIO FERREIRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50321,
+       "nomeUrna": "PROF DAVID OLIVEIRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50364,
+       "nomeUrna": "F. CUNHA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50444,
+       "nomeUrna": "HUMBERTO VIGILANTE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50500,
+       "nomeUrna": "JOSE IRONILDO DA SAÚDE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50518,
+       "nomeUrna": "PROFESSORA ALEXIA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50655,
+       "nomeUrna": "JOELMA LEANDRO",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   }
+  },
+  "RR": {
+   "PSTU": {
+    "presidente": [
+     {
+      "numero": 16,
+      "nomeUrna": "HERTZ DIAS",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "PCB": {
+    "presidente": [
+     {
+      "numero": 21,
+      "nomeUrna": "EDMILSON COSTA",
+      "partido": "PCB",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "UP": {
+    "presidente": [
+     {
+      "numero": 80,
+      "nomeUrna": "SAMARA",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "PSOL": {
+    "presidente": [
+     {
+      "numero": 13,
+      "nomeUrna": "LULA",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 50,
+      "nomeUrna": "ROSI AIRES",
+      "partido": "PSOL",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 500,
+      "nomeUrna": "BARTÔ MACUXI",
+      "partido": "PSOL",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     },
+     {
+      "numero": 505,
+      "nomeUrna": "MARIO ROCHA",
+      "partido": "PSOL",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 5000,
+       "nomeUrna": "MEIRINHA MACUXI",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5005,
+       "nomeUrna": "ROBERT DAGON",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5035,
+       "nomeUrna": "CRIS RODRIGUES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5057,
+       "nomeUrna": "LARISSA MULHERES DA SEGURANÇA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5066,
+       "nomeUrna": "NIMOZ LOPES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5067,
+       "nomeUrna": "LINDOMAR ALENCAR",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5071,
+       "nomeUrna": "JEEPÃO",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   }
+  },
+  "RS": {
+   "PSTU": {
+    "presidente": [
+     {
+      "numero": 16,
+      "nomeUrna": "HERTZ DIAS",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 16,
+      "nomeUrna": "REJANE DE OLIVEIRA",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 160,
+      "nomeUrna": "DANIELA MULHERES SOCIALISTAS",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     },
+     {
+      "numero": 161,
+      "nomeUrna": "REGIS ETHUR",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 16,
+     "candidatos": [
+      {
+       "numero": 1600,
+       "nomeUrna": "MARLISE JANETE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 1616,
+       "nomeUrna": "ÍCARO MADALENA",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 16,
+     "candidatos": [
+      {
+       "numero": 16000,
+       "nomeUrna": "PATRÍCIA PEIXE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 16161,
+       "nomeUrna": "ANDERSON SILVA",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   },
+   "PCB": {
+    "presidente": [
+     {
+      "numero": 21,
+      "nomeUrna": "EDMILSON COSTA",
+      "partido": "PCB",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "UP": {
+    "presidente": [
+     {
+      "numero": 80,
+      "nomeUrna": "SAMARA",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 80,
+      "nomeUrna": "PRISCILA VOIGT",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 800,
+      "nomeUrna": "LUCIANO DO MLB",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     },
+     {
+      "numero": 808,
+      "nomeUrna": "TANIA PERES",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 80,
+     "candidatos": [
+      {
+       "numero": 8000,
+       "nomeUrna": "GUSTAVO RAMOS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 8008,
+       "nomeUrna": "PROF JAQUE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 8080,
+       "nomeUrna": "BRUNO DO MLB",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 80,
+     "candidatos": [
+      {
+       "numero": 80000,
+       "nomeUrna": "EVERALDO OLIVEIRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 80123,
+       "nomeUrna": "SAMARA GARCIA",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   },
+   "PSOL": {
+    "presidente": [
+     {
+      "numero": 13,
+      "nomeUrna": "LULA",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 12,
+      "nomeUrna": "JULIANA BRIZOLA",
+      "partido": "PDT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 500,
+      "nomeUrna": "MANUELA D'ÁVILA",
+      "partido": "PSOL",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 5000,
+       "nomeUrna": "ROBERTO ROBAINA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5001,
+       "nomeUrna": "ATENA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5002,
+       "nomeUrna": "TAMI PAVEGLIO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5004,
+       "nomeUrna": "SOLDADO EDERSON",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5005,
+       "nomeUrna": "RAFAEL PERLASCA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5007,
+       "nomeUrna": "ALISSON OLIVEIRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5010,
+       "nomeUrna": "GUIDO CNR",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5011,
+       "nomeUrna": "BAIANA MÁRCIA FRANÇA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5012,
+       "nomeUrna": "JOHN ELVIS BRAGA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5015,
+       "nomeUrna": "CRIS MACHADO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5020,
+       "nomeUrna": "JORGE FREITAS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5033,
+       "nomeUrna": "PATY REX",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5045,
+       "nomeUrna": "BETINA TORRIANI",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5050,
+       "nomeUrna": "FERNANDA MELCHIONNA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5055,
+       "nomeUrna": "JURANDIR SILVA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5066,
+       "nomeUrna": "LEANDRO DUTRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5070,
+       "nomeUrna": "INGRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5075,
+       "nomeUrna": "TIAGO DOMINGUEZ",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5077,
+       "nomeUrna": "PAI EDERSON DE OGUM",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5086,
+       "nomeUrna": "MÃE KATITA DE OXALÁ",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5088,
+       "nomeUrna": "RODRIGO CEBOLA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5090,
+       "nomeUrna": "PROFESSOR VINICIUS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5099,
+       "nomeUrna": "PAULO BRACK",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 50000,
+       "nomeUrna": "LUCIANA GENRO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50005,
+       "nomeUrna": "PROFESSORA DANI KROEFF",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50007,
+       "nomeUrna": "DJALMA DUTRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50010,
+       "nomeUrna": "VILMAR O GARI",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50023,
+       "nomeUrna": "ABRÃO GODOIS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50050,
+       "nomeUrna": "MATHEUS VICENTE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50100,
+       "nomeUrna": "MARJORIE SASSET",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50111,
+       "nomeUrna": "FABIANO BENITES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50123,
+       "nomeUrna": "MATHEUS GOMES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50150,
+       "nomeUrna": "PROFESSOR GUILHERME",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50200,
+       "nomeUrna": "GABI ROSA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50222,
+       "nomeUrna": "INÁCIO RODRIGUES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50333,
+       "nomeUrna": "SORA JU",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50500,
+       "nomeUrna": "PEDRO STEIN",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50550,
+       "nomeUrna": "ADRIANO RICOLDI",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50555,
+       "nomeUrna": "KAREN SANTOS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50570,
+       "nomeUrna": "FABY GOMES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50777,
+       "nomeUrna": "ALICE CARVALHO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50888,
+       "nomeUrna": "IVERÁ",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50950,
+       "nomeUrna": "GUILHERME GIL",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50999,
+       "nomeUrna": "FERNANDA MIRANDA",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   }
+  },
+  "SC": {
+   "PSTU": {
+    "presidente": [
+     {
+      "numero": 16,
+      "nomeUrna": "HERTZ DIAS",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 16,
+      "nomeUrna": "PROFESSOR MARCUS SODRÉ",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 160,
+      "nomeUrna": "JOANINHA DE OLIVEIRA",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     },
+     {
+      "numero": 161,
+      "nomeUrna": "MARCOS DORVAL",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": 16,
+     "candidatos": [
+      {
+       "numero": 16000,
+       "nomeUrna": "PROFESSOR CRISTIANO FLORÊNCIO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 16016,
+       "nomeUrna": "PROFESSORA NADIR FERNANDES",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   },
+   "PCB": {
+    "presidente": [
+     {
+      "numero": 21,
+      "nomeUrna": "EDMILSON COSTA",
+      "partido": "PCB",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "UP": {
+    "presidente": [
+     {
+      "numero": 80,
+      "nomeUrna": "SAMARA",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 80,
+      "nomeUrna": "LAÍS CHAUD",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 800,
+      "nomeUrna": "ANA LUCIA DA SILVEIRA MACHADO",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     },
+     {
+      "numero": 808,
+      "nomeUrna": "MARLENE SOCCAS",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 80,
+     "candidatos": [
+      {
+       "numero": 8000,
+       "nomeUrna": "AMANDA WENCESLAU",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 8080,
+       "nomeUrna": "ANDRE DREJAN",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "PSOL": {
+    "presidente": [
+     {
+      "numero": 13,
+      "nomeUrna": "LULA",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 40,
+      "nomeUrna": "GELSON MERÍSIO",
+      "partido": "PSB",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 500,
+      "nomeUrna": "AFRÂNIO BOPPRÉ",
+      "partido": "PSOL",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 5000,
+       "nomeUrna": "VICTOR GASPODINI",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5001,
+       "nomeUrna": "THIAGO MORETI - PROF. TATUADO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5005,
+       "nomeUrna": "DRAG URBANA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5008,
+       "nomeUrna": "BIA ALVES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5010,
+       "nomeUrna": "PROFESSOR ELSON",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5013,
+       "nomeUrna": "PROFESSOR CANGURU",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5018,
+       "nomeUrna": "SIMONE MEDEIROS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5020,
+       "nomeUrna": "LÍVIA - COLETIVA SC PLURAL",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5024,
+       "nomeUrna": "INÁCIO SPERBER",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5040,
+       "nomeUrna": "NANDJA XOKLENG",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5042,
+       "nomeUrna": "SODRÉ",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5050,
+       "nomeUrna": "VALMIR BRAZ NENA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5055,
+       "nomeUrna": "MARI SOUZA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5075,
+       "nomeUrna": "MIRÊ CHAGAS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5077,
+       "nomeUrna": "SAMARA MADUREIRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5080,
+       "nomeUrna": "JÉSSICA MICHELS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5093,
+       "nomeUrna": "GIL SANTOS",
+       "situacao": "sub judice (indeferido com recurso)"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 50000,
+       "nomeUrna": "ALEXANDRE NAU",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50005,
+       "nomeUrna": "ALEX STEIN",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50007,
+       "nomeUrna": "FABINHO HENSCHEL",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50044,
+       "nomeUrna": "ÁGATHA BRUM",
+       "situacao": "sub judice (indeferido com recurso)"
+      },
+      {
+       "numero": 50054,
+       "nomeUrna": "PROF. GENÉSIO ADOLFO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50096,
+       "nomeUrna": "JÔ MARQUEZ",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50100,
+       "nomeUrna": "MARIANA SARTOR",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50111,
+       "nomeUrna": "GERSON POPAYE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50123,
+       "nomeUrna": "ANA VAZ",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50150,
+       "nomeUrna": "MARQUITO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50180,
+       "nomeUrna": "INGRID SATERÉ MAWÉ",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50321,
+       "nomeUrna": "PROFESSOR ANDREW LEAL",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50333,
+       "nomeUrna": "ÂNGELO CHOCOLATE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50369,
+       "nomeUrna": "FÁBIO DE OLIVEIRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50456,
+       "nomeUrna": "MEIRINHO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50500,
+       "nomeUrna": "CAMASÃO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50505,
+       "nomeUrna": "DOUGLAS MERIZ",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50550,
+       "nomeUrna": "GELEIA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50555,
+       "nomeUrna": "PROFª IZA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50600,
+       "nomeUrna": "PROFESSOR MARCELO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50777,
+       "nomeUrna": "ANA FLÁVIA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50789,
+       "nomeUrna": "AMARILDO NARCISO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50900,
+       "nomeUrna": "CARLOS SILVA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50999,
+       "nomeUrna": "VIVI DO JUNTOS",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   }
+  },
+  "SE": {
+   "PSTU": {
+    "presidente": [
+     {
+      "numero": 16,
+      "nomeUrna": "HERTZ DIAS",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "PCB": {
+    "presidente": [
+     {
+      "numero": 21,
+      "nomeUrna": "EDMILSON COSTA",
+      "partido": "PCB",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "UP": {
+    "presidente": [
+     {
+      "numero": 80,
+      "nomeUrna": "SAMARA",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": 80,
+     "candidatos": [
+      {
+       "numero": 8000,
+       "nomeUrna": "MATEUS HENRIQUES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 8080,
+       "nomeUrna": "BRUNA MAKIDA",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 80,
+     "candidatos": [
+      {
+       "numero": 80123,
+       "nomeUrna": "ROSE DO MLB",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 80800,
+       "nomeUrna": "GIOVANNI OLIVEIRA",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   },
+   "PSOL": {
+    "presidente": [
+     {
+      "numero": 13,
+      "nomeUrna": "LULA",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 50,
+      "nomeUrna": "DR. HELTON",
+      "partido": "PSOL",
+      "situacao": "sub judice (indeferido com recurso)",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 500,
+      "nomeUrna": "IRAN BARBOSA",
+      "partido": "PSOL",
+      "situacao": "sub judice (indeferido com recurso)",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 5000,
+       "nomeUrna": "DAÍA",
+       "situacao": "sub judice (indeferido com recurso)"
+      },
+      {
+       "numero": 5010,
+       "nomeUrna": "LÚCIA BARROSO",
+       "situacao": "sub judice (indeferido com recurso)"
+      },
+      {
+       "numero": 5013,
+       "nomeUrna": "IGOR BAIMA",
+       "situacao": "sub judice (indeferido com recurso)"
+      },
+      {
+       "numero": 5019,
+       "nomeUrna": "DR. EMERSON",
+       "situacao": "sub judice (indeferido com recurso)"
+      },
+      {
+       "numero": 5050,
+       "nomeUrna": "DELEGADO MÁRIO LEONY",
+       "situacao": "sub judice (indeferido com recurso)"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 50000,
+       "nomeUrna": "SERGIO SAMPAIO",
+       "situacao": "sub judice (indeferido com recurso)"
+      },
+      {
+       "numero": 50079,
+       "nomeUrna": "ANDRE LUCAS",
+       "situacao": "sub judice (indeferido com recurso)"
+      },
+      {
+       "numero": 50100,
+       "nomeUrna": "ESPAÇO QUILOMBOLA",
+       "situacao": "sub judice (indeferido com recurso)"
+      },
+      {
+       "numero": 50113,
+       "nomeUrna": "ATENILSON JOSÉ",
+       "situacao": "sub judice (indeferido com recurso)"
+      },
+      {
+       "numero": 50121,
+       "nomeUrna": "VANESSA DO POVO",
+       "situacao": "sub judice (indeferido com recurso)"
+      },
+      {
+       "numero": 50123,
+       "nomeUrna": "PROFESSORA SÔNIA MEIRE",
+       "situacao": "sub judice (indeferido com recurso)"
+      },
+      {
+       "numero": 50180,
+       "nomeUrna": "LINDA BRASIL",
+       "situacao": "sub judice (indeferido com recurso)"
+      },
+      {
+       "numero": 50333,
+       "nomeUrna": "GILDO DE BOQUIM",
+       "situacao": "sub judice (indeferido com recurso)"
+      },
+      {
+       "numero": 50500,
+       "nomeUrna": "PROFESSOR OTÁVIO SALES",
+       "situacao": "sub judice (indeferido com recurso)"
+      },
+      {
+       "numero": 50555,
+       "nomeUrna": "RICARDO RIBEIRO DA ENERGIA",
+       "situacao": "sub judice (indeferido com recurso)"
+      },
+      {
+       "numero": 50631,
+       "nomeUrna": "EDER MATOS",
+       "situacao": "sub judice (indeferido com recurso)"
+      },
+      {
+       "numero": 50777,
+       "nomeUrna": "MARIA SALVADOR",
+       "situacao": "sub judice (indeferido com recurso)"
+      }
+     ]
+    }
+   }
+  },
+  "SP": {
+   "PSTU": {
+    "presidente": [
+     {
+      "numero": 16,
+      "nomeUrna": "HERTZ DIAS",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 16,
+      "nomeUrna": "VERA LÚCIA",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 160,
+      "nomeUrna": "WELLER GONÇALVES",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     },
+     {
+      "numero": 161,
+      "nomeUrna": "DRA ELIANA FERREIRA",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 16,
+     "candidatos": [
+      {
+       "numero": 1600,
+       "nomeUrna": "MANDI COELHO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 1611,
+       "nomeUrna": "RENATO BANCADA ANTICAPITALISTA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 1616,
+       "nomeUrna": "ARTHUR CEZARIO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 1627,
+       "nomeUrna": "FRODO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 1660,
+       "nomeUrna": "LORENA FERNANDES",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 16,
+     "candidatos": [
+      {
+       "numero": 16000,
+       "nomeUrna": "PROFA. FLAVIA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 16016,
+       "nomeUrna": "WILIAM ANTICANDIDATO DO GOI",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 16123,
+       "nomeUrna": "FÁTIMA SILVA",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   },
+   "PCB": {
+    "presidente": [
+     {
+      "numero": 21,
+      "nomeUrna": "EDMILSON COSTA",
+      "partido": "PCB",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 21,
+      "nomeUrna": "CARLOS MACHADO",
+      "partido": "PCB",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 211,
+      "nomeUrna": "PETTER MAAHS",
+      "partido": "PCB",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "UP": {
+    "presidente": [
+     {
+      "numero": 80,
+      "nomeUrna": "SAMARA",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 80,
+      "nomeUrna": "VIVIAN MENDES",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 800,
+      "nomeUrna": "MARCIO ALVES",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     },
+     {
+      "numero": 808,
+      "nomeUrna": "MAÍRA DE SOUZA",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 80,
+     "candidatos": [
+      {
+       "numero": 8000,
+       "nomeUrna": "RICARDO SENESE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 8001,
+       "nomeUrna": "MATHEUS MORAIS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 8008,
+       "nomeUrna": "KARLA ALBUQUERQUE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 8010,
+       "nomeUrna": "THAIS GASPARINI",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 8080,
+       "nomeUrna": "DANY OLIVEIRA",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 80,
+     "candidatos": [
+      {
+       "numero": 80000,
+       "nomeUrna": "JULIA CACHOS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 80123,
+       "nomeUrna": "LUCAS DA FRENTE OPERÁRIA",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   },
+   "PSOL": {
+    "presidente": [
+     {
+      "numero": 13,
+      "nomeUrna": "LULA",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 13,
+      "nomeUrna": "FERNANDO HADDAD",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 180,
+      "nomeUrna": "MARINA SILVA",
+      "partido": "REDE",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     },
+     {
+      "numero": 400,
+      "nomeUrna": "SIMONE TEBET",
+      "partido": "PSB",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 5000,
+       "nomeUrna": "SÂMIA BOMFIM",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5001,
+       "nomeUrna": "RIBAMAR PASSOS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5005,
+       "nomeUrna": "GUILHERME CORTEZ",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5006,
+       "nomeUrna": "MÃE SU DE NÃNÃ",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5007,
+       "nomeUrna": "FLÁVIO CASIMIRO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5010,
+       "nomeUrna": "NATÁLIA BOULOS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5012,
+       "nomeUrna": "THUANY FARIA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5013,
+       "nomeUrna": "FABIO MELLO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5014,
+       "nomeUrna": "ADRIANO NASCIMENTO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5015,
+       "nomeUrna": "CÍCERO PERUEIRO",
+       "situacao": "sub judice (indeferido com recurso)"
+      },
+      {
+       "numero": 5016,
+       "nomeUrna": "GABRIEL DOS ANIMAIS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5019,
+       "nomeUrna": "EDILENE BANCADA TRABALHADORAS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5020,
+       "nomeUrna": "VISCONDE JAMAICA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5021,
+       "nomeUrna": "CARLOS DO BONSUCESSO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5022,
+       "nomeUrna": "WILTINHO POETA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5023,
+       "nomeUrna": "DRA. HERICA VERYANO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5028,
+       "nomeUrna": "OLEGÁRIO DA COMUNIDADE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5040,
+       "nomeUrna": "MARIA ELI RICO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5042,
+       "nomeUrna": "SANTO LEGALIZA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5050,
+       "nomeUrna": "JULIANO MEDEIROS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5051,
+       "nomeUrna": "VAGNER ROBERTO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5055,
+       "nomeUrna": "RAUL MARCELO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5056,
+       "nomeUrna": "ENOC SANTANA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5060,
+       "nomeUrna": "PIERRE FERNANDEZ",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5065,
+       "nomeUrna": "SERGINHO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5066,
+       "nomeUrna": "BERNARDO LIMA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5070,
+       "nomeUrna": "ERIKA HILTON",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5075,
+       "nomeUrna": "MARCIO LUNA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5077,
+       "nomeUrna": "LUCIANA GATTI",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5078,
+       "nomeUrna": "ÍNDIO VIGILANTE",
+       "situacao": "sub judice (indeferido com recurso)"
+      },
+      {
+       "numero": 5080,
+       "nomeUrna": "ADERITO DUTRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5088,
+       "nomeUrna": "SÔNIA GUAJAJARA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5089,
+       "nomeUrna": "PROFESSORA LUCIENE CAVALCANTE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5090,
+       "nomeUrna": "NELSON TRABALHADOR",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5099,
+       "nomeUrna": "PROF. LAURO PACHECO",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 50000,
+       "nomeUrna": "PAULA DA BANCADA FEMINISTA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50001,
+       "nomeUrna": "MONTEIRO",
+       "situacao": "sub judice (indeferido com recurso)"
+      },
+      {
+       "numero": 50005,
+       "nomeUrna": "PAULO JUVENTUDE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50009,
+       "nomeUrna": "DANYLO AMILCAR",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50010,
+       "nomeUrna": "GENIVAL CALIXTO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50011,
+       "nomeUrna": "FERNANDA SILVA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50013,
+       "nomeUrna": "JR. FREITAS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50014,
+       "nomeUrna": "BRUNO JORDANI",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50021,
+       "nomeUrna": "PASTOR EDVALDO GOMES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50022,
+       "nomeUrna": "PROFº CHICO GRETTER",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50024,
+       "nomeUrna": "RAFAEL GONZAGA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50027,
+       "nomeUrna": "DENIS GRILLO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50050,
+       "nomeUrna": "MARLY CALDAS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50074,
+       "nomeUrna": "MESTRE VALDENOR",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50076,
+       "nomeUrna": "GIL FREITAS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50079,
+       "nomeUrna": "PR. RICARDO BORGES PDEO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50100,
+       "nomeUrna": "MARIANA CONTI",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50101,
+       "nomeUrna": "DANILO TORRES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50110,
+       "nomeUrna": "EDIANE MARIA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50111,
+       "nomeUrna": "PROFESSOR RILDO NEDSON",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50121,
+       "nomeUrna": "GENESIO GENTE DA GENTE",
+       "situacao": "sub judice (indeferido com recurso)"
+      },
+      {
+       "numero": 50123,
+       "nomeUrna": "FERNANDA SOUTO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50133,
+       "nomeUrna": "REINA DO COLETIVO FISIOTERAPIA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50150,
+       "nomeUrna": "DIOGO TRAJANO DA SILVA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50154,
+       "nomeUrna": "JAMES GONDIM",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50180,
+       "nomeUrna": "CAROLINA SIMON",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50192,
+       "nomeUrna": "CIDA AIRES",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50200,
+       "nomeUrna": "CLAUDIO DIAS DE OLIVEIRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50222,
+       "nomeUrna": "MEG DO BRÁS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50244,
+       "nomeUrna": "PROFESSOR RUI TORQUATO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50250,
+       "nomeUrna": "IVO CELSO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50299,
+       "nomeUrna": "MARCOS MS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50300,
+       "nomeUrna": "KEIT LIMA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50303,
+       "nomeUrna": "DR. LUIZ CARVALHO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50321,
+       "nomeUrna": "CLAUDINEY GENEROSO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50333,
+       "nomeUrna": "GILBERTO ALENCAR",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50444,
+       "nomeUrna": "ROSIVALDO MOREIRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50456,
+       "nomeUrna": "VALDEMAR TCHUM",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50500,
+       "nomeUrna": "DÉBORA CAMILO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50501,
+       "nomeUrna": "PROFESSOR AUSTRIQUI LUCENA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50505,
+       "nomeUrna": "CARLOS JÁCOMO, O MAQUINISTA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50507,
+       "nomeUrna": "FÁBIO PEREIRA DOS SANTOS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50522,
+       "nomeUrna": "PROFªJANE",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50544,
+       "nomeUrna": "DAL SILVA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50550,
+       "nomeUrna": "FERNANDA GARCIA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50551,
+       "nomeUrna": "DR. MARCOS CAJÉ",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50555,
+       "nomeUrna": "LUIZA ERUNDINA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50666,
+       "nomeUrna": "PROFESSORA REVYEUX LIMA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50670,
+       "nomeUrna": "EDNALDO BISPO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50678,
+       "nomeUrna": "AGRIPINO BANCADA LGBT+",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50700,
+       "nomeUrna": "SOFIA FAVERO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50777,
+       "nomeUrna": "POLIANA QUIRINO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50789,
+       "nomeUrna": "CARLOS GIANNAZI",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50796,
+       "nomeUrna": "PROFESSORA NIDIA LIMA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50888,
+       "nomeUrna": "CHIRLEY PANKARÁ",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50900,
+       "nomeUrna": "MONICA DAS PRETAS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50950,
+       "nomeUrna": "GHAYEQUER GODOY",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 50999,
+       "nomeUrna": "PROFESSOR DANIEL ABRANCHES",
+       "situacao": "deferido"
+      }
+     ]
+    }
+   }
+  },
+  "TO": {
+   "PSTU": {
+    "presidente": [
+     {
+      "numero": 16,
+      "nomeUrna": "HERTZ DIAS",
+      "partido": "PSTU",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "PCB": {
+    "presidente": [
+     {
+      "numero": 21,
+      "nomeUrna": "EDMILSON COSTA",
+      "partido": "PCB",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "UP": {
+    "presidente": [
+     {
+      "numero": 80,
+      "nomeUrna": "SAMARA",
+      "partido": "UP",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "governador": [],
+    "senador": [],
+    "deputadoFederal": {
+     "legenda": null,
+     "candidatos": []
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   },
+   "PSOL": {
+    "presidente": [
+     {
+      "numero": 13,
+      "nomeUrna": "LULA",
+      "partido": "PT",
+      "situacao": "deferido",
+      "tipo": "apoio"
+     }
+    ],
+    "governador": [
+     {
+      "numero": 50,
+      "nomeUrna": "PROF WITER NAVES",
+      "partido": "PSOL",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "senador": [
+     {
+      "numero": 500,
+      "nomeUrna": "PROFESSOR OSVALDO",
+      "partido": "PSOL",
+      "situacao": "deferido",
+      "tipo": "proprio"
+     }
+    ],
+    "deputadoFederal": {
+     "legenda": 50,
+     "candidatos": [
+      {
+       "numero": 5000,
+       "nomeUrna": "NILMA GUERREIRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5013,
+       "nomeUrna": "ADALTON PEDREIRO",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5033,
+       "nomeUrna": "MÁRCIA BANDEIRA",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5051,
+       "nomeUrna": "BENONES DOS SANTOS",
+       "situacao": "deferido"
+      },
+      {
+       "numero": 5055,
+       "nomeUrna": "CLEITON MOTORISTA",
+       "situacao": "deferido"
+      }
+     ]
+    },
+    "deputadoEstadual": {
+     "legenda": null,
+     "candidatos": []
+    }
+   }
+  }
+ }
+}

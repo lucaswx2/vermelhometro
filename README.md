@@ -1,12 +1,12 @@
 # Vermelhômetro
 
-A temperatura da esquerda nas eleições 2026: presidente, governadores, Senado e Câmara.
+Colinha de voto de classe para as eleições 2026, com os números oficiais do TSE, e o placar da esquerda em cada disputa.
 
 https://vermelhometro.vercel.app
 
 ## Discorda de uma classificação?
 
-A faixa de cada candidato (esquerda radical, frente ampla, centrão, direita liberal, extrema direita) foi definida pelo Claude, a IA da Anthropic, e está em [`dados/classificacao-candidatos.csv`](dados/classificacao-candidatos.csv).
+A faixa de cada candidato (esquerda socialista, PT e aliados, centrão, direita liberal, extrema direita) foi definida com auxílio de IA (Claude, da Anthropic), revisada e assumida pelo autor, e está em [`dados/classificacao-candidatos.csv`](dados/classificacao-candidatos.csv).
 
 Para propor uma mudança:
 
@@ -18,9 +18,18 @@ Para propor uma mudança:
 
 - `dados/classificacao-candidatos.csv`: candidatos e faixas.
 - `dados/raw/`: pesquisas e bases brutas.
-- `dados/*.json`: gerados por `node scripts/importar-dados.ts`.
+- `dados/raw/candidatos-tse/`: candidaturas aptas com número de urna, da API DivulgaCandContas do TSE.
+- `dados/*.json`: gerados por `pnpm dados`.
 
-Só entram pesquisas com todos os dados exigidos pela Resolução TSE 23.600/2019. A metodologia completa está em [/como-calculamos](https://vermelhometro.vercel.app/como-calculamos).
+Só entram pesquisas com todos os dados exigidos pela Resolução TSE 23.600/2019. O método está em [/transparencia](https://vermelhometro.vercel.app/transparencia).
+
+## Colinhas
+
+O critério é do autor: voto de classe em PSTU, PCB, UP ou PSOL. Em cada cargo, o candidato do próprio partido; sem candidato, o apoio formal do partido na coligação; para deputado, voto de legenda quando o partido tem candidatos no estado. Veja `scripts/gerar-colinhas.ts`.
+
+## Dia da eleição
+
+`scripts/congelamento.mjs` impede deploys de sábado 22h a domingo 17h (Brasília), no 1º e no 2º turno.
 
 ## Rodar local
 

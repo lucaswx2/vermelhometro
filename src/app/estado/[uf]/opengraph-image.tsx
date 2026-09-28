@@ -1,11 +1,14 @@
-import { cartazDaUf } from '@/componentes/cartazes'
-import { UFS } from '@/lib/dados'
+import { imagemCartaz, TAMANHO_OG } from '@/componentes/imagemCartaz'
+import { atualizadoEm } from '@/lib/dados'
+import { ehUf, NOME_UF, UFS } from '@/lib/estados'
 
-export const alt = 'Vermelhômetro: a temperatura da esquerda no estado'
-export const size = { width: 1200, height: 630 }
+export const alt = 'Vermelhômetro: colinha de esquerda do estado'
+export const size = TAMANHO_OG
 export const contentType = 'image/png'
 export const generateStaticParams = () => UFS.map((uf) => ({ uf: uf.toLowerCase() }))
 
 export default async function Imagem({ params }: { params: Promise<{ uf: string }> }) {
-  return cartazDaUf((await params).uf, 'og')
+  const uf = (await params).uf.toUpperCase()
+  const nome = ehUf(uf) ? NOME_UF[uf] : uf
+  return imagemCartaz({ chamada: 'Domingo, 4 de outubro', titulo: `Colinha de esquerda · ${nome}`, atualizadoEm })
 }

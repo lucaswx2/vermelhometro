@@ -20,3 +20,89 @@ body {
 .moldura {
   border: 4px double var(--color-vermelho);
 }
+
+.botao-primario,
+.botao-secundario {
+  display: flex;
+  min-height: 58px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  font-family: var(--font-anton);
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.botao-primario {
+  background: var(--color-vermelho);
+  color: #fff;
+}
+
+.botao-primario:hover {
+  background: var(--color-sangue);
+}
+
+.botao-secundario {
+  border: 3px solid var(--color-vermelho);
+  color: var(--color-vermelho);
+}
+
+.botao-secundario:hover {
+  background: var(--color-vermelho);
+  color: #fff;
+}
+
+#impressao {
+  display: none;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 8mm;
+  }
+
+  body > :not(main),
+  main > :not(:has(#impressao)),
+  section:has(> #impressao) > :not(#impressao) {
+    display: none !important;
+  }
+
+  main {
+    padding: 0 !important;
+    max-width: none !important;
+  }
+
+  #impressao {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 134mm;
+    gap: 5mm;
+  }
+
+  #impressao .folha-colinha {
+    border-style: dashed;
+    break-inside: avoid;
+    overflow: hidden;
+    font-size: 11px;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  #impressao .folha-colinha .text-5xl {
+    font-size: 28px;
+  }
+
+  #impressao .folha-colinha li {
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+
+  #impressao .folha-colinha footer {
+    font-size: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+}
