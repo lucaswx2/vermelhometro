@@ -25,9 +25,9 @@ const secoes = [
   {
     titulo: 'O critério das colinhas',
     texto: [
-      'A colinha é de voto de classe: você escolhe um entre PSTU, PCB, UP e PSOL. O critério é do autor.',
-      'Em cada cargo entra o candidato do próprio partido. Sem candidato próprio, entra quem o partido apoia formalmente na coligação, com aviso. Sem nenhum dos dois, você escolhe outra opção de classe ou deixa em branco.',
-      'Para deputado, o padrão é o voto de legenda (o número do partido), que só aparece quando o partido tem candidatos ao cargo no estado. O voto de legenda do PSOL vai para a federação PSOL-Rede.',
+      'Você monta a colinha cargo a cargo, com qualquer candidatura apta de qualquer partido. Na busca, quem luta com a classe trabalhadora vem primeiro: a esquerda socialista, depois PT e aliados, depois os outros partidos. Dentro de cada grupo, a ordem muda a cada visita.',
+      'O atalho “Vote com a classe” preenche tudo com a indicação de um entre PSTU, PCB, UP e PSOL. O critério desse atalho é do autor: em cada cargo, o candidato do próprio partido; sem candidato próprio, quem o partido apoia formalmente na coligação, com aviso. Depois você troca o que quiser.',
+      'Para deputado, o atalho usa o voto de legenda (o número do partido), que só aparece quando o partido tem candidatos ao cargo no estado. O voto de legenda do PSOL vai para a federação PSOL-Rede.',
       'A colinha fica só no seu aparelho: o que você escolhe vive no endereço da página, depois do #, e não é enviado a servidor nenhum.',
     ],
   },
