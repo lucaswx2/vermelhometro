@@ -1,0 +1,254 @@
+{
+  "geradoEm": "2026-09-29T17:32:00.285Z",
+  "logos": {
+    "AGIR": {
+      "arquivo": "/partidos/AGIR.svg",
+      "fonte": "https://commons.wikimedia.org/wiki/File:Logotipo_do_partido_Agir.svg",
+      "licenca": "PD-shape, PD-textlogo",
+      "autor": "Partido Agir",
+      "status": "ok",
+      "confianca": "alta"
+    },
+    "AVANTE": {
+      "arquivo": "/partidos/AVANTE.svg",
+      "fonte": "https://commons.wikimedia.org/wiki/File:Avante_70_(Brasil)_logo.svg",
+      "licenca": "PD-textlogo",
+      "autor": "Avante",
+      "status": "ok",
+      "confianca": "alta"
+    },
+    "CIDADANIA": {
+      "arquivo": "/partidos/CIDADANIA.svg",
+      "fonte": "https://commons.wikimedia.org/wiki/File:Cidadania_(Brasil)_logo_(variant_1).svg",
+      "licenca": "PD-textlogo",
+      "autor": "Partido Cidadania (Brasil)",
+      "status": "ok",
+      "confianca": "alta"
+    },
+    "DC": {
+      "arquivo": "/partidos/DC.png",
+      "fonte": "https://commons.wikimedia.org/wiki/File:Logomarca_Democracia_Crist%C3%A3.png",
+      "licenca": "PD-textlogo, PD-shape",
+      "autor": "Democracia Cristã",
+      "status": "ok",
+      "confianca": "alta"
+    },
+    "DEMOCRATA": {
+      "arquivo": "/partidos/DEMOCRATA.png",
+      "fonte": "https://commons.wikimedia.org/wiki/File:Logomarca_O_Democrata_35.png",
+      "licenca": "PD-textlogo, PD-shape",
+      "autor": "Democrata 35",
+      "status": "ok",
+      "confianca": "alta",
+      "nota": "Democrata é o ex-PMB, renomeado em 2025."
+    },
+    "MDB": {
+      "arquivo": "/partidos/MDB.svg",
+      "fonte": "https://commons.wikimedia.org/wiki/File:Movimento_Democr%C3%A1tico_Brasileiro_(2017).svg",
+      "licenca": "PD-textlogo",
+      "autor": "Movimento Democrático Brasileiro",
+      "status": "ok",
+      "confianca": "alta"
+    },
+    "MISSÃO": {
+      "arquivo": "/partidos/MISSAO.svg",
+      "fonte": "https://commons.wikimedia.org/wiki/File:Partido_Miss%C3%A3o_logo_(dark).svg",
+      "licenca": "PD-textlogo",
+      "autor": "Partido Missão",
+      "status": "ok",
+      "confianca": "baixa",
+      "nota": "Só o texto \"missão\". O logo completo, com a onça, só existe como conteúdo restrito (fair use) na pt.wikipedia: https://pt.wikipedia.org/wiki/Ficheiro:MISSÃO_logo.png"
+    },
+    "MOBILIZA": {
+      "arquivo": "/partidos/MOBILIZA.png",
+      "fonte": "https://commons.wikimedia.org/wiki/File:Logomarca_Partido_Mobiliza.png",
+      "licenca": "PD-textlogo, PD-shape",
+      "autor": "MOBLIZA",
+      "status": "ok",
+      "confianca": "alta",
+      "nota": "Mobiliza é o ex-PMN."
+    },
+    "NOVO": {
+      "arquivo": "/partidos/NOVO.svg",
+      "fonte": "https://commons.wikimedia.org/wiki/File:Partido_Novo_logo_(2023).svg",
+      "licenca": "PD-textlogo",
+      "autor": "Partido Novo",
+      "status": "ok",
+      "confianca": "alta"
+    },
+    "PCB": {
+      "arquivo": "/partidos/PCB.svg",
+      "fonte": "https://commons.wikimedia.org/wiki/File:PCB_logo.svg",
+      "licenca": "CC BY-SA 2.5 br",
+      "autor": "Partido Comunista Brasileiro",
+      "status": "ok",
+      "confianca": "alta"
+    },
+    "PCDOB": {
+      "arquivo": "/partidos/PCDOB.svg",
+      "fonte": "https://commons.wikimedia.org/wiki/File:PCdoB_logo.svg",
+      "licenca": "PD-textlogo",
+      "autor": "desconhecido",
+      "status": "ok",
+      "confianca": "alta"
+    },
+    "PCO": {
+      "arquivo": "/partidos/PCO.svg",
+      "fonte": "https://commons.wikimedia.org/wiki/File:Logo_PCO_Institucional.svg",
+      "licenca": "CC BY-SA 4.0",
+      "autor": "Calloshccp",
+      "status": "ok",
+      "confianca": "alta",
+      "nota": "Vetorização feita por usuário do Commons a partir do logo oficial."
+    },
+    "PDT": {
+      "arquivo": "/partidos/PDT.png",
+      "fonte": "https://commons.wikimedia.org/wiki/File:PDT_logo_2026_(cropped).png",
+      "licenca": "PD-shape, PD-textlogo",
+      "autor": "Partido Democrático Trabalhista",
+      "status": "ok",
+      "confianca": "alta",
+      "nota": "Identidade visual nova de 2026. A versão SVG do mesmo logo tem pedido de exclusão no Commons (jun/2026) por talvez passar do limiar de originalidade; se for apagada, este PNG pode ter o mesmo destino."
+    },
+    "PL": {
+      "arquivo": "/partidos/PL.svg",
+      "fonte": "https://commons.wikimedia.org/wiki/File:Partido_Liberal_(Brazil)_logo.svg",
+      "licenca": "PD-textlogo",
+      "autor": "Partido Liberal",
+      "status": "ok",
+      "confianca": "alta"
+    },
+    "PODE": {
+      "arquivo": "/partidos/PODE.svg",
+      "fonte": "https://commons.wikimedia.org/wiki/File:Podemos_(Brasil)_logo.svg",
+      "licenca": "PD-textlogo",
+      "autor": "Podemos (Brasil)",
+      "status": "ok",
+      "confianca": "alta"
+    },
+    "PP": {
+      "arquivo": "/partidos/PP.svg",
+      "fonte": "https://commons.wikimedia.org/wiki/File:Progressistas_(Brazil)_logo.svg",
+      "licenca": "PD-textlogo",
+      "autor": "Progressistas",
+      "status": "ok",
+      "confianca": "alta"
+    },
+    "PRD": {
+      "arquivo": "/partidos/PRD.svg",
+      "fonte": "https://commons.wikimedia.org/wiki/File:Partido_Renova%C3%A7%C3%A3o_Democr%C3%A1tica_logo.svg",
+      "licenca": "PD-textlogo",
+      "autor": "Partido Renovação Democrática",
+      "status": "ok",
+      "confianca": "alta"
+    },
+    "PRTB": {
+      "arquivo": "/partidos/PRTB.png",
+      "fonte": "https://commons.wikimedia.org/wiki/File:Logomarca_do_Partido_Renovador_Trabalhista_Brasileiro_2.png",
+      "licenca": "PD-logo",
+      "autor": "PRTB",
+      "status": "ok",
+      "confianca": "alta",
+      "nota": "Logo \"Brasileiro 28\", o mesmo do site prtb.org.br em set/2026. Fundo cinza claro, não transparente."
+    },
+    "PSB": {
+      "arquivo": "/partidos/PSB.svg",
+      "fonte": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Brazilian_Socialist_Party_(wordmark_color).svg",
+      "licenca": "PD-textlogo",
+      "autor": "desconhecido",
+      "status": "ok",
+      "confianca": "alta"
+    },
+    "PSD": {
+      "arquivo": "/partidos/PSD.svg",
+      "fonte": "https://commons.wikimedia.org/wiki/File:PSD_Brazil_logo.svg",
+      "licenca": "PD-textlogo",
+      "autor": "Partido Social Democrático",
+      "status": "ok",
+      "confianca": "alta"
+    },
+    "PSDB": {
+      "arquivo": "/partidos/PSDB.svg",
+      "fonte": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Brazilian_Social_Democracy_Party_(2023).svg",
+      "licenca": "PD-textlogo",
+      "autor": "desconhecido",
+      "status": "ok",
+      "confianca": "alta"
+    },
+    "PSOL": {
+      "arquivo": "/partidos/PSOL.svg",
+      "fonte": "https://commons.wikimedia.org/wiki/File:Logo_PSOL_roxo.svg",
+      "licenca": "PD-textlogo",
+      "autor": "Partido Socialismo e Liberdade / Ziraldo",
+      "status": "ok",
+      "confianca": "alta"
+    },
+    "PSTU": {
+      "arquivo": "/partidos/PSTU.svg",
+      "fonte": "https://commons.wikimedia.org/wiki/File:Flag_of_the_PSTU.svg",
+      "licenca": "PD-textlogo",
+      "autor": "Lucas Friederich",
+      "status": "ok",
+      "confianca": "baixa",
+      "nota": "É a bandeira (retângulo vermelho com \"PSTU\"). O logo oficial, a bandeira tremulando, só existe no Commons com 139x90 px."
+    },
+    "PT": {
+      "arquivo": "/partidos/PT.svg",
+      "fonte": "https://commons.wikimedia.org/wiki/File:PT_(Brazil)_logo_2021.svg",
+      "licenca": "PD-textlogo",
+      "autor": "Workers' Party (Brazil) (PT)",
+      "status": "ok",
+      "confianca": "alta"
+    },
+    "PV": {
+      "arquivo": "/partidos/PV.svg",
+      "fonte": "https://commons.wikimedia.org/wiki/File:Logomarca_do_Partido_Verde.svg",
+      "licenca": "PD-textlogo",
+      "autor": "Partido Verde",
+      "status": "ok",
+      "confianca": "alta"
+    },
+    "REDE": {
+      "arquivo": "/partidos/REDE.svg",
+      "fonte": "https://commons.wikimedia.org/wiki/File:Rede_Sustentabilidade_logo.svg",
+      "licenca": "PD-textlogo",
+      "autor": "Rede Sustentabilidade",
+      "status": "ok",
+      "confianca": "alta"
+    },
+    "REPUBLICANOS": {
+      "arquivo": "/partidos/REPUBLICANOS.svg",
+      "fonte": "https://commons.wikimedia.org/wiki/File:Republicanos_(Brazil)_wordmark.svg",
+      "licenca": "PD-textlogo",
+      "autor": "Republicanos",
+      "status": "ok",
+      "confianca": "alta",
+      "nota": "O logo completo da pt.wikipedia é conteúdo restrito; este é o logotipo em texto, em domínio público."
+    },
+    "SOLIDARIEDADE": {
+      "arquivo": "/partidos/SOLIDARIEDADE.svg",
+      "fonte": "https://commons.wikimedia.org/wiki/File:Solidariedade_77_(Brasil)_logo.svg",
+      "licenca": "PD-textlogo",
+      "autor": "Solidariedade (Brasil)",
+      "status": "ok",
+      "confianca": "alta"
+    },
+    "UNIÃO": {
+      "arquivo": "/partidos/UNIAO.svg",
+      "fonte": "https://commons.wikimedia.org/wiki/File:Uni%C3%A3o_Brasil_logo.svg",
+      "licenca": "PD-textlogo",
+      "autor": "União Brasil",
+      "status": "ok",
+      "confianca": "alta"
+    },
+    "UP": {
+      "arquivo": "/partidos/UP.svg",
+      "fonte": "https://commons.wikimedia.org/wiki/File:Unidade_Popular_wordmark.svg",
+      "licenca": "PD-textlogo",
+      "autor": "Unidade Popular",
+      "status": "ok",
+      "confianca": "alta",
+      "nota": "Quadrado preto com \"UP\" em branco."
+    }
+  }
+}
