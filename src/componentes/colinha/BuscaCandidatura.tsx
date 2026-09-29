@@ -5,7 +5,7 @@ import { flushSync } from 'react-dom'
 import type { Uf } from '@/lib/estados'
 import { faixaInfo } from '@/lib/faixas'
 import { buscar, type Grupo } from './busca'
-import type { Opcao, Vaga, Voto } from './escolha'
+import { ehSubJudice, type Opcao, type Vaga, type Voto } from './escolha'
 import { FotoCandidatura } from './FotoCandidatura'
 import { SeloDoPartido } from './SeloDoPartido'
 import { enderecoNoTse } from './tse'
@@ -39,8 +39,6 @@ const TITULO_DO_GRUPO = {
   ampla: { titulo: 'Frente ampla', cor: faixaInfo['frente-ampla'].cor },
   outros: { titulo: 'Outros partidos', cor: '#2A0A0A' },
 } satisfies Record<Grupo, { titulo: string; cor: string }>
-
-const ehSubJudice = (o: Opcao) => o.situacao.startsWith('sub judice')
 
 const plural = (n: number, um: string, varios: string) => `${n.toLocaleString('pt-BR')} ${n === 1 ? um : varios}`
 
@@ -221,7 +219,7 @@ function ListaDoGrupo({ opcoes, atual, aoAbrir }: { opcoes: Opcao[]; atual: Voto
                 <span className="text-base font-bold uppercase leading-tight">{o.nome}</span>
                 <span className="flex flex-wrap items-center gap-1.5 text-xs font-bold">
                   <SeloDoPartido opcao={o} comFaixa={false} />
-                  {ehSubJudice(o) && <span className="text-sangue">Sub judice</span>}
+                  {ehSubJudice(o.situacao) && <span className="text-sangue">Sub judice</span>}
                   {atual === o.numero && <span className="text-vermelho">✓ Na sua colinha</span>}
                 </span>
               </span>
@@ -292,7 +290,7 @@ function Gaveta({ opcao, vaga, uf, aoPor, aoFechar }: { opcao: Opcao; vaga: Vaga
             </div>
           )}
         </dl>
-        {ehSubJudice(opcao) && (
+        {ehSubJudice(opcao.situacao) && (
           <p className="border-l-4 border-sangue bg-white p-2.5 text-sm font-bold">
             Sub judice: o registro está em recurso. Se for negado, o voto é anulado.
           </p>

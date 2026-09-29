@@ -38,6 +38,9 @@ export type Opcao = {
   sq: string | null
 }
 
+// Registro em recurso: se for negado, o voto é anulado.
+export const ehSubJudice = (situacao: string) => situacao.startsWith('sub judice')
+
 // Formato enxuto que o servidor manda ao navegador: São Paulo tem umas 2.400 candidaturas.
 export type CandidaturaCompacta = [numero: number, nome: string, partido: string, faixa: number, situacao: string, foto: string | null, sq: string]
 
@@ -205,7 +208,7 @@ export type LinhaDaColinha = Vaga &
   ({ tipo: 'vazia'; aviso: string | null } | { tipo: 'branco' } | { tipo: 'escolhida'; opcao: Opcao; aviso: string | null })
 
 const avisoDaSituacao = (situacao: string) =>
-  situacao.startsWith('sub judice') ? 'Sub judice: o voto pode ser anulado se o registro for negado.' : null
+  ehSubJudice(situacao) ? 'Sub judice: o voto pode ser anulado se o registro for negado.' : null
 
 const semVotoDeClasse = (cargo: Cargo, partido: SiglaDeClasse) =>
   cargo === 'deputadoFederal' || cargo === 'deputadoEstadual'
