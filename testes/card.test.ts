@@ -54,9 +54,13 @@ describe('o arquivo do card', () => {
 })
 
 describe('uma linha do card', () => {
-  it('diz "em branco" quando não há número', () => {
-    assert.equal(nomeDaLinha({ numero: null, nome: 'FULANA' }), 'em branco')
+  it('diz "em branco" quando o voto em branco foi escolhido', () => {
+    assert.equal(nomeDaLinha({ numero: null, nome: 'em branco' }), 'em branco')
     assert.equal(numeroDaLinha({ numero: null }), '—')
+  })
+
+  it('diz "a escolher" quando o cargo ainda está vazio, sem sugerir voto em branco', () => {
+    assert.equal(nomeDaLinha({ numero: null, nome: null }), 'a escolher')
   })
 
   it('mostra o nome e o número escolhidos', () => {

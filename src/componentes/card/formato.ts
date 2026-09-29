@@ -25,7 +25,7 @@ export const linhaLegal = (dataTse: string) =>
   `números do TSE de ${dataTse} · fotos: TSE (CC-BY) · Lucas Freitas, pessoa física · não é material oficial de candidato, partido ou TSE`
 
 export const nomeDaLinha = ({ numero, nome }: { numero: number | null; nome: string | null }) =>
-  numero === null ? 'em branco' : (nome ?? '')
+  numero === null ? (nome ?? 'a escolher') : (nome ?? '')
 
 export const numeroDaLinha = ({ numero }: { numero: number | null }) => (numero === null ? '—' : String(numero))
 

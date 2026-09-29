@@ -51,7 +51,7 @@ const paraOCard = (linha: LinhaDaColinha): LinhaDoCard => {
     const { numero, nome, partido, faixa, foto } = linha.opcao
     return { rotulo: linha.rotulo, numero, nome, partido, faixa, foto }
   }
-  return { rotulo: linha.rotulo, numero: null, nome: linha.tipo === 'branco' ? 'Voto em branco' : null, partido: null, faixa: null, foto: null }
+  return { rotulo: linha.rotulo, numero: null, nome: linha.tipo === 'branco' ? 'em branco' : null, partido: null, faixa: null, foto: null }
 }
 
 // Abre o menu de compartilhar do celular; sem ele, o zap.
