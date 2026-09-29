@@ -1,7 +1,8 @@
-import { candidatos, pesquisas, camara, senadoresContinuam } from './dados'
+import { candidatos, pesquisas, camara, eleitorado, senadoresContinuam } from './dados'
 import type { Candidato, Pesquisa } from './esquemas'
 import { UFS, type Uf } from './estados'
 import { faixaDoPartido, ladoDaFaixa, normalizar, type Faixa, type Lado } from './faixas'
+import { ameacaNosGovernos, eleitoradoSobAmeaca, type DisputaDoSenado, type GovernoNaAmeaca } from './ameaca'
 
 type Contagem = Record<Lado, number>
 
@@ -188,6 +189,39 @@ export const placarCamara = () => {
     { medio: contagemVazia(), min: contagemVazia(), max: contagemVazia() },
   )
   return { atual, projetada: projetada ?? null, impeachment: IMPEACHMENT_BLOQUEIO }
+}
+
+// ---------- Ameaça ----------
+
+const daExtrema = (c: Classificacao) => c.faixa === 'extrema-direita'
+
+export const governosNaAmeaca = () =>
+  UFS.map((uf) => {
+    const governo = governoDaUf(uf)
+    return {
+      uf,
+      nomeLider: governo.lider?.nomeUrna ?? null,
+      faixaLider: governo.lider?.classe?.faixa ?? null,
+      extremaFavorita: governo.pesquisa !== null && situacaoDoCampo(governo.pesquisa, daExtrema).situacao === 'favorita',
+      extremaNoPrimeiroTurno: governo.alertaExtrema !== null,
+    } satisfies GovernoNaAmeaca & { nomeLider: string | null }
+  })
+
+// Onde a extrema direita lidera para governador e quantos eleitores vivem lá.
+export const ameacaNosEstados = () => {
+  const governos = governosNaAmeaca()
+  const resumo = ameacaNosGovernos(governos)
+  return { governos, ...resumo, eleitorado: eleitoradoSobAmeaca(eleitorado, resumo.lidera) }
+}
+
+export const disputasDoSenado = () =>
+  UFS.map(senadoDaUf).map(({ uf, pesquisa, eleitos }): DisputaDoSenado =>
+    pesquisa === null ? { uf, status: 'sem-pesquisa' } : { uf, status: 'com-pesquisa', faixas: eleitos.map((e) => e.classe?.faixa ?? null) },
+  )
+
+export const primeiroTurnoPresidente = () => {
+  const pesquisa = pesquisas.filter((p) => p.cargo === 'presidente' && p.turno === 1).sort(maisRecentePrimeiro)[0]
+  return pesquisa ? { pesquisa, lideres: comPartido(pesquisa).slice(0, 2) } : null
 }
 
 function media(valores: number[]) {
