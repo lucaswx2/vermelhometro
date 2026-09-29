@@ -47,9 +47,14 @@ export function FotoCandidatura({ opcao, tamanho, alt = '' }: { opcao: Pick<Opca
   )
 }
 
+// Cargo sem escolha: o quadro da foto pequena, tracejado.
 export function FotoVazia() {
   return (
-    <span aria-hidden="true" className="foto-candidatura flex h-[67px] w-12 shrink-0 items-center justify-center border-2 border-dashed border-vermelho">
+    <span
+      aria-hidden="true"
+      className="foto-candidatura flex shrink-0 items-center justify-center border-2 border-dashed border-vermelho"
+      style={{ width: MEDIDAS.p.largura, height: MEDIDAS.p.altura }}
+    >
       <svg width="18" height="18" viewBox="0 0 18 18">
         <path d="M9 2 V16 M2 9 H16" className="stroke-vermelho" strokeWidth="2.5" />
       </svg>
