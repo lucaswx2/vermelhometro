@@ -12,7 +12,7 @@ export type Lado = 'esquerda' | 'centro' | 'direita'
 
 export const faixaInfo = {
   'esquerda-radical': { nome: 'Esquerda socialista', cor: '#8E0F14', texto: '#FFF4DC', lado: 'esquerda' },
-  'frente-ampla': { nome: 'PT e aliados', cor: '#D93A26', texto: '#FFFFFF', lado: 'esquerda' },
+  'frente-ampla': { nome: 'Frente ampla', cor: '#D93A26', texto: '#FFFFFF', lado: 'esquerda' },
   centrao: { nome: 'Centrão', cor: '#D8C69C', texto: '#2A0A0A', lado: 'centro' },
   'direita-liberal': { nome: 'Direita liberal', cor: '#5F6673', texto: '#FFFFFF', lado: 'direita' },
   'extrema-direita': { nome: 'Extrema direita', cor: '#2A0A0A', texto: '#FFF4DC', lado: 'direita' },

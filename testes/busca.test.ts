@@ -29,7 +29,7 @@ const opcoes: Opcao[] = [
 const nomes = (lista: Opcao[]) => lista.map((o) => o.nome)
 
 describe('a prioridade da esquerda na busca', () => {
-  it('separa esquerda socialista, PT e aliados e outros partidos', () => {
+  it('separa esquerda socialista, frente ampla e outros partidos', () => {
     const grupos = buscar(opcoes, '', 0)
     assert.equal(grupos.esquerda.length, 4)
     assert.deepEqual(nomes(grupos.ampla).sort(), ['MARINA SILVA', 'SIMONE TEBET'])

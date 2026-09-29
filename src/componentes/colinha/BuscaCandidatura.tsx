@@ -36,7 +36,7 @@ const aoPedirFechar = (aoFechar: () => void) => ({
 
 const TITULO_DO_GRUPO = {
   esquerda: { titulo: 'Esquerda socialista', cor: faixaInfo['esquerda-radical'].cor },
-  ampla: { titulo: 'PT e aliados', cor: faixaInfo['frente-ampla'].cor },
+  ampla: { titulo: 'Frente ampla', cor: faixaInfo['frente-ampla'].cor },
   outros: { titulo: 'Outros partidos', cor: '#2A0A0A' },
 } satisfies Record<Grupo, { titulo: string; cor: string }>
 

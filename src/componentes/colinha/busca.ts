@@ -1,7 +1,7 @@
 import { normalizar, type Faixa } from '../../lib/faixas.ts'
 import type { Opcao } from './escolha.ts'
 
-// Prioridade da esquerda: esquerda socialista, depois PT e aliados, depois os outros, recolhidos.
+// Prioridade da esquerda: esquerda socialista, depois a frente ampla, depois os outros, recolhidos.
 export type Grupo = 'esquerda' | 'ampla' | 'outros'
 
 export const GRUPOS = ['esquerda', 'ampla', 'outros'] as const satisfies readonly Grupo[]
