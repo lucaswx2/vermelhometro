@@ -3,27 +3,28 @@
 import { useRouter } from 'next/navigation'
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react'
 import { flushSync } from 'react-dom'
-import { CompartilharCard, type LinhaDoCard } from '@/componentes/card/CompartilharCard'
-import { NOME_UF, UFS, ehUf } from '@/lib/estados'
+import { CompartilharCard } from '@/componentes/card/CompartilharCard'
+import type { LinhaDoCard } from '@/componentes/card/formato'
+import { NOME_UF, UFS, ehUf, rotaDoEstado, type Uf } from '@/lib/estados'
 import { PARTIDOS_DE_CLASSE } from '@/lib/partidosDeClasse'
 import { lembrarColinha } from '../ultimaColinha'
 import { BuscaCandidatura } from './BuscaCandidatura'
 import {
-  abrirCandidatas,
+  abrirCandidaturas,
+  enderecoEmOutroEstado,
   ESCOLHA_VAZIA,
   escreverEscolha,
   lerEscolha,
   linkDaColinha,
   montarColinha,
   opcoesDoCargo,
-  paraOutroEstado,
   votar,
   votarComAClasse,
-  type CandidatasCompactas,
+  type CandidaturasCompactas,
   type Cargo,
   type Escolha,
   type LinhaDaColinha,
-  type PadroesDaClasse,
+  type ColinhasDeClasse,
   type Voto,
 } from './escolha'
 import { FotoCandidatura, FotoVazia } from './FotoCandidatura'
@@ -43,15 +44,17 @@ const gravar = (escolha: Escolha) => {
   window.dispatchEvent(new HashChangeEvent('hashchange'))
 }
 
+// A linha sem candidatura escolhida: cargo vazio ou voto em branco.
+type SemOpcao = Exclude<LinhaDaColinha['tipo'], 'escolhida'>
 
-const votoDaLinha = (linha: LinhaDaColinha): Voto | null => (linha.tipo === 'escolhida' ? linha.opcao.numero : linha.tipo === 'branco' ? 'branco' : null)
+const VOTO_SEM_OPCAO = { vazia: null, branco: 'branco' } satisfies Record<SemOpcao, Voto | null>
+
+const votoDaLinha = (linha: LinhaDaColinha): Voto | null => (linha.tipo === 'escolhida' ? linha.opcao.numero : VOTO_SEM_OPCAO[linha.tipo])
 
 const paraOCard = (linha: LinhaDaColinha): LinhaDoCard => {
-  if (linha.tipo === 'escolhida') {
-    const { numero, nome, partido, faixa, foto } = linha.opcao
-    return { rotulo: linha.rotulo, numero, nome, partido, faixa, foto }
-  }
-  return { rotulo: linha.rotulo, numero: null, nome: linha.tipo === 'branco' ? 'em branco' : null, partido: null, faixa: null, foto: null }
+  if (linha.tipo !== 'escolhida') return { tipo: linha.tipo, rotulo: linha.rotulo }
+  const { numero, nome, partido, faixa, foto } = linha.opcao
+  return { tipo: 'escolhida', rotulo: linha.rotulo, numero, nome, partido, faixa, foto }
 }
 
 // Abre o menu de compartilhar do celular; sem ele, o zap.
@@ -72,25 +75,25 @@ const mandar = async (url: string) => {
 type Busca = { cargo: Cargo; semente: number }
 
 type Props = {
-  uf: string
+  uf: Uf
   estado: string
-  candidatas: CandidatasCompactas
-  padroes: PadroesDaClasse
+  candidaturas: CandidaturasCompactas
+  colinhasDeClasse: ColinhasDeClasse
   dataTse: string
 }
 
-export function MontadorColinha({ uf, estado, candidatas, padroes, dataTse }: Props) {
+export function MontadorColinha({ uf, estado, candidaturas, colinhasDeClasse, dataTse }: Props) {
   const hash = useSyncExternalStore(assinarHash, hashAtual, hashNoServidor)
   const escolha = lerEscolha(hash)
-  const opcoes = useMemo(() => abrirCandidatas(candidatas), [candidatas])
-  const linhas = montarColinha(escolha, opcoes, padroes, uf === 'DF')
+  const opcoes = useMemo(() => abrirCandidaturas(candidaturas), [candidaturas])
+  const linhas = montarColinha(escolha, opcoes, colinhasDeClasse, uf === 'DF')
   const [busca, setBusca] = useState<Busca | null>(null)
   const temEscolha = linhas.some((l) => l.tipo !== 'vazia')
-  const url = `${SITE}/estado/${uf.toLowerCase()}${linkDaColinha(escolha)}`
+  const url = `${SITE}${rotaDoEstado(uf)}${linkDaColinha(escolha)}`
 
   // A aba "Colinha" do rodapé volta para esta colinha.
   useEffect(() => {
-    lembrarColinha(`/estado/${uf.toLowerCase()}${hash}`)
+    lembrarColinha(`${rotaDoEstado(uf)}${hash}`)
   }, [uf, hash])
 
   const abrirBusca = (cargo: Cargo) => setBusca((atual) => ({ cargo, semente: atual?.semente ?? Math.floor(Math.random() * 1e6) }))
@@ -110,7 +113,7 @@ export function MontadorColinha({ uf, estado, candidatas, padroes, dataTse }: Pr
 
   return (
     <>
-      {escolha.recebida && <ConviteRecebida uf={uf} escolha={escolha} />}
+      {escolha.recebida && <AvisoDoLinkRecebido uf={uf} escolha={escolha} />}
 
       <section aria-labelledby="vote-com-a-classe" className="nao-imprimir flex flex-col gap-2.5 bg-vermelho p-3.5 text-papel">
         <div className="flex flex-col gap-0.5">
@@ -213,52 +216,68 @@ export function MontadorColinha({ uf, estado, candidatas, padroes, dataTse }: Pr
   )
 }
 
+const ACAO_DA_VAGA = {
+  vazia: { texto: 'Escolher ›', rotulo: 'Escolher' },
+  branco: { texto: 'Trocar', rotulo: 'Trocar' },
+  escolhida: { texto: 'Trocar', rotulo: 'Trocar' },
+} satisfies Record<LinhaDaColinha['tipo'], { texto: string; rotulo: string }>
+
 function CartaoDaVaga({ linha, aoAbrir }: { linha: LinhaDaColinha; aoAbrir: () => void }) {
   const aviso = linha.tipo === 'branco' ? null : linha.aviso
-  const acao = linha.tipo === 'vazia' ? 'Escolher ›' : 'Trocar'
+  const acao = ACAO_DA_VAGA[linha.tipo]
   return (
     <li className="relative flex min-h-[84px] items-center gap-3 border-2 border-tinta bg-white px-3 py-2.5 focus-within:outline-4 focus-within:outline-ouro">
       {linha.tipo === 'escolhida' ? <FotoCandidatura opcao={linha.opcao} tamanho="p" /> : <FotoVazia />}
       <span className="flex min-w-0 grow flex-col gap-px">
-        {linha.tipo === 'vazia' ? (
-          <>
-            <span className="font-display text-[21px] uppercase leading-tight">{linha.rotulo}</span>
-            <span className="text-[13px] font-medium text-tinta/70">{linha.digitos}</span>
-          </>
-        ) : (
-          <>
-            <span className="text-[11px] font-bold uppercase tracking-wide text-tinta/70">{linha.rotulo}</span>
-            {linha.tipo === 'escolhida' ? (
-              <>
-                <span className="flex items-baseline gap-2">
-                  <span className="font-display text-[32px] leading-none tracking-wide">{linha.opcao.numero}</span>
-                  <span className="truncate text-[15px] font-bold uppercase">{linha.opcao.nome}</span>
-                </span>
-                <span className="mt-0.5 self-start">
-                  <SeloDoPartido opcao={linha.opcao} />
-                </span>
-              </>
-            ) : (
-              <span className="font-display text-[32px] uppercase leading-none">Branco</span>
-            )}
-          </>
-        )}
+        <TextoDaVaga linha={linha} />
         {aviso && <span className="mt-1 text-xs font-medium text-sangue">{aviso}</span>}
       </span>
       <button
         id={`vaga-${linha.cargo}`}
         type="button"
         onClick={aoAbrir}
-        aria-label={`${acao.replace(' ›', '')}: ${linha.rotulo}`}
+        aria-label={`${acao.rotulo}: ${linha.rotulo}`}
         className="min-h-11 shrink-0 text-sm font-bold uppercase text-vermelho outline-none after:absolute after:inset-0"
       >
-        {acao}
+        {acao.texto}
       </button>
     </li>
   )
 }
 
-function ConviteRecebida({ uf, escolha }: { uf: string; escolha: Escolha }) {
+function TextoDaVaga({ linha }: { linha: LinhaDaColinha }) {
+  if (linha.tipo === 'vazia') {
+    return (
+      <>
+        <span className="font-display text-[21px] uppercase leading-tight">{linha.rotulo}</span>
+        <span className="text-[13px] font-medium text-tinta/70">{linha.digitos}</span>
+      </>
+    )
+  }
+  const rotulo = <span className="text-[11px] font-bold uppercase tracking-wide text-tinta/70">{linha.rotulo}</span>
+  if (linha.tipo === 'branco') {
+    return (
+      <>
+        {rotulo}
+        <span className="font-display text-[32px] uppercase leading-none">Branco</span>
+      </>
+    )
+  }
+  return (
+    <>
+      {rotulo}
+      <span className="flex items-baseline gap-2">
+        <span className="font-display text-[32px] leading-none tracking-wide">{linha.opcao.numero}</span>
+        <span className="truncate text-[15px] font-bold uppercase">{linha.opcao.nome}</span>
+      </span>
+      <span className="mt-0.5 self-start">
+        <SeloDoPartido opcao={linha.opcao} />
+      </span>
+    </>
+  )
+}
+
+function AvisoDoLinkRecebido({ uf, escolha }: { uf: Uf; escolha: Escolha }) {
   const router = useRouter()
   const [destino, setDestino] = useState(uf)
   const levados = [
@@ -269,21 +288,20 @@ function ConviteRecebida({ uf, escolha }: { uf: string; escolha: Escolha }) {
 
   const montar = () => {
     if (destino === uf) return gravar({ ...escolha, recebida: false })
-    if (!ehUf(destino)) return
-    router.push(`/estado/${destino.toLowerCase()}${escreverEscolha(paraOutroEstado(escolha))}`)
+    router.push(enderecoEmOutroEstado(destino, escolha))
   }
 
   return (
-    <section aria-labelledby="convite" className="nao-imprimir flex flex-col gap-3 border-[3px] border-tinta bg-ouro px-4 py-4.5">
+    <section aria-labelledby="link-recebido" className="nao-imprimir flex flex-col gap-3 border-[3px] border-tinta bg-ouro px-4 py-4.5">
       <p className="text-[13px] font-bold uppercase tracking-[0.12em]">Te mandaram uma colinha</p>
-      <h2 id="convite" className="font-display text-3xl uppercase leading-none">
+      <h2 id="link-recebido" className="font-display text-3xl uppercase leading-none">
         Vota em outro estado? Monte a sua.
       </h2>
       <label className="flex flex-col gap-1 text-[13px] font-bold">
         Seu estado
         <select
           value={destino}
-          onChange={(e) => setDestino(e.target.value)}
+          onChange={(e) => ehUf(e.target.value) && setDestino(e.target.value)}
           className="h-12 border-[3px] border-tinta bg-papel px-2.5 text-[17px] font-bold text-tinta"
         >
           {UFS.map((u) => (
@@ -305,6 +323,8 @@ function ConviteRecebida({ uf, escolha }: { uf: string; escolha: Escolha }) {
   )
 }
 
+const NUMERO_NA_FOLHA = { vazia: '—', branco: 'BRANCO' } satisfies Record<SemOpcao, string>
+
 function Folha({ linhas, estado, partido, dataTse }: { linhas: LinhaDaColinha[]; estado: string; partido: string | null; dataTse: string }) {
   return (
     <article className="folha-colinha flex flex-col border-[3px] border-tinta bg-white text-black">
@@ -320,7 +340,7 @@ function Folha({ linhas, estado, partido, dataTse }: { linhas: LinhaDaColinha[];
               <span className="text-sm font-bold uppercase">{l.rotulo}</span>
               <div className="flex items-baseline gap-3">
                 <span className="numero-folha min-w-[4ch] font-display text-5xl leading-none tracking-wider">
-                  {l.tipo === 'escolhida' ? l.opcao.numero : l.tipo === 'branco' ? 'BRANCO' : '—'}
+                  {l.tipo === 'escolhida' ? l.opcao.numero : NUMERO_NA_FOLHA[l.tipo]}
                 </span>
                 {l.tipo === 'escolhida' && (
                   <span className="truncate text-base font-medium">

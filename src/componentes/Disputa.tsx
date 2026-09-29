@@ -1,5 +1,5 @@
 import type { Pesquisa } from '@/lib/esquemas'
-import { faixaInfo, rotuloDoPalanque } from '@/lib/faixas'
+import { FICHA_DA_FAIXA, rotuloDoPalanque } from '@/lib/faixas'
 import { classificar } from '@/lib/placar'
 import { FichaPesquisa } from './FichaPesquisa'
 
@@ -22,7 +22,7 @@ export function Disputa({ titulo, pesquisa, nota }: { titulo: string; pesquisa: 
         {resultados.map((r) => {
           const classe = classificar(pesquisa, r)
           if (!classe) return null
-          const partido = faixaInfo[classe.faixaPartido]
+          const partido = FICHA_DA_FAIXA[classe.faixaPartido]
           const palanque = rotuloDoPalanque(classe.faixaPartido, classe.faixa)
           return (
             <li key={r.nomeUrna} className="flex flex-col gap-1">

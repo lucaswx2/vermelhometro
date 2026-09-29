@@ -1,11 +1,12 @@
 'use client'
 
 import { useSyncExternalStore } from 'react'
+import { ROTA_DO_ESTADO } from '@/lib/estados'
 
 // A última colinha aberta, só neste aparelho: a aba "Colinha" volta para ela.
 const CHAVE = 'vermelhometro:colinha'
 const EVENTO = 'vermelhometro:colinha'
-const CAMINHO_DE_COLINHA = /^\/estado\/[a-z]{2}(#[\w=&%-]*)?$/
+const CAMINHO_DE_COLINHA = new RegExp(String.raw`${ROTA_DO_ESTADO.source}(#[\w=&%-]*)?$`)
 
 export const lembrarColinha = (caminho: string) => {
   try {

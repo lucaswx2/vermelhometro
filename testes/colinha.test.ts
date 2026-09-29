@@ -1,17 +1,18 @@
 import { describe, it } from 'node:test'
 import assert from 'node:assert/strict'
 import {
-  abrirCandidatas,
+  abrirCandidaturas,
   escreverEscolha,
   ESCOLHA_VAZIA,
   lerEscolha,
   linkDaColinha,
   montarColinha,
   opcoesDoCargo,
-  padroesDaClasse,
+  colinhasDeClasse,
+  enderecoEmOutroEstado,
   paraOutroEstado,
   votar,
-  type CandidatasCompactas,
+  type CandidaturasCompactas,
   type Escolha,
   type LinhaDaColinha,
 } from '../src/componentes/colinha/escolha.ts'
@@ -47,31 +48,31 @@ const classe = {
 }
 
 // Todas as candidaturas aptas do mesmo estado, como o navegador recebe.
-const compactas: CandidatasCompactas = {
+const compactas: CandidaturasCompactas = {
   deputadoFederal: [
-    [1616, 'FULANA', 'PSTU', 0, 'sub judice (indeferido com recurso)', null],
-    [1310, 'CICRANO', 'PT', 1, '', null],
-    [2222, 'BELTRANO', 'PL', 4, '', '/fotos/1.jpg'],
+    [1616, 'FULANA', 'PSTU', 0, 'sub judice (indeferido com recurso)', null, 'sq1'],
+    [1310, 'CICRANO', 'PT', 1, '', null, 'sq2'],
+    [2222, 'BELTRANO', 'PL', 4, '', '/fotos/1.jpg', 'sq12'],
   ],
-  deputadoEstadual: [[16000, 'ZEZINHA', 'PSTU', 0, '', null]],
+  deputadoEstadual: [[16000, 'ZEZINHA', 'PSTU', 0, '', null, 'sq3']],
   senador: [
-    [160, 'WELLER', 'PSTU', 0, '', null],
-    [161, 'ELIANA', 'PSTU', 0, '', null],
-    [800, 'MARCIO', 'UP', 0, '', null],
-    [222, 'CAPITAO', 'PL', 4, '', null],
+    [160, 'WELLER', 'PSTU', 0, '', null, 'sq4'],
+    [161, 'ELIANA', 'PSTU', 0, '', null, 'sq5'],
+    [800, 'MARCIO', 'UP', 0, '', null, 'sq6'],
+    [222, 'CAPITAO', 'PL', 4, '', null, 'sq7'],
   ],
-  governador: [[16, 'ANA', 'PSTU', 0, '', null]],
+  governador: [[16, 'ANA', 'PSTU', 0, '', null, 'sq8']],
   presidente: [
-    [16, 'HERTZ DIAS', 'PSTU', 0, '', null],
-    [21, 'EDMILSON COSTA', 'PCB', 0, '', null],
-    [13, 'LULA', 'PT', 1, '', null],
+    [16, 'HERTZ DIAS', 'PSTU', 0, '', null, 'sq9'],
+    [21, 'EDMILSON COSTA', 'PCB', 0, '', null, 'sq10'],
+    [13, 'LULA', 'PT', 1, '', null, 'sq11'],
   ],
 }
 
-const opcoes = abrirCandidatas(compactas)
-const padroes = padroesDaClasse(classe)
+const opcoes = abrirCandidaturas(compactas)
+const daClasse = colinhasDeClasse(classe)
 
-const montar = (escolha: Partial<Escolha>, ehDf = false) => montarColinha({ ...ESCOLHA_VAZIA, ...escolha }, opcoes, padroes, ehDf)
+const montar = (escolha: Partial<Escolha>, ehDf = false) => montarColinha({ ...ESCOLHA_VAZIA, ...escolha }, opcoes, daClasse, ehDf)
 
 const linha = (linhas: LinhaDaColinha[], cargo: string) => {
   const achada = linhas.find((l) => l.cargo === cargo)
@@ -211,5 +212,14 @@ describe('o link da colinha', () => {
   it('leva para outro estado só o partido e o presidente', () => {
     const escolha: Escolha = { partido: 'PSOL', recebida: true, votos: { presidente: 13, governador: 16, senador1: 160 } }
     assert.deepEqual(paraOutroEstado(escolha), { partido: 'PSOL', recebida: false, votos: { presidente: 13 } })
+  })
+
+  it('abre a página do outro estado com o partido e o presidente no link', () => {
+    const escolha: Escolha = { partido: 'PSOL', recebida: true, votos: { presidente: 13, governador: 16 } }
+    assert.equal(enderecoEmOutroEstado('RJ', escolha), '/estado/rj#p=PSOL&pr=13')
+  })
+
+  it('abre a página do outro estado sem link quando não há escolha', () => {
+    assert.equal(enderecoEmOutroEstado('BA', ESCOLHA_VAZIA), '/estado/ba')
   })
 })

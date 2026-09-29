@@ -1,7 +1,7 @@
 import { normalizar, type Faixa } from '../../lib/faixas.ts'
 import type { Opcao } from './escolha.ts'
 
-// Prioridade da esquerda: esquerda socialista, depois PT e aliados, depois os outros, recolhidos.
+// Prioridade da esquerda: esquerda socialista, depois a frente ampla, depois os outros, recolhidos.
 export type Grupo = 'esquerda' | 'ampla' | 'outros'
 
 export const GRUPOS = ['esquerda', 'ampla', 'outros'] as const satisfies readonly Grupo[]
@@ -19,9 +19,9 @@ const LETRAS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 // A cada visita a ordem começa por uma letra: ninguém fica sempre em primeiro.
 export const letraDaVez = (semente: number) => LETRAS[((Math.trunc(semente) % LETRAS.length) + LETRAS.length) % LETRAS.length]
 
-export const girarPelaLetra = <T>(itens: T[], chave: (item: T) => string, letra: string) => {
-  const ordenados = [...itens].sort((a, b) => (chave(a) < chave(b) ? -1 : chave(a) > chave(b) ? 1 : 0))
-  const inicio = ordenados.findIndex((item) => chave(item) >= letra)
+export const girarPelaLetra = <T>(entradas: T[], chave: (entrada: T) => string, letra: string) => {
+  const ordenados = [...entradas].sort((a, b) => (chave(a) < chave(b) ? -1 : chave(a) > chave(b) ? 1 : 0))
+  const inicio = ordenados.findIndex((entrada) => chave(entrada) >= letra)
   if (inicio <= 0) return ordenados
   return [...ordenados.slice(inicio), ...ordenados.slice(0, inicio)]
 }

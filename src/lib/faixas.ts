@@ -1,3 +1,5 @@
+import { COR_DO_TEMA } from './cores.ts'
+
 export const FAIXAS = [
   'esquerda-radical',
   'frente-ampla',
@@ -10,12 +12,12 @@ export type Faixa = (typeof FAIXAS)[number]
 
 export type Lado = 'esquerda' | 'centro' | 'direita'
 
-export const faixaInfo = {
-  'esquerda-radical': { nome: 'Esquerda socialista', cor: '#8E0F14', texto: '#FFF4DC', lado: 'esquerda' },
-  'frente-ampla': { nome: 'PT e aliados', cor: '#D93A26', texto: '#FFFFFF', lado: 'esquerda' },
-  centrao: { nome: 'Centrão', cor: '#D8C69C', texto: '#2A0A0A', lado: 'centro' },
+export const FICHA_DA_FAIXA = {
+  'esquerda-radical': { nome: 'Esquerda socialista', cor: COR_DO_TEMA.sangue, texto: COR_DO_TEMA.papel, lado: 'esquerda' },
+  'frente-ampla': { nome: 'Frente ampla', cor: '#D93A26', texto: '#FFFFFF', lado: 'esquerda' },
+  centrao: { nome: 'Centrão', cor: '#D8C69C', texto: COR_DO_TEMA.tinta, lado: 'centro' },
   'direita-liberal': { nome: 'Direita liberal', cor: '#5F6673', texto: '#FFFFFF', lado: 'direita' },
-  'extrema-direita': { nome: 'Extrema direita', cor: '#2A0A0A', texto: '#FFF4DC', lado: 'direita' },
+  'extrema-direita': { nome: 'Extrema direita', cor: COR_DO_TEMA.tinta, texto: COR_DO_TEMA.papel, lado: 'direita' },
 } satisfies Record<Faixa, { nome: string; cor: string; texto: string; lado: Lado }>
 
 const faixaPorPartido: Record<string, Faixa> = {
@@ -49,7 +51,7 @@ export const normalizar = (texto: string) =>
 
 export const faixaDoPartido = (partido: string): Faixa => faixaPorPartido[normalizar(partido).replace(/ /g, '')] ?? 'centrao'
 
-export const ladoDaFaixa = (faixa: Faixa): Lado => faixaInfo[faixa].lado
+export const ladoDaFaixa = (faixa: Faixa): Lado => FICHA_DA_FAIXA[faixa].lado
 
 const PALANQUE: Partial<Record<Faixa, string>> = {
   'frente-ampla': 'no palanque de Lula',
@@ -58,4 +60,4 @@ const PALANQUE: Partial<Record<Faixa, string>> = {
 
 // Rótulo da segunda camada: onde o candidato está de fato, quando difere do partido.
 export const rotuloDoPalanque = (faixaPartido: Faixa, faixa: Faixa) =>
-  faixa === faixaPartido ? null : (PALANQUE[faixa] ?? faixaInfo[faixa].nome)
+  faixa === faixaPartido ? null : (PALANQUE[faixa] ?? FICHA_DA_FAIXA[faixa].nome)

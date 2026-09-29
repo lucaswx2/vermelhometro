@@ -4,7 +4,7 @@ import { buscar, girarPelaLetra, letraDaVez } from '../src/componentes/colinha/b
 import type { Opcao } from '../src/componentes/colinha/escolha.ts'
 import type { Faixa } from '../src/lib/faixas.ts'
 
-const candidata = (numero: number, nome: string, partido: string, faixa: Faixa): Opcao => ({
+const candidatura = (numero: number, nome: string, partido: string, faixa: Faixa): Opcao => ({
   tipo: 'candidatura',
   numero,
   nome,
@@ -12,23 +12,24 @@ const candidata = (numero: number, nome: string, partido: string, faixa: Faixa):
   faixa,
   situacao: '',
   foto: null,
+  sq: `sq-${numero}`,
 })
 
 const opcoes: Opcao[] = [
-  candidata(160, 'WELLER GONÇALVES', 'PSTU', 'esquerda-radical'),
-  candidata(808, 'MAÍRA DE SOUZA', 'UP', 'esquerda-radical'),
-  candidata(211, 'PETTER MAAHS', 'PCB', 'esquerda-radical'),
-  candidata(180, 'MARINA SILVA', 'REDE', 'frente-ampla'),
-  candidata(400, 'SIMONE TEBET', 'PSB', 'frente-ampla'),
-  candidata(222, 'CAPITÃO FULANO', 'PL', 'extrema-direita'),
-  candidata(555, 'BELTRANO', 'PSD', 'centrao'),
-  { tipo: 'legenda', numero: 16, nome: 'Legenda PSTU', partido: 'PSTU', faixa: 'esquerda-radical', situacao: '', foto: null },
+  candidatura(160, 'WELLER GONÇALVES', 'PSTU', 'esquerda-radical'),
+  candidatura(808, 'MAÍRA DE SOUZA', 'UP', 'esquerda-radical'),
+  candidatura(211, 'PETTER MAAHS', 'PCB', 'esquerda-radical'),
+  candidatura(180, 'MARINA SILVA', 'REDE', 'frente-ampla'),
+  candidatura(400, 'SIMONE TEBET', 'PSB', 'frente-ampla'),
+  candidatura(222, 'CAPITÃO FULANO', 'PL', 'extrema-direita'),
+  candidatura(555, 'BELTRANO', 'PSD', 'centrao'),
+  { tipo: 'legenda', numero: 16, nome: 'Legenda PSTU', partido: 'PSTU', faixa: 'esquerda-radical', situacao: '', foto: null, sq: null },
 ]
 
 const nomes = (lista: Opcao[]) => lista.map((o) => o.nome)
 
 describe('a prioridade da esquerda na busca', () => {
-  it('separa esquerda socialista, PT e aliados e outros partidos', () => {
+  it('separa esquerda socialista, frente ampla e outros partidos', () => {
     const grupos = buscar(opcoes, '', 0)
     assert.equal(grupos.esquerda.length, 4)
     assert.deepEqual(nomes(grupos.ampla).sort(), ['MARINA SILVA', 'SIMONE TEBET'])

@@ -2,11 +2,14 @@
 
 import { useDeferredValue, useMemo, useRef, useState, type SyntheticEvent } from 'react'
 import { flushSync } from 'react-dom'
-import { faixaInfo } from '@/lib/faixas'
+import { COR_DO_TEMA } from '@/lib/cores'
+import type { Uf } from '@/lib/estados'
+import { FICHA_DA_FAIXA } from '@/lib/faixas'
 import { buscar, type Grupo } from './busca'
-import type { Opcao, Vaga, Voto } from './escolha'
+import { ehSubJudice, type Opcao, type Vaga, type Voto } from './escolha'
 import { FotoCandidatura } from './FotoCandidatura'
 import { SeloDoPartido } from './SeloDoPartido'
+import { enderecoNoTse } from './tse'
 
 const TSE = 'https://divulgacandcontas.tse.jus.br'
 
@@ -33,12 +36,10 @@ const aoPedirFechar = (aoFechar: () => void) => ({
 })
 
 const TITULO_DO_GRUPO = {
-  esquerda: { titulo: 'Esquerda socialista', cor: faixaInfo['esquerda-radical'].cor },
-  ampla: { titulo: 'PT e aliados', cor: faixaInfo['frente-ampla'].cor },
-  outros: { titulo: 'Outros partidos', cor: '#2A0A0A' },
+  esquerda: { titulo: 'Esquerda socialista', cor: FICHA_DA_FAIXA['esquerda-radical'].cor },
+  ampla: { titulo: 'Frente ampla', cor: FICHA_DA_FAIXA['frente-ampla'].cor },
+  outros: { titulo: 'Outros partidos', cor: COR_DO_TEMA.tinta },
 } satisfies Record<Grupo, { titulo: string; cor: string }>
-
-const ehSubJudice = (o: Opcao) => o.situacao.startsWith('sub judice')
 
 const plural = (n: number, um: string, varios: string) => `${n.toLocaleString('pt-BR')} ${n === 1 ? um : varios}`
 
@@ -47,7 +48,7 @@ type Props = {
   opcoes: Opcao[]
   atual: Voto | null
   estado: string
-  uf: string
+  uf: Uf
   semente: number
   dataTse: string
   aoEscolher: (voto: Voto) => void
@@ -74,8 +75,8 @@ export function BuscaCandidatura({ vaga, opcoes, atual, estado, uf, semente, dat
     gatilho.current?.focus()
   }
 
-  const lista = (grupo: Grupo) => (
-    <ListaDoGrupo key={`${grupo}-${termoAdiado}`} opcoes={grupos[grupo]} atual={atual} aoAbrir={abrirPerfil} />
+  const resultadosDo = (grupo: Grupo) => (
+    <ResultadosDoGrupo key={`${grupo}-${termoAdiado}`} opcoes={grupos[grupo]} atual={atual} aoAbrir={abrirPerfil} />
   )
 
   return (
@@ -154,7 +155,7 @@ export function BuscaCandidatura({ vaga, opcoes, atual, estado, uf, semente, dat
                   <span>{TITULO_DO_GRUPO[grupo].titulo}</span>
                   <span>{grupos[grupo].length}</span>
                 </h3>
-                {lista(grupo)}
+                {resultadosDo(grupo)}
               </section>
             ),
         )}
@@ -167,7 +168,7 @@ export function BuscaCandidatura({ vaga, opcoes, atual, estado, uf, semente, dat
                   <span>Outros partidos</span>
                   <span>{grupos.outros.length}</span>
                 </h3>
-                {lista('outros')}
+                {resultadosDo('outros')}
               </>
             ) : (
               <div className="p-4">
@@ -201,7 +202,7 @@ export function BuscaCandidatura({ vaga, opcoes, atual, estado, uf, semente, dat
   )
 }
 
-function ListaDoGrupo({ opcoes, atual, aoAbrir }: { opcoes: Opcao[]; atual: Voto | null; aoAbrir: (opcao: Opcao, botao: HTMLElement) => void }) {
+function ResultadosDoGrupo({ opcoes, atual, aoAbrir }: { opcoes: Opcao[]; atual: Voto | null; aoAbrir: (opcao: Opcao, botao: HTMLElement) => void }) {
   const [limite, setLimite] = useState(PAGINA)
   const faltam = opcoes.length - limite
   return (
@@ -219,7 +220,7 @@ function ListaDoGrupo({ opcoes, atual, aoAbrir }: { opcoes: Opcao[]; atual: Voto
                 <span className="text-base font-bold uppercase leading-tight">{o.nome}</span>
                 <span className="flex flex-wrap items-center gap-1.5 text-xs font-bold">
                   <SeloDoPartido opcao={o} comFaixa={false} />
-                  {ehSubJudice(o) && <span className="text-sangue">Sub judice</span>}
+                  {ehSubJudice(o.situacao) && <span className="text-sangue">Sub judice</span>}
                   {atual === o.numero && <span className="text-vermelho">✓ Na sua colinha</span>}
                 </span>
               </span>
@@ -243,8 +244,10 @@ function ListaDoGrupo({ opcoes, atual, aoAbrir }: { opcoes: Opcao[]; atual: Voto
 
 const situacaoLegivel = (situacao: string) => (situacao === '' ? 'Deferida' : situacao.charAt(0).toUpperCase() + situacao.slice(1))
 
-function Gaveta({ opcao, vaga, uf, aoPor, aoFechar }: { opcao: Opcao; vaga: Vaga; uf: string; aoPor: () => void; aoFechar: () => void }) {
+function Gaveta({ opcao, vaga, uf, aoPor, aoFechar }: { opcao: Opcao; vaga: Vaga; uf: Uf; aoPor: () => void; aoFechar: () => void }) {
   const legenda = opcao.tipo === 'legenda'
+  // Voto de legenda não tem página de candidatura: fica a página inicial do TSE.
+  const noTse = opcao.sq ? enderecoNoTse({ sq: opcao.sq, uf, cargo: vaga.cargo }) : TSE
   return (
     <dialog
       ref={abrirComoModal}
@@ -288,7 +291,7 @@ function Gaveta({ opcao, vaga, uf, aoPor, aoFechar }: { opcao: Opcao; vaga: Vaga
             </div>
           )}
         </dl>
-        {ehSubJudice(opcao) && (
+        {ehSubJudice(opcao.situacao) && (
           <p className="border-l-4 border-sangue bg-white p-2.5 text-sm font-bold">
             Sub judice: o registro está em recurso. Se for negado, o voto é anulado.
           </p>
@@ -296,7 +299,7 @@ function Gaveta({ opcao, vaga, uf, aoPor, aoFechar }: { opcao: Opcao; vaga: Vaga
         <button type="button" onClick={aoPor} className="h-[58px] bg-vermelho font-display text-[23px] uppercase tracking-wide text-ouro hover:bg-sangue">
           Pôr na minha colinha
         </button>
-        <a href={TSE} target="_blank" rel="noopener noreferrer" className="flex min-h-11 items-center self-center text-sm font-bold text-vermelho underline">
+        <a href={noTse} target="_blank" rel="noopener noreferrer" className="flex min-h-11 items-center self-center text-sm font-bold text-vermelho underline">
           Ver a candidatura no TSE ↗
         </a>
       </div>

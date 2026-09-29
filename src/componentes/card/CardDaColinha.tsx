@@ -1,16 +1,17 @@
 import type { Ref } from 'react'
+import type { Uf } from '@/lib/estados'
 import { PONTOS_ESTRELA, raiosDoSol } from '../sol'
-import type { LinhaDoCard } from './CompartilharCard'
 import {
   FORMATOS,
   enderecoDoEstado,
   linhaLegal,
   nomeDaLinha,
-  numeroDaLinha,
+  numeroParaExibir,
   siglaDaLinha,
   tamanhoDoNumero,
   truncar,
   type Formato,
+  type LinhaDoCard,
 } from './formato'
 
 const NOME_MAXIMO = 48
@@ -33,8 +34,8 @@ const DESENHO = {
     rotulo: 'text-[22px]',
     nome: 'text-[26px]',
     rodape: 'top-[1112px] gap-2',
-    chamada: 'text-[46px]',
-    endereco: 'text-[34px]',
+    chamada: 'text-[44px]',
+    endereco: 'text-[30px]',
     legal: 'text-[19px] max-w-[940px]',
   },
   stories: {
@@ -52,8 +53,8 @@ const DESENHO = {
     rotulo: 'text-[26px]',
     nome: 'text-[34px]',
     rodape: 'top-[1700px] gap-2.5',
-    chamada: 'text-[50px]',
-    endereco: 'text-[36px]',
+    chamada: 'text-[48px]',
+    endereco: 'text-[32px]',
     legal: 'text-[20px] max-w-[960px]',
   },
 } satisfies Record<Formato, unknown>
@@ -62,7 +63,7 @@ type PropsDaCardDaColinha = {
   formato: Formato
   linhas: LinhaDoCard[]
   estado: string
-  uf: string
+  uf: Uf
   dataTse: string
   fotosQuebradas: string[]
   aoFalharFoto: (foto: string) => void
@@ -76,10 +77,10 @@ export function CardDaColinha({ formato, linhas, estado, uf, dataTse, fotosQuebr
   return (
     <div ref={ref} style={{ width: largura, height: altura }} className="relative overflow-hidden bg-vermelho font-sans text-papel">
       <svg width={largura} height={altura} viewBox={`0 0 ${largura} ${altura}`} className="absolute left-0 top-0" aria-hidden="true">
-        <path d={d.raios} fill="#E0402A" />
-        <circle cx={d.sol.cx} cy={d.sol.cy} r={d.sol.r} fill="#F5C542" />
+        <path d={d.raios} className="fill-raio" />
+        <circle cx={d.sol.cx} cy={d.sol.cy} r={d.sol.r} className="fill-ouro" />
         <g transform={`translate(${largura / 2} ${d.estrela.y}) scale(${d.estrela.escala})`}>
-          <polygon points={PONTOS_ESTRELA} fill="#F5C542" />
+          <polygon points={PONTOS_ESTRELA} className="fill-ouro" />
         </g>
       </svg>
 
@@ -90,8 +91,8 @@ export function CardDaColinha({ formato, linhas, estado, uf, dataTse, fotosQuebr
 
       <ul className={`absolute ${d.grade}`}>
         {linhas.map((linha, i) => {
-          const foto = linha.foto && !fotosQuebradas.includes(linha.foto) ? linha.foto : null
-          const numero = numeroDaLinha(linha)
+          const foto = linha.tipo === 'escolhida' && linha.foto && !fotosQuebradas.includes(linha.foto) ? linha.foto : null
+          const numero = numeroParaExibir(linha)
           const nome = truncar(nomeDaLinha(linha), NOME_MAXIMO)
           const sigla = siglaDaLinha(linha)
           return (
@@ -114,7 +115,7 @@ export function CardDaColinha({ formato, linhas, estado, uf, dataTse, fotosQuebr
               ) : (
                 <div className={`flex shrink-0 flex-col items-center justify-center gap-2.5 bg-vermelho ${d.foto}`}>
                   <svg width={d.estrelaDoQuadro} height={d.estrelaDoQuadro} viewBox="-50 -50 100 100" aria-hidden="true">
-                    <polygon points={PONTOS_ESTRELA} fill="#F5C542" />
+                    <polygon points={PONTOS_ESTRELA} className="fill-ouro" />
                   </svg>
                   {sigla && <span className={`max-w-full truncate px-1 font-display text-papel ${d.sigla}`}>{sigla}</span>}
                 </div>
@@ -130,10 +131,12 @@ export function CardDaColinha({ formato, linhas, estado, uf, dataTse, fotosQuebr
         })}
       </ul>
 
-      <div className={`absolute left-0 flex w-full flex-col items-center text-center text-sangue ${d.rodape}`}>
-        <p className={`font-display uppercase leading-none ${d.chamada}`}>Nenhum voto na extrema direita!</p>
-        <p className={`font-bold ${d.endereco}`}>Anote no papel · {enderecoDoEstado(uf)}</p>
-        <p className={`font-medium leading-[1.35] ${d.legal}`}>{linhaLegal(dataTse)}</p>
+      {/* Uma coluna que cresce para baixo: chamada e endereço numa linha cada, a linha legal em até duas.
+          Na captura a fonte pode medir diferente da prévia; sem quebra e com entrelinha folgada, nada se sobrepõe. */}
+      <div className={`absolute left-0 flex w-full flex-col items-center px-6 text-center text-sangue ${d.rodape}`}>
+        <p className={`whitespace-nowrap font-display uppercase leading-[1.15] ${d.chamada}`}>Nenhum voto na extrema direita!</p>
+        <p className={`whitespace-nowrap font-bold leading-[1.25] ${d.endereco}`}>Anote no papel · {enderecoDoEstado(uf)}</p>
+        <p className={`line-clamp-2 font-medium leading-[1.35] ${d.legal}`}>{linhaLegal(dataTse)}</p>
       </div>
     </div>
   )

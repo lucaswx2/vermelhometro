@@ -1,5 +1,8 @@
 // Regras puras do card: tamanhos, textos e nome do arquivo. Sem JSON, para rodar nos testes.
 
+import { rotaDoEstado, type Uf } from '../../lib/estados.ts'
+import type { Faixa } from '../../lib/faixas.ts'
+
 export const FORMATOS = {
   feed: { largura: 1080, altura: 1350, rotulo: 'Feed 4:5' },
   stories: { largura: 1080, altura: 1920, rotulo: 'Stories 9:16' },
@@ -17,21 +20,27 @@ export const tamanhoDaPrevia = (formato: Formato) => {
   return { escala, largura: Math.round(largura * escala), altura: Math.round(altura * escala) }
 }
 
-export const nomeDoArquivo = (uf: string, formato: Formato) => `colinha-${uf.toLowerCase()}-${formato}.png`
+export const nomeDoArquivo = (uf: Uf, formato: Formato) => `colinha-${uf.toLowerCase()}-${formato}.png`
 
-export const enderecoDoEstado = (uf: string) => `vermelhometro.vercel.app/estado/${uf.toLowerCase()}`
+export const enderecoDoEstado = (uf: Uf) => `vermelhometro.vercel.app${rotaDoEstado(uf)}`
 
 export const linhaLegal = (dataTse: string) =>
   `números do TSE de ${dataTse} · fotos: TSE (CC-BY) · Lucas Freitas, pessoa física · não é material oficial de candidato, partido ou TSE`
 
-export const nomeDaLinha = ({ numero, nome }: { numero: number | null; nome: string | null }) =>
-  numero === null ? (nome ?? 'a escolher') : (nome ?? '')
+// Uma linha do card: um cargo da colinha, já resolvido.
+export type LinhaDoCard =
+  | { tipo: 'vazia'; rotulo: string }
+  | { tipo: 'branco'; rotulo: string }
+  | { tipo: 'escolhida'; rotulo: string; numero: number; nome: string; partido: string; faixa: Faixa; foto: string | null }
 
-export const numeroDaLinha = ({ numero }: { numero: number | null }) => (numero === null ? '—' : String(numero))
+const NOME_SEM_ESCOLHA = { vazia: 'a escolher', branco: 'em branco' } satisfies Record<Exclude<LinhaDoCard['tipo'], 'escolhida'>, string>
 
-// Sem foto, o quadro mostra a sigla: do partido ou, no voto de legenda, do nome "Legenda X".
-export const siglaDaLinha = ({ partido, nome }: { partido: string | null; nome: string | null }) =>
-  partido ?? nome?.match(/^legenda\s+(\S+)/i)?.[1] ?? null
+export const nomeDaLinha = (linha: LinhaDoCard) => (linha.tipo === 'escolhida' ? linha.nome : NOME_SEM_ESCOLHA[linha.tipo])
+
+export const numeroParaExibir = (linha: LinhaDoCard) => (linha.tipo === 'escolhida' ? String(linha.numero) : '—')
+
+// Sem foto, o quadro mostra a sigla do partido; o voto de legenda também traz o partido.
+export const siglaDaLinha = (linha: LinhaDoCard) => (linha.tipo === 'escolhida' ? linha.partido : null)
 
 const TAMANHO_DO_NUMERO = {
   feed: { normal: 112, longo: 92 },

@@ -18,9 +18,10 @@ import {
   type Leitura,
 } from '@/lib/ameaca'
 import { atualizadoEm, camara, senadoresContinuam } from '@/lib/dados'
+import { COR_DO_TEMA } from '@/lib/cores'
 import type { Pesquisa } from '@/lib/esquemas'
 import { NOME_UF } from '@/lib/estados'
-import { faixaInfo } from '@/lib/faixas'
+import { FICHA_DA_FAIXA } from '@/lib/faixas'
 import { ameacaNosEstados, disputasDoSenado, placarCamara, placarPresidente, primeiroTurnoPresidente } from '@/lib/placar'
 
 const RAIOS = raiosDoSol(200, 640, 24, 900)
@@ -32,10 +33,10 @@ const estados = (n: number) => `${n} ${n === 1 ? 'estado' : 'estados'}`
 const diaMes = (iso: string) => `${iso.slice(8, 10)}/${iso.slice(5, 7)}`
 
 // "SP, PR e SC"
-const listar = (itens: readonly string[]) => (itens.length < 2 ? itens.join('') : `${itens.slice(0, -1).join(', ')} e ${itens.at(-1)}`)
+const juntarComE = (nomes: readonly string[]) => (nomes.length < 2 ? nomes.join('') : `${nomes.slice(0, -1).join(', ')} e ${nomes.at(-1)}`)
 
 // O mesmo registro no TSE cobre o 1º e o 2º turno de uma pesquisa: a ficha aparece uma vez.
-const umaPorRegistro = (lista: Pesquisa[]) => lista.filter((p, i) => lista.findIndex((q) => q.registro === p.registro) === i)
+const umaPorRegistro = (pesquisas: Pesquisa[]) => pesquisas.filter((p, i) => pesquisas.findIndex((q) => q.registro === p.registro) === i)
 
 const MANCHETE_PRESIDENTE = {
   empate: 'Empate técnico. O bolsonarismo está colado.',
@@ -50,11 +51,11 @@ const ROTULO_LEITURA = {
 } satisfies Record<Leitura, string>
 
 const GRUPO = {
-  'extrema-direita': { nome: 'Extrema direita', cor: faixaInfo['extrema-direita'].cor, borda: 'border-tinta' },
-  'outra-oposicao': { nome: 'Outra oposição', cor: faixaInfo['direita-liberal'].cor, borda: 'border-tinta' },
-  'centrao-ou-indefinido': { nome: 'Centrão ou indefinido', cor: faixaInfo.centrao.cor, borda: 'border-tinta' },
+  'extrema-direita': { nome: 'Extrema direita', cor: FICHA_DA_FAIXA['extrema-direita'].cor, borda: 'border-tinta' },
+  'outra-oposicao': { nome: 'Outra oposição', cor: FICHA_DA_FAIXA['direita-liberal'].cor, borda: 'border-tinta' },
+  'centrao-ou-indefinido': { nome: 'Centrão ou indefinido', cor: FICHA_DA_FAIXA.centrao.cor, borda: 'border-tinta' },
   'sem-pesquisa': { nome: 'Sem pesquisa', cor: '#FFFFFF', borda: 'border-dashed border-tinta/60' },
-  'esquerda-e-aliados': { nome: 'Esquerda e aliados', cor: '#C8171E', borda: 'border-tinta' },
+  'esquerda-e-aliados': { nome: 'Esquerda e aliados', cor: COR_DO_TEMA.vermelho, borda: 'border-tinta' },
 } satisfies Record<GrupoDoSenado, { nome: string; cor: string; borda: string }>
 
 const MARCOS_DO_SENADO: Record<number, string> = { [MAIORIA_SENADO]: 'maioria', [DOIS_TERCOS_SENADO]: 'dois terços' }
@@ -99,7 +100,7 @@ export default function Placar() {
       <section aria-labelledby="manchete" className="relative overflow-hidden bg-tinta text-papel">
         <svg viewBox="0 0 400 560" preserveAspectRatio="xMidYMax slice" className="absolute inset-0 h-full w-full" aria-hidden="true">
           <path d={RAIOS} fill="#3A1212" />
-          <circle cx="200" cy="640" r="170" fill="#C8171E" />
+          <circle cx="200" cy="640" r="170" className="fill-vermelho" />
         </svg>
         <div className="relative mx-auto flex max-w-xl flex-col items-center px-5 pb-8 text-center">
           <p className="mt-4 flex w-full justify-between text-xs font-bold uppercase tracking-[0.15em]">
@@ -112,7 +113,7 @@ export default function Placar() {
           </h1>
           <p className="mt-1 text-xl font-bold leading-snug">do eleitorado vive num estado onde a extrema direita lidera a corrida pelo governo.</p>
           <p className="mt-3 leading-snug text-cinza">
-            São {milhoes(ameaca.eleitorado.eleitores)} de eleitores em {estados(ameaca.eleitorado.estados)}: {listar(ameaca.lidera)}.
+            São {milhoes(ameaca.eleitorado.eleitores)} de eleitores em {estados(ameaca.eleitorado.estados)}: {juntarComE(ameaca.lidera)}.
           </p>
           <p className="mt-16 font-display text-[40px] uppercase leading-none text-ouro">Não passarão!</p>
         </div>
@@ -178,7 +179,7 @@ export default function Placar() {
             {ameaca.primeiroTurno.length > 0 && (
               <>
                 {' '}
-                Pode levar já no 1º turno em <strong>{estados(ameaca.primeiroTurno.length)}</strong>: {listar(ameaca.primeiroTurno)}.
+                Pode levar já no 1º turno em <strong>{estados(ameaca.primeiroTurno.length)}</strong>: {juntarComE(ameaca.primeiroTurno)}.
               </>
             )}
           </p>
@@ -238,7 +239,7 @@ export default function Placar() {
           <p className="text-sm text-tinta/70">
             Os 2 primeiros de cada estado na última pesquisa registrada, mais os {senadoresContinuam.length} senadores que ficam até 2031, pelo partido e
             pelo alinhamento com o governo.
-            {semPesquisaSenado.length > 0 && ` Sem pesquisa válida: ${listar(semPesquisaSenado)}.`}
+            {semPesquisaSenado.length > 0 && ` Sem pesquisa válida: ${juntarComE(semPesquisaSenado)}.`}
           </p>
         </article>
 

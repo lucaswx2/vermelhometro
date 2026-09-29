@@ -6,11 +6,12 @@ import {
   linhaLegal,
   nomeDaLinha,
   nomeDoArquivo,
-  numeroDaLinha,
+  numeroParaExibir,
   siglaDaLinha,
   tamanhoDaPrevia,
   tamanhoDoNumero,
   truncar,
+  type LinhaDoCard,
 } from '../src/componentes/card/formato.ts'
 
 describe('os formatos do card', () => {
@@ -37,7 +38,7 @@ describe('os formatos do card', () => {
 describe('o arquivo do card', () => {
   it('leva a UF em minúsculas e o formato no nome', () => {
     assert.equal(nomeDoArquivo('SP', 'feed'), 'colinha-sp-feed.png')
-    assert.equal(nomeDoArquivo('df', 'stories'), 'colinha-df-stories.png')
+    assert.equal(nomeDoArquivo('DF', 'stories'), 'colinha-df-stories.png')
   })
 
   it('aponta para a página do estado', () => {
@@ -53,31 +54,44 @@ describe('o arquivo do card', () => {
   })
 })
 
+const escolhida = (numero: number, nome: string, partido: string): LinhaDoCard => ({
+  tipo: 'escolhida',
+  rotulo: 'Senador(a) · 1º voto',
+  numero,
+  nome,
+  partido,
+  faixa: 'esquerda-radical',
+  foto: null,
+})
+
 describe('uma linha do card', () => {
   it('diz "em branco" quando o voto em branco foi escolhido', () => {
-    assert.equal(nomeDaLinha({ numero: null, nome: 'em branco' }), 'em branco')
-    assert.equal(numeroDaLinha({ numero: null }), '—')
+    const branco: LinhaDoCard = { tipo: 'branco', rotulo: 'Governador(a)' }
+    assert.equal(nomeDaLinha(branco), 'em branco')
+    assert.equal(numeroParaExibir(branco), '—')
   })
 
   it('diz "a escolher" quando o cargo ainda está vazio, sem sugerir voto em branco', () => {
-    assert.equal(nomeDaLinha({ numero: null, nome: null }), 'a escolher')
+    const vazia: LinhaDoCard = { tipo: 'vazia', rotulo: 'Governador(a)' }
+    assert.equal(nomeDaLinha(vazia), 'a escolher')
+    assert.equal(numeroParaExibir(vazia), '—')
   })
 
   it('mostra o nome e o número escolhidos', () => {
-    assert.equal(nomeDaLinha({ numero: 160, nome: 'WELLER' }), 'WELLER')
-    assert.equal(numeroDaLinha({ numero: 160 }), '160')
+    assert.equal(nomeDaLinha(escolhida(160, 'WELLER', 'PSTU')), 'WELLER')
+    assert.equal(numeroParaExibir(escolhida(160, 'WELLER', 'PSTU')), '160')
   })
 
   it('usa o partido como sigla do quadro sem foto', () => {
-    assert.equal(siglaDaLinha({ partido: 'PSTU', nome: 'HERTZ DIAS' }), 'PSTU')
+    assert.equal(siglaDaLinha(escolhida(16, 'HERTZ DIAS', 'PSTU')), 'PSTU')
   })
 
-  it('tira a sigla do voto de legenda quando o partido não vem', () => {
-    assert.equal(siglaDaLinha({ partido: null, nome: 'Legenda PSOL' }), 'PSOL')
+  it('usa o partido do voto de legenda como sigla', () => {
+    assert.equal(siglaDaLinha(escolhida(50, 'Legenda PSOL', 'PSOL')), 'PSOL')
   })
 
-  it('fica sem sigla quando não há partido nem legenda', () => {
-    assert.equal(siglaDaLinha({ partido: null, nome: null }), null)
+  it('fica sem sigla quando o cargo não tem escolha', () => {
+    assert.equal(siglaDaLinha({ tipo: 'vazia', rotulo: 'Governador(a)' }), null)
   })
 
   it('diminui o número de cinco dígitos para caber no quadro', () => {

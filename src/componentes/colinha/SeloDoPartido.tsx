@@ -1,13 +1,13 @@
-import { faixaInfo } from '@/lib/faixas'
+import { FICHA_DA_FAIXA } from '@/lib/faixas'
 import type { Opcao } from './escolha'
 
 // Partido e faixa num selo com a cor da faixa.
 export function SeloDoPartido({ opcao, comFaixa = true }: { opcao: Pick<Opcao, 'partido' | 'faixa'>; comFaixa?: boolean }) {
-  const info = faixaInfo[opcao.faixa]
+  const ficha = FICHA_DA_FAIXA[opcao.faixa]
   return (
-    <span className="inline-block px-1.5 py-px text-xs font-bold" style={{ background: info.cor, color: info.texto }}>
+    <span className="inline-block px-1.5 py-px text-xs font-bold" style={{ background: ficha.cor, color: ficha.texto }}>
       {opcao.partido}
-      {comFaixa && ` · ${info.nome}`}
+      {comFaixa && ` · ${ficha.nome}`}
     </span>
   )
 }

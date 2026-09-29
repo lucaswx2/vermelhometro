@@ -7,6 +7,12 @@ export type Uf = (typeof UFS)[number]
 
 export const ehUf = (valor: string): valor is Uf => (UFS as readonly string[]).includes(valor)
 
+// A página de cada estado mora em /estado/sp.
+export const rotaDoEstado = (uf: Uf) => `/estado/${uf.toLowerCase()}`
+
+// Casa o começo de uma rota de estado e captura a sigla em minúsculas.
+export const ROTA_DO_ESTADO = /^\/estado\/([a-z]{2})/
+
 export const NOME_UF = {
   AC: 'Acre', AL: 'Alagoas', AM: 'Amazonas', AP: 'Amapá', BA: 'Bahia', CE: 'Ceará', DF: 'Distrito Federal',
   ES: 'Espírito Santo', GO: 'Goiás', MA: 'Maranhão', MG: 'Minas Gerais', MS: 'Mato Grosso do Sul',
