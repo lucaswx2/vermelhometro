@@ -54,6 +54,11 @@ body {
   color: #fff;
 }
 
+/* Com a busca ou a gaveta abertas, a página de trás não rola. */
+html:has(dialog[open]) {
+  overflow: hidden;
+}
+
 #impressao {
   display: none;
 }
@@ -64,10 +69,15 @@ body {
     margin: 8mm;
   }
 
+  /* Só a folha sai no papel: 4 por A4. */
   body > :not(main),
-  main > :not(:has(#impressao)),
-  section:has(> #impressao) > :not(#impressao) {
+  main :not(#impressao):not(:has(#impressao)):not(#impressao *),
+  .nao-imprimir {
     display: none !important;
+  }
+
+  body {
+    padding: 0 !important;
   }
 
   main {
@@ -91,8 +101,23 @@ body {
     print-color-adjust: exact;
   }
 
-  #impressao .folha-colinha .text-5xl {
+  #impressao .folha-colinha .numero-folha {
     font-size: 28px;
+  }
+
+  #impressao .folha-colinha .foto-candidatura {
+    width: 9mm !important;
+    height: 12.6mm !important;
+    border-width: 1px;
+  }
+
+  #impressao .folha-colinha .foto-candidatura svg {
+    width: 4mm;
+    height: 4mm;
+  }
+
+  #impressao .folha-colinha .foto-candidatura span {
+    font-size: 6px !important;
   }
 
   #impressao .folha-colinha li {
