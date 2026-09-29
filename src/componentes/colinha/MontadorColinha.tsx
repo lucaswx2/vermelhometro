@@ -10,7 +10,7 @@ import { PARTIDOS_DE_CLASSE } from '@/lib/partidosDeClasse'
 import { lembrarColinha } from '../ultimaColinha'
 import { BuscaCandidatura } from './BuscaCandidatura'
 import {
-  abrirCandidatas,
+  abrirCandidaturas,
   ESCOLHA_VAZIA,
   escreverEscolha,
   lerEscolha,
@@ -20,11 +20,11 @@ import {
   paraOutroEstado,
   votar,
   votarComAClasse,
-  type CandidatasCompactas,
+  type CandidaturasCompactas,
   type Cargo,
   type Escolha,
   type LinhaDaColinha,
-  type PadroesDaClasse,
+  type ColinhasDeClasse,
   type Voto,
 } from './escolha'
 import { FotoCandidatura, FotoVazia } from './FotoCandidatura'
@@ -73,16 +73,16 @@ type Busca = { cargo: Cargo; semente: number }
 type Props = {
   uf: Uf
   estado: string
-  candidatas: CandidatasCompactas
-  padroes: PadroesDaClasse
+  candidaturas: CandidaturasCompactas
+  colinhasDeClasse: ColinhasDeClasse
   dataTse: string
 }
 
-export function MontadorColinha({ uf, estado, candidatas, padroes, dataTse }: Props) {
+export function MontadorColinha({ uf, estado, candidaturas, colinhasDeClasse, dataTse }: Props) {
   const hash = useSyncExternalStore(assinarHash, hashAtual, hashNoServidor)
   const escolha = lerEscolha(hash)
-  const opcoes = useMemo(() => abrirCandidatas(candidatas), [candidatas])
-  const linhas = montarColinha(escolha, opcoes, padroes, uf === 'DF')
+  const opcoes = useMemo(() => abrirCandidaturas(candidaturas), [candidaturas])
+  const linhas = montarColinha(escolha, opcoes, colinhasDeClasse, uf === 'DF')
   const [busca, setBusca] = useState<Busca | null>(null)
   const temEscolha = linhas.some((l) => l.tipo !== 'vazia')
   const url = `${SITE}/estado/${uf.toLowerCase()}${linkDaColinha(escolha)}`
@@ -109,7 +109,7 @@ export function MontadorColinha({ uf, estado, candidatas, padroes, dataTse }: Pr
 
   return (
     <>
-      {escolha.recebida && <ConviteRecebida uf={uf} escolha={escolha} />}
+      {escolha.recebida && <AvisoDoLinkRecebido uf={uf} escolha={escolha} />}
 
       <section aria-labelledby="vote-com-a-classe" className="nao-imprimir flex flex-col gap-2.5 bg-vermelho p-3.5 text-papel">
         <div className="flex flex-col gap-0.5">
@@ -257,7 +257,7 @@ function CartaoDaVaga({ linha, aoAbrir }: { linha: LinhaDaColinha; aoAbrir: () =
   )
 }
 
-function ConviteRecebida({ uf, escolha }: { uf: string; escolha: Escolha }) {
+function AvisoDoLinkRecebido({ uf, escolha }: { uf: string; escolha: Escolha }) {
   const router = useRouter()
   const [destino, setDestino] = useState(uf)
   const levados = [
@@ -273,9 +273,9 @@ function ConviteRecebida({ uf, escolha }: { uf: string; escolha: Escolha }) {
   }
 
   return (
-    <section aria-labelledby="convite" className="nao-imprimir flex flex-col gap-3 border-[3px] border-tinta bg-ouro px-4 py-4.5">
+    <section aria-labelledby="link-recebido" className="nao-imprimir flex flex-col gap-3 border-[3px] border-tinta bg-ouro px-4 py-4.5">
       <p className="text-[13px] font-bold uppercase tracking-[0.12em]">Te mandaram uma colinha</p>
-      <h2 id="convite" className="font-display text-3xl uppercase leading-none">
+      <h2 id="link-recebido" className="font-display text-3xl uppercase leading-none">
         Vota em outro estado? Monte a sua.
       </h2>
       <label className="flex flex-col gap-1 text-[13px] font-bold">

@@ -4,7 +4,7 @@ import { buscar, girarPelaLetra, letraDaVez } from '../src/componentes/colinha/b
 import type { Opcao } from '../src/componentes/colinha/escolha.ts'
 import type { Faixa } from '../src/lib/faixas.ts'
 
-const candidata = (numero: number, nome: string, partido: string, faixa: Faixa): Opcao => ({
+const candidatura = (numero: number, nome: string, partido: string, faixa: Faixa): Opcao => ({
   tipo: 'candidatura',
   numero,
   nome,
@@ -16,13 +16,13 @@ const candidata = (numero: number, nome: string, partido: string, faixa: Faixa):
 })
 
 const opcoes: Opcao[] = [
-  candidata(160, 'WELLER GONÇALVES', 'PSTU', 'esquerda-radical'),
-  candidata(808, 'MAÍRA DE SOUZA', 'UP', 'esquerda-radical'),
-  candidata(211, 'PETTER MAAHS', 'PCB', 'esquerda-radical'),
-  candidata(180, 'MARINA SILVA', 'REDE', 'frente-ampla'),
-  candidata(400, 'SIMONE TEBET', 'PSB', 'frente-ampla'),
-  candidata(222, 'CAPITÃO FULANO', 'PL', 'extrema-direita'),
-  candidata(555, 'BELTRANO', 'PSD', 'centrao'),
+  candidatura(160, 'WELLER GONÇALVES', 'PSTU', 'esquerda-radical'),
+  candidatura(808, 'MAÍRA DE SOUZA', 'UP', 'esquerda-radical'),
+  candidatura(211, 'PETTER MAAHS', 'PCB', 'esquerda-radical'),
+  candidatura(180, 'MARINA SILVA', 'REDE', 'frente-ampla'),
+  candidatura(400, 'SIMONE TEBET', 'PSB', 'frente-ampla'),
+  candidatura(222, 'CAPITÃO FULANO', 'PL', 'extrema-direita'),
+  candidatura(555, 'BELTRANO', 'PSD', 'centrao'),
   { tipo: 'legenda', numero: 16, nome: 'Legenda PSTU', partido: 'PSTU', faixa: 'esquerda-radical', situacao: '', foto: null, sq: null },
 ]
 

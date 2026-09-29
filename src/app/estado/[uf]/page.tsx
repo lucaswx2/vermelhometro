@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { formatarAtualizacao } from '@/componentes/Cartaz'
-import { compactar, padroesDaClasse, type CandidatasCompactas } from '@/componentes/colinha/escolha'
+import { compactar, colinhasDeClasse, type CandidaturasCompactas } from '@/componentes/colinha/escolha'
 import { MontadorColinha } from '@/componentes/colinha/MontadorColinha'
 import { Disputa } from '@/componentes/Disputa'
 import { Rodape } from '@/componentes/Rodape'
@@ -24,8 +24,8 @@ export async function generateMetadata({ params }: PageProps<'/estado/[uf]'>): P
 }
 
 // Só o que a colinha mostra de cada candidatura, agrupado por cargo.
-const candidatasDaUf = (uf: Uf) => {
-  const porCargo: CandidatasCompactas = { deputadoFederal: [], deputadoEstadual: [], senador: [], governador: [], presidente: [] }
+const candidaturasCompactas = (uf: Uf) => {
+  const porCargo: CandidaturasCompactas = { deputadoFederal: [], deputadoEstadual: [], senador: [], governador: [], presidente: [] }
   for (const c of candidaturasDaUf(uf)) porCargo[c.cargo].push(compactar(c, fotoDaCandidatura(c)))
   return porCargo
 }
@@ -48,8 +48,8 @@ export default async function Estado({ params }: PageProps<'/estado/[uf]'>) {
         <MontadorColinha
           uf={uf}
           estado={NOME_UF[uf]}
-          candidatas={candidatasDaUf(uf)}
-          padroes={padroesDaClasse(colinhaDaUf(uf))}
+          candidaturas={candidaturasCompactas(uf)}
+          colinhasDeClasse={colinhasDeClasse(colinhaDaUf(uf))}
           dataTse={formatarAtualizacao(colinhasGeradasEm)}
         />
 

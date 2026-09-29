@@ -38,18 +38,18 @@ export type Opcao = {
 }
 
 // Formato enxuto que o servidor manda ao navegador: São Paulo tem umas 2.400 candidaturas.
-export type CandidataCompacta = [numero: number, nome: string, partido: string, faixa: number, situacao: string, foto: string | null, sq: string]
+export type CandidaturaCompacta = [numero: number, nome: string, partido: string, faixa: number, situacao: string, foto: string | null, sq: string]
 
-export type CandidatasCompactas = Record<CargoTse, CandidataCompacta[]>
+export type CandidaturasCompactas = Record<CargoTse, CandidaturaCompacta[]>
 
 export type OpcoesDaUf = Record<CargoTse, Opcao[]>
 
 export const compactar = (
   c: { sq: string; numero: number; nomeUrna: string; partido: string; faixa: Faixa; situacao: string },
   foto: string | null,
-): CandidataCompacta => [c.numero, c.nomeUrna, c.partido, FAIXAS.indexOf(c.faixa), c.situacao === 'deferido' ? '' : c.situacao, foto, c.sq]
+): CandidaturaCompacta => [c.numero, c.nomeUrna, c.partido, FAIXAS.indexOf(c.faixa), c.situacao === 'deferido' ? '' : c.situacao, foto, c.sq]
 
-const abrir = ([numero, nome, partido, faixa, situacao, foto, sq]: CandidataCompacta): Opcao => ({
+const abrir = ([numero, nome, partido, faixa, situacao, foto, sq]: CandidaturaCompacta): Opcao => ({
   tipo: 'candidatura',
   numero,
   nome,
@@ -69,9 +69,9 @@ const faixaMaisComum = (faixas: Faixa[]) => {
 }
 
 // Voto de legenda só vale para partido com candidatos ao cargo no estado.
-const legendasDoCargo = (candidatas: Opcao[], cargo: keyof typeof DIGITOS_DO_PARTIDO): Opcao[] => {
+const legendasDoCargo = (candidaturas: Opcao[], cargo: keyof typeof DIGITOS_DO_PARTIDO): Opcao[] => {
   const porPartido = new Map<string, { numero: number; faixas: Faixa[] }>()
-  for (const c of candidatas) {
+  for (const c of candidaturas) {
     const atual = porPartido.get(c.partido) ?? { numero: Math.floor(c.numero / DIGITOS_DO_PARTIDO[cargo]), faixas: [] }
     atual.faixas.push(c.faixa)
     porPartido.set(c.partido, atual)
@@ -88,7 +88,7 @@ const legendasDoCargo = (candidatas: Opcao[], cargo: keyof typeof DIGITOS_DO_PAR
   }))
 }
 
-export const abrirCandidatas = (compactas: CandidatasCompactas): OpcoesDaUf => {
+export const abrirCandidaturas = (compactas: CandidaturasCompactas): OpcoesDaUf => {
   const federal = compactas.deputadoFederal.map(abrir)
   const estadual = compactas.deputadoEstadual.map(abrir)
   return {
@@ -101,33 +101,35 @@ export const abrirCandidatas = (compactas: CandidatasCompactas): OpcoesDaUf => {
 }
 
 // O que o atalho "vote com a classe" põe em cada cargo.
-export type Padrao = { numero: number; apoio: boolean }
+export type VotoDeClasse = { numero: number; apoio: boolean }
 
-export type PadroesDaClasse = Partial<Record<SiglaDeClasse, Partial<Record<Cargo, Padrao>>>>
+export type ColinhaDeClasse = Partial<Record<Cargo, VotoDeClasse>>
 
-const padraoMajoritario = (opcao: OpcaoDaClasse | undefined) => (opcao ? { numero: opcao.numero, apoio: opcao.tipo === 'apoio' } : undefined)
+export type ColinhasDeClasse = Partial<Record<SiglaDeClasse, ColinhaDeClasse>>
 
-const padraoProporcional = (legenda: number | null) => (legenda === null ? undefined : { numero: legenda, apoio: false })
+const votoMajoritario = (opcao: OpcaoDaClasse | undefined) => (opcao ? { numero: opcao.numero, apoio: opcao.tipo === 'apoio' } : undefined)
 
-const padroesDoPartido = (c: ColinhaDoPartido) => {
-  const candidatos: [Cargo, Padrao | undefined][] = [
-    ['deputadoFederal', padraoProporcional(c.deputadoFederal.legenda)],
-    ['deputadoEstadual', padraoProporcional(c.deputadoEstadual.legenda)],
-    ['senador1', padraoMajoritario(c.senador[0])],
-    ['senador2', padraoMajoritario(c.senador[1])],
-    ['governador', padraoMajoritario(c.governador[0])],
-    ['presidente', padraoMajoritario(c.presidente[0])],
+const votoProporcional = (legenda: number | null) => (legenda === null ? undefined : { numero: legenda, apoio: false })
+
+const colinhaDeClasseDoPartido = (c: ColinhaDoPartido) => {
+  const candidatos: [Cargo, VotoDeClasse | undefined][] = [
+    ['deputadoFederal', votoProporcional(c.deputadoFederal.legenda)],
+    ['deputadoEstadual', votoProporcional(c.deputadoEstadual.legenda)],
+    ['senador1', votoMajoritario(c.senador[0])],
+    ['senador2', votoMajoritario(c.senador[1])],
+    ['governador', votoMajoritario(c.governador[0])],
+    ['presidente', votoMajoritario(c.presidente[0])],
   ]
-  const padroes: Partial<Record<Cargo, Padrao>> = {}
-  for (const [cargo, padrao] of candidatos) if (padrao) padroes[cargo] = padrao
-  return padroes
+  const colinha: ColinhaDeClasse = {}
+  for (const [cargo, voto] of candidatos) if (voto) colinha[cargo] = voto
+  return colinha
 }
 
-export const padroesDaClasse = (todas: Partial<Record<SiglaDeClasse, ColinhaDoPartido>>): PadroesDaClasse =>
+export const colinhasDeClasse = (todas: Partial<Record<SiglaDeClasse, ColinhaDoPartido>>): ColinhasDeClasse =>
   Object.fromEntries(
     PARTIDOS_DE_CLASSE.flatMap((p) => {
       const colinha = todas[p.sigla]
-      return colinha ? [[p.sigla, padroesDoPartido(colinha)]] : []
+      return colinha ? [[p.sigla, colinhaDeClasseDoPartido(colinha)]] : []
     }),
   )
 
@@ -202,27 +204,27 @@ export type LinhaDaColinha = Vaga &
 const avisoDaSituacao = (situacao: string) =>
   situacao.startsWith('sub judice') ? 'Sub judice: o voto pode ser anulado se o registro for negado.' : null
 
-const semPadrao = (cargo: Cargo, partido: SiglaDeClasse) =>
+const semVotoDeClasse = (cargo: Cargo, partido: SiglaDeClasse) =>
   cargo === 'deputadoFederal' || cargo === 'deputadoEstadual'
     ? `O ${partido} não tem candidatos a este cargo aqui: o voto na legenda ${partido} seria nulo. Escolha outro nome.`
     : `O ${partido} não tem candidatura aqui. Escolha outro nome ou deixe em branco.`
 
-const montarLinha = (vaga: Vaga, escolha: Escolha, opcoes: OpcoesDaUf, padroes: PadroesDaClasse): LinhaDaColinha => {
+const montarLinha = (vaga: Vaga, escolha: Escolha, opcoes: OpcoesDaUf, daClasse: ColinhasDeClasse): LinhaDaColinha => {
   const { partido } = escolha
-  const padrao = partido ? padroes[partido]?.[vaga.cargo] : undefined
-  const voto = escolha.votos[vaga.cargo] ?? padrao?.numero
+  const votoDaClasse = partido ? daClasse[partido]?.[vaga.cargo] : undefined
+  const voto = escolha.votos[vaga.cargo] ?? votoDaClasse?.numero
   if (voto === 'branco') return { ...vaga, tipo: 'branco' }
-  if (voto === undefined) return { ...vaga, tipo: 'vazia', aviso: partido ? semPadrao(vaga.cargo, partido) : null }
+  if (voto === undefined) return { ...vaga, tipo: 'vazia', aviso: partido ? semVotoDeClasse(vaga.cargo, partido) : null }
   const opcao = opcoes[cargoNoTse(vaga.cargo)].find((o) => o.numero === voto)
   if (!opcao) return { ...vaga, tipo: 'vazia', aviso: `O número ${voto} não está entre as candidaturas aptas deste cargo. Escolha de novo.` }
-  const apoio = partido && padrao?.apoio && padrao.numero === voto ? `Apoio do ${partido} (coligação): o partido não tem candidatura própria.` : null
+  const apoio = partido && votoDaClasse?.apoio && votoDaClasse.numero === voto ? `Apoio do ${partido} (coligação): o partido não tem candidatura própria.` : null
   return { ...vaga, tipo: 'escolhida', opcao, aviso: [apoio, avisoDaSituacao(opcao.situacao)].filter(Boolean).join(' ') || null }
 }
 
 const numeroDaLinha = (linha: LinhaDaColinha | undefined) => (linha?.tipo === 'escolhida' ? linha.opcao.numero : null)
 
-export const montarColinha = (escolha: Escolha, opcoes: OpcoesDaUf, padroes: PadroesDaClasse, ehDf: boolean): LinhaDaColinha[] => {
-  const linhas = vagasDaColinha(ehDf).map((vaga) => montarLinha(vaga, escolha, opcoes, padroes))
+export const montarColinha = (escolha: Escolha, opcoes: OpcoesDaUf, daClasse: ColinhasDeClasse, ehDf: boolean): LinhaDaColinha[] => {
+  const linhas = vagasDaColinha(ehDf).map((vaga) => montarLinha(vaga, escolha, opcoes, daClasse))
   // A urna não aceita o mesmo senador nos dois votos.
   const [, , senador1, senador2] = linhas
   if (numeroDaLinha(senador1) !== null && numeroDaLinha(senador1) === numeroDaLinha(senador2)) {

@@ -1,17 +1,17 @@
 import { describe, it } from 'node:test'
 import assert from 'node:assert/strict'
 import {
-  abrirCandidatas,
+  abrirCandidaturas,
   escreverEscolha,
   ESCOLHA_VAZIA,
   lerEscolha,
   linkDaColinha,
   montarColinha,
   opcoesDoCargo,
-  padroesDaClasse,
+  colinhasDeClasse,
   paraOutroEstado,
   votar,
-  type CandidatasCompactas,
+  type CandidaturasCompactas,
   type Escolha,
   type LinhaDaColinha,
 } from '../src/componentes/colinha/escolha.ts'
@@ -47,7 +47,7 @@ const classe = {
 }
 
 // Todas as candidaturas aptas do mesmo estado, como o navegador recebe.
-const compactas: CandidatasCompactas = {
+const compactas: CandidaturasCompactas = {
   deputadoFederal: [
     [1616, 'FULANA', 'PSTU', 0, 'sub judice (indeferido com recurso)', null, 'sq1'],
     [1310, 'CICRANO', 'PT', 1, '', null, 'sq2'],
@@ -68,10 +68,10 @@ const compactas: CandidatasCompactas = {
   ],
 }
 
-const opcoes = abrirCandidatas(compactas)
-const padroes = padroesDaClasse(classe)
+const opcoes = abrirCandidaturas(compactas)
+const daClasse = colinhasDeClasse(classe)
 
-const montar = (escolha: Partial<Escolha>, ehDf = false) => montarColinha({ ...ESCOLHA_VAZIA, ...escolha }, opcoes, padroes, ehDf)
+const montar = (escolha: Partial<Escolha>, ehDf = false) => montarColinha({ ...ESCOLHA_VAZIA, ...escolha }, opcoes, daClasse, ehDf)
 
 const linha = (linhas: LinhaDaColinha[], cargo: string) => {
   const achada = linhas.find((l) => l.cargo === cargo)
