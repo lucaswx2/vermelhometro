@@ -18,6 +18,10 @@ _Avoid_: avatar, retrato
 A posição ideológica atribuída a um candidato ou partido, numa escala de cinco (da esquerda socialista à extrema direita).
 _Avoid_: espectro, lado, orientação
 
+**Frente ampla**:
+A faixa do PT e dos partidos e candidaturas no palanque de Lula. Candidatura de partido dessa faixa que está fora da coligação de Lula é reclassificada, com motivo.
+_Avoid_: PT e aliados, centro-esquerda
+
 **Partido de classe**:
 Um dos quatro partidos da esquerda socialista que servem de base para a colinha: PSTU, PCB, UP e PSOL.
 _Avoid_: partido de esquerda (é mais amplo)
@@ -26,6 +30,7 @@ _Avoid_: partido de esquerda (é mais amplo)
 
 **Colinha**:
 A lista de números que o eleitor leva para votar, cargo a cargo, na ordem da urna. O eleitor escolhe cada nome; qualquer candidato de qualquer partido pode entrar.
+Nos textos do site ela se chama “colinha de luta”; no código e nos documentos, só “colinha”.
 _Avoid_: cola, guia de voto
 
 **Colinha de classe**:
@@ -33,7 +38,7 @@ A colinha já preenchida com a indicação de um partido de classe, oferecida co
 _Avoid_: colinha padrão, sugestão
 
 **Prioridade da esquerda**:
-A ordem em que os candidatos aparecem na busca: primeiro a esquerda socialista, depois PT e aliados, depois os outros partidos, recolhidos. Ninguém é escondido.
+A ordem em que os candidatos aparecem na busca: primeiro a esquerda socialista, depois a frente ampla, depois os outros partidos, recolhidos. Ninguém é escondido.
 _Avoid_: filtro, ranking
 
 **Folha**:
