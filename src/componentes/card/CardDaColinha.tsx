@@ -1,3 +1,4 @@
+import { logoDoPartido } from '@/lib/logos'
 import type { Ref } from 'react'
 import type { Uf } from '@/lib/estados'
 import { PONTOS_ESTRELA, raiosDoSol } from '../sol'
@@ -95,6 +96,7 @@ export function CardDaColinha({ formato, linhas, estado, uf, dataTse, fotosQuebr
           const numero = numeroParaExibir(linha)
           const nome = truncar(nomeDaLinha(linha), NOME_MAXIMO)
           const sigla = siglaDaLinha(linha)
+          const logo = sigla ? logoDoPartido(sigla) : null
           return (
             <li key={`${linha.rotulo}-${i}`} className={`box-border flex min-w-0 items-center bg-papel text-tinta ${d.quadro}`}>
               {foto ? (
@@ -111,6 +113,11 @@ export function CardDaColinha({ formato, linhas, estado, uf, dataTse, fotosQuebr
                     }}
                     onError={() => aoFalharFoto(foto)}
                   />
+                </div>
+              ) : logo ? (
+                <div className={`flex shrink-0 items-center justify-center border-2 border-tinta bg-white p-3 ${d.foto}`}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={logo} alt={`Logo do ${sigla}`} className="block max-h-full w-full object-contain" />
                 </div>
               ) : (
                 <div className={`flex shrink-0 flex-col items-center justify-center gap-2.5 bg-vermelho ${d.foto}`}>

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { logoDoPartido } from '@/lib/logos'
 import { PONTOS_ESTRELA } from '../sol'
 import type { Opcao } from './escolha'
 
@@ -15,9 +16,20 @@ const tamanhoDaSigla = (sigla: string, tamanho: Tamanho) => {
   return sigla.length > 6 ? base * 0.62 : sigla.length > 4 ? base * 0.8 : base
 }
 
-// Sem foto, a estrela com a sigla: o espaço fica marcado, não vazio.
+// Sem foto (voto de legenda), a logo do partido; sem logo, a estrela com a sigla.
 export function FotoCandidatura({ opcao, tamanho, alt = '' }: { opcao: Pick<Opcao, 'foto' | 'partido'>; tamanho: Tamanho; alt?: string }) {
   const { largura, altura, estrela } = MEDIDAS[tamanho]
+  const logo = opcao.foto ? null : logoDoPartido(opcao.partido)
+  if (logo) {
+    return (
+      <span
+        className="foto-candidatura flex shrink-0 items-center justify-center border-2 border-tinta bg-white p-1"
+        style={{ width: largura, height: altura }}
+      >
+        <Image src={logo} alt={alt || `Logo do ${opcao.partido}`} width={largura} height={largura} unoptimized className="h-auto max-h-full w-full object-contain" />
+      </span>
+    )
+  }
   if (opcao.foto) {
     return (
       <Image

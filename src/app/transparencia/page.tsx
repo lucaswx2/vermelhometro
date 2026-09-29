@@ -49,6 +49,18 @@ const secoes = [
         </a>
         , licença CC-BY.
       </>,
+      'No voto de legenda aparece a logo do partido. Todas vêm do Wikimedia Commons, com licença livre; fonte e licença de cada uma estão em dados/logos-partidos.json, no código aberto do site. As logos são marcas dos partidos e aparecem só para identificar cada um.',
+      <>
+        Logo do PCB: Partido Comunista Brasileiro,{' '}
+        <a href="https://commons.wikimedia.org/wiki/File:PCB_logo.svg" className="font-bold underline" target="_blank" rel="noopener noreferrer">
+          Wikimedia Commons
+        </a>
+        , CC BY-SA 2.5 BR. Logo do PCO: Calloshccp,{' '}
+        <a href="https://commons.wikimedia.org/wiki/File:Logo_PCO_Institucional.svg" className="font-bold underline" target="_blank" rel="noopener noreferrer">
+          Wikimedia Commons
+        </a>
+        , CC BY-SA 4.0.
+      </>,
     ],
   },
   {
