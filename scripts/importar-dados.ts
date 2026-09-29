@@ -2,8 +2,13 @@
 // Uso: node scripts/importar-dados.ts
 import { readFileSync, readdirSync, writeFileSync, existsSync } from 'node:fs'
 import { join } from 'node:path'
+import { unzipSync } from 'fflate'
 import { z } from 'zod'
 import { candidatoSchema, pesquisaSchema, camaraSchema, senadorContinuaSchema } from '../src/lib/esquemas.ts'
+import { protocolosDoCsv, registrosAusentes } from './pesqele.ts'
+
+// Registros de pesquisa do PesqEle, atualizados uma vez por dia (dados abertos do TSE, cc-by).
+const PESQELE = 'https://cdn.tse.jus.br/estatistica/sead/odsele/pesquisa_eleitoral/pesquisa_eleitoral_2026.zip'
 
 const DADOS = join(import.meta.dirname, '..', 'dados')
 const RAW = join(DADOS, 'raw')
@@ -40,8 +45,16 @@ const importarPesquisas = () => {
     recusadas.push(`${id.success ? id.data.id : '?'}: ${campos}`)
   }
   const unicas = [...new Map(aceitas.map((p) => [p.id, p])).values()]
-  gravarJson('pesquisas.json', unicas)
-  return { aceitas: unicas.length, recusadas }
+  return { unicas, recusadas }
+}
+
+// Só confere que o registro existe: o CSV guarda o planejado, não o divulgado, e não sobrescreve nada.
+const baixarProtocolosPesqEle = async () => {
+  const resposta = await fetch(PESQELE)
+  if (!resposta.ok) throw new Error(`PesqEle: HTTP ${resposta.status} em ${PESQELE}`)
+  const csvs = unzipSync(new Uint8Array(await resposta.arrayBuffer()), { filter: (f) => f.name.endsWith('.csv') })
+  const latin1 = new TextDecoder('latin1')
+  return new Set(Object.values(csvs).flatMap((bytes) => [...protocolosDoCsv(latin1.decode(bytes))]))
 }
 
 const copiarValidado = (origem: string, destino: string, schema: z.ZodType) => {
@@ -51,8 +64,19 @@ const copiarValidado = (origem: string, destino: string, schema: z.ZodType) => {
   return true
 }
 
+const { unicas: pesquisas, recusadas } = importarPesquisas()
+const protocolos = await baixarProtocolosPesqEle()
+const semRegistro = registrosAusentes(pesquisas, protocolos)
+console.log(`PesqEle: ${protocolos.size} registros no TSE · ${pesquisas.length} pesquisas conferidas · ${semRegistro.length} sem registro`)
+if (semRegistro.length > 0) {
+  console.error('Pesquisas com registro ausente do PesqEle (nada foi gravado):')
+  for (const p of semRegistro) console.error(`  - ${p.id}: ${p.registro}`)
+  process.exit(1)
+}
+
 const total = importarCandidatos()
-const { aceitas, recusadas } = importarPesquisas()
+gravarJson('pesquisas.json', pesquisas)
+const aceitas = pesquisas.length
 const camaraOk = copiarValidado('camara.json', 'camara.json', camaraSchema)
 const senadoOk = copiarValidado('senadores-continuam.json', 'senadores-continuam.json', z.array(senadorContinuaSchema))
 const semMetadados = (valor: unknown) =>

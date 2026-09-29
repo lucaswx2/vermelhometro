@@ -12,6 +12,8 @@ export const metadata: Metadata = {
   alternates: { canonical: '/transparencia' },
 }
 
+const FOTOS_TSE = 'https://dadosabertos.tse.jus.br/dataset/candidatos-2026'
+
 const secoes = [
   {
     titulo: 'Quem faz',
@@ -37,6 +39,19 @@ const secoes = [
     ],
   },
   {
+    titulo: 'As fotos',
+    texto: [
+      'Cada candidato aparece com a foto que entregou ao TSE, a mesma que a urna mostra depois de digitado o número. As fotos ficam guardadas no próprio site, sem montagem nem retoque.',
+      <>
+        Fotos: TSE, conjunto{' '}
+        <a href={FOTOS_TSE} className="font-bold underline" target="_blank" rel="noopener noreferrer">
+          Candidatos 2026
+        </a>
+        , licença CC-BY.
+      </>,
+    ],
+  },
+  {
     titulo: 'As etiquetas',
     texto: [
       'Cada candidato tem a etiqueta do partido. Quando o palanque real é outro (por exemplo, alguém do MDB com o PT na coligação, ou do PP com o PL), aparece uma segunda etiqueta com o motivo.',
@@ -48,6 +63,7 @@ const secoes = [
     titulo: 'As pesquisas',
     texto: [
       'Só entram pesquisas registradas no TSE com todos os dados exigidos pela Resolução 23.600/2019: período de campo, margem de erro, confiança, número de entrevistas, instituto, contratante e registro. Faltou um, fica de fora. Pesquisa suspensa pela Justiça Eleitoral sai.',
+      'A cada atualização, o registro de toda pesquisa é conferido no PesqEle, o cadastro de pesquisas do TSE. Registro que não está lá trava a atualização.',
       'Presidente: média do 2º turno entre os dois primeiros do 1º, uma pesquisa por instituto, dos últimos 21 dias. Governo e Senado: a pesquisa mais recente de cada estado. Empate técnico é diferença menor que duas margens de erro.',
       'O site não faz pesquisa nem enquete.',
     ],
@@ -74,8 +90,8 @@ export default function Transparencia() {
         {secoes.map((secao) => (
           <section key={secao.titulo} className="moldura flex flex-col gap-2 px-4 py-4">
             <h2 className="font-display text-2xl uppercase text-vermelho">{secao.titulo}</h2>
-            {secao.texto.map((p) => (
-              <p key={p} className="leading-relaxed">
+            {secao.texto.map((p, i) => (
+              <p key={i} className="leading-relaxed">
                 {p}
               </p>
             ))}
