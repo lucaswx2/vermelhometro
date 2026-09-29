@@ -277,7 +277,7 @@ function TextoDaVaga({ linha }: { linha: LinhaDaColinha }) {
   )
 }
 
-function AvisoDoLinkRecebido({ uf, escolha }: { uf: string; escolha: Escolha }) {
+function AvisoDoLinkRecebido({ uf, escolha }: { uf: Uf; escolha: Escolha }) {
   const router = useRouter()
   const [destino, setDestino] = useState(uf)
   const levados = [
@@ -288,7 +288,6 @@ function AvisoDoLinkRecebido({ uf, escolha }: { uf: string; escolha: Escolha }) 
 
   const montar = () => {
     if (destino === uf) return gravar({ ...escolha, recebida: false })
-    if (!ehUf(destino)) return
     router.push(enderecoEmOutroEstado(destino, escolha))
   }
 
@@ -302,7 +301,7 @@ function AvisoDoLinkRecebido({ uf, escolha }: { uf: string; escolha: Escolha }) 
         Seu estado
         <select
           value={destino}
-          onChange={(e) => setDestino(e.target.value)}
+          onChange={(e) => ehUf(e.target.value) && setDestino(e.target.value)}
           className="h-12 border-[3px] border-tinta bg-papel px-2.5 text-[17px] font-bold text-tinta"
         >
           {UFS.map((u) => (

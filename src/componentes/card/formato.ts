@@ -20,7 +20,7 @@ export const tamanhoDaPrevia = (formato: Formato) => {
   return { escala, largura: Math.round(largura * escala), altura: Math.round(altura * escala) }
 }
 
-export const nomeDoArquivo = (uf: string, formato: Formato) => `colinha-${uf.toLowerCase()}-${formato}.png`
+export const nomeDoArquivo = (uf: Uf, formato: Formato) => `colinha-${uf.toLowerCase()}-${formato}.png`
 
 export const enderecoDoEstado = (uf: Uf) => `vermelhometro.vercel.app${rotaDoEstado(uf)}`
 

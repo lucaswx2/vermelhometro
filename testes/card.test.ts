@@ -38,7 +38,7 @@ describe('os formatos do card', () => {
 describe('o arquivo do card', () => {
   it('leva a UF em minúsculas e o formato no nome', () => {
     assert.equal(nomeDoArquivo('SP', 'feed'), 'colinha-sp-feed.png')
-    assert.equal(nomeDoArquivo('df', 'stories'), 'colinha-df-stories.png')
+    assert.equal(nomeDoArquivo('DF', 'stories'), 'colinha-df-stories.png')
   })
 
   it('aponta para a página do estado', () => {
