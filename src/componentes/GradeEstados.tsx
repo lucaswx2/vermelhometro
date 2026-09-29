@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { faixaInfo, FAIXAS, type Faixa } from '@/lib/faixas'
-import type { Uf } from '@/lib/estados'
+import { rotaDoEstado, type Uf } from '@/lib/estados'
 
 // Posição [coluna, linha] de cada UF na grade: todos os estados com o mesmo peso visual.
 const POSICAO = {
@@ -26,7 +26,7 @@ export function GradeEstados({ celulas, ancora = '' }: { celulas: Celula[]; anco
         return (
           <Link
             key={uf}
-            href={`/estado/${uf.toLowerCase()}${ancora}`}
+            href={`${rotaDoEstado(uf)}${ancora}`}
             aria-label={rotulo}
             style={{
               gridColumn: coluna,

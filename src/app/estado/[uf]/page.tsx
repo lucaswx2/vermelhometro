@@ -7,7 +7,7 @@ import { Disputa } from '@/componentes/Disputa'
 import { Rodape } from '@/componentes/Rodape'
 import { candidaturasDaUf, fotoDaCandidatura } from '@/lib/candidaturas'
 import { colinhaDaUf, colinhasGeradasEm } from '@/lib/colinhas'
-import { ehUf, NOME_UF, noEstado, UFS, type Uf } from '@/lib/estados'
+import { ehUf, NOME_UF, noEstado, rotaDoEstado, UFS, type Uf } from '@/lib/estados'
 import { governoDaUf, senadoDaUf } from '@/lib/placar'
 
 export const generateStaticParams = () => UFS.map((uf) => ({ uf: uf.toLowerCase() }))
@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: PageProps<'/estado/[uf]'>): P
   return {
     title: `Colinha de luta ${NOME_UF[uf]} 2026: números dos candidatos`,
     description: `Monte sua colinha de luta ${noEstado(uf)}: vote com a classe (PSTU, PCB, UP ou PSOL) ou escolha cargo a cargo, com os números oficiais do TSE. Nenhum voto na extrema direita.`,
-    alternates: { canonical: `/estado/${uf.toLowerCase()}` },
+    alternates: { canonical: rotaDoEstado(uf) },
   }
 }
 

@@ -3,13 +3,13 @@
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import type { ReactNode } from 'react'
-import { ehUf, NOME_UF, UFS, type Uf } from '@/lib/estados'
-import { escreverEscolha, lerEscolha, paraOutroEstado } from './colinha/escolha'
+import { ehUf, NOME_UF, ROTA_DO_ESTADO, UFS, type Uf } from '@/lib/estados'
+import { enderecoEmOutroEstado, ESCOLHA_VAZIA, lerEscolha } from './colinha/escolha'
 import { PONTOS_ESTRELA } from './sol'
 import { useUltimaColinha } from './ultimaColinha'
 
 const ufDaRota = (caminho: string): Uf | null => {
-  const uf = /^\/estado\/([a-z]{2})/.exec(caminho)?.[1]?.toUpperCase()
+  const uf = ROTA_DO_ESTADO.exec(caminho)?.[1]?.toUpperCase()
   return uf && ehUf(uf) ? uf : null
 }
 
@@ -21,8 +21,7 @@ export function BarraDoTopo() {
   // Quem troca de estado leva o partido e o presidente; o resto muda com o estado.
   const trocarEstado = (novo: string) => {
     if (!ehUf(novo)) return
-    const levar = uf ? escreverEscolha(paraOutroEstado(lerEscolha(window.location.hash))) : ''
-    router.push(`/estado/${novo.toLowerCase()}${levar}`)
+    router.push(enderecoEmOutroEstado(novo, uf ? lerEscolha(window.location.hash) : ESCOLHA_VAZIA))
   }
 
   return (

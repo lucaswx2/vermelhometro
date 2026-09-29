@@ -1,4 +1,5 @@
 import type { Ref } from 'react'
+import type { Uf } from '@/lib/estados'
 import { PONTOS_ESTRELA, raiosDoSol } from '../sol'
 import {
   FORMATOS,
@@ -62,7 +63,7 @@ type PropsDaCardDaColinha = {
   formato: Formato
   linhas: LinhaDoCard[]
   estado: string
-  uf: string
+  uf: Uf
   dataTse: string
   fotosQuebradas: string[]
   aoFalharFoto: (foto: string) => void

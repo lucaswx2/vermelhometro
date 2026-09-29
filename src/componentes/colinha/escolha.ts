@@ -1,4 +1,5 @@
 import type { ColinhaDoPartido, Opcao as OpcaoDaClasse } from '../../lib/colinhas.ts'
+import { rotaDoEstado, type Uf } from '../../lib/estados.ts'
 import { FAIXAS, type Faixa } from '../../lib/faixas.ts'
 import { PARTIDOS_DE_CLASSE, type SiglaDeClasse } from '../../lib/partidosDeClasse.ts'
 
@@ -197,6 +198,8 @@ export const paraOutroEstado = (escolha: Escolha): Escolha => ({
   recebida: false,
   votos: escolha.votos.presidente === undefined ? {} : { presidente: escolha.votos.presidente },
 })
+
+export const enderecoEmOutroEstado = (uf: Uf, escolha: Escolha) => `${rotaDoEstado(uf)}${escreverEscolha(paraOutroEstado(escolha))}`
 
 export type LinhaDaColinha = Vaga &
   ({ tipo: 'vazia'; aviso: string | null } | { tipo: 'branco' } | { tipo: 'escolhida'; opcao: Opcao; aviso: string | null })

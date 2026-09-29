@@ -5,19 +5,19 @@ import { useEffect, useMemo, useState, useSyncExternalStore } from 'react'
 import { flushSync } from 'react-dom'
 import { CompartilharCard } from '@/componentes/card/CompartilharCard'
 import type { LinhaDoCard } from '@/componentes/card/formato'
-import { NOME_UF, UFS, ehUf, type Uf } from '@/lib/estados'
+import { NOME_UF, UFS, ehUf, rotaDoEstado, type Uf } from '@/lib/estados'
 import { PARTIDOS_DE_CLASSE } from '@/lib/partidosDeClasse'
 import { lembrarColinha } from '../ultimaColinha'
 import { BuscaCandidatura } from './BuscaCandidatura'
 import {
   abrirCandidaturas,
+  enderecoEmOutroEstado,
   ESCOLHA_VAZIA,
   escreverEscolha,
   lerEscolha,
   linkDaColinha,
   montarColinha,
   opcoesDoCargo,
-  paraOutroEstado,
   votar,
   votarComAClasse,
   type CandidaturasCompactas,
@@ -85,11 +85,11 @@ export function MontadorColinha({ uf, estado, candidaturas, colinhasDeClasse, da
   const linhas = montarColinha(escolha, opcoes, colinhasDeClasse, uf === 'DF')
   const [busca, setBusca] = useState<Busca | null>(null)
   const temEscolha = linhas.some((l) => l.tipo !== 'vazia')
-  const url = `${SITE}/estado/${uf.toLowerCase()}${linkDaColinha(escolha)}`
+  const url = `${SITE}${rotaDoEstado(uf)}${linkDaColinha(escolha)}`
 
   // A aba "Colinha" do rodapé volta para esta colinha.
   useEffect(() => {
-    lembrarColinha(`/estado/${uf.toLowerCase()}${hash}`)
+    lembrarColinha(`${rotaDoEstado(uf)}${hash}`)
   }, [uf, hash])
 
   const abrirBusca = (cargo: Cargo) => setBusca((atual) => ({ cargo, semente: atual?.semente ?? Math.floor(Math.random() * 1e6) }))
@@ -269,7 +269,7 @@ function AvisoDoLinkRecebido({ uf, escolha }: { uf: string; escolha: Escolha }) 
   const montar = () => {
     if (destino === uf) return gravar({ ...escolha, recebida: false })
     if (!ehUf(destino)) return
-    router.push(`/estado/${destino.toLowerCase()}${escreverEscolha(paraOutroEstado(escolha))}`)
+    router.push(enderecoEmOutroEstado(destino, escolha))
   }
 
   return (

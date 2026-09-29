@@ -9,6 +9,7 @@ import {
   montarColinha,
   opcoesDoCargo,
   colinhasDeClasse,
+  enderecoEmOutroEstado,
   paraOutroEstado,
   votar,
   type CandidaturasCompactas,
@@ -211,5 +212,14 @@ describe('o link da colinha', () => {
   it('leva para outro estado só o partido e o presidente', () => {
     const escolha: Escolha = { partido: 'PSOL', recebida: true, votos: { presidente: 13, governador: 16, senador1: 160 } }
     assert.deepEqual(paraOutroEstado(escolha), { partido: 'PSOL', recebida: false, votos: { presidente: 13 } })
+  })
+
+  it('abre a página do outro estado com o partido e o presidente no link', () => {
+    const escolha: Escolha = { partido: 'PSOL', recebida: true, votos: { presidente: 13, governador: 16 } }
+    assert.equal(enderecoEmOutroEstado('RJ', escolha), '/estado/rj#p=PSOL&pr=13')
+  })
+
+  it('abre a página do outro estado sem link quando não há escolha', () => {
+    assert.equal(enderecoEmOutroEstado('BA', ESCOLHA_VAZIA), '/estado/ba')
   })
 })

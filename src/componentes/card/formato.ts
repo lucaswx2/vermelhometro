@@ -1,5 +1,6 @@
 // Regras puras do card: tamanhos, textos e nome do arquivo. Sem JSON, para rodar nos testes.
 
+import { rotaDoEstado, type Uf } from '../../lib/estados.ts'
 import type { Faixa } from '../../lib/faixas.ts'
 
 export const FORMATOS = {
@@ -21,7 +22,7 @@ export const tamanhoDaPrevia = (formato: Formato) => {
 
 export const nomeDoArquivo = (uf: string, formato: Formato) => `colinha-${uf.toLowerCase()}-${formato}.png`
 
-export const enderecoDoEstado = (uf: string) => `vermelhometro.vercel.app/estado/${uf.toLowerCase()}`
+export const enderecoDoEstado = (uf: Uf) => `vermelhometro.vercel.app${rotaDoEstado(uf)}`
 
 export const linhaLegal = (dataTse: string) =>
   `números do TSE de ${dataTse} · fotos: TSE (CC-BY) · Lucas Freitas, pessoa física · não é material oficial de candidato, partido ou TSE`

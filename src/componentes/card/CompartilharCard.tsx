@@ -2,13 +2,14 @@
 
 import { useRef, useState, useTransition } from 'react'
 import { domToBlob } from 'modern-screenshot'
+import type { Uf } from '@/lib/estados'
 import { CardDaColinha } from './CardDaColinha'
 import { FORMATOS, nomeDoArquivo, tamanhoDaPrevia, type Formato, type LinhaDoCard } from './formato'
 
 export type PropsDoCard = {
   linhas: LinhaDoCard[]
   estado: string
-  uf: string
+  uf: Uf
   dataTse: string
 }
 
@@ -23,7 +24,7 @@ const ORDEM_DOS_FORMATOS = ['feed', 'stories'] as const satisfies readonly Forma
 const chaveDoCard = (props: PropsDoCard, formato: Formato) => JSON.stringify([formato, props])
 
 // Espera as fontes (Anton e Oswald) e as fotos antes de fotografar o nó em tamanho real.
-const gerarArquivo = async (card: HTMLElement, formato: Formato, uf: string) => {
+const gerarArquivo = async (card: HTMLElement, formato: Formato, uf: Uf) => {
   await document.fonts.ready
   const { largura, altura } = FORMATOS[formato]
   // Largura e altura explícitas: sem elas a lib mede o nó já reduzido pela prévia.
