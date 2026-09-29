@@ -9,6 +9,7 @@
     "start": "next start",
     "lint": "eslint",
     "dados": "node scripts/importar-dados.ts && node scripts/gerar-colinhas.ts",
+    "dados:tse": "node scripts/baixar-tse.ts && node scripts/baixar-fotos.ts",
     "test": "node --test \"testes/**/*.test.ts\""
   },
   "dependencies": {
