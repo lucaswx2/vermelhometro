@@ -144,7 +144,7 @@ export function MontadorColinha({ uf, estado, candidatas, padroes, dataTse }: Pr
       <section aria-labelledby="titulo-colinha" className="nao-imprimir flex flex-col gap-2">
         <div className="flex items-end justify-between gap-2">
           <h2 id="titulo-colinha" className="text-[13px] font-bold uppercase tracking-[0.15em]">
-            {temEscolha ? `Sua colinha · ${estado}` : `Ou monte cargo a cargo · ${estado}`}
+            {escolha.recebida ? `A colinha que te mandaram · ${estado}` : temEscolha ? `Sua colinha · ${estado}` : `Ou monte cargo a cargo · ${estado}`}
           </h2>
           {temEscolha && (
             <button

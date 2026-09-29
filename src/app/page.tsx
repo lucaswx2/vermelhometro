@@ -19,7 +19,7 @@ export default function Inicio() {
             Monte sua <br /> colinha de luta
           </>
         }
-        rodape="Vote com a classe. Nenhum voto na extrema direita."
+        rodape="Nenhum voto na extrema direita."
         atualizadoEm={atualizadoEm}
       />
 
