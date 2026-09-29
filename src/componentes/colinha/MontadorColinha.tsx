@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation'
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react'
 import { flushSync } from 'react-dom'
 import { CompartilharCard, type LinhaDoCard } from '@/componentes/card/CompartilharCard'
-import { NOME_UF, UFS, ehUf } from '@/lib/estados'
+import { NOME_UF, UFS, ehUf, type Uf } from '@/lib/estados'
 import { PARTIDOS_DE_CLASSE } from '@/lib/partidosDeClasse'
 import { lembrarColinha } from '../ultimaColinha'
 import { BuscaCandidatura } from './BuscaCandidatura'
@@ -72,7 +72,7 @@ const mandar = async (url: string) => {
 type Busca = { cargo: Cargo; semente: number }
 
 type Props = {
-  uf: string
+  uf: Uf
   estado: string
   candidatas: CandidatasCompactas
   padroes: PadroesDaClasse

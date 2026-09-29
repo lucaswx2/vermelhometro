@@ -12,6 +12,7 @@ const candidata = (numero: number, nome: string, partido: string, faixa: Faixa):
   faixa,
   situacao: '',
   foto: null,
+  sq: `sq-${numero}`,
 })
 
 const opcoes: Opcao[] = [
@@ -22,7 +23,7 @@ const opcoes: Opcao[] = [
   candidata(400, 'SIMONE TEBET', 'PSB', 'frente-ampla'),
   candidata(222, 'CAPITÃO FULANO', 'PL', 'extrema-direita'),
   candidata(555, 'BELTRANO', 'PSD', 'centrao'),
-  { tipo: 'legenda', numero: 16, nome: 'Legenda PSTU', partido: 'PSTU', faixa: 'esquerda-radical', situacao: '', foto: null },
+  { tipo: 'legenda', numero: 16, nome: 'Legenda PSTU', partido: 'PSTU', faixa: 'esquerda-radical', situacao: '', foto: null, sq: null },
 ]
 
 const nomes = (lista: Opcao[]) => lista.map((o) => o.nome)

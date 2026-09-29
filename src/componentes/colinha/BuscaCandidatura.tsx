@@ -2,11 +2,13 @@
 
 import { useDeferredValue, useMemo, useRef, useState, type SyntheticEvent } from 'react'
 import { flushSync } from 'react-dom'
+import type { Uf } from '@/lib/estados'
 import { faixaInfo } from '@/lib/faixas'
 import { buscar, type Grupo } from './busca'
 import type { Opcao, Vaga, Voto } from './escolha'
 import { FotoCandidatura } from './FotoCandidatura'
 import { SeloDoPartido } from './SeloDoPartido'
+import { enderecoNoTse } from './tse'
 
 const TSE = 'https://divulgacandcontas.tse.jus.br'
 
@@ -47,7 +49,7 @@ type Props = {
   opcoes: Opcao[]
   atual: Voto | null
   estado: string
-  uf: string
+  uf: Uf
   semente: number
   dataTse: string
   aoEscolher: (voto: Voto) => void
@@ -243,8 +245,10 @@ function ListaDoGrupo({ opcoes, atual, aoAbrir }: { opcoes: Opcao[]; atual: Voto
 
 const situacaoLegivel = (situacao: string) => (situacao === '' ? 'Deferida' : situacao.charAt(0).toUpperCase() + situacao.slice(1))
 
-function Gaveta({ opcao, vaga, uf, aoPor, aoFechar }: { opcao: Opcao; vaga: Vaga; uf: string; aoPor: () => void; aoFechar: () => void }) {
+function Gaveta({ opcao, vaga, uf, aoPor, aoFechar }: { opcao: Opcao; vaga: Vaga; uf: Uf; aoPor: () => void; aoFechar: () => void }) {
   const legenda = opcao.tipo === 'legenda'
+  // Voto de legenda não tem página de candidatura: fica a página inicial do TSE.
+  const noTse = opcao.sq ? enderecoNoTse({ sq: opcao.sq, uf, cargo: vaga.cargo }) : TSE
   return (
     <dialog
       ref={abrirComoModal}
@@ -296,7 +300,7 @@ function Gaveta({ opcao, vaga, uf, aoPor, aoFechar }: { opcao: Opcao; vaga: Vaga
         <button type="button" onClick={aoPor} className="h-[58px] bg-vermelho font-display text-[23px] uppercase tracking-wide text-ouro hover:bg-sangue">
           Pôr na minha colinha
         </button>
-        <a href={TSE} target="_blank" rel="noopener noreferrer" className="flex min-h-11 items-center self-center text-sm font-bold text-vermelho underline">
+        <a href={noTse} target="_blank" rel="noopener noreferrer" className="flex min-h-11 items-center self-center text-sm font-bold text-vermelho underline">
           Ver a candidatura no TSE ↗
         </a>
       </div>

@@ -33,21 +33,23 @@ export type Opcao = {
   // Vazia quando o registro está deferido.
   situacao: string
   foto: string | null
+  // O sequencial da candidatura no TSE; voto de legenda não tem.
+  sq: string | null
 }
 
 // Formato enxuto que o servidor manda ao navegador: São Paulo tem umas 2.400 candidaturas.
-export type CandidataCompacta = [numero: number, nome: string, partido: string, faixa: number, situacao: string, foto: string | null]
+export type CandidataCompacta = [numero: number, nome: string, partido: string, faixa: number, situacao: string, foto: string | null, sq: string]
 
 export type CandidatasCompactas = Record<CargoTse, CandidataCompacta[]>
 
 export type OpcoesDaUf = Record<CargoTse, Opcao[]>
 
 export const compactar = (
-  c: { numero: number; nomeUrna: string; partido: string; faixa: Faixa; situacao: string },
+  c: { sq: string; numero: number; nomeUrna: string; partido: string; faixa: Faixa; situacao: string },
   foto: string | null,
-): CandidataCompacta => [c.numero, c.nomeUrna, c.partido, FAIXAS.indexOf(c.faixa), c.situacao === 'deferido' ? '' : c.situacao, foto]
+): CandidataCompacta => [c.numero, c.nomeUrna, c.partido, FAIXAS.indexOf(c.faixa), c.situacao === 'deferido' ? '' : c.situacao, foto, c.sq]
 
-const abrir = ([numero, nome, partido, faixa, situacao, foto]: CandidataCompacta): Opcao => ({
+const abrir = ([numero, nome, partido, faixa, situacao, foto, sq]: CandidataCompacta): Opcao => ({
   tipo: 'candidatura',
   numero,
   nome,
@@ -55,6 +57,7 @@ const abrir = ([numero, nome, partido, faixa, situacao, foto]: CandidataCompacta
   faixa: FAIXAS[faixa] ?? 'centrao',
   situacao,
   foto,
+  sq,
 })
 
 const DIGITOS_DO_PARTIDO = { deputadoFederal: 100, deputadoEstadual: 1000 } as const
@@ -81,6 +84,7 @@ const legendasDoCargo = (candidatas: Opcao[], cargo: keyof typeof DIGITOS_DO_PAR
     faixa: faixaMaisComum(faixas),
     situacao: '',
     foto: null,
+    sq: null,
   }))
 }
 

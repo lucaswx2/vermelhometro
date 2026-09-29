@@ -49,22 +49,22 @@ const classe = {
 // Todas as candidaturas aptas do mesmo estado, como o navegador recebe.
 const compactas: CandidatasCompactas = {
   deputadoFederal: [
-    [1616, 'FULANA', 'PSTU', 0, 'sub judice (indeferido com recurso)', null],
-    [1310, 'CICRANO', 'PT', 1, '', null],
-    [2222, 'BELTRANO', 'PL', 4, '', '/fotos/1.jpg'],
+    [1616, 'FULANA', 'PSTU', 0, 'sub judice (indeferido com recurso)', null, 'sq1'],
+    [1310, 'CICRANO', 'PT', 1, '', null, 'sq2'],
+    [2222, 'BELTRANO', 'PL', 4, '', '/fotos/1.jpg', 'sq12'],
   ],
-  deputadoEstadual: [[16000, 'ZEZINHA', 'PSTU', 0, '', null]],
+  deputadoEstadual: [[16000, 'ZEZINHA', 'PSTU', 0, '', null, 'sq3']],
   senador: [
-    [160, 'WELLER', 'PSTU', 0, '', null],
-    [161, 'ELIANA', 'PSTU', 0, '', null],
-    [800, 'MARCIO', 'UP', 0, '', null],
-    [222, 'CAPITAO', 'PL', 4, '', null],
+    [160, 'WELLER', 'PSTU', 0, '', null, 'sq4'],
+    [161, 'ELIANA', 'PSTU', 0, '', null, 'sq5'],
+    [800, 'MARCIO', 'UP', 0, '', null, 'sq6'],
+    [222, 'CAPITAO', 'PL', 4, '', null, 'sq7'],
   ],
-  governador: [[16, 'ANA', 'PSTU', 0, '', null]],
+  governador: [[16, 'ANA', 'PSTU', 0, '', null, 'sq8']],
   presidente: [
-    [16, 'HERTZ DIAS', 'PSTU', 0, '', null],
-    [21, 'EDMILSON COSTA', 'PCB', 0, '', null],
-    [13, 'LULA', 'PT', 1, '', null],
+    [16, 'HERTZ DIAS', 'PSTU', 0, '', null, 'sq9'],
+    [21, 'EDMILSON COSTA', 'PCB', 0, '', null, 'sq10'],
+    [13, 'LULA', 'PT', 1, '', null, 'sq11'],
   ],
 }
 
