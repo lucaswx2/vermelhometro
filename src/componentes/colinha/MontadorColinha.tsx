@@ -1,10 +1,33 @@
 'use client'
 
-import { useSyncExternalStore } from 'react'
-import type { ColinhaDoPartido } from '@/lib/colinhas'
-import { PARTIDOS_DE_CLASSE, type SiglaDeClasse } from '@/lib/partidosDeClasse'
-import { desenharColinha } from './desenharColinha'
-import { escreverEscolha, lerEscolha, montarLinhas, textoDaColinha, type Escolha, type Linha } from './escolha'
+import { useRouter } from 'next/navigation'
+import { useEffect, useMemo, useState, useSyncExternalStore } from 'react'
+import { flushSync } from 'react-dom'
+import { CompartilharCard, type LinhaDoCard } from '@/componentes/card/CompartilharCard'
+import { NOME_UF, UFS, ehUf } from '@/lib/estados'
+import { PARTIDOS_DE_CLASSE } from '@/lib/partidosDeClasse'
+import { lembrarColinha } from '../ultimaColinha'
+import { BuscaCandidatura } from './BuscaCandidatura'
+import {
+  abrirCandidatas,
+  ESCOLHA_VAZIA,
+  escreverEscolha,
+  lerEscolha,
+  linkDaColinha,
+  montarColinha,
+  opcoesDoCargo,
+  paraOutroEstado,
+  votar,
+  votarComAClasse,
+  type CandidatasCompactas,
+  type Cargo,
+  type Escolha,
+  type LinhaDaColinha,
+  type PadroesDaClasse,
+  type Voto,
+} from './escolha'
+import { FotoCandidatura, FotoVazia } from './FotoCandidatura'
+import { SeloDoPartido } from './SeloDoPartido'
 
 const SITE = 'https://vermelhometro.vercel.app'
 
@@ -16,102 +39,273 @@ const hashAtual = () => window.location.hash
 const hashNoServidor = () => ''
 
 const gravar = (escolha: Escolha) => {
-  window.history.replaceState(null, '', escreverEscolha(escolha))
+  window.history.replaceState(null, '', escreverEscolha(escolha) || window.location.pathname)
   window.dispatchEvent(new HashChangeEvent('hashchange'))
 }
+
+
+const votoDaLinha = (linha: LinhaDaColinha): Voto | null => (linha.tipo === 'escolhida' ? linha.opcao.numero : linha.tipo === 'branco' ? 'branco' : null)
+
+const paraOCard = (linha: LinhaDaColinha): LinhaDoCard => {
+  if (linha.tipo === 'escolhida') {
+    const { numero, nome, partido, faixa, foto } = linha.opcao
+    return { rotulo: linha.rotulo, numero, nome, partido, faixa, foto }
+  }
+  return { rotulo: linha.rotulo, numero: null, nome: linha.tipo === 'branco' ? 'Voto em branco' : null, partido: null, faixa: null, foto: null }
+}
+
+// Abre o menu de compartilhar do celular; sem ele, o zap.
+const mandar = async (url: string) => {
+  const texto = 'Minha colinha de luta pro dia 4/10. Monte a sua:'
+  if (navigator.share) {
+    try {
+      await navigator.share({ url, text: texto })
+      return
+    } catch (erro) {
+      if (erro instanceof DOMException && erro.name === 'AbortError') return
+      console.error('Falha ao abrir o compartilhamento', erro)
+    }
+  }
+  window.open(`https://wa.me/?text=${encodeURIComponent(`${texto} ${url}`)}`, '_blank', 'noopener,noreferrer')
+}
+
+type Busca = { cargo: Cargo; semente: number }
 
 type Props = {
   uf: string
   estado: string
-  porPartido: Partial<Record<SiglaDeClasse, ColinhaDoPartido>>
-  atualizadoEm: string
+  candidatas: CandidatasCompactas
+  padroes: PadroesDaClasse
+  dataTse: string
 }
 
-export function MontadorColinha({ uf, estado, porPartido, atualizadoEm }: Props) {
+export function MontadorColinha({ uf, estado, candidatas, padroes, dataTse }: Props) {
   const hash = useSyncExternalStore(assinarHash, hashAtual, hashNoServidor)
   const escolha = lerEscolha(hash)
-  const { partido } = escolha
-  const linhas = partido ? montarLinhas(porPartido, { ...escolha, partido }, uf === 'DF') : null
-  const url = `${SITE}/estado/${uf.toLowerCase()}${escreverEscolha(escolha)}`
+  const opcoes = useMemo(() => abrirCandidatas(candidatas), [candidatas])
+  const linhas = montarColinha(escolha, opcoes, padroes, uf === 'DF')
+  const [busca, setBusca] = useState<Busca | null>(null)
+  const temEscolha = linhas.some((l) => l.tipo !== 'vazia')
+  const url = `${SITE}/estado/${uf.toLowerCase()}${linkDaColinha(escolha)}`
+
+  // A aba "Colinha" do rodapé volta para esta colinha.
+  useEffect(() => {
+    lembrarColinha(`/estado/${uf.toLowerCase()}${hash}`)
+  }, [uf, hash])
+
+  const abrirBusca = (cargo: Cargo) => setBusca((atual) => ({ cargo, semente: atual?.semente ?? Math.floor(Math.random() * 1e6) }))
+  const fecharBusca = () => {
+    if (!busca) return
+    // Tira a busca da tela já, para devolver o foco ao cartão que a abriu.
+    flushSync(() => setBusca(null))
+    document.getElementById(`vaga-${busca.cargo}`)?.focus()
+  }
+  const escolher = (voto: Voto) => {
+    if (!busca) return
+    gravar(votar(escolha, busca.cargo, voto))
+    fecharBusca()
+  }
+
+  const linhaBuscada = busca ? linhas.find((l) => l.cargo === busca.cargo) : undefined
 
   return (
-    <section aria-labelledby="titulo-colinha" className="flex flex-col gap-4">
-      <div className="nao-imprimir flex flex-col gap-3">
-        <h2 id="titulo-colinha" className="text-center font-display text-3xl uppercase text-vermelho">
-          1. Escolha o partido
-        </h2>
-        <div className="grid grid-cols-2 gap-2" role="group" aria-label="Partido da colinha">
-          {PARTIDOS_DE_CLASSE.map((p) => (
+    <>
+      {escolha.recebida && <ConviteRecebida uf={uf} escolha={escolha} />}
+
+      <section aria-labelledby="vote-com-a-classe" className="nao-imprimir flex flex-col gap-2.5 bg-vermelho p-3.5 text-papel">
+        <div className="flex flex-col gap-0.5">
+          <h2 id="vote-com-a-classe" className="font-display text-[22px] uppercase text-ouro">
+            Vote com a classe
+          </h2>
+          <p className="text-sm leading-snug">Um toque e a colinha sai preenchida com a indicação do partido. Depois troque o que quiser.</p>
+        </div>
+        <div className="grid grid-cols-4 gap-1.5" role="group" aria-label="Preencher com a colinha de classe do partido">
+          {PARTIDOS_DE_CLASSE.map((p) => {
+            const ativo = escolha.partido === p.sigla
+            return (
+              <button
+                key={p.sigla}
+                type="button"
+                aria-pressed={ativo}
+                onClick={() => gravar(votarComAClasse(p.sigla))}
+                className={`flex h-[52px] flex-col items-center justify-center border-2 border-papel font-display text-lg leading-none ${
+                  ativo ? 'bg-ouro text-tinta' : 'bg-papel text-vermelho hover:bg-ouro/80'
+                }`}
+              >
+                {p.sigla}
+                <span className="font-sans text-xs font-bold">{p.numero}</span>
+              </button>
+            )
+          })}
+        </div>
+        <p className="text-[11px] opacity-85">A ordem dos botões não é recomendação.</p>
+      </section>
+
+      <section aria-labelledby="titulo-colinha" className="nao-imprimir flex flex-col gap-2">
+        <div className="flex items-end justify-between gap-2">
+          <h2 id="titulo-colinha" className="text-[13px] font-bold uppercase tracking-[0.15em]">
+            {escolha.recebida ? `A colinha que te mandaram · ${estado}` : temEscolha ? `Sua colinha · ${estado}` : `Ou monte cargo a cargo · ${estado}`}
+          </h2>
+          {temEscolha && (
             <button
-              key={p.sigla}
               type="button"
-              aria-pressed={partido === p.sigla}
-              onClick={() => gravar({ partido: p.sigla })}
-              className={`flex h-16 items-center justify-center gap-2 border-[3px] border-vermelho font-display text-2xl ${
-                partido === p.sigla ? 'bg-vermelho text-papel' : 'bg-papel text-vermelho hover:bg-vermelho/10'
-              }`}
+              onClick={() => gravar(ESCOLHA_VAZIA)}
+              className="h-11 shrink-0 border-2 border-vermelho px-2.5 text-[13px] font-bold uppercase text-vermelho hover:bg-vermelho hover:text-papel"
             >
-              <span>{p.sigla}</span>
-              <span className="text-lg opacity-80">{p.numero}</span>
+              Limpar
             </button>
+          )}
+        </div>
+        <ol className="flex flex-col gap-2">
+          {linhas.map((linha) => (
+            <CartaoDaVaga key={linha.cargo} linha={linha} aoAbrir={() => abrirBusca(linha.cargo)} />
+          ))}
+        </ol>
+      </section>
+
+      {temEscolha && (
+        <div className="nao-imprimir flex flex-col gap-2.5">
+          <section aria-labelledby="espalhe" className="flex flex-col gap-2.5">
+            <h2 id="espalhe" className="text-center font-display text-[26px] uppercase text-vermelho">
+              ★ Espalhe nas redes ★
+            </h2>
+            <CompartilharCard linhas={linhas.map(paraOCard)} estado={estado} uf={uf} dataTse={dataTse} />
+          </section>
+          <button
+            type="button"
+            onClick={() => mandar(url)}
+            className="h-[54px] border-[3px] border-vermelho font-display text-[21px] uppercase text-vermelho hover:bg-vermelho hover:text-papel"
+          >
+            Mande pros companheiros
+          </button>
+          <p className="text-center text-xs text-tinta/70">O link não diz quem mandou.</p>
+          <div className="flex items-center justify-between gap-2">
+            <span className="text-[13px] font-bold">Celular não entra na cabine. Anote e leve.</span>
+            <button type="button" onClick={() => window.print()} className="min-h-11 shrink-0 text-sm font-bold text-vermelho underline">
+              Imprimir a folha
+            </button>
+          </div>
+        </div>
+      )}
+
+      {temEscolha && (
+        <div id="impressao" aria-hidden="true">
+          {[0, 1, 2, 3].map((i) => (
+            <Folha key={i} linhas={linhas} estado={estado} partido={escolha.partido} dataTse={dataTse} />
           ))}
         </div>
-        <p className="text-center text-sm">A ordem dos botões não é recomendação. Os quatro são partidos da esquerda socialista.</p>
-      </div>
-
-      {linhas && partido && (
-        <>
-          <div className="nao-imprimir flex flex-col gap-3">
-            <h2 className="text-center font-display text-3xl uppercase text-vermelho">2. Confira sua colinha</h2>
-            <p className="text-center text-sm">Na ordem em que a urna pede. Toque em “trocar” para escolher outro nome.</p>
-          </div>
-          <FolhaColinha linhas={linhas} estado={estado} partido={partido} atualizadoEm={atualizadoEm} editavel escolha={escolha} />
-
-          <div className="nao-imprimir flex flex-col gap-2.5">
-            <h2 className="text-center font-display text-3xl uppercase text-vermelho">3. Leve no papel</h2>
-            <p className="bg-tinta p-3 text-center font-bold text-papel">Celular é proibido na cabine de votação. Imprima ou copie à mão.</p>
-            <button type="button" onClick={() => window.print()} className="botao-primario">
-              Imprimir (4 por folha)
-            </button>
-            <button type="button" onClick={() => salvarImagem(linhas, estado, partido, atualizadoEm)} className="botao-secundario">
-              Salvar imagem
-            </button>
-            <a
-              href={`https://wa.me/?text=${encodeURIComponent(textoDaColinha(linhas, estado, url))}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="botao-secundario"
-            >
-              Mandar no zap
-            </a>
-          </div>
-
-          <div id="impressao" aria-hidden="true">
-            {[0, 1, 2, 3].map((i) => (
-              <FolhaColinha key={i} linhas={linhas} estado={estado} partido={partido} atualizadoEm={atualizadoEm} />
-            ))}
-          </div>
-        </>
       )}
+
+      {busca && linhaBuscada && (
+        <BuscaCandidatura
+          vaga={linhaBuscada}
+          opcoes={opcoesDoCargo(opcoes, busca.cargo, linhas)}
+          atual={votoDaLinha(linhaBuscada)}
+          estado={estado}
+          uf={uf}
+          semente={busca.semente}
+          dataTse={dataTse}
+          aoEscolher={escolher}
+          aoFechar={fecharBusca}
+        />
+      )}
+    </>
+  )
+}
+
+function CartaoDaVaga({ linha, aoAbrir }: { linha: LinhaDaColinha; aoAbrir: () => void }) {
+  const aviso = linha.tipo === 'branco' ? null : linha.aviso
+  const acao = linha.tipo === 'vazia' ? 'Escolher ›' : 'Trocar'
+  return (
+    <li className="relative flex min-h-[84px] items-center gap-3 border-2 border-tinta bg-white px-3 py-2.5 focus-within:outline-4 focus-within:outline-ouro">
+      {linha.tipo === 'escolhida' ? <FotoCandidatura opcao={linha.opcao} tamanho="p" /> : <FotoVazia />}
+      <span className="flex min-w-0 grow flex-col gap-px">
+        {linha.tipo === 'vazia' ? (
+          <>
+            <span className="font-display text-[21px] uppercase leading-tight">{linha.rotulo}</span>
+            <span className="text-[13px] font-medium text-tinta/70">{linha.digitos}</span>
+          </>
+        ) : (
+          <>
+            <span className="text-[11px] font-bold uppercase tracking-wide text-tinta/70">{linha.rotulo}</span>
+            {linha.tipo === 'escolhida' ? (
+              <>
+                <span className="flex items-baseline gap-2">
+                  <span className="font-display text-[32px] leading-none tracking-wide">{linha.opcao.numero}</span>
+                  <span className="truncate text-[15px] font-bold uppercase">{linha.opcao.nome}</span>
+                </span>
+                <span className="mt-0.5 self-start">
+                  <SeloDoPartido opcao={linha.opcao} />
+                </span>
+              </>
+            ) : (
+              <span className="font-display text-[32px] uppercase leading-none">Branco</span>
+            )}
+          </>
+        )}
+        {aviso && <span className="mt-1 text-xs font-medium text-sangue">{aviso}</span>}
+      </span>
+      <button
+        id={`vaga-${linha.cargo}`}
+        type="button"
+        onClick={aoAbrir}
+        aria-label={`${acao.replace(' ›', '')}: ${linha.rotulo}`}
+        className="min-h-11 shrink-0 text-sm font-bold uppercase text-vermelho outline-none after:absolute after:inset-0"
+      >
+        {acao}
+      </button>
+    </li>
+  )
+}
+
+function ConviteRecebida({ uf, escolha }: { uf: string; escolha: Escolha }) {
+  const router = useRouter()
+  const [destino, setDestino] = useState(uf)
+  const levados = [
+    escolha.partido && `o partido (${escolha.partido})`,
+    (escolha.partido || escolha.votos.presidente !== undefined) && 'o presidente',
+  ].filter(Boolean)
+  const levar = levados.length > 0 ? `Levamos ${levados.join(' e ')}. Os outros cargos passam` : 'Os cargos passam'
+
+  const montar = () => {
+    if (destino === uf) return gravar({ ...escolha, recebida: false })
+    if (!ehUf(destino)) return
+    router.push(`/estado/${destino.toLowerCase()}${escreverEscolha(paraOutroEstado(escolha))}`)
+  }
+
+  return (
+    <section aria-labelledby="convite" className="nao-imprimir flex flex-col gap-3 border-[3px] border-tinta bg-ouro px-4 py-4.5">
+      <p className="text-[13px] font-bold uppercase tracking-[0.12em]">Te mandaram uma colinha</p>
+      <h2 id="convite" className="font-display text-3xl uppercase leading-none">
+        Vota em outro estado? Monte a sua.
+      </h2>
+      <label className="flex flex-col gap-1 text-[13px] font-bold">
+        Seu estado
+        <select
+          value={destino}
+          onChange={(e) => setDestino(e.target.value)}
+          className="h-12 border-[3px] border-tinta bg-papel px-2.5 text-[17px] font-bold text-tinta"
+        >
+          {UFS.map((u) => (
+            <option key={u} value={u}>
+              {NOME_UF[u]}
+            </option>
+          ))}
+        </select>
+      </label>
+      <button type="button" onClick={montar} className="h-[54px] bg-tinta font-display text-[22px] uppercase text-ouro hover:bg-sangue">
+        Montar minha colinha
+      </button>
+      <p className="text-[13px] leading-snug">
+        {destino === uf
+          ? 'Também vota aqui? Troque o que quiser e ela vira sua.'
+          : `${levar} para os números do seu estado.`}
+      </p>
     </section>
   )
 }
 
-function FolhaColinha({
-  linhas,
-  estado,
-  partido,
-  atualizadoEm,
-  editavel = false,
-  escolha,
-}: {
-  linhas: Linha[]
-  estado: string
-  partido: SiglaDeClasse
-  atualizadoEm: string
-  editavel?: boolean
-  escolha?: Escolha
-}) {
+function Folha({ linhas, estado, partido, dataTse }: { linhas: LinhaDaColinha[]; estado: string; partido: string | null; dataTse: string }) {
   return (
     <article className="folha-colinha flex flex-col border-[3px] border-tinta bg-white text-black">
       <header className="flex items-baseline justify-between bg-tinta px-3 py-2 text-white">
@@ -120,66 +314,28 @@ function FolhaColinha({
       </header>
       <ol className="flex flex-col">
         {linhas.map((l) => (
-          <li key={l.cargo} className="flex flex-col gap-0.5 border-b border-black/30 px-3 py-2">
-            <div className="flex items-center justify-between gap-2">
+          <li key={l.cargo} className="flex items-center gap-2 border-b border-black/30 px-3 py-1.5">
+            {l.tipo === 'escolhida' ? <FotoCandidatura opcao={l.opcao} tamanho="p" /> : <FotoVazia />}
+            <div className="flex min-w-0 flex-col">
               <span className="text-sm font-bold uppercase">{l.rotulo}</span>
-              {editavel && escolha && <Trocar linha={l} escolha={escolha} />}
+              <div className="flex items-baseline gap-3">
+                <span className="numero-folha min-w-[4ch] font-display text-5xl leading-none tracking-wider">
+                  {l.tipo === 'escolhida' ? l.opcao.numero : l.tipo === 'branco' ? 'BRANCO' : '—'}
+                </span>
+                {l.tipo === 'escolhida' && (
+                  <span className="truncate text-base font-medium">
+                    {l.opcao.nome} · {l.opcao.partido}
+                  </span>
+                )}
+              </div>
             </div>
-            <div className="flex items-baseline gap-3">
-              <span className="min-w-[4ch] font-display text-5xl leading-none tracking-wider">{l.numero ?? '—'}</span>
-              <span className="text-base font-medium">{l.nome ?? 'em branco'}</span>
-            </div>
-            {l.aviso && <p className="text-xs">{l.aviso}</p>}
           </li>
         ))}
       </ol>
       <footer className="px-3 py-2 text-[11px] leading-snug">
-        Voto de classe · {partido}. Números oficiais do TSE de {atualizadoEm}. Confira em divulgacandcontas.tse.jus.br. Feito por Lucas Freitas
-        (pessoa física) em vermelhometro.vercel.app. Não é material oficial de candidato, partido ou TSE.
+        {partido ? `Voto de classe · ${partido}. ` : ''}Números oficiais do TSE de {dataTse}. Confira em divulgacandcontas.tse.jus.br. Feito por Lucas
+        Freitas (pessoa física) em vermelhometro.vercel.app. Não é material oficial de candidato, partido ou TSE.
       </footer>
     </article>
   )
-}
-
-function Trocar({ linha, escolha }: { linha: Linha; escolha: Escolha }) {
-  const id = `trocar-${linha.cargo}`
-  return (
-    <>
-      <label htmlFor={id} className="sr-only">
-        Trocar {linha.rotulo}
-      </label>
-      <select
-        id={id}
-        value={linha.numero === null ? 'branco' : String(linha.numero)}
-        onChange={(e) => gravar({ ...escolha, [linha.cargo]: e.target.value })}
-        className="max-w-[55%] border-2 border-vermelho bg-papel px-2 py-1.5 text-sm font-bold text-vermelho"
-      >
-        {linha.escolhas.map((e) => (
-          <option key={e.valor} value={e.valor}>
-            {e.rotulo}
-          </option>
-        ))}
-      </select>
-    </>
-  )
-}
-
-async function salvarImagem(linhas: Linha[], estado: string, partido: SiglaDeClasse, atualizadoEm: string) {
-  try {
-    const blob = await desenharColinha(linhas, estado, partido, atualizadoEm)
-    const arquivo = new File([blob], `colinha-${partido.toLowerCase()}.png`, { type: 'image/png' })
-    if (navigator.canShare?.({ files: [arquivo] })) {
-      await navigator.share({ files: [arquivo], title: `Colinha de classe · ${estado}` })
-      return
-    }
-    const link = document.createElement('a')
-    link.href = URL.createObjectURL(blob)
-    link.download = arquivo.name
-    link.click()
-    URL.revokeObjectURL(link.href)
-  } catch (erro) {
-    if (erro instanceof DOMException && erro.name === 'AbortError') return
-    console.error('Falha ao gerar a imagem da colinha', erro)
-    window.alert('Não deu para gerar a imagem. Use “Imprimir” ou tire um print da tela.')
-  }
 }

@@ -12,6 +12,7 @@ export function Rodape() {
       <p className="mt-2">
         Classificação dos candidatos feita com auxílio de IA (Claude, da Anthropic), revisada e assumida pelo autor. O critério das colinhas é do autor.
       </p>
+      <p className="mt-2">Números e fotos dos candidatos: TSE. Fotos: TSE (CC-BY).</p>
       <p className="mt-2">
         <Link href="/transparencia" className="text-ouro underline">
           Transparência e método
