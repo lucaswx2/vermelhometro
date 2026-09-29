@@ -4,7 +4,7 @@ import { useDeferredValue, useMemo, useRef, useState, type SyntheticEvent } from
 import { flushSync } from 'react-dom'
 import { COR_DO_TEMA } from '@/lib/cores'
 import type { Uf } from '@/lib/estados'
-import { faixaInfo } from '@/lib/faixas'
+import { FICHA_DA_FAIXA } from '@/lib/faixas'
 import { buscar, type Grupo } from './busca'
 import { ehSubJudice, type Opcao, type Vaga, type Voto } from './escolha'
 import { FotoCandidatura } from './FotoCandidatura'
@@ -36,8 +36,8 @@ const aoPedirFechar = (aoFechar: () => void) => ({
 })
 
 const TITULO_DO_GRUPO = {
-  esquerda: { titulo: 'Esquerda socialista', cor: faixaInfo['esquerda-radical'].cor },
-  ampla: { titulo: 'Frente ampla', cor: faixaInfo['frente-ampla'].cor },
+  esquerda: { titulo: 'Esquerda socialista', cor: FICHA_DA_FAIXA['esquerda-radical'].cor },
+  ampla: { titulo: 'Frente ampla', cor: FICHA_DA_FAIXA['frente-ampla'].cor },
   outros: { titulo: 'Outros partidos', cor: COR_DO_TEMA.tinta },
 } satisfies Record<Grupo, { titulo: string; cor: string }>
 
@@ -75,8 +75,8 @@ export function BuscaCandidatura({ vaga, opcoes, atual, estado, uf, semente, dat
     gatilho.current?.focus()
   }
 
-  const lista = (grupo: Grupo) => (
-    <ListaDoGrupo key={`${grupo}-${termoAdiado}`} opcoes={grupos[grupo]} atual={atual} aoAbrir={abrirPerfil} />
+  const resultadosDo = (grupo: Grupo) => (
+    <ResultadosDoGrupo key={`${grupo}-${termoAdiado}`} opcoes={grupos[grupo]} atual={atual} aoAbrir={abrirPerfil} />
   )
 
   return (
@@ -155,7 +155,7 @@ export function BuscaCandidatura({ vaga, opcoes, atual, estado, uf, semente, dat
                   <span>{TITULO_DO_GRUPO[grupo].titulo}</span>
                   <span>{grupos[grupo].length}</span>
                 </h3>
-                {lista(grupo)}
+                {resultadosDo(grupo)}
               </section>
             ),
         )}
@@ -168,7 +168,7 @@ export function BuscaCandidatura({ vaga, opcoes, atual, estado, uf, semente, dat
                   <span>Outros partidos</span>
                   <span>{grupos.outros.length}</span>
                 </h3>
-                {lista('outros')}
+                {resultadosDo('outros')}
               </>
             ) : (
               <div className="p-4">
@@ -202,7 +202,7 @@ export function BuscaCandidatura({ vaga, opcoes, atual, estado, uf, semente, dat
   )
 }
 
-function ListaDoGrupo({ opcoes, atual, aoAbrir }: { opcoes: Opcao[]; atual: Voto | null; aoAbrir: (opcao: Opcao, botao: HTMLElement) => void }) {
+function ResultadosDoGrupo({ opcoes, atual, aoAbrir }: { opcoes: Opcao[]; atual: Voto | null; aoAbrir: (opcao: Opcao, botao: HTMLElement) => void }) {
   const [limite, setLimite] = useState(PAGINA)
   const faltam = opcoes.length - limite
   return (

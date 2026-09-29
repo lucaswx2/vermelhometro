@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { COR_DO_TEMA } from '@/lib/cores'
-import { faixaInfo, FAIXAS, type Faixa } from '@/lib/faixas'
+import { FICHA_DA_FAIXA, FAIXAS, type Faixa } from '@/lib/faixas'
 import { rotaDoEstado, type Uf } from '@/lib/estados'
 
 // Posição [coluna, linha] de cada UF na grade: todos os estados com o mesmo peso visual.
@@ -22,7 +22,7 @@ export function GradeEstados({ celulas, ancora = '' }: { celulas: Celula[]; anco
     <div className="grid auto-rows-[48px] grid-cols-6 gap-1.5">
       {celulas.map(({ uf, rotulo, faixa }) => {
         const [coluna, linha] = POSICAO[uf]
-        const info = faixa ? faixaInfo[faixa] : null
+        const ficha = faixa ? FICHA_DA_FAIXA[faixa] : null
         const semDado = faixa === null
         return (
           <Link
@@ -32,11 +32,11 @@ export function GradeEstados({ celulas, ancora = '' }: { celulas: Celula[]; anco
             style={{
               gridColumn: coluna,
               gridRow: linha,
-              background: info?.cor ?? (semDado ? 'transparent' : COR_DO_TEMA.papel),
-              color: info?.texto ?? COR_DO_TEMA.tinta,
+              background: ficha?.cor ?? (semDado ? 'transparent' : COR_DO_TEMA.papel),
+              color: ficha?.texto ?? COR_DO_TEMA.tinta,
             }}
             className={`flex items-center justify-center font-display text-lg transition-transform hover:scale-105 focus-visible:outline-4 focus-visible:outline-ouro ${
-              semDado ? 'border-2 border-dashed border-tinta/50' : info ? '' : 'border-2 border-tinta'
+              semDado ? 'border-2 border-dashed border-tinta/50' : ficha ? '' : 'border-2 border-tinta'
             }`}
           >
             {uf}
@@ -52,8 +52,8 @@ export function Legenda() {
     <ul className="flex flex-wrap justify-center gap-x-3.5 gap-y-2 text-sm font-medium">
       {FAIXAS.map((faixa) => (
         <li key={faixa} className="flex items-center gap-1.5">
-          <span className="size-4 border border-tinta" style={{ background: faixaInfo[faixa].cor }} />
-          {faixaInfo[faixa].nome}
+          <span className="size-4 border border-tinta" style={{ background: FICHA_DA_FAIXA[faixa].cor }} />
+          {FICHA_DA_FAIXA[faixa].nome}
         </li>
       ))}
       <li className="flex items-center gap-1.5">

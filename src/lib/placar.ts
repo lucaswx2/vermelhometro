@@ -228,17 +228,17 @@ function media(valores: number[]) {
   return valores.length === 0 ? 50 : valores.reduce((a, b) => a + b, 0) / valores.length
 }
 
-function dentroDaJanela(lista: Pesquisa[]) {
-  const maisNova = lista[0]?.campoFim
+function dentroDaJanela(pesquisas: Pesquisa[]) {
+  const maisNova = pesquisas[0]?.campoFim
   if (!maisNova) return []
   const limite = new Date(maisNova)
   limite.setDate(limite.getDate() - JANELA_DIAS)
-  return lista.filter((p) => new Date(p.campoFim) >= limite)
+  return pesquisas.filter((p) => new Date(p.campoFim) >= limite)
 }
 
-function umaPorInstituto(lista: Pesquisa[]) {
+function umaPorInstituto(pesquisas: Pesquisa[]) {
   const vistos = new Set<string>()
-  return lista.filter((p) => {
+  return pesquisas.filter((p) => {
     if (vistos.has(p.instituto)) return false
     vistos.add(p.instituto)
     return true
