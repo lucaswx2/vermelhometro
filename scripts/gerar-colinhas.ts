@@ -4,11 +4,13 @@
 // 2. sem candidato próprio, o candidato que o partido apoia formalmente (coligação na planilha);
 // 3. deputados: voto de legenda, só se o partido tiver candidatos ao cargo na UF.
 // Uso: node scripts/gerar-colinhas.ts
-import { readFileSync, writeFileSync } from 'node:fs'
+import { existsSync, readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { z } from 'zod'
+import type { Candidatura } from '../src/lib/candidaturas.ts'
 import { candidatoSchema } from '../src/lib/esquemas.ts'
 import { UFS } from '../src/lib/estados.ts'
+import { faixaDoPartido } from '../src/lib/faixas.ts'
 import { PARTIDOS_DE_CLASSE } from '../src/lib/partidosDeClasse.ts'
 
 const DADOS = join(import.meta.dirname, '..', 'dados')
@@ -21,6 +23,7 @@ const candidaturaTse = z.object({
   partido: z.string(),
   situacao: z.string(),
   coligacaoOuFederacao: z.string(),
+  sq: z.string(),
 })
 
 type CandidaturaTse = z.infer<typeof candidaturaTse>
@@ -114,3 +117,41 @@ for (const uf of UFS) {
   })
   console.log(uf, resumo.join(' | '))
 }
+
+// ---------- Candidaturas de qualquer partido, para a busca da colinha ----------
+
+const FOTOS = join(import.meta.dirname, '..', 'public', 'fotos')
+
+const CARGO_DA_COLINHA = {
+  presidente: 'presidente',
+  governador: 'governador',
+  senador: 'senador',
+  'deputado federal': 'deputadoFederal',
+  'deputado estadual': 'deputadoEstadual',
+  'deputado distrital': 'deputadoEstadual',
+} as const satisfies Record<CandidaturaTse['cargo'], Candidatura['cargo']>
+
+// Majoritários classificados na planilha levam a faixa do palanque; o resto, a do partido.
+const faixaDaCandidatura = (c: CandidaturaTse, uf: string, lista: CandidaturaTse[]) => {
+  if (c.cargo !== 'presidente' && c.cargo !== 'governador' && c.cargo !== 'senador') return faixaDoPartido(c.partido)
+  const doCargo = lista.filter((l) => l.cargo === c.cargo)
+  const naPlanilha = planilha.find((p) => p.cargo === c.cargo && p.uf === uf && acharNoTse(doCargo, p.nomeUrna, p.partido)?.sq === c.sq)
+  return naPlanilha?.faixa ?? faixaDoPartido(c.partido)
+}
+
+const candidaturas = (uf: string, lista: CandidaturaTse[]): Candidatura[] =>
+  lista.map((c) => ({
+    sq: c.sq,
+    cargo: CARGO_DA_COLINHA[c.cargo],
+    numero: c.numero,
+    nomeUrna: c.nomeUrna,
+    partido: c.partido,
+    situacao: c.situacao,
+    faixa: faixaDaCandidatura(c, uf, lista),
+    foto: existsSync(join(FOTOS, `${c.sq}.jpg`)),
+  }))
+
+const porUf: Record<string, Candidatura[]> = Object.fromEntries([['BR', candidaturas('BR', presidenciais)], ...UFS.map((uf) => [uf, candidaturas(uf, lerTse(`${uf}.json`))])])
+writeFileSync(join(DADOS, 'candidaturas.json'), `${JSON.stringify({ geradoEm: new Date().toISOString(), porUf })}\n`, 'utf8')
+const todas = Object.values(porUf).flat()
+console.log(`candidaturas: ${todas.length} · com foto: ${todas.filter((c) => c.foto).length}`)

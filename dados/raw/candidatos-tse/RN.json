@@ -1,273 +1,2441 @@
 [
-  {"cargo":"governador","numero":13,"nomeUrna":"CADU DE LULA","partido":"PT","situacao":"deferido","coligacaoOuFederacao":"TIME QUE CUIDA"},
-  {"cargo":"governador","numero":16,"nomeUrna":"DÁRIO BARBOSA","partido":"PSTU","situacao":"deferido","coligacaoOuFederacao":"PSTU"},
-  {"cargo":"governador","numero":22,"nomeUrna":"ÁLVARO DIAS","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"ENDIREITA RN"},
-  {"cargo":"governador","numero":27,"nomeUrna":"GODEIRO LINHARESS","partido":"DC","situacao":"deferido","coligacaoOuFederacao":"DC"},
-  {"cargo":"governador","numero":29,"nomeUrna":"HENRIQUE LYRA","partido":"PCO","situacao":"sub judice (indeferido com recurso)","coligacaoOuFederacao":"PCO"},
-  {"cargo":"governador","numero":36,"nomeUrna":"RODRIGO DE BOLSONARO","partido":"AGIR","situacao":"deferido","coligacaoOuFederacao":"AGIR"},
-  {"cargo":"governador","numero":44,"nomeUrna":"ALLYSON","partido":"UNIÃO","situacao":"deferido","coligacaoOuFederacao":"ESPERANÇA E TRABALHO'"},
-  {"cargo":"governador","numero":50,"nomeUrna":"PROFESSOR ROBERIO PAULINO","partido":"PSOL","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)"},
-  {"cargo":"governador","numero":80,"nomeUrna":"ARINALDA DO MLB","partido":"UP","situacao":"deferido","coligacaoOuFederacao":"UP"},
-  {"cargo":"senador","numero":123,"nomeUrna":"RAFAEL MOTTA","partido":"PDT","situacao":"deferido","coligacaoOuFederacao":"TIME QUE CUIDA"},
-  {"cargo":"senador","numero":131,"nomeUrna":"SAMANDA DE LULA","partido":"PT","situacao":"deferido","coligacaoOuFederacao":"TIME QUE CUIDA"},
-  {"cargo":"senador","numero":161,"nomeUrna":"LUCIANA MANDU","partido":"PSTU","situacao":"deferido","coligacaoOuFederacao":"PSTU"},
-  {"cargo":"senador","numero":166,"nomeUrna":"ROSÁLIA FERNANDES","partido":"PSTU","situacao":"deferido","coligacaoOuFederacao":"PSTU"},
-  {"cargo":"senador","numero":200,"nomeUrna":"STYVENSON VALENTIM","partido":"PODE","situacao":"deferido","coligacaoOuFederacao":"ENDIREITA RN"},
-  {"cargo":"senador","numero":222,"nomeUrna":"CORONEL HÉLIO","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"ENDIREITA RN"},
-  {"cargo":"senador","numero":360,"nomeUrna":"GARI WENDELL BATISTA","partido":"AGIR","situacao":"deferido","coligacaoOuFederacao":"AGIR"},
-  {"cargo":"senador","numero":369,"nomeUrna":"CLÓVIS COSTA DO COLETIVO NÓS","partido":"AGIR","situacao":"deferido","coligacaoOuFederacao":"AGIR"},
-  {"cargo":"senador","numero":444,"nomeUrna":"TÉRCIO TINÔCO","partido":"UNIÃO","situacao":"deferido","coligacaoOuFederacao":"ESPERANÇA E TRABALHO"},
-  {"cargo":"senador","numero":500,"nomeUrna":"SANDRO PIMENTEL","partido":"PSOL","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)"},
-  {"cargo":"senador","numero":501,"nomeUrna":"SONIA GODEIRO","partido":"PSOL","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)"},
-  {"cargo":"senador","numero":555,"nomeUrna":"ZENAIDE MAIA","partido":"PSD","situacao":"deferido","coligacaoOuFederacao":"ESPERANÇA E TRABALHO"},
-  {"cargo":"senador","numero":800,"nomeUrna":"PROFESSOR GUILHERME","partido":"UP","situacao":"deferido","coligacaoOuFederacao":"UP"},
-  {"cargo":"deputado federal","numero":1111,"nomeUrna":"JOÃO MAIA","partido":"PP","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)"},
-  {"cargo":"deputado federal","numero":1122,"nomeUrna":"PAULINHA GALDINO","partido":"PP","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)"},
-  {"cargo":"deputado federal","numero":1144,"nomeUrna":"LEILA MAIA","partido":"PP","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)"},
-  {"cargo":"deputado federal","numero":1155,"nomeUrna":"ROBINSON FARIA","partido":"PP","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)"},
-  {"cargo":"deputado federal","numero":1200,"nomeUrna":"PEDRO CHE","partido":"PDT","situacao":"deferido","coligacaoOuFederacao":"PDT"},
-  {"cargo":"deputado federal","numero":1212,"nomeUrna":"CINTIA MAIA","partido":"PDT","situacao":"deferido","coligacaoOuFederacao":"PDT"},
-  {"cargo":"deputado federal","numero":1213,"nomeUrna":"NAXSON PALHARES","partido":"PDT","situacao":"deferido","coligacaoOuFederacao":"PDT"},
-  {"cargo":"deputado federal","numero":1230,"nomeUrna":"PROFESSORA SÂMELA","partido":"PDT","situacao":"deferido","coligacaoOuFederacao":"PDT"},
-  {"cargo":"deputado federal","numero":1233,"nomeUrna":"DR. ESTÁCIO","partido":"PDT","situacao":"deferido","coligacaoOuFederacao":"PDT"},
-  {"cargo":"deputado federal","numero":1234,"nomeUrna":"SUSAPE AUGUSTO","partido":"PDT","situacao":"deferido","coligacaoOuFederacao":"PDT"},
-  {"cargo":"deputado federal","numero":1244,"nomeUrna":"PROFESSOR EDVALDO JÚNIOR","partido":"PDT","situacao":"deferido","coligacaoOuFederacao":"PDT"},
-  {"cargo":"deputado federal","numero":1255,"nomeUrna":"PATRÍCIA CASTRO","partido":"PDT","situacao":"deferido","coligacaoOuFederacao":"PDT"},
-  {"cargo":"deputado federal","numero":1277,"nomeUrna":"DAVI RODRIGUES JR.","partido":"PDT","situacao":"deferido","coligacaoOuFederacao":"PDT"},
-  {"cargo":"deputado federal","numero":1300,"nomeUrna":"MARLEIDE CUNHA","partido":"PT","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)"},
-  {"cargo":"deputado federal","numero":1311,"nomeUrna":"NATÁLIA BONAVIDES","partido":"PT","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)"},
-  {"cargo":"deputado federal","numero":1313,"nomeUrna":"BRISA","partido":"PT","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)"},
-  {"cargo":"deputado federal","numero":1333,"nomeUrna":"MINEIRO","partido":"PT","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)"},
-  {"cargo":"deputado federal","numero":1345,"nomeUrna":"ODON JUNIOR","partido":"PT","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)"},
-  {"cargo":"deputado federal","numero":1400,"nomeUrna":"ABIMAEL COSTA","partido":"MISSÃO","situacao":"deferido","coligacaoOuFederacao":"MISSÃO"},
-  {"cargo":"deputado federal","numero":1401,"nomeUrna":"GABRIEL BOTELHO","partido":"MISSÃO","situacao":"deferido","coligacaoOuFederacao":"MISSÃO"},
-  {"cargo":"deputado federal","numero":1411,"nomeUrna":"DR. SALOMÃO","partido":"MISSÃO","situacao":"deferido","coligacaoOuFederacao":"MISSÃO"},
-  {"cargo":"deputado federal","numero":1414,"nomeUrna":"VIVIANE AVELINO","partido":"MISSÃO","situacao":"deferido","coligacaoOuFederacao":"MISSÃO"},
-  {"cargo":"deputado federal","numero":1441,"nomeUrna":"IGOR FERNANDES","partido":"MISSÃO","situacao":"deferido","coligacaoOuFederacao":"MISSÃO"},
-  {"cargo":"deputado federal","numero":1444,"nomeUrna":"ANA CLARA GURGEL","partido":"MISSÃO","situacao":"deferido","coligacaoOuFederacao":"MISSÃO"},
-  {"cargo":"deputado federal","numero":1447,"nomeUrna":"ALANNA BEATRIZ","partido":"MISSÃO","situacao":"deferido","coligacaoOuFederacao":"MISSÃO"},
-  {"cargo":"deputado federal","numero":1455,"nomeUrna":"IGOR RAYAN","partido":"MISSÃO","situacao":"deferido","coligacaoOuFederacao":"MISSÃO"},
-  {"cargo":"deputado federal","numero":1477,"nomeUrna":"FELIX SANTOS","partido":"MISSÃO","situacao":"deferido","coligacaoOuFederacao":"MISSÃO"},
-  {"cargo":"deputado federal","numero":2200,"nomeUrna":"JUNINHO SAIA RODADA","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
-  {"cargo":"deputado federal","numero":2210,"nomeUrna":"GENERAL GIRÃO","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
-  {"cargo":"deputado federal","numero":2211,"nomeUrna":"CARLA DICKSON","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
-  {"cargo":"deputado federal","numero":2222,"nomeUrna":"SARGENTO GONÇALVES","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
-  {"cargo":"deputado federal","numero":2233,"nomeUrna":"NINA","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
-  {"cargo":"deputado federal","numero":2244,"nomeUrna":"CORONEL BRILHANTE","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
-  {"cargo":"deputado federal","numero":2255,"nomeUrna":"PEDRO FILHO","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
-  {"cargo":"deputado federal","numero":2277,"nomeUrna":"GABI TRAJANO","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
-  {"cargo":"deputado federal","numero":2288,"nomeUrna":"CABO DEYVISON","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
-  {"cargo":"deputado federal","numero":2323,"nomeUrna":"ANNE BEZERRA","partido":"CIDADANIA","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)"},
-  {"cargo":"deputado federal","numero":2345,"nomeUrna":"PAULO OVÍDIO","partido":"CIDADANIA","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)"},
-  {"cargo":"deputado federal","numero":2500,"nomeUrna":"CARLOS ENFERMEIRO","partido":"PRD","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)"},
-  {"cargo":"deputado federal","numero":2512,"nomeUrna":"RAMA CUNHA","partido":"PRD","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)"},
-  {"cargo":"deputado federal","numero":2544,"nomeUrna":"FRAN BARBEIRO","partido":"PRD","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)"},
-  {"cargo":"deputado federal","numero":2555,"nomeUrna":"NARDE SANTOS","partido":"PRD","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)"},
-  {"cargo":"deputado federal","numero":2570,"nomeUrna":"GARIBALDE LEITE","partido":"PRD","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)"},
-  {"cargo":"deputado federal","numero":2722,"nomeUrna":"SARGENTO MELQUISEDEC","partido":"DC","situacao":"deferido","coligacaoOuFederacao":"DC"},
-  {"cargo":"deputado federal","numero":2724,"nomeUrna":"XEXEU DE NATAL","partido":"DC","situacao":"deferido","coligacaoOuFederacao":"DC"},
-  {"cargo":"deputado federal","numero":2730,"nomeUrna":"PROFESSORA CLARICE","partido":"DC","situacao":"deferido","coligacaoOuFederacao":"DC"},
-  {"cargo":"deputado federal","numero":3000,"nomeUrna":"RAPHAEL FERREIRA","partido":"NOVO","situacao":"deferido","coligacaoOuFederacao":"NOVO"},
-  {"cargo":"deputado federal","numero":3001,"nomeUrna":"RICHARDSON","partido":"NOVO","situacao":"deferido","coligacaoOuFederacao":"NOVO"},
-  {"cargo":"deputado federal","numero":3003,"nomeUrna":"DIRETOR DILSON LIMA","partido":"NOVO","situacao":"deferido","coligacaoOuFederacao":"NOVO"},
-  {"cargo":"deputado federal","numero":3010,"nomeUrna":"SUYANE VARELA","partido":"NOVO","situacao":"deferido","coligacaoOuFederacao":"NOVO"},
-  {"cargo":"deputado federal","numero":3022,"nomeUrna":"CAMILA ATÍPICA","partido":"NOVO","situacao":"deferido","coligacaoOuFederacao":"NOVO"},
-  {"cargo":"deputado federal","numero":3030,"nomeUrna":"ABEL FARIAS","partido":"NOVO","situacao":"deferido","coligacaoOuFederacao":"NOVO"},
-  {"cargo":"deputado federal","numero":3033,"nomeUrna":"DRA. DALILA VETERINÁRIA","partido":"NOVO","situacao":"deferido","coligacaoOuFederacao":"NOVO"},
-  {"cargo":"deputado federal","numero":3044,"nomeUrna":"DR DANIEL","partido":"NOVO","situacao":"deferido","coligacaoOuFederacao":"NOVO"},
-  {"cargo":"deputado federal","numero":3055,"nomeUrna":"DANIEL RIZZI","partido":"NOVO","situacao":"deferido","coligacaoOuFederacao":"NOVO"},
-  {"cargo":"deputado federal","numero":3309,"nomeUrna":"KARINE DA VILA","partido":"MOBILIZA","situacao":"deferido","coligacaoOuFederacao":"MOBILIZA"},
-  {"cargo":"deputado federal","numero":3310,"nomeUrna":"NALBA DA SAUDE","partido":"MOBILIZA","situacao":"deferido","coligacaoOuFederacao":"MOBILIZA"},
-  {"cargo":"deputado federal","numero":3312,"nomeUrna":"MAGNO REIS","partido":"MOBILIZA","situacao":"deferido","coligacaoOuFederacao":"MOBILIZA"},
-  {"cargo":"deputado federal","numero":3322,"nomeUrna":"SAMARA TORRES","partido":"MOBILIZA","situacao":"deferido","coligacaoOuFederacao":"MOBILIZA"},
-  {"cargo":"deputado federal","numero":3323,"nomeUrna":"PATRICIA FERREIRA","partido":"MOBILIZA","situacao":"deferido","coligacaoOuFederacao":"MOBILIZA"},
-  {"cargo":"deputado federal","numero":3324,"nomeUrna":"WINDSON XUXU","partido":"MOBILIZA","situacao":"deferido","coligacaoOuFederacao":"MOBILIZA"},
-  {"cargo":"deputado federal","numero":3333,"nomeUrna":"WENDER ANDRADE","partido":"MOBILIZA","situacao":"deferido","coligacaoOuFederacao":"MOBILIZA"},
-  {"cargo":"deputado federal","numero":3335,"nomeUrna":"ANGELITA DA VILA","partido":"MOBILIZA","situacao":"deferido","coligacaoOuFederacao":"MOBILIZA"},
-  {"cargo":"deputado federal","numero":3350,"nomeUrna":"ALEXANDRE RAMOS","partido":"MOBILIZA","situacao":"deferido","coligacaoOuFederacao":"MOBILIZA"},
-  {"cargo":"deputado federal","numero":4010,"nomeUrna":"AILTON RAMOS POR K","partido":"PSB","situacao":"deferido","coligacaoOuFederacao":"PSB"},
-  {"cargo":"deputado federal","numero":4011,"nomeUrna":"HELIA LIMA","partido":"PSB","situacao":"deferido","coligacaoOuFederacao":"PSB"},
-  {"cargo":"deputado federal","numero":4012,"nomeUrna":"MOACIR J. BARROS","partido":"PSB","situacao":"deferido","coligacaoOuFederacao":"PSB"},
-  {"cargo":"deputado federal","numero":4013,"nomeUrna":"DRA GLEUCE LEITE","partido":"PSB","situacao":"deferido","coligacaoOuFederacao":"PSB"},
-  {"cargo":"deputado federal","numero":4040,"nomeUrna":"ERMINIO FELIX","partido":"PSB","situacao":"deferido","coligacaoOuFederacao":"PSB"},
-  {"cargo":"deputado federal","numero":4055,"nomeUrna":"ARAPUÁ DE MACAU","partido":"PSB","situacao":"deferido","coligacaoOuFederacao":"PSB"},
-  {"cargo":"deputado federal","numero":4088,"nomeUrna":"RAQUEL LOVAN","partido":"PSB","situacao":"deferido","coligacaoOuFederacao":"PSB"},
-  {"cargo":"deputado federal","numero":4300,"nomeUrna":"DR. BERNARDO","partido":"PV","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)"},
-  {"cargo":"deputado federal","numero":4343,"nomeUrna":"THABATTA PIMENTA","partido":"PV","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)"},
-  {"cargo":"deputado federal","numero":4400,"nomeUrna":"DANI RIBEIRO","partido":"UNIÃO","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)"},
-  {"cargo":"deputado federal","numero":4444,"nomeUrna":"BENES LEOCÁDIO","partido":"UNIÃO","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)"},
-  {"cargo":"deputado federal","numero":4455,"nomeUrna":"FAUSTINO","partido":"UNIÃO","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)"},
-  {"cargo":"deputado federal","numero":4477,"nomeUrna":"NAGILA DINIZ","partido":"UNIÃO","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)"},
-  {"cargo":"deputado federal","numero":4508,"nomeUrna":"ALEX KROOS","partido":"PSDB","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)"},
-  {"cargo":"deputado federal","numero":4512,"nomeUrna":"FLAVIO LUIZ","partido":"PSDB","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)"},
-  {"cargo":"deputado federal","numero":4555,"nomeUrna":"NEGA DE NENEM BORGES","partido":"PSDB","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)"},
-  {"cargo":"deputado federal","numero":5013,"nomeUrna":"VANUZIA","partido":"PSOL","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)"},
-  {"cargo":"deputado federal","numero":5044,"nomeUrna":"PHILIPE DO VAT","partido":"PSOL","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)"},
-  {"cargo":"deputado federal","numero":5055,"nomeUrna":"PASTORA VERONICA","partido":"PSOL","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)"},
-  {"cargo":"deputado federal","numero":5088,"nomeUrna":"ED RODRIGUES","partido":"PSOL","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)"},
-  {"cargo":"deputado federal","numero":5098,"nomeUrna":"IGOR ROCHA","partido":"PSOL","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)"},
-  {"cargo":"deputado federal","numero":6513,"nomeUrna":"RAPOSINHA","partido":"PCDOB","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)"},
-  {"cargo":"deputado federal","numero":6565,"nomeUrna":"KEROLAYNE FERREIRA","partido":"PCDOB","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)"},
-  {"cargo":"deputado federal","numero":7010,"nomeUrna":"APOLLIANE SOUZA","partido":"AVANTE","situacao":"deferido","coligacaoOuFederacao":"AVANTE"},
-  {"cargo":"deputado federal","numero":7011,"nomeUrna":"PALHAÇO  FUXIQUINHO","partido":"AVANTE","situacao":"deferido","coligacaoOuFederacao":"AVANTE"},
-  {"cargo":"deputado federal","numero":7012,"nomeUrna":"GABRIEL NUNES","partido":"AVANTE","situacao":"deferido","coligacaoOuFederacao":"AVANTE"},
-  {"cargo":"deputado federal","numero":7022,"nomeUrna":"VITOR MARQUES","partido":"AVANTE","situacao":"deferido","coligacaoOuFederacao":"AVANTE"},
-  {"cargo":"deputado federal","numero":7044,"nomeUrna":"LILIAN CYNTHIA","partido":"AVANTE","situacao":"deferido","coligacaoOuFederacao":"AVANTE"},
-  {"cargo":"deputado federal","numero":7070,"nomeUrna":"HUDSON TOURINHO","partido":"AVANTE","situacao":"deferido","coligacaoOuFederacao":"AVANTE"},
-  {"cargo":"deputado federal","numero":7077,"nomeUrna":"ADRIANA ALBUQUERQUE","partido":"AVANTE","situacao":"deferido","coligacaoOuFederacao":"AVANTE"},
-  {"cargo":"deputado federal","numero":7717,"nomeUrna":"DÉBORAH SUELLEN","partido":"SOLIDARIEDADE","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)"},
-  {"cargo":"deputado federal","numero":7722,"nomeUrna":"JOHN KENNETH","partido":"SOLIDARIEDADE","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)"},
-  {"cargo":"deputado federal","numero":7732,"nomeUrna":"CRISTIANI ARTESÃ","partido":"SOLIDARIEDADE","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)"},
-  {"cargo":"deputado federal","numero":7777,"nomeUrna":"FRED BRAGA","partido":"SOLIDARIEDADE","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)"},
-  {"cargo":"deputado federal","numero":8000,"nomeUrna":"BIA DO MLB","partido":"UP","situacao":"deferido","coligacaoOuFederacao":"UP"},
-  {"cargo":"deputado federal","numero":8080,"nomeUrna":"VICTOR HUGO","partido":"UP","situacao":"deferido","coligacaoOuFederacao":"UP"},
-  {"cargo":"deputado estadual","numero":11000,"nomeUrna":"ADRIANA TROMBETA","partido":"PP","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)"},
-  {"cargo":"deputado estadual","numero":11111,"nomeUrna":"NEILTON DIÓGENES","partido":"PP","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)"},
-  {"cargo":"deputado estadual","numero":11123,"nomeUrna":"POLYANNA DANTAS","partido":"PP","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)"},
-  {"cargo":"deputado estadual","numero":11222,"nomeUrna":"NELTER QUEIROZ","partido":"PP","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)"},
-  {"cargo":"deputado estadual","numero":11333,"nomeUrna":"DERLANDIO JACKSON","partido":"PP","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)"},
-  {"cargo":"deputado estadual","numero":11555,"nomeUrna":"JULIO CESAR","partido":"PP","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)"},
-  {"cargo":"deputado estadual","numero":11666,"nomeUrna":"MAJOR CARLA CÂMARA","partido":"PP","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)"},
-  {"cargo":"deputado estadual","numero":11711,"nomeUrna":"BAMBAM","partido":"PP","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)"},
-  {"cargo":"deputado estadual","numero":11777,"nomeUrna":"SIRLENO JUNIOR","partido":"PP","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)"},
-  {"cargo":"deputado estadual","numero":11999,"nomeUrna":"KLEBER RODRIGUES","partido":"PP","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)"},
-  {"cargo":"deputado estadual","numero":13000,"nomeUrna":"PEDRO LOPES","partido":"PT","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)"},
-  {"cargo":"deputado estadual","numero":13013,"nomeUrna":"IVAN BARON","partido":"PT","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)"},
-  {"cargo":"deputado estadual","numero":13111,"nomeUrna":"DANIEL VALENÇA","partido":"PT","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)"},
-  {"cargo":"deputado estadual","numero":13113,"nomeUrna":"JULIANA GARCIA","partido":"PT","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)"},
-  {"cargo":"deputado estadual","numero":13123,"nomeUrna":"ISOLDA DANTAS","partido":"PT","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)"},
-  {"cargo":"deputado estadual","numero":13222,"nomeUrna":"FRANCISCO DO PT","partido":"PT","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)"},
-  {"cargo":"deputado estadual","numero":13333,"nomeUrna":"GERLAILSON ABRANTES (NENEM)","partido":"PT","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)"},
-  {"cargo":"deputado estadual","numero":13613,"nomeUrna":"DIVANEIDE BASÍLIO","partido":"PT","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)"},
-  {"cargo":"deputado estadual","numero":13713,"nomeUrna":"JORGE DE LIMA","partido":"PT","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)"},
-  {"cargo":"deputado estadual","numero":13777,"nomeUrna":"ALINE JULIETE","partido":"PT","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)"},
-  {"cargo":"deputado estadual","numero":13882,"nomeUrna":"DÉBORA REFE","partido":"PT","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)"},
-  {"cargo":"deputado estadual","numero":14000,"nomeUrna":"FÁBIO SILVEIRA","partido":"MISSÃO","situacao":"deferido","coligacaoOuFederacao":"MISSÃO"},
-  {"cargo":"deputado estadual","numero":14777,"nomeUrna":"RAYANNE FIGUEIREDO","partido":"MISSÃO","situacao":"deferido","coligacaoOuFederacao":"MISSÃO"},
-  {"cargo":"deputado estadual","numero":15000,"nomeUrna":"CLOVIS JUNIOR","partido":"MDB","situacao":"deferido","coligacaoOuFederacao":"MDB"},
-  {"cargo":"deputado estadual","numero":15015,"nomeUrna":"MARLENE MONTE","partido":"MDB","situacao":"deferido","coligacaoOuFederacao":"MDB"},
-  {"cargo":"deputado estadual","numero":15100,"nomeUrna":"ANGELA PAIVA","partido":"MDB","situacao":"deferido","coligacaoOuFederacao":"MDB"},
-  {"cargo":"deputado estadual","numero":15111,"nomeUrna":"JUNIOR MARQUES","partido":"MDB","situacao":"deferido","coligacaoOuFederacao":"MDB"},
-  {"cargo":"deputado estadual","numero":15115,"nomeUrna":"IVANILDA TENORIO","partido":"MDB","situacao":"deferido","coligacaoOuFederacao":"MDB"},
-  {"cargo":"deputado estadual","numero":15123,"nomeUrna":"PROFESSOR EMERSON","partido":"MDB","situacao":"deferido com recurso","coligacaoOuFederacao":"MDB"},
-  {"cargo":"deputado estadual","numero":15133,"nomeUrna":"DR ANTÔNIO JÁCOME","partido":"MDB","situacao":"deferido","coligacaoOuFederacao":"MDB"},
-  {"cargo":"deputado estadual","numero":15155,"nomeUrna":"SARA SANTOS","partido":"MDB","situacao":"deferido","coligacaoOuFederacao":"MDB"},
-  {"cargo":"deputado estadual","numero":15180,"nomeUrna":"ANA LUISA","partido":"MDB","situacao":"deferido","coligacaoOuFederacao":"MDB"},
-  {"cargo":"deputado estadual","numero":15190,"nomeUrna":"MAJOR EMERSON","partido":"MDB","situacao":"deferido","coligacaoOuFederacao":"MDB"},
-  {"cargo":"deputado estadual","numero":15222,"nomeUrna":"IVAN JUNIOR","partido":"MDB","situacao":"deferido","coligacaoOuFederacao":"MDB"},
-  {"cargo":"deputado estadual","numero":15300,"nomeUrna":"ELLEM ROCHA","partido":"MDB","situacao":"deferido","coligacaoOuFederacao":"MDB"},
-  {"cargo":"deputado estadual","numero":15333,"nomeUrna":"HOLDERLIN SILVA","partido":"MDB","situacao":"deferido","coligacaoOuFederacao":"MDB"},
-  {"cargo":"deputado estadual","numero":15400,"nomeUrna":"SALETE CAMPELO","partido":"MDB","situacao":"deferido","coligacaoOuFederacao":"MDB"},
-  {"cargo":"deputado estadual","numero":15444,"nomeUrna":"PROFESSOR LUIS CARLOS NORONHA","partido":"MDB","situacao":"deferido","coligacaoOuFederacao":"MDB"},
-  {"cargo":"deputado estadual","numero":15456,"nomeUrna":"YARA GOIS","partido":"MDB","situacao":"deferido","coligacaoOuFederacao":"MDB"},
-  {"cargo":"deputado estadual","numero":15500,"nomeUrna":"ISMENIA ARAUJO","partido":"MDB","situacao":"deferido","coligacaoOuFederacao":"MDB"},
-  {"cargo":"deputado estadual","numero":15555,"nomeUrna":"BIBIANO","partido":"MDB","situacao":"deferido","coligacaoOuFederacao":"MDB"},
-  {"cargo":"deputado estadual","numero":15666,"nomeUrna":"ELVIS DE DAL","partido":"MDB","situacao":"deferido","coligacaoOuFederacao":"MDB"},
-  {"cargo":"deputado estadual","numero":15678,"nomeUrna":"WALTER ALVES","partido":"MDB","situacao":"deferido","coligacaoOuFederacao":"MDB"},
-  {"cargo":"deputado estadual","numero":15777,"nomeUrna":"JEFERSON BRITO","partido":"MDB","situacao":"deferido","coligacaoOuFederacao":"MDB"},
-  {"cargo":"deputado estadual","numero":15888,"nomeUrna":"LUCIANO BARBOSA","partido":"MDB","situacao":"deferido","coligacaoOuFederacao":"MDB"},
-  {"cargo":"deputado estadual","numero":15999,"nomeUrna":"DR MILANO MAXIMO","partido":"MDB","situacao":"deferido","coligacaoOuFederacao":"MDB"},
-  {"cargo":"deputado estadual","numero":16123,"nomeUrna":"TIAGO SILVA","partido":"PSTU","situacao":"deferido","coligacaoOuFederacao":"PSTU"},
-  {"cargo":"deputado estadual","numero":16456,"nomeUrna":"PROFESSORA ANA CELIA","partido":"PSTU","situacao":"deferido","coligacaoOuFederacao":"PSTU"},
-  {"cargo":"deputado estadual","numero":18000,"nomeUrna":"LILA","partido":"REDE","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)"},
-  {"cargo":"deputado estadual","numero":18018,"nomeUrna":"PROFESSORA MÁRCIA","partido":"REDE","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)"},
-  {"cargo":"deputado estadual","numero":18118,"nomeUrna":"RENAN RIBEIRO","partido":"REDE","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)"},
-  {"cargo":"deputado estadual","numero":18123,"nomeUrna":"GUILHERME QUEIROZ","partido":"REDE","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)"},
-  {"cargo":"deputado estadual","numero":18333,"nomeUrna":"PAULO BINHO","partido":"REDE","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)"},
-  {"cargo":"deputado estadual","numero":18456,"nomeUrna":"CHICO GUERREIRO","partido":"REDE","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)"},
-  {"cargo":"deputado estadual","numero":18777,"nomeUrna":"RAPHAELA ARAÚJO","partido":"REDE","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)"},
-  {"cargo":"deputado estadual","numero":18888,"nomeUrna":"ÉDSON NEGRÃO","partido":"REDE","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)"},
-  {"cargo":"deputado estadual","numero":18999,"nomeUrna":"ROBERTO MOSSORÓ","partido":"REDE","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)"},
-  {"cargo":"deputado estadual","numero":22000,"nomeUrna":"JORGE DO ROSÁRIO","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
-  {"cargo":"deputado estadual","numero":22007,"nomeUrna":"AMORA BRAYAN","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
-  {"cargo":"deputado estadual","numero":22022,"nomeUrna":"JOSEMAR VARELA","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
-  {"cargo":"deputado estadual","numero":22100,"nomeUrna":"DR. KERGINALDO","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
-  {"cargo":"deputado estadual","numero":22110,"nomeUrna":"GETÚLIO RÊGO","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
-  {"cargo":"deputado estadual","numero":22111,"nomeUrna":"ADJUTO DIAS","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
-  {"cargo":"deputado estadual","numero":22123,"nomeUrna":"TEREZINHA MAIA","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
-  {"cargo":"deputado estadual","numero":22190,"nomeUrna":"SARGENTO RIVALDO","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
-  {"cargo":"deputado estadual","numero":22220,"nomeUrna":"KARINA PIMENTA","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
-  {"cargo":"deputado estadual","numero":22222,"nomeUrna":"CORONEL AZEVEDO","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
-  {"cargo":"deputado estadual","numero":22234,"nomeUrna":"PASTORA JOIS","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
-  {"cargo":"deputado estadual","numero":22322,"nomeUrna":"BIBI COSTA","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
-  {"cargo":"deputado estadual","numero":22333,"nomeUrna":"TOMBA FARIAS","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
-  {"cargo":"deputado estadual","numero":22345,"nomeUrna":"RENAN DA FEDERAL","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
-  {"cargo":"deputado estadual","numero":22422,"nomeUrna":"MICHAEL DINIZ","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
-  {"cargo":"deputado estadual","numero":22444,"nomeUrna":"GABRIEL CÉSAR","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
-  {"cargo":"deputado estadual","numero":22456,"nomeUrna":"BISPO PAULO LUIZ","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
-  {"cargo":"deputado estadual","numero":22522,"nomeUrna":"GABRIEL RIBEIRO","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
-  {"cargo":"deputado estadual","numero":22555,"nomeUrna":"LUÍZ EDUARDO","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
-  {"cargo":"deputado estadual","numero":22556,"nomeUrna":"SARGENTO MANASSES","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
-  {"cargo":"deputado estadual","numero":22722,"nomeUrna":"DANIELE PRADO","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
-  {"cargo":"deputado estadual","numero":22762,"nomeUrna":"ANNE LAGARTIXA","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
-  {"cargo":"deputado estadual","numero":22777,"nomeUrna":"CAMILA ARAÚJO","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
-  {"cargo":"deputado estadual","numero":22888,"nomeUrna":"GUSTAVO CARVALHO","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
-  {"cargo":"deputado estadual","numero":22999,"nomeUrna":"MARCELA ALVES","partido":"PL","situacao":"deferido","coligacaoOuFederacao":"PL"},
-  {"cargo":"deputado estadual","numero":23123,"nomeUrna":"DRA TATIANE COSTA","partido":"CIDADANIA","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)"},
-  {"cargo":"deputado estadual","numero":23456,"nomeUrna":"CABO RALPH","partido":"CIDADANIA","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)"},
-  {"cargo":"deputado estadual","numero":25001,"nomeUrna":"J LIMA","partido":"PRD","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)"},
-  {"cargo":"deputado estadual","numero":25065,"nomeUrna":"PROF. MARCELO FELIPPE","partido":"PRD","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)"},
-  {"cargo":"deputado estadual","numero":25111,"nomeUrna":"MANOEL FELIX","partido":"PRD","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)"},
-  {"cargo":"deputado estadual","numero":25222,"nomeUrna":"EDMILSON ACARI","partido":"PRD","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)"},
-  {"cargo":"deputado estadual","numero":25333,"nomeUrna":"GEOVANA SILVA","partido":"PRD","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)"},
-  {"cargo":"deputado estadual","numero":25444,"nomeUrna":"JUSSY NUNES","partido":"PRD","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)"},
-  {"cargo":"deputado estadual","numero":25456,"nomeUrna":"GILBERTO OLINTO","partido":"PRD","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)"},
-  {"cargo":"deputado estadual","numero":25555,"nomeUrna":"NILDETE VITORINO","partido":"PRD","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)"},
-  {"cargo":"deputado estadual","numero":25600,"nomeUrna":"CHICO CHAPÉU DE COURO","partido":"PRD","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)"},
-  {"cargo":"deputado estadual","numero":25700,"nomeUrna":"RONALDO CACHORRÃO","partido":"PRD","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)"},
-  {"cargo":"deputado estadual","numero":25777,"nomeUrna":"PROFESSORA APARECIDA","partido":"PRD","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)"},
-  {"cargo":"deputado estadual","numero":25789,"nomeUrna":"DANIEL SANTOS","partido":"PRD","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)"},
-  {"cargo":"deputado estadual","numero":25900,"nomeUrna":"ALEXSANDRA XAVIER","partido":"PRD","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)"},
-  {"cargo":"deputado estadual","numero":43000,"nomeUrna":"KALINE DE DR. BERNARDO","partido":"PV","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)"},
-  {"cargo":"deputado estadual","numero":43100,"nomeUrna":"MILKLEI DO PV","partido":"PV","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)"},
-  {"cargo":"deputado estadual","numero":43123,"nomeUrna":"RONNY HOLANDA","partido":"PV","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)"},
-  {"cargo":"deputado estadual","numero":43222,"nomeUrna":"UBALDO FERNANDES","partido":"PV","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)"},
-  {"cargo":"deputado estadual","numero":43333,"nomeUrna":"IVANILSON OLIVEIRA","partido":"PV","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)"},
-  {"cargo":"deputado estadual","numero":43666,"nomeUrna":"EUDIANE MACEDO","partido":"PV","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)"},
-  {"cargo":"deputado estadual","numero":43777,"nomeUrna":"VALÉRIA CICLISTA","partido":"PV","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)"},
-  {"cargo":"deputado estadual","numero":44111,"nomeUrna":"DEIVID SIMÃO","partido":"UNIÃO","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)"},
-  {"cargo":"deputado estadual","numero":44123,"nomeUrna":"VAVÁ AZEVEDO","partido":"UNIÃO","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)"},
-  {"cargo":"deputado estadual","numero":44190,"nomeUrna":"MARLENE BEZERRA","partido":"UNIÃO","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)"},
-  {"cargo":"deputado estadual","numero":44222,"nomeUrna":"MACIEL GOMES","partido":"UNIÃO","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)"},
-  {"cargo":"deputado estadual","numero":44333,"nomeUrna":"NENEL LUCAS","partido":"UNIÃO","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)"},
-  {"cargo":"deputado estadual","numero":44444,"nomeUrna":"CINTHIA DE ALLYSON","partido":"UNIÃO","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)"},
-  {"cargo":"deputado estadual","numero":44544,"nomeUrna":"GALENO TORQUATO","partido":"UNIÃO","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)"},
-  {"cargo":"deputado estadual","numero":44555,"nomeUrna":"ROBSON CARVALHO","partido":"UNIÃO","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)"},
-  {"cargo":"deputado estadual","numero":44888,"nomeUrna":"NATALIA LEOPOLDINA","partido":"UNIÃO","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)"},
-  {"cargo":"deputado estadual","numero":45000,"nomeUrna":"TAVEIRA JÚNIOR","partido":"PSDB","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)"},
-  {"cargo":"deputado estadual","numero":45045,"nomeUrna":"NEY ROBSON","partido":"PSDB","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)"},
-  {"cargo":"deputado estadual","numero":45084,"nomeUrna":"GILVAN BALADA","partido":"PSDB","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)"},
-  {"cargo":"deputado estadual","numero":45111,"nomeUrna":"ERIKO JÁCOME","partido":"PSDB","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)"},
-  {"cargo":"deputado estadual","numero":45123,"nomeUrna":"DR GUSTAVO SOARES","partido":"PSDB","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)"},
-  {"cargo":"deputado estadual","numero":45190,"nomeUrna":"POLICIAL CANTOR","partido":"PSDB","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)"},
-  {"cargo":"deputado estadual","numero":45222,"nomeUrna":"EXPEDITO FERREIRA","partido":"PSDB","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)"},
-  {"cargo":"deputado estadual","numero":45321,"nomeUrna":"CLEITON DA POLICLÍNICA","partido":"PSDB","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)"},
-  {"cargo":"deputado estadual","numero":45333,"nomeUrna":"JÚNIOR COLAÇA","partido":"PSDB","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)"},
-  {"cargo":"deputado estadual","numero":45444,"nomeUrna":"DAIANA VALENTIM","partido":"PSDB","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)"},
-  {"cargo":"deputado estadual","numero":45454,"nomeUrna":"ENGRÁCIA ALVES","partido":"PSDB","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)"},
-  {"cargo":"deputado estadual","numero":45455,"nomeUrna":"LEIDE FIT","partido":"PSDB","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)"},
-  {"cargo":"deputado estadual","numero":45456,"nomeUrna":"REITORA LUDIMILLA","partido":"PSDB","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)"},
-  {"cargo":"deputado estadual","numero":45555,"nomeUrna":"CRISTIANE DANTAS","partido":"PSDB","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)"},
-  {"cargo":"deputado estadual","numero":45666,"nomeUrna":"DRA KARINA PEREIRA","partido":"PSDB","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)"},
-  {"cargo":"deputado estadual","numero":45678,"nomeUrna":"EZEQUIEL","partido":"PSDB","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)"},
-  {"cargo":"deputado estadual","numero":45700,"nomeUrna":"LÉO SOUZA","partido":"PSDB","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)"},
-  {"cargo":"deputado estadual","numero":45707,"nomeUrna":"ANY ALCÂNTARA","partido":"PSDB","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)"},
-  {"cargo":"deputado estadual","numero":45777,"nomeUrna":"JONATA NASCIMENTO","partido":"PSDB","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)"},
-  {"cargo":"deputado estadual","numero":45789,"nomeUrna":"DAVI FERNANDES","partido":"PSDB","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)"},
-  {"cargo":"deputado estadual","numero":45888,"nomeUrna":"EUGÊNIO RIBEIRO","partido":"PSDB","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)"},
-  {"cargo":"deputado estadual","numero":45999,"nomeUrna":"DELEGADO LEOCÁDIO","partido":"PSDB","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)"},
-  {"cargo":"deputado estadual","numero":50000,"nomeUrna":"IRAMÁ BARBOSA","partido":"PSOL","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)"},
-  {"cargo":"deputado estadual","numero":50005,"nomeUrna":"ALEXANDRA","partido":"PSOL","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)"},
-  {"cargo":"deputado estadual","numero":50013,"nomeUrna":"GEORGE","partido":"PSOL","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)"},
-  {"cargo":"deputado estadual","numero":50024,"nomeUrna":"JESSICA ELIAS","partido":"PSOL","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)"},
-  {"cargo":"deputado estadual","numero":50050,"nomeUrna":"CARLINHOS DO GÁS","partido":"PSOL","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)"},
-  {"cargo":"deputado estadual","numero":50100,"nomeUrna":"LOURENÇO","partido":"PSOL","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)"},
-  {"cargo":"deputado estadual","numero":50123,"nomeUrna":"ANA SOS PATINHAS","partido":"PSOL","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)"},
-  {"cargo":"deputado estadual","numero":50222,"nomeUrna":"WILSON DUARTE","partido":"PSOL","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)"},
-  {"cargo":"deputado estadual","numero":50555,"nomeUrna":"AURELIO OLIVEIRA","partido":"PSOL","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)"},
-  {"cargo":"deputado estadual","numero":65123,"nomeUrna":"CEZINHA NUNES","partido":"PCDOB","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)"},
-  {"cargo":"deputado estadual","numero":65555,"nomeUrna":"FÁTIMA SOUZA","partido":"PCDOB","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)"},
-  {"cargo":"deputado estadual","numero":65777,"nomeUrna":"GLECIO ROCHA - O REI DO BODE","partido":"PCDOB","situacao":"deferido","coligacaoOuFederacao":"FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)"},
-  {"cargo":"deputado estadual","numero":80000,"nomeUrna":"JULIO DA FNR","partido":"UP","situacao":"deferido","coligacaoOuFederacao":"UP"},
-  {"cargo":"deputado estadual","numero":80180,"nomeUrna":"MILENNE BARBOSA","partido":"UP","situacao":"deferido","coligacaoOuFederacao":"UP"}
+ {
+  "cargo": "governador",
+  "numero": 44,
+  "nomeUrna": "ALLYSON",
+  "partido": "UNIÃO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "ESPERANÇA E TRABALHO'",
+  "sq": "200002535255"
+ },
+ {
+  "cargo": "governador",
+  "numero": 22,
+  "nomeUrna": "ÁLVARO DIAS",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "ENDIREITA RN",
+  "sq": "200002534442"
+ },
+ {
+  "cargo": "governador",
+  "numero": 80,
+  "nomeUrna": "ARINALDA DO MLB",
+  "partido": "UP",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "UP",
+  "sq": "200002547826"
+ },
+ {
+  "cargo": "governador",
+  "numero": 13,
+  "nomeUrna": "CADU DE LULA",
+  "partido": "PT",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "TIME QUE CUIDA",
+  "sq": "200002534001"
+ },
+ {
+  "cargo": "governador",
+  "numero": 16,
+  "nomeUrna": "DÁRIO BARBOSA",
+  "partido": "PSTU",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PSTU",
+  "sq": "200002542481"
+ },
+ {
+  "cargo": "governador",
+  "numero": 27,
+  "nomeUrna": "GODEIRO LINHARESS",
+  "partido": "DC",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "DC",
+  "sq": "200002554482"
+ },
+ {
+  "cargo": "governador",
+  "numero": 29,
+  "nomeUrna": "HENRIQUE LYRA",
+  "partido": "PCO",
+  "situacao": "sub judice (indeferido com recurso)",
+  "coligacaoOuFederacao": "PCO",
+  "sq": "200002553301"
+ },
+ {
+  "cargo": "governador",
+  "numero": 50,
+  "nomeUrna": "PROFESSOR ROBERIO PAULINO",
+  "partido": "PSOL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)",
+  "sq": "200002546757"
+ },
+ {
+  "cargo": "governador",
+  "numero": 36,
+  "nomeUrna": "RODRIGO DE BOLSONARO",
+  "partido": "AGIR",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "AGIR",
+  "sq": "200002546756"
+ },
+ {
+  "cargo": "senador",
+  "numero": 369,
+  "nomeUrna": "CLÓVIS COSTA DO COLETIVO NÓS",
+  "partido": "AGIR",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "AGIR",
+  "sq": "200002548115"
+ },
+ {
+  "cargo": "senador",
+  "numero": 222,
+  "nomeUrna": "CORONEL HÉLIO",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "ENDIREITA RN",
+  "sq": "200002534447"
+ },
+ {
+  "cargo": "senador",
+  "numero": 360,
+  "nomeUrna": "GARI WENDELL BATISTA",
+  "partido": "AGIR",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "AGIR",
+  "sq": "200002549133"
+ },
+ {
+  "cargo": "senador",
+  "numero": 161,
+  "nomeUrna": "LUCIANA MANDU",
+  "partido": "PSTU",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PSTU",
+  "sq": "200002542484"
+ },
+ {
+  "cargo": "senador",
+  "numero": 800,
+  "nomeUrna": "PROFESSOR GUILHERME",
+  "partido": "UP",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "UP",
+  "sq": "200002550541"
+ },
+ {
+  "cargo": "senador",
+  "numero": 123,
+  "nomeUrna": "RAFAEL MOTTA",
+  "partido": "PDT",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "TIME QUE CUIDA",
+  "sq": "200002533843"
+ },
+ {
+  "cargo": "senador",
+  "numero": 166,
+  "nomeUrna": "ROSÁLIA FERNANDES",
+  "partido": "PSTU",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PSTU",
+  "sq": "200002542483"
+ },
+ {
+  "cargo": "senador",
+  "numero": 131,
+  "nomeUrna": "SAMANDA DE LULA",
+  "partido": "PT",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "TIME QUE CUIDA",
+  "sq": "200002533841"
+ },
+ {
+  "cargo": "senador",
+  "numero": 500,
+  "nomeUrna": "SANDRO PIMENTEL",
+  "partido": "PSOL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)",
+  "sq": "200002546792"
+ },
+ {
+  "cargo": "senador",
+  "numero": 501,
+  "nomeUrna": "SONIA GODEIRO",
+  "partido": "PSOL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)",
+  "sq": "200002546795"
+ },
+ {
+  "cargo": "senador",
+  "numero": 200,
+  "nomeUrna": "STYVENSON VALENTIM",
+  "partido": "PODE",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "ENDIREITA RN",
+  "sq": "200002534448"
+ },
+ {
+  "cargo": "senador",
+  "numero": 444,
+  "nomeUrna": "TÉRCIO TINÔCO",
+  "partido": "UNIÃO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "ESPERANÇA E TRABALHO",
+  "sq": "200002535511"
+ },
+ {
+  "cargo": "senador",
+  "numero": 555,
+  "nomeUrna": "ZENAIDE MAIA",
+  "partido": "PSD",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "ESPERANÇA E TRABALHO",
+  "sq": "200002535507"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 3030,
+  "nomeUrna": "ABEL FARIAS",
+  "partido": "NOVO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "NOVO",
+  "sq": "200002535503"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 1400,
+  "nomeUrna": "ABIMAEL COSTA",
+  "partido": "MISSÃO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MISSÃO",
+  "sq": "200002547278"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 7077,
+  "nomeUrna": "ADRIANA ALBUQUERQUE",
+  "partido": "AVANTE",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "AVANTE",
+  "sq": "200002551423"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 4010,
+  "nomeUrna": "AILTON RAMOS POR K",
+  "partido": "PSB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PSB",
+  "sq": "200002546752"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 1447,
+  "nomeUrna": "ALANNA BEATRIZ",
+  "partido": "MISSÃO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MISSÃO",
+  "sq": "200002547276"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 4508,
+  "nomeUrna": "ALEX KROOS",
+  "partido": "PSDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)",
+  "sq": "200002538219"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 3350,
+  "nomeUrna": "ALEXANDRE RAMOS",
+  "partido": "MOBILIZA",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MOBILIZA",
+  "sq": "200002549675"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 1444,
+  "nomeUrna": "ANA CLARA GURGEL",
+  "partido": "MISSÃO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MISSÃO",
+  "sq": "200002547277"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 3335,
+  "nomeUrna": "ANGELITA DA VILA",
+  "partido": "MOBILIZA",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MOBILIZA",
+  "sq": "200002549678"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 2323,
+  "nomeUrna": "ANNE BEZERRA",
+  "partido": "CIDADANIA",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)",
+  "sq": "200002538215"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 7010,
+  "nomeUrna": "APOLLIANE SOUZA",
+  "partido": "AVANTE",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "AVANTE",
+  "sq": "200002551422"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 4055,
+  "nomeUrna": "ARAPUÁ DE MACAU",
+  "partido": "PSB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PSB",
+  "sq": "200002546749"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 4444,
+  "nomeUrna": "BENES LEOCÁDIO",
+  "partido": "UNIÃO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)",
+  "sq": "200002535722"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 8000,
+  "nomeUrna": "BIA DO MLB",
+  "partido": "UP",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "UP",
+  "sq": "200002548528"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 1313,
+  "nomeUrna": "BRISA",
+  "partido": "PT",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)",
+  "sq": "200002533874"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 2288,
+  "nomeUrna": "CABO DEYVISON",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PL",
+  "sq": "200002533879"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 3022,
+  "nomeUrna": "CAMILA ATÍPICA",
+  "partido": "NOVO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "NOVO",
+  "sq": "200002535506"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 2211,
+  "nomeUrna": "CARLA DICKSON",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PL",
+  "sq": "200002533876"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 2500,
+  "nomeUrna": "CARLOS ENFERMEIRO",
+  "partido": "PRD",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)",
+  "sq": "200002546773"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 1212,
+  "nomeUrna": "CINTIA MAIA",
+  "partido": "PDT",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PDT",
+  "sq": "200002546763"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 2244,
+  "nomeUrna": "CORONEL BRILHANTE",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PL",
+  "sq": "200002533882"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 7732,
+  "nomeUrna": "CRISTIANI ARTESÃ",
+  "partido": "SOLIDARIEDADE",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)",
+  "sq": "200002546772"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 4400,
+  "nomeUrna": "DANI RIBEIRO",
+  "partido": "UNIÃO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)",
+  "sq": "200002535718"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 3055,
+  "nomeUrna": "DANIEL RIZZI",
+  "partido": "NOVO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "NOVO",
+  "sq": "200002535499"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 1277,
+  "nomeUrna": "DAVI RODRIGUES JR.",
+  "partido": "PDT",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PDT",
+  "sq": "200002546762"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 7717,
+  "nomeUrna": "DÉBORAH SUELLEN",
+  "partido": "SOLIDARIEDADE",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)",
+  "sq": "200002546775"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 3003,
+  "nomeUrna": "DIRETOR DILSON LIMA",
+  "partido": "NOVO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "NOVO",
+  "sq": "200002535504"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 3044,
+  "nomeUrna": "DR DANIEL",
+  "partido": "NOVO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "NOVO",
+  "sq": "200002535498"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 4300,
+  "nomeUrna": "DR. BERNARDO",
+  "partido": "PV",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)",
+  "sq": "200002533867"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 1233,
+  "nomeUrna": "DR. ESTÁCIO",
+  "partido": "PDT",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PDT",
+  "sq": "200002546767"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 1411,
+  "nomeUrna": "DR. SALOMÃO",
+  "partido": "MISSÃO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MISSÃO",
+  "sq": "200002547284"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 4013,
+  "nomeUrna": "DRA GLEUCE LEITE",
+  "partido": "PSB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PSB",
+  "sq": "200002546750"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 3033,
+  "nomeUrna": "DRA. DALILA VETERINÁRIA",
+  "partido": "NOVO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "NOVO",
+  "sq": "200002535502"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 5088,
+  "nomeUrna": "ED RODRIGUES",
+  "partido": "PSOL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)",
+  "sq": "200002546797"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 4040,
+  "nomeUrna": "ERMINIO FELIX",
+  "partido": "PSB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PSB",
+  "sq": "200002546754"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 4455,
+  "nomeUrna": "FAUSTINO",
+  "partido": "UNIÃO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)",
+  "sq": "200002535716"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 1477,
+  "nomeUrna": "FELIX SANTOS",
+  "partido": "MISSÃO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MISSÃO",
+  "sq": "200002547279"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 4512,
+  "nomeUrna": "FLAVIO LUIZ",
+  "partido": "PSDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)",
+  "sq": "200002538216"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 2544,
+  "nomeUrna": "FRAN BARBEIRO",
+  "partido": "PRD",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)",
+  "sq": "200002546769"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 7777,
+  "nomeUrna": "FRED BRAGA",
+  "partido": "SOLIDARIEDADE",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)",
+  "sq": "200002546768"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 2277,
+  "nomeUrna": "GABI TRAJANO",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PL",
+  "sq": "200002533881"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 1401,
+  "nomeUrna": "GABRIEL BOTELHO",
+  "partido": "MISSÃO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MISSÃO",
+  "sq": "200002547283"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 7012,
+  "nomeUrna": "GABRIEL NUNES",
+  "partido": "AVANTE",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "AVANTE",
+  "sq": "200002551418"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 2570,
+  "nomeUrna": "GARIBALDE LEITE",
+  "partido": "PRD",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)",
+  "sq": "200002546770"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 2210,
+  "nomeUrna": "GENERAL GIRÃO",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PL",
+  "sq": "200002533875"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 4011,
+  "nomeUrna": "HELIA LIMA",
+  "partido": "PSB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PSB",
+  "sq": "200002546751"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 7070,
+  "nomeUrna": "HUDSON TOURINHO",
+  "partido": "AVANTE",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "AVANTE",
+  "sq": "200002551424"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 1441,
+  "nomeUrna": "IGOR FERNANDES",
+  "partido": "MISSÃO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MISSÃO",
+  "sq": "200002547282"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 1455,
+  "nomeUrna": "IGOR RAYAN",
+  "partido": "MISSÃO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MISSÃO",
+  "sq": "200002547280"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 5098,
+  "nomeUrna": "IGOR ROCHA",
+  "partido": "PSOL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)",
+  "sq": "200002546800"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 1111,
+  "nomeUrna": "JOÃO MAIA",
+  "partido": "PP",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)",
+  "sq": "200002535715"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 7722,
+  "nomeUrna": "JOHN KENNETH",
+  "partido": "SOLIDARIEDADE",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)",
+  "sq": "200002546771"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 2200,
+  "nomeUrna": "JUNINHO SAIA RODADA",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PL",
+  "sq": "200002533883"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 3309,
+  "nomeUrna": "KARINE DA VILA",
+  "partido": "MOBILIZA",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MOBILIZA",
+  "sq": "200002549674"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 6565,
+  "nomeUrna": "KEROLAYNE FERREIRA",
+  "partido": "PCDOB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)",
+  "sq": "200002533873"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 1144,
+  "nomeUrna": "LEILA MAIA",
+  "partido": "PP",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)",
+  "sq": "200002535719"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 7044,
+  "nomeUrna": "LILIAN CYNTHIA",
+  "partido": "AVANTE",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "AVANTE",
+  "sq": "200002551420"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 3312,
+  "nomeUrna": "MAGNO REIS",
+  "partido": "MOBILIZA",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MOBILIZA",
+  "sq": "200002549679"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 1300,
+  "nomeUrna": "MARLEIDE CUNHA",
+  "partido": "PT",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)",
+  "sq": "200002533870"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 1333,
+  "nomeUrna": "MINEIRO",
+  "partido": "PT",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)",
+  "sq": "200002533866"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 4012,
+  "nomeUrna": "MOACIR J. BARROS",
+  "partido": "PSB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PSB",
+  "sq": "200002546747"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 4477,
+  "nomeUrna": "NAGILA DINIZ",
+  "partido": "UNIÃO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)",
+  "sq": "200002535717"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 3310,
+  "nomeUrna": "NALBA DA SAUDE",
+  "partido": "MOBILIZA",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MOBILIZA",
+  "sq": "200002549673"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 2555,
+  "nomeUrna": "NARDE SANTOS",
+  "partido": "PRD",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)",
+  "sq": "200002546774"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 1311,
+  "nomeUrna": "NATÁLIA BONAVIDES",
+  "partido": "PT",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)",
+  "sq": "200002533872"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 1213,
+  "nomeUrna": "NAXSON PALHARES",
+  "partido": "PDT",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PDT",
+  "sq": "200002546764"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 4555,
+  "nomeUrna": "NEGA DE NENEM BORGES",
+  "partido": "PSDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)",
+  "sq": "200002538213"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 2233,
+  "nomeUrna": "NINA",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PL",
+  "sq": "200002533880"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 1345,
+  "nomeUrna": "ODON JUNIOR",
+  "partido": "PT",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)",
+  "sq": "200002533869"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 7011,
+  "nomeUrna": "PALHAÇO  FUXIQUINHO",
+  "partido": "AVANTE",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "AVANTE",
+  "sq": "200002551425"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 5055,
+  "nomeUrna": "PASTORA VERONICA",
+  "partido": "PSOL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)",
+  "sq": "200002546798"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 1255,
+  "nomeUrna": "PATRÍCIA CASTRO",
+  "partido": "PDT",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PDT",
+  "sq": "200002546760"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 3323,
+  "nomeUrna": "PATRICIA FERREIRA",
+  "partido": "MOBILIZA",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MOBILIZA",
+  "sq": "200002549680"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 1122,
+  "nomeUrna": "PAULINHA GALDINO",
+  "partido": "PP",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)",
+  "sq": "200002535720"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 2345,
+  "nomeUrna": "PAULO OVÍDIO",
+  "partido": "CIDADANIA",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)",
+  "sq": "200002538214"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 1200,
+  "nomeUrna": "PEDRO CHE",
+  "partido": "PDT",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PDT",
+  "sq": "200002546759"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 2255,
+  "nomeUrna": "PEDRO FILHO",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PL",
+  "sq": "200002533878"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 5044,
+  "nomeUrna": "PHILIPE DO VAT",
+  "partido": "PSOL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)",
+  "sq": "200002546801"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 1244,
+  "nomeUrna": "PROFESSOR EDVALDO JÚNIOR",
+  "partido": "PDT",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PDT",
+  "sq": "200002546761"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 2730,
+  "nomeUrna": "PROFESSORA CLARICE",
+  "partido": "DC",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "DC",
+  "sq": "200002552150"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 1230,
+  "nomeUrna": "PROFESSORA SÂMELA",
+  "partido": "PDT",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PDT",
+  "sq": "200002546765"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 2512,
+  "nomeUrna": "RAMA CUNHA",
+  "partido": "PRD",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)",
+  "sq": "200002546776"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 3000,
+  "nomeUrna": "RAPHAEL FERREIRA",
+  "partido": "NOVO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "NOVO",
+  "sq": "200002535500"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 6513,
+  "nomeUrna": "RAPOSINHA",
+  "partido": "PCDOB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)",
+  "sq": "200002533871"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 4088,
+  "nomeUrna": "RAQUEL LOVAN",
+  "partido": "PSB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PSB",
+  "sq": "200002546748"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 3001,
+  "nomeUrna": "RICHARDSON",
+  "partido": "NOVO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "NOVO",
+  "sq": "200002535501"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 1155,
+  "nomeUrna": "ROBINSON FARIA",
+  "partido": "PP",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)",
+  "sq": "200002535721"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 3322,
+  "nomeUrna": "SAMARA TORRES",
+  "partido": "MOBILIZA",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MOBILIZA",
+  "sq": "200002549677"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 2222,
+  "nomeUrna": "SARGENTO GONÇALVES",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PL",
+  "sq": "200002533877"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 2722,
+  "nomeUrna": "SARGENTO MELQUISEDEC",
+  "partido": "DC",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "DC",
+  "sq": "200002552149"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 1234,
+  "nomeUrna": "SUSAPE AUGUSTO",
+  "partido": "PDT",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PDT",
+  "sq": "200002546766"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 3010,
+  "nomeUrna": "SUYANE VARELA",
+  "partido": "NOVO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "NOVO",
+  "sq": "200002535505"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 4343,
+  "nomeUrna": "THABATTA PIMENTA",
+  "partido": "PV",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)",
+  "sq": "200002533868"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 5013,
+  "nomeUrna": "VANUZIA",
+  "partido": "PSOL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)",
+  "sq": "200002546799"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 8080,
+  "nomeUrna": "VICTOR HUGO",
+  "partido": "UP",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "UP",
+  "sq": "200002548527"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 7022,
+  "nomeUrna": "VITOR MARQUES",
+  "partido": "AVANTE",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "AVANTE",
+  "sq": "200002551419"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 1414,
+  "nomeUrna": "VIVIANE AVELINO",
+  "partido": "MISSÃO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MISSÃO",
+  "sq": "200002547281"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 3333,
+  "nomeUrna": "WENDER ANDRADE",
+  "partido": "MOBILIZA",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MOBILIZA",
+  "sq": "200002549672"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 3324,
+  "nomeUrna": "WINDSON XUXU",
+  "partido": "MOBILIZA",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MOBILIZA",
+  "sq": "200002549676"
+ },
+ {
+  "cargo": "deputado federal",
+  "numero": 2724,
+  "nomeUrna": "XEXEU DE NATAL",
+  "partido": "DC",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "DC",
+  "sq": "200002552144"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 22111,
+  "nomeUrna": "ADJUTO DIAS",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PL",
+  "sq": "200002534419"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 11000,
+  "nomeUrna": "ADRIANA TROMBETA",
+  "partido": "PP",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)",
+  "sq": "200002535739"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 50005,
+  "nomeUrna": "ALEXANDRA",
+  "partido": "PSOL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)",
+  "sq": "200002548545"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 25900,
+  "nomeUrna": "ALEXSANDRA XAVIER",
+  "partido": "PRD",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)",
+  "sq": "200002546788"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 13777,
+  "nomeUrna": "ALINE JULIETE",
+  "partido": "PT",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)",
+  "sq": "200002533865"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 22007,
+  "nomeUrna": "AMORA BRAYAN",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PL",
+  "sq": "200002534422"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 15180,
+  "nomeUrna": "ANA LUISA",
+  "partido": "MDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MDB",
+  "sq": "200002534348"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 50123,
+  "nomeUrna": "ANA SOS PATINHAS",
+  "partido": "PSOL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)",
+  "sq": "200002548543"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 15100,
+  "nomeUrna": "ANGELA PAIVA",
+  "partido": "MDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MDB",
+  "sq": "200002534357"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 22762,
+  "nomeUrna": "ANNE LAGARTIXA",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PL",
+  "sq": "200002534417"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 45707,
+  "nomeUrna": "ANY ALCÂNTARA",
+  "partido": "PSDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)",
+  "sq": "200002538237"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 50555,
+  "nomeUrna": "AURELIO OLIVEIRA",
+  "partido": "PSOL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)",
+  "sq": "200002548544"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 11711,
+  "nomeUrna": "BAMBAM",
+  "partido": "PP",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)",
+  "sq": "200002535732"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 22322,
+  "nomeUrna": "BIBI COSTA",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PL",
+  "sq": "200002533892"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 15555,
+  "nomeUrna": "BIBIANO",
+  "partido": "MDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MDB",
+  "sq": "200002534370"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 22456,
+  "nomeUrna": "BISPO PAULO LUIZ",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PL",
+  "sq": "200002534428"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 23456,
+  "nomeUrna": "CABO RALPH",
+  "partido": "CIDADANIA",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)",
+  "sq": "200002538226"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 22777,
+  "nomeUrna": "CAMILA ARAÚJO",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PL",
+  "sq": "200002534421"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 50050,
+  "nomeUrna": "CARLINHOS DO GÁS",
+  "partido": "PSOL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)",
+  "sq": "200002548560"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 65123,
+  "nomeUrna": "CEZINHA NUNES",
+  "partido": "PCDOB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)",
+  "sq": "200002533859"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 25600,
+  "nomeUrna": "CHICO CHAPÉU DE COURO",
+  "partido": "PRD",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)",
+  "sq": "200002546780"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 18456,
+  "nomeUrna": "CHICO GUERREIRO",
+  "partido": "REDE",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)",
+  "sq": "200002548546"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 44444,
+  "nomeUrna": "CINTHIA DE ALLYSON",
+  "partido": "UNIÃO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)",
+  "sq": "200002535730"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 45321,
+  "nomeUrna": "CLEITON DA POLICLÍNICA",
+  "partido": "PSDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)",
+  "sq": "200002538224"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 15000,
+  "nomeUrna": "CLOVIS JUNIOR",
+  "partido": "MDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MDB",
+  "sq": "200002534359"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 22222,
+  "nomeUrna": "CORONEL AZEVEDO",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PL",
+  "sq": "200002533888"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 45555,
+  "nomeUrna": "CRISTIANE DANTAS",
+  "partido": "PSDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)",
+  "sq": "200002538228"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 45444,
+  "nomeUrna": "DAIANA VALENTIM",
+  "partido": "PSDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)",
+  "sq": "200002538245"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 25789,
+  "nomeUrna": "DANIEL SANTOS",
+  "partido": "PRD",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)",
+  "sq": "200002546786"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 13111,
+  "nomeUrna": "DANIEL VALENÇA",
+  "partido": "PT",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)",
+  "sq": "200002533849"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 22722,
+  "nomeUrna": "DANIELE PRADO",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PL",
+  "sq": "200002533884"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 45789,
+  "nomeUrna": "DAVI FERNANDES",
+  "partido": "PSDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)",
+  "sq": "200002538223"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 13882,
+  "nomeUrna": "DÉBORA REFE",
+  "partido": "PT",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)",
+  "sq": "200002533848"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 44111,
+  "nomeUrna": "DEIVID SIMÃO",
+  "partido": "UNIÃO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)",
+  "sq": "200002535729"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 45999,
+  "nomeUrna": "DELEGADO LEOCÁDIO",
+  "partido": "PSDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)",
+  "sq": "200002538242"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 11333,
+  "nomeUrna": "DERLANDIO JACKSON",
+  "partido": "PP",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)",
+  "sq": "200002535742"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 13613,
+  "nomeUrna": "DIVANEIDE BASÍLIO",
+  "partido": "PT",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)",
+  "sq": "200002533863"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 15133,
+  "nomeUrna": "DR ANTÔNIO JÁCOME",
+  "partido": "MDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MDB",
+  "sq": "200002534358"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 45123,
+  "nomeUrna": "DR GUSTAVO SOARES",
+  "partido": "PSDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)",
+  "sq": "200002538244"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 15999,
+  "nomeUrna": "DR MILANO MAXIMO",
+  "partido": "MDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MDB",
+  "sq": "200002534349"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 22100,
+  "nomeUrna": "DR. KERGINALDO",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PL",
+  "sq": "200002534427"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 45666,
+  "nomeUrna": "DRA KARINA PEREIRA",
+  "partido": "PSDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)",
+  "sq": "200002554438"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 23123,
+  "nomeUrna": "DRA TATIANE COSTA",
+  "partido": "CIDADANIA",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)",
+  "sq": "200002538231"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 25222,
+  "nomeUrna": "EDMILSON ACARI",
+  "partido": "PRD",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)",
+  "sq": "200002546782"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 18888,
+  "nomeUrna": "ÉDSON NEGRÃO",
+  "partido": "REDE",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)",
+  "sq": "200002548555"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 15300,
+  "nomeUrna": "ELLEM ROCHA",
+  "partido": "MDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MDB",
+  "sq": "200002534360"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 15666,
+  "nomeUrna": "ELVIS DE DAL",
+  "partido": "MDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MDB",
+  "sq": "200002534353"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 45454,
+  "nomeUrna": "ENGRÁCIA ALVES",
+  "partido": "PSDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)",
+  "sq": "200002538241"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 45111,
+  "nomeUrna": "ERIKO JÁCOME",
+  "partido": "PSDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)",
+  "sq": "200002538246"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 43666,
+  "nomeUrna": "EUDIANE MACEDO",
+  "partido": "PV",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)",
+  "sq": "200002533854"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 45888,
+  "nomeUrna": "EUGÊNIO RIBEIRO",
+  "partido": "PSDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)",
+  "sq": "200002538225"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 45222,
+  "nomeUrna": "EXPEDITO FERREIRA",
+  "partido": "PSDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)",
+  "sq": "200002538234"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 45678,
+  "nomeUrna": "EZEQUIEL",
+  "partido": "PSDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)",
+  "sq": "200002538230"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 14000,
+  "nomeUrna": "FÁBIO SILVEIRA",
+  "partido": "MISSÃO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MISSÃO",
+  "sq": "200002547274"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 65555,
+  "nomeUrna": "FÁTIMA SOUZA",
+  "partido": "PCDOB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)",
+  "sq": "200002533847"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 13222,
+  "nomeUrna": "FRANCISCO DO PT",
+  "partido": "PT",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)",
+  "sq": "200002533860"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 22444,
+  "nomeUrna": "GABRIEL CÉSAR",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PL",
+  "sq": "200002534414"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 22522,
+  "nomeUrna": "GABRIEL RIBEIRO",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PL",
+  "sq": "200002534420"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 44544,
+  "nomeUrna": "GALENO TORQUATO",
+  "partido": "UNIÃO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)",
+  "sq": "200002535738"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 50013,
+  "nomeUrna": "GEORGE",
+  "partido": "PSOL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)",
+  "sq": "200002548556"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 25333,
+  "nomeUrna": "GEOVANA SILVA",
+  "partido": "PRD",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)",
+  "sq": "200002546789"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 13333,
+  "nomeUrna": "GERLAILSON ABRANTES (NENEM)",
+  "partido": "PT",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)",
+  "sq": "200002533845"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 22110,
+  "nomeUrna": "GETÚLIO RÊGO",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PL",
+  "sq": "200002534424"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 25456,
+  "nomeUrna": "GILBERTO OLINTO",
+  "partido": "PRD",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)",
+  "sq": "200002546778"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 45084,
+  "nomeUrna": "GILVAN BALADA",
+  "partido": "PSDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)",
+  "sq": "200002538236"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 65777,
+  "nomeUrna": "GLECIO ROCHA - O REI DO BODE",
+  "partido": "PCDOB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)",
+  "sq": "200002533846"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 18123,
+  "nomeUrna": "GUILHERME QUEIROZ",
+  "partido": "REDE",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)",
+  "sq": "200002548553"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 22888,
+  "nomeUrna": "GUSTAVO CARVALHO",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PL",
+  "sq": "200002534423"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 15333,
+  "nomeUrna": "HOLDERLIN SILVA",
+  "partido": "MDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MDB",
+  "sq": "200002534354"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 50000,
+  "nomeUrna": "IRAMÁ BARBOSA",
+  "partido": "PSOL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)",
+  "sq": "200002548561"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 15500,
+  "nomeUrna": "ISMENIA ARAUJO",
+  "partido": "MDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MDB",
+  "sq": "200002534366"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 13123,
+  "nomeUrna": "ISOLDA DANTAS",
+  "partido": "PT",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)",
+  "sq": "200002533862"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 13013,
+  "nomeUrna": "IVAN BARON",
+  "partido": "PT",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)",
+  "sq": "200002533857"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 15222,
+  "nomeUrna": "IVAN JUNIOR",
+  "partido": "MDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MDB",
+  "sq": "200002534351"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 15115,
+  "nomeUrna": "IVANILDA TENORIO",
+  "partido": "MDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MDB",
+  "sq": "200002534365"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 43333,
+  "nomeUrna": "IVANILSON OLIVEIRA",
+  "partido": "PV",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)",
+  "sq": "200002533853"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 25001,
+  "nomeUrna": "J LIMA",
+  "partido": "PRD",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)",
+  "sq": "200002546781"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 15777,
+  "nomeUrna": "JEFERSON BRITO",
+  "partido": "MDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MDB",
+  "sq": "200002534369"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 50024,
+  "nomeUrna": "JESSICA ELIAS",
+  "partido": "PSOL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)",
+  "sq": "200002548562"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 45777,
+  "nomeUrna": "JONATA NASCIMENTO",
+  "partido": "PSDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)",
+  "sq": "200002538238"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 13713,
+  "nomeUrna": "JORGE DE LIMA",
+  "partido": "PT",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)",
+  "sq": "200002533851"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 22000,
+  "nomeUrna": "JORGE DO ROSÁRIO",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PL",
+  "sq": "200002533893"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 22022,
+  "nomeUrna": "JOSEMAR VARELA",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PL",
+  "sq": "200002533886"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 13113,
+  "nomeUrna": "JULIANA GARCIA",
+  "partido": "PT",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)",
+  "sq": "200002533850"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 11555,
+  "nomeUrna": "JULIO CESAR",
+  "partido": "PP",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)",
+  "sq": "200002535726"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 80000,
+  "nomeUrna": "JULIO DA FNR",
+  "partido": "UP",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "UP",
+  "sq": "200002547829"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 45333,
+  "nomeUrna": "JÚNIOR COLAÇA",
+  "partido": "PSDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)",
+  "sq": "200002538229"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 15111,
+  "nomeUrna": "JUNIOR MARQUES",
+  "partido": "MDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MDB",
+  "sq": "200002534362"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 25444,
+  "nomeUrna": "JUSSY NUNES",
+  "partido": "PRD",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)",
+  "sq": "200002546785"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 43000,
+  "nomeUrna": "KALINE DE DR. BERNARDO",
+  "partido": "PV",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)",
+  "sq": "200002533861"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 22220,
+  "nomeUrna": "KARINA PIMENTA",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PL",
+  "sq": "200002534415"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 11999,
+  "nomeUrna": "KLEBER RODRIGUES",
+  "partido": "PP",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)",
+  "sq": "200002535736"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 45455,
+  "nomeUrna": "LEIDE FIT",
+  "partido": "PSDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)",
+  "sq": "200002538232"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 45700,
+  "nomeUrna": "LÉO SOUZA",
+  "partido": "PSDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)",
+  "sq": "200002538240"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 18000,
+  "nomeUrna": "LILA",
+  "partido": "REDE",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)",
+  "sq": "200002548554"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 50100,
+  "nomeUrna": "LOURENÇO",
+  "partido": "PSOL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)",
+  "sq": "200002548557"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 15888,
+  "nomeUrna": "LUCIANO BARBOSA",
+  "partido": "MDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MDB",
+  "sq": "200002534350"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 22555,
+  "nomeUrna": "LUÍZ EDUARDO",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PL",
+  "sq": "200002533885"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 44222,
+  "nomeUrna": "MACIEL GOMES",
+  "partido": "UNIÃO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)",
+  "sq": "200002535740"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 11666,
+  "nomeUrna": "MAJOR CARLA CÂMARA",
+  "partido": "PP",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)",
+  "sq": "200002535737"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 15190,
+  "nomeUrna": "MAJOR EMERSON",
+  "partido": "MDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MDB",
+  "sq": "200002534356"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 25111,
+  "nomeUrna": "MANOEL FELIX",
+  "partido": "PRD",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)",
+  "sq": "200002546783"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 22999,
+  "nomeUrna": "MARCELA ALVES",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PL",
+  "sq": "200002533891"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 44190,
+  "nomeUrna": "MARLENE BEZERRA",
+  "partido": "UNIÃO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)",
+  "sq": "200002535741"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 15015,
+  "nomeUrna": "MARLENE MONTE",
+  "partido": "MDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MDB",
+  "sq": "200002534368"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 22422,
+  "nomeUrna": "MICHAEL DINIZ",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PL",
+  "sq": "200002533887"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 80180,
+  "nomeUrna": "MILENNE BARBOSA",
+  "partido": "UP",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "UP",
+  "sq": "200002547828"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 43100,
+  "nomeUrna": "MILKLEI DO PV",
+  "partido": "PV",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)",
+  "sq": "200002533855"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 44888,
+  "nomeUrna": "NATALIA LEOPOLDINA",
+  "partido": "UNIÃO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)",
+  "sq": "200002535735"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 11111,
+  "nomeUrna": "NEILTON DIÓGENES",
+  "partido": "PP",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)",
+  "sq": "200002535725"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 11222,
+  "nomeUrna": "NELTER QUEIROZ",
+  "partido": "PP",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)",
+  "sq": "200002535728"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 44333,
+  "nomeUrna": "NENEL LUCAS",
+  "partido": "UNIÃO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)",
+  "sq": "200002535727"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 45045,
+  "nomeUrna": "NEY ROBSON",
+  "partido": "PSDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)",
+  "sq": "200002538243"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 25555,
+  "nomeUrna": "NILDETE VITORINO",
+  "partido": "PRD",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)",
+  "sq": "200002546784"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 22234,
+  "nomeUrna": "PASTORA JOIS",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PL",
+  "sq": "200002534426"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 18333,
+  "nomeUrna": "PAULO BINHO",
+  "partido": "REDE",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)",
+  "sq": "200002548550"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 13000,
+  "nomeUrna": "PEDRO LOPES",
+  "partido": "PT",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)",
+  "sq": "200002533858"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 45190,
+  "nomeUrna": "POLICIAL CANTOR",
+  "partido": "PSDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)",
+  "sq": "200002538222"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 11123,
+  "nomeUrna": "POLYANNA DANTAS",
+  "partido": "PP",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)",
+  "sq": "200002535731"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 25065,
+  "nomeUrna": "PROF. MARCELO FELIPPE",
+  "partido": "PRD",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)",
+  "sq": "200002546790"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 15123,
+  "nomeUrna": "PROFESSOR EMERSON",
+  "partido": "MDB",
+  "situacao": "sub judice (deferido com recurso)",
+  "coligacaoOuFederacao": "MDB",
+  "sq": "200002534361"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 15444,
+  "nomeUrna": "PROFESSOR LUIS CARLOS NORONHA",
+  "partido": "MDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MDB",
+  "sq": "200002534352"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 16456,
+  "nomeUrna": "PROFESSORA ANA CELIA",
+  "partido": "PSTU",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PSTU",
+  "sq": "200002542489"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 25777,
+  "nomeUrna": "PROFESSORA APARECIDA",
+  "partido": "PRD",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)",
+  "sq": "200002546779"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 18018,
+  "nomeUrna": "PROFESSORA MÁRCIA",
+  "partido": "REDE",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)",
+  "sq": "200002548558"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 18777,
+  "nomeUrna": "RAPHAELA ARAÚJO",
+  "partido": "REDE",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)",
+  "sq": "200002548551"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 14777,
+  "nomeUrna": "RAYANNE FIGUEIREDO",
+  "partido": "MISSÃO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MISSÃO",
+  "sq": "200002547275"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 45456,
+  "nomeUrna": "REITORA LUDIMILLA",
+  "partido": "PSDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)",
+  "sq": "200002538239"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 22345,
+  "nomeUrna": "RENAN DA FEDERAL",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PL",
+  "sq": "200002534416"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 18118,
+  "nomeUrna": "RENAN RIBEIRO",
+  "partido": "REDE",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)",
+  "sq": "200002548548"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 18999,
+  "nomeUrna": "ROBERTO MOSSORÓ",
+  "partido": "REDE",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)",
+  "sq": "200002548559"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 44555,
+  "nomeUrna": "ROBSON CARVALHO",
+  "partido": "UNIÃO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)",
+  "sq": "200002535734"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 25700,
+  "nomeUrna": "RONALDO CACHORRÃO",
+  "partido": "PRD",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(25-PRD/77-SOLIDARIEDADE)",
+  "sq": "200002546777"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 43123,
+  "nomeUrna": "RONNY HOLANDA",
+  "partido": "PV",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)",
+  "sq": "200002533852"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 15400,
+  "nomeUrna": "SALETE CAMPELO",
+  "partido": "MDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MDB",
+  "sq": "200002534367"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 15155,
+  "nomeUrna": "SARA SANTOS",
+  "partido": "MDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MDB",
+  "sq": "200002534364"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 22556,
+  "nomeUrna": "SARGENTO MANASSES",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PL",
+  "sq": "200002534418"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 22190,
+  "nomeUrna": "SARGENTO RIVALDO",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PL",
+  "sq": "200002533889"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 11777,
+  "nomeUrna": "SIRLENO JUNIOR",
+  "partido": "PP",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)",
+  "sq": "200002535733"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 45000,
+  "nomeUrna": "TAVEIRA JÚNIOR",
+  "partido": "PSDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSDB CIDADANIA(45-PSDB/23-CIDADANIA)",
+  "sq": "200002538233"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 22123,
+  "nomeUrna": "TEREZINHA MAIA",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PL",
+  "sq": "200002533890"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 16123,
+  "nomeUrna": "TIAGO SILVA",
+  "partido": "PSTU",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PSTU",
+  "sq": "200002542490"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 22333,
+  "nomeUrna": "TOMBA FARIAS",
+  "partido": "PL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "PL",
+  "sq": "200002534425"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 43222,
+  "nomeUrna": "UBALDO FERNANDES",
+  "partido": "PV",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)",
+  "sq": "200002533864"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 43777,
+  "nomeUrna": "VALÉRIA CICLISTA",
+  "partido": "PV",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(13-PT/65-PC do B/43-PV)",
+  "sq": "200002533856"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 44123,
+  "nomeUrna": "VAVÁ AZEVEDO",
+  "partido": "UNIÃO",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO UNIÃO PROGRESSISTA(44-UNIÃO/11-PP)",
+  "sq": "200002535724"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 15678,
+  "nomeUrna": "WALTER ALVES",
+  "partido": "MDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MDB",
+  "sq": "200002534363"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 50222,
+  "nomeUrna": "WILSON DUARTE",
+  "partido": "PSOL",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "FEDERAÇÃO PSOL REDE(50-PSOL/18-REDE)",
+  "sq": "200002548547"
+ },
+ {
+  "cargo": "deputado estadual",
+  "numero": 15456,
+  "nomeUrna": "YARA GOIS",
+  "partido": "MDB",
+  "situacao": "deferido",
+  "coligacaoOuFederacao": "MDB",
+  "sq": "200002534355"
+ }
 ]
