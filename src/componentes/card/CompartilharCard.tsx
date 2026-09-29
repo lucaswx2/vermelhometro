@@ -2,6 +2,7 @@
 
 import { useRef, useState, useTransition } from 'react'
 import { domToBlob } from 'modern-screenshot'
+import { COR_DO_TEMA } from '@/lib/cores'
 import type { Uf } from '@/lib/estados'
 import { CardDaColinha } from './CardDaColinha'
 import { FORMATOS, nomeDoArquivo, tamanhoDaPrevia, type Formato, type LinhaDoCard } from './formato'
@@ -28,7 +29,7 @@ const gerarArquivo = async (card: HTMLElement, formato: Formato, uf: Uf) => {
   await document.fonts.ready
   const { largura, altura } = FORMATOS[formato]
   // Largura e altura explícitas: sem elas a lib mede o nó já reduzido pela prévia.
-  const blob = await domToBlob(card, { width: largura, height: altura, scale: 1, type: 'image/png', backgroundColor: '#C8171E' })
+  const blob = await domToBlob(card, { width: largura, height: altura, scale: 1, type: 'image/png', backgroundColor: COR_DO_TEMA.vermelho })
   return new File([blob], nomeDoArquivo(uf, formato), { type: 'image/png' })
 }
 

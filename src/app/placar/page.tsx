@@ -18,6 +18,7 @@ import {
   type Leitura,
 } from '@/lib/ameaca'
 import { atualizadoEm, camara, senadoresContinuam } from '@/lib/dados'
+import { COR_DO_TEMA } from '@/lib/cores'
 import type { Pesquisa } from '@/lib/esquemas'
 import { NOME_UF } from '@/lib/estados'
 import { faixaInfo } from '@/lib/faixas'
@@ -54,7 +55,7 @@ const GRUPO = {
   'outra-oposicao': { nome: 'Outra oposição', cor: faixaInfo['direita-liberal'].cor, borda: 'border-tinta' },
   'centrao-ou-indefinido': { nome: 'Centrão ou indefinido', cor: faixaInfo.centrao.cor, borda: 'border-tinta' },
   'sem-pesquisa': { nome: 'Sem pesquisa', cor: '#FFFFFF', borda: 'border-dashed border-tinta/60' },
-  'esquerda-e-aliados': { nome: 'Esquerda e aliados', cor: '#C8171E', borda: 'border-tinta' },
+  'esquerda-e-aliados': { nome: 'Esquerda e aliados', cor: COR_DO_TEMA.vermelho, borda: 'border-tinta' },
 } satisfies Record<GrupoDoSenado, { nome: string; cor: string; borda: string }>
 
 const MARCOS_DO_SENADO: Record<number, string> = { [MAIORIA_SENADO]: 'maioria', [DOIS_TERCOS_SENADO]: 'dois terços' }
@@ -99,7 +100,7 @@ export default function Placar() {
       <section aria-labelledby="manchete" className="relative overflow-hidden bg-tinta text-papel">
         <svg viewBox="0 0 400 560" preserveAspectRatio="xMidYMax slice" className="absolute inset-0 h-full w-full" aria-hidden="true">
           <path d={RAIOS} fill="#3A1212" />
-          <circle cx="200" cy="640" r="170" fill="#C8171E" />
+          <circle cx="200" cy="640" r="170" className="fill-vermelho" />
         </svg>
         <div className="relative mx-auto flex max-w-xl flex-col items-center px-5 pb-8 text-center">
           <p className="mt-4 flex w-full justify-between text-xs font-bold uppercase tracking-[0.15em]">

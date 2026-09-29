@@ -77,10 +77,10 @@ export function CardDaColinha({ formato, linhas, estado, uf, dataTse, fotosQuebr
   return (
     <div ref={ref} style={{ width: largura, height: altura }} className="relative overflow-hidden bg-vermelho font-sans text-papel">
       <svg width={largura} height={altura} viewBox={`0 0 ${largura} ${altura}`} className="absolute left-0 top-0" aria-hidden="true">
-        <path d={d.raios} fill="#E0402A" />
-        <circle cx={d.sol.cx} cy={d.sol.cy} r={d.sol.r} fill="#F5C542" />
+        <path d={d.raios} className="fill-raio" />
+        <circle cx={d.sol.cx} cy={d.sol.cy} r={d.sol.r} className="fill-ouro" />
         <g transform={`translate(${largura / 2} ${d.estrela.y}) scale(${d.estrela.escala})`}>
-          <polygon points={PONTOS_ESTRELA} fill="#F5C542" />
+          <polygon points={PONTOS_ESTRELA} className="fill-ouro" />
         </g>
       </svg>
 
@@ -115,7 +115,7 @@ export function CardDaColinha({ formato, linhas, estado, uf, dataTse, fotosQuebr
               ) : (
                 <div className={`flex shrink-0 flex-col items-center justify-center gap-2.5 bg-vermelho ${d.foto}`}>
                   <svg width={d.estrelaDoQuadro} height={d.estrelaDoQuadro} viewBox="-50 -50 100 100" aria-hidden="true">
-                    <polygon points={PONTOS_ESTRELA} fill="#F5C542" />
+                    <polygon points={PONTOS_ESTRELA} className="fill-ouro" />
                   </svg>
                   {sigla && <span className={`max-w-full truncate px-1 font-display text-papel ${d.sigla}`}>{sigla}</span>}
                 </div>

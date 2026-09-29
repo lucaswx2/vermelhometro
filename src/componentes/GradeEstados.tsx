@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { COR_DO_TEMA } from '@/lib/cores'
 import { faixaInfo, FAIXAS, type Faixa } from '@/lib/faixas'
 import { rotaDoEstado, type Uf } from '@/lib/estados'
 
@@ -31,8 +32,8 @@ export function GradeEstados({ celulas, ancora = '' }: { celulas: Celula[]; anco
             style={{
               gridColumn: coluna,
               gridRow: linha,
-              background: info?.cor ?? (semDado ? 'transparent' : '#FFF4DC'),
-              color: info?.texto ?? '#2A0A0A',
+              background: info?.cor ?? (semDado ? 'transparent' : COR_DO_TEMA.papel),
+              color: info?.texto ?? COR_DO_TEMA.tinta,
             }}
             className={`flex items-center justify-center font-display text-lg transition-transform hover:scale-105 focus-visible:outline-4 focus-visible:outline-ouro ${
               semDado ? 'border-2 border-dashed border-tinta/50' : info ? '' : 'border-2 border-tinta'

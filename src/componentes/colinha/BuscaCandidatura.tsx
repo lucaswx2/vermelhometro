@@ -2,6 +2,7 @@
 
 import { useDeferredValue, useMemo, useRef, useState, type SyntheticEvent } from 'react'
 import { flushSync } from 'react-dom'
+import { COR_DO_TEMA } from '@/lib/cores'
 import type { Uf } from '@/lib/estados'
 import { faixaInfo } from '@/lib/faixas'
 import { buscar, type Grupo } from './busca'
@@ -37,7 +38,7 @@ const aoPedirFechar = (aoFechar: () => void) => ({
 const TITULO_DO_GRUPO = {
   esquerda: { titulo: 'Esquerda socialista', cor: faixaInfo['esquerda-radical'].cor },
   ampla: { titulo: 'Frente ampla', cor: faixaInfo['frente-ampla'].cor },
-  outros: { titulo: 'Outros partidos', cor: '#2A0A0A' },
+  outros: { titulo: 'Outros partidos', cor: COR_DO_TEMA.tinta },
 } satisfies Record<Grupo, { titulo: string; cor: string }>
 
 const plural = (n: number, um: string, varios: string) => `${n.toLocaleString('pt-BR')} ${n === 1 ? um : varios}`

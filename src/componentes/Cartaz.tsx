@@ -17,8 +17,8 @@ export function Cartaz({ titulo, chamada, rodape, atualizadoEm }: { titulo: Reac
   return (
     <section className="relative overflow-hidden bg-vermelho text-papel">
       <svg viewBox="0 0 400 560" preserveAspectRatio="xMidYMax slice" className="absolute inset-0 h-full w-full" aria-hidden="true">
-        <path d={RAIOS} fill="#E0402A" />
-        <circle cx="200" cy="600" r="170" fill="#F5C542" />
+        <path d={RAIOS} className="fill-raio" />
+        <circle cx="200" cy="600" r="170" className="fill-ouro" />
       </svg>
       <div className="relative mx-auto flex max-w-xl flex-col items-center px-5 pb-6 text-center">
         <p className="mt-4 flex w-full justify-between text-xs font-bold uppercase tracking-[0.15em]">
@@ -26,7 +26,7 @@ export function Cartaz({ titulo, chamada, rodape, atualizadoEm }: { titulo: Reac
           <span>Atualizado {formatarAtualizacao(atualizadoEm)}</span>
         </p>
         <svg viewBox="-50 -50 100 100" className="mt-6 size-16" aria-hidden="true">
-          <polygon points={PONTOS_ESTRELA} fill="#F5C542" />
+          <polygon points={PONTOS_ESTRELA} className="fill-ouro" />
         </svg>
         <p className="mt-4 text-base font-bold uppercase tracking-[0.12em] text-ouro">{chamada}</p>
         <h1 className="mt-1 font-display text-[52px] uppercase leading-[0.95]">{titulo}</h1>

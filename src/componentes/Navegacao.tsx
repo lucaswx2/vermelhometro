@@ -29,7 +29,7 @@ export function BarraDoTopo() {
       <div className="mx-auto flex h-[60px] max-w-xl items-center justify-between px-4">
         <Link href="/" className="flex min-h-11 items-center gap-2" aria-label="Vermelhômetro, início">
           <svg width="24" height="24" viewBox="-50 -50 100 100" aria-hidden="true">
-            <polygon points={PONTOS_ESTRELA} fill="#F5C542" />
+            <polygon points={PONTOS_ESTRELA} className="fill-ouro" />
           </svg>
           <span className="font-display text-[22px] tracking-wide">VERMELHÔMETRO</span>
         </Link>

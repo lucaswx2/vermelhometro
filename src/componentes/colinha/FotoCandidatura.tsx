@@ -38,7 +38,7 @@ export function FotoCandidatura({ opcao, tamanho, alt = '' }: { opcao: Pick<Opca
       style={{ width: largura, height: altura }}
     >
       <svg viewBox="-50 -50 100 100" width={estrela} height={estrela}>
-        <polygon points={PONTOS_ESTRELA} fill="#F5C542" />
+        <polygon points={PONTOS_ESTRELA} className="fill-ouro" />
       </svg>
       <span className="max-w-full truncate font-display leading-none text-papel" style={{ fontSize: tamanhoDaSigla(opcao.partido, tamanho) }}>
         {opcao.partido}
@@ -51,7 +51,7 @@ export function FotoVazia() {
   return (
     <span aria-hidden="true" className="foto-candidatura flex h-[67px] w-12 shrink-0 items-center justify-center border-2 border-dashed border-vermelho">
       <svg width="18" height="18" viewBox="0 0 18 18">
-        <path d="M9 2 V16 M2 9 H16" stroke="#C8171E" strokeWidth="2.5" />
+        <path d="M9 2 V16 M2 9 H16" className="stroke-vermelho" strokeWidth="2.5" />
       </svg>
     </span>
   )
