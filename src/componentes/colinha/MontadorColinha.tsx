@@ -3,7 +3,8 @@
 import { useRouter } from 'next/navigation'
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react'
 import { flushSync } from 'react-dom'
-import { CompartilharCard, type LinhaDoCard } from '@/componentes/card/CompartilharCard'
+import { CompartilharCard } from '@/componentes/card/CompartilharCard'
+import type { LinhaDoCard } from '@/componentes/card/formato'
 import { NOME_UF, UFS, ehUf, type Uf } from '@/lib/estados'
 import { PARTIDOS_DE_CLASSE } from '@/lib/partidosDeClasse'
 import { lembrarColinha } from '../ultimaColinha'
@@ -47,11 +48,9 @@ const gravar = (escolha: Escolha) => {
 const votoDaLinha = (linha: LinhaDaColinha): Voto | null => (linha.tipo === 'escolhida' ? linha.opcao.numero : linha.tipo === 'branco' ? 'branco' : null)
 
 const paraOCard = (linha: LinhaDaColinha): LinhaDoCard => {
-  if (linha.tipo === 'escolhida') {
-    const { numero, nome, partido, faixa, foto } = linha.opcao
-    return { rotulo: linha.rotulo, numero, nome, partido, faixa, foto }
-  }
-  return { rotulo: linha.rotulo, numero: null, nome: linha.tipo === 'branco' ? 'em branco' : null, partido: null, faixa: null, foto: null }
+  if (linha.tipo !== 'escolhida') return { tipo: linha.tipo, rotulo: linha.rotulo }
+  const { numero, nome, partido, faixa, foto } = linha.opcao
+  return { tipo: 'escolhida', rotulo: linha.rotulo, numero, nome, partido, faixa, foto }
 }
 
 // Abre o menu de compartilhar do celular; sem ele, o zap.

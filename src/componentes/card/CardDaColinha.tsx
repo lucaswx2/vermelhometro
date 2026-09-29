@@ -1,16 +1,16 @@
 import type { Ref } from 'react'
 import { PONTOS_ESTRELA, raiosDoSol } from '../sol'
-import type { LinhaDoCard } from './CompartilharCard'
 import {
   FORMATOS,
   enderecoDoEstado,
   linhaLegal,
   nomeDaLinha,
-  numeroDaLinha,
+  numeroParaExibir,
   siglaDaLinha,
   tamanhoDoNumero,
   truncar,
   type Formato,
+  type LinhaDoCard,
 } from './formato'
 
 const NOME_MAXIMO = 48
@@ -90,8 +90,8 @@ export function CardDaColinha({ formato, linhas, estado, uf, dataTse, fotosQuebr
 
       <ul className={`absolute ${d.grade}`}>
         {linhas.map((linha, i) => {
-          const foto = linha.foto && !fotosQuebradas.includes(linha.foto) ? linha.foto : null
-          const numero = numeroDaLinha(linha)
+          const foto = linha.tipo === 'escolhida' && linha.foto && !fotosQuebradas.includes(linha.foto) ? linha.foto : null
+          const numero = numeroParaExibir(linha)
           const nome = truncar(nomeDaLinha(linha), NOME_MAXIMO)
           const sigla = siglaDaLinha(linha)
           return (

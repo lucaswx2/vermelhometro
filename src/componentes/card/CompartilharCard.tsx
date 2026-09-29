@@ -2,19 +2,8 @@
 
 import { useRef, useState, useTransition } from 'react'
 import { domToBlob } from 'modern-screenshot'
-import type { Faixa } from '@/lib/faixas'
 import { CardDaColinha } from './CardDaColinha'
-import { FORMATOS, nomeDoArquivo, tamanhoDaPrevia, type Formato } from './formato'
-
-// Uma linha do card: um cargo da colinha, já resolvido.
-export type LinhaDoCard = {
-  rotulo: string
-  numero: number | null
-  nome: string | null
-  partido: string | null
-  faixa: Faixa | null
-  foto: string | null
-}
+import { FORMATOS, nomeDoArquivo, tamanhoDaPrevia, type Formato, type LinhaDoCard } from './formato'
 
 export type PropsDoCard = {
   linhas: LinhaDoCard[]
